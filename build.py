@@ -325,7 +325,7 @@ def main():
     write("feed.xml", feed_xml(editions))
     write("sitemap.xml", sitemap_xml(editions))
     write("robots.txt", f"User-agent: *\nAllow: /\nSitemap: {SITE_URL}/sitemap.xml\n")
-    write("CNAME", SITE_URL.replace("https://", "").replace("http://", "") + "\n")
+    #write("CNAME", SITE_URL.replace("https://", "").replace("http://", "") + "\n")
 
     css = STATIC / "style.css"
     if css.exists():
