@@ -1,0 +1,218 @@
+name: Daily edition
+
+# Claude writes the edition and the audio script inside this runner, commits
+# them, and the same workflow builds and deploys the site. Everything happens
+# in GitHub — no external sandbox, no API billing (the OAuth token bills to
+# the Claude subscription).
+#
+# DST WARNING: GitHub cron is UTC and does not follow daylight saving.
+#   EDT (summer): "35 9 * * *"  = 5:35am ET
+#   EST (winter): "35 10 * * *" = 5:35am ET
+# Change this line twice a year, or the edition drifts by an hour.
+
+on:
+  schedule:
+    - cron: "35 9 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+# Shares the "pages" group with publish.yml so a manual edit during the daily
+# run queues behind it instead of racing it to the same deployment.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  write-and-build:
+    runs-on: ubuntu-latest
+    outputs:
+      wrote: ${{ steps.commit.outputs.wrote }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Claude writes today's edition
+        uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          claude_args: |
+            --max-turns 60
+            --allowedTools "Bash,Read,Write,Edit,Glob,Grep,WebSearch,WebFetch"
+          prompt: |
+            You are the editor of "Artificial Record", a daily AI-industry newsletter
+            at artificialrecord.com. Tagline: "The AI industry, on the record."
+            Work autonomously. Do not ask questions. You are already inside a checkout
+            of the repository — do not clone anything.
+
+            === STEP 1 — ORIENT ===
+            Run `TZ=America/New_York date +%Y-%m-%d` for today's Eastern date. Call it TODAY.
+
+            Read the two most recent files in content/editions/ so you match the house
+            style exactly and do not repeat items already published.
+
+            Today's edition number = the highest `edition:` value across all files in
+            content/editions/, plus one.
+
+            If content/editions/TODAY.md already exists, STOP. Print "ALREADY PUBLISHED"
+            and do nothing else.
+
+            === STEP 2 — RESEARCH ===
+            Cover the last 24-48 hours. Go wide, then deep on what matters. Use WebSearch
+            and WebFetch thoroughly — nothing has been researched for you.
+
+            - Frontier labs: fetch openai.com/news and anthropic.com/news directly. Also
+              search Google DeepMind, Meta, xAI, Mistral, Microsoft, Amazon, Apple.
+            - Model releases, benchmarks, API changes, agent launches, open-weights drops
+            - Regulation, lawsuits, copyright rulings, EU/US/China policy, procurement
+            - Funding rounds and private-company milestones
+            - Chips, data centers, energy, enterprise AI spending, sovereign AI
+            - Public-market moves tied to AI, including earnings released after the close
+
+            GO TO PRIMARY SOURCES. Fetch the company announcement, the regulatory filing,
+            the investor-relations page — not an aggregator's summary of it.
+
+            === STEP 3 — WRITE THE EDITION ===
+            Write content/editions/TODAY.md, beginning with exactly this front matter:
+
+            ---
+            title: AI Industry Daily Briefing — [Month D, YYYY]
+            date: TODAY
+            edition: [number from step 1]
+            slug: ai-industry-daily-briefing-TODAY
+            summary: [one sentence carrying real information — named companies and
+            figures, not a topic label. This is the archive line, the RSS description
+            and the link preview.]
+            ---
+
+            The slug is a permanent URL. Never change a published edition's slug.
+
+            No H1 and no subtitle after the front matter — the template renders both from
+            metadata. Start directly with `## The Executive Read`.
+
+            - `## The Executive Read` — one substantial paragraph on the day's direction,
+              built around a real throughline, not a list
+            - `## Top AI Headlines` — 3 to 5 items. Each an `###` headline, then bold-led
+              paragraphs: **What happened.** / **Why it matters.** / **Business implication.**
+              Close each with an italic source line of real markdown links.
+            - Then, only where there is real news: Model and Product Updates, Regulation
+              and Policy Watch, Emerging Startup Radar, AI Infrastructure and Market
+              Signals, Public Investment Watchlist, Forward-Looking Angle, Watchlist
+            - Omit any section with nothing real in it. Never pad.
+
+            EDITORIAL STANDARDS — NON-NEGOTIABLE:
+            - Every claim traces to a source you actually fetched. Never invent a story,
+              quote, number, funding round, product name, or URL.
+            - Never include a link you are not certain exists.
+            - Reported rather than confirmed must say so: "reported by", "according to",
+              "in talks".
+            - Self-reported vendor benchmarks must be labelled as the vendor's own claim.
+            - Drop what you cannot stand behind. A shorter edition beats a padded one.
+            - No hype. Never "this changes everything," "game-changer," "the future is
+              here," "poised to dominate."
+            - No financial advice. Public-company coverage is informational only.
+            - Plain language, short sentences. Explain any technical term the first time
+              it appears, in half a sentence, without condescension.
+            - If a previous edition got something wrong, correct it in the text and say
+              plainly what you are withdrawing.
+
+            LENGTH: whatever the verified material supports. Roughly 1,200-2,000 words on
+            a normal day, 2,500+ on a heavy one. Never compress a significant verified
+            story to hit a number, and never pad.
+
+            === STEP 4 — WRITE THE AUDIO SCRIPT ===
+            Write content/scripts/TODAY.txt. Create the directory if needed.
+
+            Begin the file with exactly this block, unchanged, then a blank line, then
+            the script:
+
+            VOICE: onyx · MODEL: gpt-4o-mini-tts
+            INSTRUCTIONS:
+            Voice: a seasoned public radio host, mid-forties, talking to one person across a table. Not announcing. Not presenting.
+            Pacing: Conversational and unhurried. Vary it — move a little quicker through familiar setup, slow down on figures and on the point of a sentence. Never metronomic.
+            Breath and pauses: Breathe audibly before a new idea. Leave a real beat of silence at paragraph breaks — a full second, sometimes longer. Silence is not dead air.
+            Inflection: Let sentences fall at the end. Do not hold pitch level and do not lift into the next line. Downward, settled, finished.
+            Articulation: Relaxed, slightly soft. Let some consonants go. Do not over-enunciate — you are not reading a legal notice.
+            Attitude: Interested, dry, faintly amused now and then. You find this genuinely interesting and you assume the listener does too. Never enthusiastic. Never selling. Never customer-service warm.
+            Avoid: uniform rhythm, rising terminal inflection, announcer polish, any sense of performance.
+
+            WRITE IT FOR THE MOUTH. This is the most important instruction here. No voice
+            model can make written prose sound spoken, because people do not speak in
+            written prose.
+            - Contractions everywhere. "This'll", "you can't", "there's", "didn't".
+            - Sentence fragments. Fragments are how people emphasise.
+            - Start sentences with And, But, So, Which. A bare "So —" opens a new thread.
+            - Break long sentences into two or three short ones. One idea per sentence.
+            - Prefer the plain verb. "Go find" over "identify".
+            - Read every paragraph aloud in your head. If you would not say it that way to
+              a colleague, rewrite it.
+
+            Shape: 1,150-1,300 words (8-9 minutes). Three or four stories, no more — depth
+            over coverage. Open with the throughline in the first two sentences, one line
+            of greeting at most. Give scale to any number a listener cannot picture: a
+            gigawatt means nothing, "about one large nuclear reactor" means something. No
+            URLs, no markdown, no source lines, no lists — nothing that cannot be spoken.
+            Keep the labelling discipline out loud. Close by naming the publication and
+            pointing to artificialrecord.com.
+
+            === STEP 5 — VERIFY BEFORE FINISHING ===
+            Run `python3 build.py` and confirm it reports today's edition. If the build
+            errors, fix the markdown and run it again. Do not finish on a broken build.
+
+            Do not commit — a later step handles that. Do not edit build.py, the
+            stylesheet, or any workflow file. Print a short report: edition number,
+            headline count, approximate word count, script word count, source domains
+            used, anything resting on a single or lower-tier source, and anything you
+            dropped for lack of verification.
+
+      - name: Commit what Claude wrote
+        id: commit
+        run: |
+          git config user.name "Artificial Record"
+          git config user.email "spenceryowell@gmail.com"
+          git add content/
+          if git diff --staged --quiet; then
+            echo "No new content — nothing to commit."
+            echo "wrote=false" >> "$GITHUB_OUTPUT"
+          else
+            DATE=$(TZ=America/New_York date +%Y-%m-%d)
+            git commit -m "Edition — $DATE"
+            git push
+            echo "wrote=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build site
+        run: |
+          pip install markdown
+          python build.py
+
+      - name: Sanity-check the build
+        run: |
+          test -s site/index.html || { echo "::error::index.html missing"; exit 1; }
+          test -s site/feed.xml  || { echo "::error::feed.xml missing"; exit 1; }
+          count=$(find site/editions -name index.html | wc -l)
+          echo "Built $count edition page(s)"
+          test "$count" -ge 1 || { echo "::error::no edition pages built"; exit 1; }
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: write-and-build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
