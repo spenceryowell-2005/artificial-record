@@ -12,6 +12,14 @@ name: TEST - Claude auth only
 on:
   workflow_dispatch:
 
+# REQUIRED. claude-code-action exchanges an OIDC token for a GitHub App token
+# before it does anything else. Without id-token: write it fails three attempts
+# with "Unable to get ACTIONS_ID_TOKEN_REQUEST_URL env variable" - which looks
+# alarming but has nothing to do with your Anthropic token.
+permissions:
+  contents: read
+  id-token: write
+
 jobs:
   test:
     runs-on: ubuntu-latest
