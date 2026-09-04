@@ -1,0 +1,74 @@
+name: Publish watchdog
+ 
+# A cron that GitHub silently DROPS produces no run, and therefore no failure,
+# so daily-edition.yml's own notify-failure job can never see it. This workflow
+# exists to catch exactly that: it does not care why there is no edition, only
+# that there isn't one.
+#
+# DST: 13:30 UTC = 09:30 ET in summer. Change to "30 14 * * *" in November.
+on:
+  schedule:
+    - cron: "30 13 * * *"
+  workflow_dispatch:
+ 
+permissions:
+  issues: write
+  contents: read
+ 
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            async function ensureLabel() {
+              try {
+                await github.rest.issues.createLabel({
+                  owner: context.repo.owner, repo: context.repo.repo,
+                  name: 'publish-failure', color: 'b60205',
+                  description: 'The daily edition did not publish',
+                });
+              } catch (e) { /* already exists - fine */ }
+            }
+            async function raise(title, body) {
+              await ensureLabel();
+              try {
+                await github.rest.issues.create({
+                  owner: context.repo.owner, repo: context.repo.repo,
+                  title, body, labels: ['publish-failure'],
+                });
+              } catch (e) {
+                core.warning(`Labelled issue failed (${e.message}); raising without label.`);
+                await github.rest.issues.create({
+                  owner: context.repo.owner, repo: context.repo.repo, title, body,
+                });
+              }
+            }
+            const fs = require('fs');
+            const day = new Date(new Date().toLocaleString('en-US', { timeZone: 'America/New_York' }))
+              .toISOString().slice(0, 10);
+            if (fs.existsSync(`content/editions/${day}.md`)) {
+              core.notice(`OK - edition for ${day} is published.`);
+              return;
+            }
+            const title = `Daily edition MISSING - ${day} - nothing published by 09:30 ET`;
+            const existing = await github.rest.issues.listForRepo({
+              owner: context.repo.owner, repo: context.repo.repo, state: 'open', labels: 'publish-failure',
+            });
+            if (existing.data.some(i => i.title === title)) return;
+            await raise(title, [
+                `**No edition exists for ${day}** and all three scheduled attempts have passed.`,
+                ``,
+                `This fires whether the workflow failed, was delayed past this check, or`,
+                `was never run at all by GitHub's scheduler.`,
+                ``,
+                `Check: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/workflows/daily-edition.yml`,
+                ``,
+                `**Recover by hand:**`,
+                `1. Have Claude write the edition from that morning's research doc.`,
+                `2. Upload it to \`content/editions/${day}.md\` via Add file -> Upload files.`,
+                `3. \`publish.yml\` builds and deploys it.`,
+            ].join('\n'));
+ 
