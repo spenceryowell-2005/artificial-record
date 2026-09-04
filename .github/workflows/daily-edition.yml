@@ -10,9 +10,19 @@ name: Daily edition
 #   EST (winter): "35 10 * * *" = 5:35am ET
 # Change this line twice a year, or the edition drifts by an hour.
 
+# GitHub's scheduler is NOT punctual. On Sep 4 2026 this workflow was queued at
+# 09:35 UTC and did not start until 13:42 UTC - a 4h07m delay. GitHub documents
+# drift of 4-14 hours on public repos, and runs are sometimes dropped entirely.
+#
+# So we do not rely on one firing. We take three independent shots, the first one
+# early enough that even a multi-hour delay still lands before readers wake up.
+# The job is idempotent: whichever attempt runs first writes the edition, and
+# every later attempt sees the file already exists and exits in seconds.
 on:
   schedule:
-    - cron: "35 9 * * *"
+    - cron: "0 6 * * *"     # 02:00 ET - primary. Delayed 4h, still lands by 06:00.
+    - cron: "0 9 * * *"     # 05:00 ET - second chance.
+    - cron: "30 11 * * *"   # 07:30 ET - last automatic chance.
   workflow_dispatch:
 
 permissions:
@@ -36,10 +46,60 @@ jobs:
         with:
           fetch-depth: 0
 
+      # The prompt asks Claude to stop if today's edition exists, but that is the
+      # model policing itself. With three scheduled attempts a day that guarantee
+      # has to be deterministic, so the workflow enforces it here instead.
+      - name: Has today's edition already been written?
+        id: guard
+        run: |
+          DATE=$(TZ=America/New_York date +%Y-%m-%d)
+          echo "date=$DATE" >> "$GITHUB_OUTPUT"
+          if [ -f "content/editions/$DATE.md" ]; then
+            echo "Edition for $DATE already exists. Skipping the write step."
+            echo "needed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "No edition for $DATE yet. Proceeding."
+            echo "needed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Normalise and validate the OAuth token
+        id: token
+        if: steps.guard.outputs.needed == 'true'
+        env:
+          RAW_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+        run: |
+          if [ -z "$RAW_TOKEN" ]; then
+            echo "::error::CLAUDE_CODE_OAUTH_TOKEN is EMPTY. Missing, or saved as an Environment secret instead of a Repository secret (Settings > Secrets and variables > Actions > Repository secrets)."
+            exit 1
+          fi
+          RAW_LEN=${#RAW_TOKEN}
+          CLEAN=$(printf '%s' "$RAW_TOKEN" | tr -d '[:space:]')
+          echo "::add-mask::$CLEAN"
+          CLEAN_LEN=${#CLEAN}
+          echo "Stored length: $RAW_LEN | after stripping whitespace: $CLEAN_LEN"
+          if [ "$RAW_LEN" -ne "$CLEAN_LEN" ]; then
+            echo "::warning::The stored secret contained $((RAW_LEN - CLEAN_LEN)) whitespace/newline character(s) - the exact fault that broke the Sep 4 run. Stripped automatically, but re-paste the secret as a single line to silence this."
+          fi
+          case "$CLEAN" in
+            sk-ant-oat01-*) echo "Format: OAuth token - correct." ;;
+            sk-ant-api*)    echo "::error::That is an API key, not an OAuth token. Regenerate with 'claude setup-token'." ; exit 1 ;;
+            *)              echo "::warning::Unrecognised format - expected sk-ant-oat01-... Possibly truncated on paste." ;;
+          esac
+          echo "token=$CLEAN" >> "$GITHUB_OUTPUT"
+
       - name: Claude writes today's edition
+        if: steps.guard.outputs.needed == 'true'
         uses: anthropics/claude-code-action@v1
+        # Belt and braces for anthropics/claude-code-action#676 and #1281:
+        # the token is passed BOTH as an input and in the environment, because
+        # the action has a known bug where it does not reach the SDK subprocess.
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ steps.token.outputs.token }}
         with:
-          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          claude_code_oauth_token: ${{ steps.token.outputs.token }}
+          # Without this the real error message is suppressed and every failure
+          # looks like the same generic "is_error:true". Turn it off once stable.
+          show_full_output: true
           claude_args: |
             --max-turns 60
             --allowedTools "Bash,Read,Write,Edit,Glob,Grep,WebSearch,WebFetch"
@@ -171,6 +231,7 @@ jobs:
 
       - name: Commit what Claude wrote
         id: commit
+        if: steps.guard.outputs.needed == 'true'
         run: |
           git config user.name "Artificial Record"
           git config user.email "spenceryowell@gmail.com"
@@ -216,3 +277,54 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+
+  # Only alarms if a job failed AND today's edition is still genuinely missing,
+  # so a failed early attempt that a later attempt rescues stays quiet.
+  # NOTE: this cannot catch a cron GitHub never ran. publish-watchdog.yml does that.
+  notify-failure:
+    needs: [write-and-build, deploy]
+    if: ${{ always() && contains(needs.*.result, 'failure') }}
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      contents: read
+    steps:
+      - uses: actions/checkout@v6
+      - name: Alarm only if no edition exists for today
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const day = new Date(new Date().toLocaleString('en-US', { timeZone: 'America/New_York' }))
+              .toISOString().slice(0, 10);
+            if (fs.existsSync(`content/editions/${day}.md`)) {
+              core.notice(`An attempt failed, but ${day} is published. No alarm raised.`);
+              return;
+            }
+            const url = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            const title = `Daily edition FAILED - ${day} - no edition published`;
+            const existing = await github.rest.issues.listForRepo({
+              owner: context.repo.owner, repo: context.repo.repo, state: 'open', labels: 'publish-failure',
+            });
+            if (existing.data.some(i => i.title === title)) {
+              core.notice('Alarm already open for today.');
+              return;
+            }
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title,
+              labels: ['publish-failure'],
+              body: [
+                `An attempt failed and **no edition exists for ${day}**.`,
+                ``,
+                `Run log: ${url}`,
+                ``,
+                `Later scheduled attempts may still rescue this. If one does, close this issue.`,
+                ``,
+                `**If none does, recover by hand:**`,
+                `1. Have Claude write the edition from that morning's research doc.`,
+                `2. Upload it to \`content/editions/${day}.md\` via Add file -> Upload files.`,
+                `3. \`publish.yml\` builds and deploys it.`,
+              ].join('\n'),
+            });
