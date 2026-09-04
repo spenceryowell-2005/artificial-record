@@ -1,0 +1,48 @@
+name: TEST - Claude auth only
+
+# Throwaway diagnostic. Manual trigger only - it is never scheduled and never
+# touches content/. Its whole job is to answer one question: does the OAuth
+# token actually reach the Claude SDK?
+#
+# It runs a trivial prompt, so a pass costs a few hundred tokens and proves the
+# auth path end to end. show_full_output is on, so a fail prints the REAL error
+# instead of the generic "is_error:true" that hid the cause on Sep 4.
+#
+# Delete this file once the daily edition has run clean unattended.
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Is the secret visible to this job at all?
+        env:
+          TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+        run: |
+          if [ -z "$TOKEN" ]; then
+            echo "::error::VERDICT: the secret is EMPTY in this job."
+            echo "::error::It is missing, or it was saved as an Environment secret rather than a Repository secret."
+            echo "::error::Fix at Settings > Secrets and variables > Actions > Repository secrets."
+            exit 1
+          fi
+          echo "Secret is visible. Length: ${#TOKEN}"
+          case "$TOKEN" in
+            sk-ant-oat01-*) echo "Format: OAuth token - correct for claude_code_oauth_token." ;;
+            sk-ant-api*)    echo "::error::VERDICT: that is an API KEY, not an OAuth token. Regenerate with 'claude setup-token'." ; exit 1 ;;
+            *)              echo "::warning::Unrecognised format - expected sk-ant-oat01-... Possibly truncated on paste." ;;
+          esac
+          echo "Secret looks fine. If the next step still fails, it is the propagation bug (#676 / #1281), not your token."
+
+      - name: Can Claude actually authenticate?
+        uses: anthropics/claude-code-action@v1
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          show_full_output: true
+          claude_args: --max-turns 2
+          prompt: |
+            Reply with exactly this and nothing else: AUTH OK
