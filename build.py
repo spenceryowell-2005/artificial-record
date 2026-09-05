@@ -43,7 +43,7 @@ LANGUAGE = "en-us"
 #                           compete with the real domain in search.
 #   CUSTOM_DOMAIN=1      -> building for artificialrecord.com. Links are rooted
 #                           at /, the CNAME is written, pages are indexable.
-#https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="e6878f91-43b4-40b5-9127-83e55a1eea18"></script>
+SUBSCRIBE_EMBED_URL = "#https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="e6878f91-43b4-40b5-9127-83e55a1eea18"></script>"
 # Set it in the workflow at DNS cutover (checklist item 12). Nothing else changes.
 CUSTOM_DOMAIN = os.environ.get("CUSTOM_DOMAIN") == "1"
 _REPO = os.environ.get("GITHUB_REPOSITORY", "")
