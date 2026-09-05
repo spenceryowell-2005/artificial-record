@@ -1,197 +1,398 @@
-/* Artificial Record — one stylesheet, no build step. */
+#!/usr/bin/env python3
+"""
+Artificial Record — static site builder.
 
-@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap');
+Reads markdown editions from content/editions/*.md and writes a complete
+server-rendered site to site/. No framework, no plugins: the daily publish
+must not break because a dependency updated overnight.
 
-:root{
-  --paper:#F6F7F5;
-  --card:#FFFFFF;
-  --ink:#15191E;
-  --ink-2:#4C5561;
-  --ink-3:#828B98;
-  --rule:#D9DDD8;
-  --rule-soft:#E7EAE5;
-  --accent:#B33A2B;
-  --link:#1F4E6B;
-  --measure:37rem;
-}
-@media (prefers-color-scheme: dark){
-  :root{
-    --paper:#16191C;
-    --card:#1D2126;
-    --ink:#E8EAE6;
-    --ink-2:#A8B1BC;
-    --ink-3:#78828F;
-    --rule:#2A2F35;
-    --rule-soft:#23282D;
-    --accent:#E0705F;
-    --link:#8FB8D4;
-  }
-}
+Usage:  python3 build.py
+Output: site/
+"""
 
-*{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-body{
-  margin:0;
-  background:var(--paper);
-  color:var(--ink);
-  font-family:"Newsreader",Georgia,"Times New Roman",serif;
-  font-size:19px;
-  line-height:1.62;
-  -webkit-font-smoothing:antialiased;
-}
+import html
+import os
+import re
+import shutil
+import sys
+from datetime import datetime, timezone
+from email.utils import format_datetime
+from pathlib import Path
 
-/* ---------- chrome ---------- */
-header.site{
-  max-width:var(--measure);margin:0 auto;padding:36px 22px 16px;
-  border-bottom:2px solid var(--ink);
-}
-.wordmark{
-  display:block;font-weight:600;font-size:30px;letter-spacing:-.015em;
-  color:var(--ink);text-decoration:none;line-height:1.1;
-}
-.tagline{
-  margin:4px 0 0;font-style:italic;color:var(--ink-2);font-size:16px;
-}
-header.site nav{
-  margin-top:14px;display:flex;gap:18px;
-  font-family:"IBM Plex Mono",ui-monospace,monospace;
-  font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;
-}
-header.site nav a{color:var(--ink-2);text-decoration:none;padding-bottom:2px;border-bottom:1px solid transparent}
-header.site nav a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+import markdown
 
-main{max-width:var(--measure);margin:0 auto;padding:0 22px}
+# --------------------------------------------------------------------------
+# Configuration
+# --------------------------------------------------------------------------
 
-footer.site{
-  max-width:var(--measure);margin:64px auto 0;padding:20px 22px 60px;
-  border-top:1px solid var(--rule);color:var(--ink-2);font-size:15px;
-}
-footer.site p{margin:0 0 6px}
-footer.site .fine{color:var(--ink-3);font-size:13.5px;font-style:italic}
+SITE_TITLE = "Artificial Record"
+SITE_TAGLINE = "The AI industry, on the record."
+SITE_DESC = (
+    "A daily briefing on the AI industry. Every claim source-linked, "
+    "unconfirmed items labelled as such, nothing hyped."
+)
+SITE_URL = "https://artificialrecord.com"
 
-/* ---------- article ---------- */
-.eyebrow{
-  font-family:"IBM Plex Mono",ui-monospace,monospace;
-  font-size:11.5px;letter-spacing:.13em;text-transform:uppercase;
-  color:var(--accent);margin:34px 0 10px;
-}
-h1,.page-title{
-  font-weight:600;font-size:clamp(29px,4.6vw,40px);line-height:1.12;
-  letter-spacing:-.018em;margin:0;text-wrap:balance;
-}
-.standfirst{
-  font-size:20px;line-height:1.5;color:var(--ink-2);font-style:italic;
-  margin:12px 0 0;
-}
+# --------------------------------------------------------------------------
+# EMAIL CAPTURE
+#
+# This is beehiiv's v3 script embed. beehiiv > Grow > Subscribe Forms > Embed
+# gives you a tag like:
+#   <script src="https://subscribe-forms.beehiiv.com/v3/loader.js"
+#           data-beehiiv-form="THE-ID"></script>
+# Only the data-beehiiv-form ID goes below. Nothing else, no quotes, no tags.
+#
+# Left empty, the signup block renders nothing and the site builds exactly as
+# it did before. Nothing breaks if this is blank.
+# --------------------------------------------------------------------------
+SUBSCRIBE_FORM_ID = "e6878f91-43b4-40b5-9127-83e55a1eea18"
+AUTHOR = "Artificial Record"
+LANGUAGE = "en-us"
 
-/* ---------- audio (phase 2; absent until an MP3 exists) ---------- */
-.listen{
-  margin:26px 0 0;padding:14px 16px;background:var(--card);
-  border:1px solid var(--rule);border-left:3px solid var(--accent);border-radius:2px;
-}
-.listen-label{
-  margin:0 0 8px;font-family:"IBM Plex Mono",ui-monospace,monospace;
-  font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2);
-}
-.listen audio{width:100%;display:block}
+# One flag controls the difference between the preview and the real site.
+#
+#   CUSTOM_DOMAIN unset  -> building for the github.io preview. Internal links
+#                           are prefixed with /<repo>, no CNAME is written, and
+#                           every page is marked noindex so the preview cannot
+#                           compete with the real domain in search.
+#   CUSTOM_DOMAIN=1      -> building for artificialrecord.com. Links are rooted
+#                           at /, the CNAME is written, pages are indexable.
+#
+# Set it in the workflow at DNS cutover (checklist item 12). Nothing else changes.
+CUSTOM_DOMAIN = os.environ.get("CUSTOM_DOMAIN") == "1"
+_REPO = os.environ.get("GITHUB_REPOSITORY", "")
+BASE = "" if CUSTOM_DOMAIN or not _REPO else "/" + _REPO.split("/")[-1]
 
-/* ---------- prose ---------- */
-.prose{margin-top:30px}
-.prose h2{
-  font-size:25px;font-weight:600;letter-spacing:-.012em;line-height:1.2;
-  margin:44px 0 0;padding-top:16px;border-top:1px solid var(--rule);text-wrap:balance;
-}
-.prose h3{
-  font-size:20.5px;font-weight:600;line-height:1.28;margin:32px 0 0;text-wrap:balance;
-}
-.prose p{margin:14px 0 0}
-.prose strong{font-weight:600}
-.prose em{font-style:italic}
-.prose ul,.prose ol{margin:14px 0 0;padding-left:24px}
-.prose li{margin:6px 0}
-.prose hr{border:0;border-top:1px solid var(--rule);margin:38px 0 0}
-.prose a{color:var(--link);text-decoration:underline;text-underline-offset:2px;text-decoration-thickness:1px}
-.prose a:hover{color:var(--accent)}
-.prose blockquote{
-  margin:20px 0 0;padding-left:18px;border-left:2px solid var(--rule);
-  color:var(--ink-2);font-style:italic;
-}
-.prose code{
-  font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.82em;
-  background:var(--rule-soft);padding:1px 5px;border-radius:2px;
-}
-/* source lines are emphasised paragraphs at the end of each story */
-.prose p > em:only-child{
-  display:block;font-size:14.5px;color:var(--ink-3);font-style:normal;
-  font-family:"IBM Plex Mono",ui-monospace,monospace;line-height:1.6;
-}
-.prose table{
-  width:100%;border-collapse:collapse;margin:18px 0 0;font-size:16px;
-  font-variant-numeric:tabular-nums;
-}
-.prose th,.prose td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--rule-soft)}
-.prose th{font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2)}
-.table-scroll,.prose > div{overflow-x:auto}
+ROOT = Path(__file__).parent.resolve()
+CONTENT = ROOT / "content" / "editions"
+AUDIO = ROOT / "audio"
+STATIC = ROOT / "static"
+OUT = ROOT / "site"
 
-/* ---------- lists of editions ---------- */
-.recent{margin-top:56px;border-top:2px solid var(--ink);padding-top:16px}
-.recent h2{
-  font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11.5px;
-  letter-spacing:.13em;text-transform:uppercase;color:var(--ink-2);
-  margin:0 0 6px;font-weight:500;
-}
-.recent ul,.archive{list-style:none;margin:0;padding:0}
-.recent li,.archive li{border-bottom:1px solid var(--rule-soft)}
-.recent a,.archive a{
-  display:grid;gap:2px 14px;padding:14px 0;text-decoration:none;color:var(--ink);
-}
-.archive a{grid-template-columns:auto auto 1fr;align-items:baseline}
-.recent a{grid-template-columns:auto 1fr;align-items:baseline}
-.recent a:hover .t,.archive a:hover .t{color:var(--accent)}
-.d,.n,.a{
-  font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11.5px;
-  letter-spacing:.06em;color:var(--ink-3);white-space:nowrap;
-}
-.n{color:var(--ink-2)}
-.a{color:var(--accent);text-transform:uppercase}
-.t{font-size:17px;line-height:1.45;color:var(--ink-2)}
-.archive{margin-top:24px}
-.page-title{margin-top:38px}
+# Phase 2 hook. Audio is optional everywhere: a missing MP3 must never
+# break a page, a feed, or the build.
+AUDIO_EXT = ".mp3"
+AUDIO_MIME = "audio/mpeg"
 
-.backlink{
-  margin:48px 0 0;font-family:"IBM Plex Mono",ui-monospace,monospace;
-  font-size:12px;letter-spacing:.06em;
-}
-.backlink a{color:var(--ink-2);text-decoration:none}
-.backlink a:hover{color:var(--accent)}
+MD = markdown.Markdown(extensions=["extra", "sane_lists", "smarty"])
 
-a:focus-visible,audio:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 
-@media (max-width:600px){
-  body{font-size:18px}
-  .archive a{grid-template-columns:auto 1fr}
-  .archive .n{grid-row:1;grid-column:2;justify-self:end}
-  .archive .t{grid-column:1 / -1}
-}
+# --------------------------------------------------------------------------
+# Reading
+# --------------------------------------------------------------------------
 
-/* ---------- email capture ---------- */
-.subscribe{
-  max-width:var(--measure);margin:44px auto 0;padding:26px 22px 24px;
-  background:var(--card);
-  border-top:2px solid var(--ink);
-  border-bottom:1px solid var(--rule);
-}
-.subscribe .eyebrow{
-  margin:0 0 6px;font-family:"IBM Plex Mono",ui-monospace,monospace;
-  font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);
-}
-.subscribe h2{
-  margin:0 0 8px;font-size:25px;font-weight:600;letter-spacing:-.01em;line-height:1.2;
-}
-.subscribe p{margin:0;color:var(--ink-2);font-size:17px}
-.subscribe .fine{margin-top:4px;font-size:14px;color:var(--ink-3)}
-@media (max-width:520px){
-  .subscribe{margin-top:34px;padding:22px 18px 20px}
-  .subscribe h2{font-size:22px}
-}
-.subscribe-form{margin:14px 0 6px;min-height:44px}
+def parse_front_matter(text):
+    """Return (meta dict, body). Front matter is `key: value` between --- fences."""
+    meta, body = {}, text
+    if text.startswith("---"):
+        end = text.find("\n---", 3)
+        if end != -1:
+            block = text[3:end].strip()
+            body = text[end + 4:].lstrip("\n")
+            for line in block.splitlines():
+                if ":" in line:
+                    k, v = line.split(":", 1)
+                    meta[k.strip().lower()] = v.strip()
+    return meta, body
+
+
+def strip_leading_title(body):
+    """Drop the H1 and an immediately following italic standfirst; the
+    template renders both from metadata so they must not appear twice."""
+    lines = body.splitlines()
+    i = 0
+    while i < len(lines) and not lines[i].strip():
+        i += 1
+    if i < len(lines) and lines[i].startswith("# "):
+        i += 1
+        while i < len(lines) and not lines[i].strip():
+            i += 1
+        if i < len(lines) and re.match(r"^\*[^*].*\*$", lines[i].strip()):
+            i += 1
+        while i < len(lines) and lines[i].strip() in ("", "---"):
+            i += 1
+    return "\n".join(lines[i:])
+
+
+def audio_for(date_str):
+    """Return (relative_url, byte_size) if an MP3 exists for this date, else None."""
+    p = AUDIO / f"{date_str}{AUDIO_EXT}"
+    if p.exists() and p.stat().st_size > 0:
+        return (f"/audio/{date_str}{AUDIO_EXT}", p.stat().st_size)
+    return None
+
+
+def load_editions():
+    editions = []
+    if not CONTENT.exists():
+        return editions
+    for path in sorted(CONTENT.glob("*.md")):
+        raw = path.read_text(encoding="utf-8")
+        meta, body = parse_front_matter(raw)
+        date_str = meta.get("date") or path.stem
+        try:
+            dt = datetime.strptime(date_str, "%Y-%m-%d").replace(tzinfo=timezone.utc)
+        except ValueError:
+            print(f"  ! skipping {path.name}: unreadable date {date_str!r}", file=sys.stderr)
+            continue
+        num = meta.get("edition", "")
+        slug = meta.get("slug") or f"ai-industry-daily-briefing-{date_str}"
+        MD.reset()
+        editions.append({
+            "path": path,
+            "date": date_str,
+            "dt": dt,
+            "number": num,
+            "slug": slug,
+            "title": meta.get("title") or f"AI Industry Daily Briefing — {dt:%B %-d, %Y}",
+            "summary": meta.get("summary", ""),
+            "html": MD.convert(strip_leading_title(body)),
+            "audio": audio_for(date_str),
+        })
+    editions.sort(key=lambda e: e["date"], reverse=True)
+    return editions
+
+
+# --------------------------------------------------------------------------
+# Rendering
+# --------------------------------------------------------------------------
+
+def e(s):
+    return html.escape(s or "", quote=True)
+
+
+def head(title, desc, canonical, kind="website", published=None):
+    tags = [
+        '<meta charset="utf-8">',
+        '<meta name="viewport" content="width=device-width, initial-scale=1">',
+        f"<title>{e(title)}</title>",
+        f'<meta name="description" content="{e(desc)}">',
+        f'<link rel="canonical" href="{e(canonical)}">',
+        f'<link rel="stylesheet" href="{BASE}/style.css">',
+        f'<link rel="alternate" type="application/rss+xml" title="{e(SITE_TITLE)}" href="{BASE}/feed.xml">',
+        f'<meta property="og:type" content="{e(kind)}">',
+        f'<meta property="og:title" content="{e(title)}">',
+        f'<meta property="og:description" content="{e(desc)}">',
+        f'<meta property="og:url" content="{e(canonical)}">',
+        f'<meta property="og:site_name" content="{e(SITE_TITLE)}">',
+        '<meta name="twitter:card" content="summary">',
+        f'<meta name="twitter:title" content="{e(title)}">',
+        f'<meta name="twitter:description" content="{e(desc)}">',
+    ]
+    if published:
+        tags.append(f'<meta property="article:published_time" content="{published}">')
+    if not CUSTOM_DOMAIN:
+        tags.append('<meta name="robots" content="noindex, nofollow">')
+    return "\n".join(tags)
+
+
+def subscribe():
+    """Signup block. Renders nothing at all until SUBSCRIBE_EMBED_URL is set."""
+    if not SUBSCRIBE_FORM_ID:
+        return ""
+    return f"""<section class="subscribe" id="subscribe">
+  <p class="eyebrow">Subscribe</p>
+  <h2>Get it in your inbox</h2>
+  <p>One email each morning on what actually happened in the AI industry. Every
+  claim source-linked, anything unconfirmed labelled as such, nothing hyped.</p>
+  <div class="subscribe-form">
+    <script src="https://subscribe-forms.beehiiv.com/v3/loader.js"
+            data-beehiiv-form="{e(SUBSCRIBE_FORM_ID)}"></script>
+    <noscript><p><a href="https://embeds.beehiiv.com/{e(SUBSCRIBE_FORM_ID)}">Subscribe by email</a></p></noscript>
+  </div>
+  <p class="fine">Free. Unsubscribe in one click.</p>
+</section>"""
+
+
+def chrome(inner, title, desc, canonical, kind="website", published=None, jsonld=""):
+    return f"""<!doctype html>
+<html lang="en">
+<head>
+{head(title, desc, canonical, kind, published)}
+{jsonld}
+</head>
+<body>
+<header class="site">
+  <a class="wordmark" href="{BASE}/">{e(SITE_TITLE)}</a>
+  <p class="tagline">{e(SITE_TAGLINE)}</p>
+  <nav><a href="{BASE}/">Latest</a><a href="{BASE}/archive/">Archive</a><a href="{BASE}/feed.xml">RSS</a>{'<a href="#subscribe">Subscribe</a>' if SUBSCRIBE_FORM_ID else ''}</nav>
+</header>
+<main>
+{inner}
+</main>
+{subscribe()}
+<footer class="site">
+  <p>{e(SITE_TITLE)} — {e(SITE_TAGLINE)}</p>
+  <p class="fine">Every claim traces to a source we fetched. Items that are reported rather than confirmed are labelled as such. Informational only; nothing here is financial advice.</p>
+</footer>
+</body>
+</html>
+"""
+
+
+def player(ed):
+    """Phase 2 hook: renders nothing at all when no MP3 exists for the date."""
+    if not ed["audio"]:
+        return ""
+    url, _size = ed["audio"]
+    url = BASE + url
+    return f"""<div class="listen">
+  <p class="listen-label">Listen to this edition</p>
+  <audio controls preload="none" src="{e(url)}"></audio>
+</div>"""
+
+
+def edition_page(ed):
+    canonical = f"{SITE_URL}/editions/{ed['slug']}/"
+    num = f"No. {e(ed['number'])} · " if ed["number"] else ""
+    jsonld = f"""<script type="application/ld+json">
+{{"@context":"https://schema.org","@type":"NewsArticle","headline":{_j(ed['title'])},
+"datePublished":"{ed['date']}","dateModified":"{ed['date']}",
+"description":{_j(ed['summary'])},"url":"{canonical}",
+"publisher":{{"@type":"Organization","name":{_j(SITE_TITLE)}}},
+"author":{{"@type":"Organization","name":{_j(AUTHOR)}}}}}
+</script>"""
+    inner = f"""<article class="edition">
+  <p class="eyebrow">{num}{ed['dt']:%B} {ed['dt'].day}, {ed['dt']:%Y}</p>
+  <h1>{e(ed['title'])}</h1>
+  {f'<p class="standfirst">{e(ed["summary"])}</p>' if ed['summary'] else ''}
+  {player(ed)}
+  <div class="prose">
+{ed['html']}
+  </div>
+</article>
+<p class="backlink"><a href="{BASE}/archive/">← All editions</a></p>"""
+    return chrome(inner, ed["title"], ed["summary"] or SITE_DESC, canonical,
+                  kind="article", published=ed["date"], jsonld=jsonld)
+
+
+def _j(s):
+    return '"' + (s or "").replace("\\", "\\\\").replace('"', '\\"') + '"'
+
+
+def index_page(editions):
+    if not editions:
+        return chrome("<p>No editions yet.</p>", SITE_TITLE, SITE_DESC, SITE_URL + "/")
+    latest = editions[0]
+    num = f"No. {e(latest['number'])} · " if latest["number"] else ""
+    recent = "".join(
+        f"""<li><a href="{BASE}/editions/{e(x['slug'])}/">
+        <span class="d">{x['dt']:%b} {x['dt'].day}</span>
+        <span class="t">{e(x['summary'] or x['title'])}</span></a></li>"""
+        for x in editions[1:11]
+    )
+    inner = f"""<article class="edition">
+  <p class="eyebrow">Today · {num}{latest['dt']:%B} {latest['dt'].day}, {latest['dt']:%Y}</p>
+  <h1>{e(latest['title'])}</h1>
+  {f'<p class="standfirst">{e(latest["summary"])}</p>' if latest['summary'] else ''}
+  {player(latest)}
+  <div class="prose">
+{latest['html']}
+  </div>
+</article>
+{f'<section class="recent"><h2>Recent editions</h2><ul>{recent}</ul></section>' if recent else ''}"""
+    return chrome(inner, f"{SITE_TITLE} — {SITE_TAGLINE}", SITE_DESC, SITE_URL + "/")
+
+
+def archive_page(editions):
+    rows = "".join(
+        f"""<li><a href="{BASE}/editions/{e(x['slug'])}/">
+        <span class="d">{x['dt']:%b} {x['dt'].day}, {x['dt']:%Y}</span>
+        <span class="n">{('No. ' + e(x['number'])) if x['number'] else ''}</span>
+        <span class="t">{e(x['summary'] or x['title'])}</span>
+        {'<span class="a">audio</span>' if x['audio'] else ''}</a></li>"""
+        for x in editions
+    )
+    inner = f"""<h1 class="page-title">Archive</h1>
+<p class="standfirst">Every edition published, most recent first.</p>
+<ul class="archive">{rows}</ul>"""
+    return chrome(inner, f"Archive — {SITE_TITLE}",
+                  f"Every edition of {SITE_TITLE}, most recent first.",
+                  SITE_URL + "/archive/")
+
+
+def feed_xml(editions):
+    now = format_datetime(datetime.now(timezone.utc))
+    items = []
+    for x in editions[:50]:
+        link = f"{SITE_URL}/editions/{x['slug']}/"
+        enclosure = ""
+        if x["audio"]:
+            url, size = x["audio"]
+            enclosure = f'<enclosure url="{e(SITE_URL + url)}" length="{size}" type="{AUDIO_MIME}"/>'
+        items.append(f"""    <item>
+      <title>{e(x['title'])}</title>
+      <link>{e(link)}</link>
+      <guid isPermaLink="true">{e(link)}</guid>
+      <pubDate>{format_datetime(x['dt'])}</pubDate>
+      <description>{e(x['summary'])}</description>
+      {enclosure}
+    </item>""")
+    return f"""<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{e(SITE_TITLE)}</title>
+    <link>{e(SITE_URL)}</link>
+    <description>{e(SITE_DESC)}</description>
+    <language>{LANGUAGE}</language>
+    <lastBuildDate>{now}</lastBuildDate>
+    <atom:link href="{e(SITE_URL)}/feed.xml" rel="self" type="application/rss+xml"/>
+{chr(10).join(items)}
+  </channel>
+</rss>
+"""
+
+
+def sitemap_xml(editions):
+    urls = [f"{SITE_URL}/", f"{SITE_URL}/archive/"]
+    urls += [f"{SITE_URL}/editions/{x['slug']}/" for x in editions]
+    body = "".join(f"  <url><loc>{e(u)}</loc></url>\n" for u in urls)
+    return ('<?xml version="1.0" encoding="UTF-8"?>\n'
+            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+            f"{body}</urlset>\n")
+
+
+# --------------------------------------------------------------------------
+# Build
+# --------------------------------------------------------------------------
+
+def write(rel, text):
+    p = OUT / rel
+    p.parent.mkdir(parents=True, exist_ok=True)
+    p.write_text(text, encoding="utf-8")
+
+
+def main():
+    editions = load_editions()
+    if OUT.exists():
+        shutil.rmtree(OUT)
+    OUT.mkdir(parents=True)
+
+    write("index.html", index_page(editions))
+    write("archive/index.html", archive_page(editions))
+    for ed in editions:
+        write(f"editions/{ed['slug']}/index.html", edition_page(ed))
+    write("feed.xml", feed_xml(editions))
+    write("sitemap.xml", sitemap_xml(editions))
+    write("robots.txt", f"User-agent: *\nAllow: /\nSitemap: {SITE_URL}/sitemap.xml\n")
+    if CUSTOM_DOMAIN:
+        write("CNAME", SITE_URL.replace("https://", "").replace("http://", "") + "\n")
+
+    css = STATIC / "style.css"
+    if css.exists():
+        shutil.copy(css, OUT / "style.css")
+
+    if AUDIO.exists():
+        for mp3 in AUDIO.glob(f"*{AUDIO_EXT}"):
+            (OUT / "audio").mkdir(exist_ok=True)
+            shutil.copy(mp3, OUT / "audio" / mp3.name)
+
+    with_audio = sum(1 for x in editions if x["audio"])
+    print(f"Built {len(editions)} edition(s) -> {OUT}")
+    if editions:
+        print(f"  latest: {editions[0]['date']}  ({editions[0]['slug']})")
+    print(f"  audio attached: {with_audio}")
+
+
+if __name__ == "__main__":
+    main()
