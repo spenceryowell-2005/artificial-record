@@ -87,8 +87,16 @@ jobs:
           esac
           echo "token=$CLEAN" >> "$GITHUB_OUTPUT"
 
+      # continue-on-error is deliberate and important. On Sep 5 Claude wrote a
+      # complete, build-verified edition and the action then failed the STEP for
+      # exceeding a turn limit - which skipped every later step and threw the
+      # finished edition away. The turn count is a process metric; whether a
+      # valid edition exists is the only thing that actually matters. So we let
+      # the step report failure, then judge the OUTPUT in the next step.
       - name: Claude writes today's edition
         if: steps.guard.outputs.needed == 'true'
+        continue-on-error: true
+        id: claude
         uses: anthropics/claude-code-action@v1
         # Belt and braces for anthropics/claude-code-action#676 and #1281:
         # the token is passed BOTH as an input and in the environment, because
@@ -101,7 +109,7 @@ jobs:
           # looks like the same generic "is_error:true". Turn it off once stable.
           show_full_output: true
           claude_args: |
-            --max-turns 60
+            --max-turns 200
             --allowedTools "Bash,Read,Write,Edit,Glob,Grep,WebSearch,WebFetch"
           prompt: |
             You are the editor of "Artificial Record", a daily AI-industry newsletter
@@ -228,6 +236,34 @@ jobs:
             headline count, approximate word count, script word count, source domains
             used, anything resting on a single or lower-tier source, and anything you
             dropped for lack of verification.
+
+      # The real pass/fail gate. On Sep 5 Claude wrote a complete, build-verified
+      # edition and the action then failed the STEP for exceeding a turn limit,
+      # which skipped every later step and threw the finished edition away.
+      # Turn count is a process metric. Whether a valid edition exists is the
+      # only thing that matters, so we judge the OUTPUT here instead.
+      - name: Did Claude actually produce an edition?
+        id: verify
+        if: steps.guard.outputs.needed == 'true'
+        run: |
+          DATE="${{ steps.guard.outputs.date }}"
+          F="content/editions/$DATE.md"
+          if [ ! -s "$F" ]; then
+            echo "::error::No edition written for $DATE. The Claude step produced nothing usable."
+            exit 1
+          fi
+          for key in "^title:" "^date:" "^edition:" "^slug:" "^summary:"; do
+            grep -qE "$key" "$F" || { echo "::error::$F is missing front-matter field ${key#^}"; exit 1; }
+          done
+          WORDS=$(wc -w < "$F")
+          echo "Edition present: $F ($WORDS words)"
+          if [ "$WORDS" -lt 600 ]; then
+            echo "::error::Only $WORDS words - too short to be a real edition. Refusing to publish."
+            exit 1
+          fi
+          if [ "${{ steps.claude.outcome }}" = "failure" ]; then
+            echo "::warning::The Claude step reported failure, but a valid edition exists and is being published. Read that step's log to see why (turn limit, post-check, etc)."
+          fi
 
       - name: Commit what Claude wrote
         id: commit
