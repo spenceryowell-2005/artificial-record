@@ -286,7 +286,10 @@ jobs:
         with:
           python-version: "3.12"
 
+      # Must match publish.yml. See the note there.
       - name: Build site
+        env:
+          CUSTOM_DOMAIN: "1"
         run: |
           pip install markdown
           python build.py
