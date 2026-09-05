@@ -24,7 +24,13 @@ jobs:
           python-version: "3.12"
       - name: Install dependencies
         run: pip install markdown
+      # CUSTOM_DOMAIN=1 roots internal links at /, writes the CNAME file, and
+      # removes the noindex tag. It MUST be set in every workflow that runs
+      # build.py, or whichever one lacks it will rebuild the site without the
+      # CNAME and with noindex back on, silently breaking the custom domain.
       - name: Build site
+        env:
+          CUSTOM_DOMAIN: "1"
         run: python build.py
       - name: Check the build actually produced pages
         run: |
