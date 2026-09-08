@@ -231,19 +231,24 @@ jobs:
             - If a previous edition got something wrong, correct it in the text and say
               plainly what you are withdrawing.
 
-            === LENGTH: 2,800-3,700 WORDS. THIS IS A REAL TARGET. ===
+            === LENGTH: 2,800-3,400 WORDS. 3,400 IS A HARD CEILING. ===
 
             The site shows readers an estimated read time at 185 words per minute.
-            2,800 words reads as 15 minutes; 3,700 as 20. That is the band.
+            2,800 words reads as 15 minutes; 3,400 as 18. That is the band, and
+            3,400 is a ceiling you do not cross. If you are over it, cut — the
+            weakest item goes entirely, or three items become one line each.
 
             Edition No. 8 came in at 2,008 words — an 11-minute read — and dropped
             three standing sections entirely. That is too thin. Editions No. 5 and
             No. 6 (3,000-5,000 words) were the right shape.
 
             Below 2,800 words you have almost certainly under-reported the day, not
-            found a quiet one. Go back and work the beats you skipped. Above 3,700
+            found a quiet one. Go back and work the beats you skipped. Above 3,400
             you are padding, or you are keeping items that deserve one line instead
             of five — cut, do not compress meaning out of the ones that matter.
+
+            Count the words of the edition body before you finish. If it is over
+            3,400, cut until it is not.
 
             The extra length must always be MORE VERIFIED FACTS: another confirmed
             story, another figure, another named source. Never longer sentences,
@@ -329,6 +334,14 @@ jobs:
           if [ "$WORDS" -lt 600 ]; then
             echo "::error::Only $WORDS words - too short to be a real edition. Refusing to publish."
             exit 1
+          fi
+          # Advisory only. A valid edition is never discarded over a word count.
+          if [ "$WORDS" -lt 2800 ]; then
+            echo "::warning::$WORDS words (~$((WORDS/185)) min read) - under the 2,800 floor. Likely under-reported; check which sections were dropped."
+          elif [ "$WORDS" -gt 3400 ]; then
+            echo "::warning::$WORDS words (~$((WORDS/185)) min read) - over the 3,400 ceiling. Tighten tomorrow."
+          else
+            echo "Length OK: $WORDS words (~$((WORDS/185)) min read)."
           fi
           if [ "${{ steps.claude.outcome }}" = "failure" ]; then
             echo "::warning::The Claude step reported failure, but a valid edition exists and is being published. Read that step's log to see why (turn limit, post-check, etc)."
