@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap');
 
 :root{
+  color-scheme:light;
   --paper:#FBFAF8;        /* masthead / chrome ground */
   --page:#F2F0EC;         /* article ground */
   --card:#FFFFFF;
@@ -20,14 +21,6 @@
   --body:"Newsreader",Georgia,"Times New Roman",serif;
   --label:"IBM Plex Sans",system-ui,-apple-system,sans-serif;
 }
-@media (prefers-color-scheme: dark){
-  :root{
-    --paper:#15161A; --page:#1B1D21; --card:#212429;
-    --ink:#EDEBE7; --ink-2:#B2AFA8; --ink-3:#807D77;
-    --rule:#EDEBE7; --rule-soft:#333' ; --accent:#E4796B; --link:#E4796B;
-  }
-}
-@media (prefers-color-scheme: dark){ :root{ --rule-soft:#33363B; } }
 
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
@@ -67,7 +60,12 @@ header.site .inner{max-width:var(--wide);margin:0 auto}
   text-transform:uppercase;color:var(--accent);white-space:nowrap;
 }
 .subbar .say{font-size:19px;color:var(--ink);margin:0;flex:1 1 260px}
-.subbar .form{flex:0 0 auto;min-width:280px}
+.subbar .cta{
+  flex:0 0 auto;font-family:var(--label);font-size:12px;font-weight:600;
+  letter-spacing:.14em;text-transform:uppercase;text-decoration:none;
+  background:var(--ink);color:#fff;padding:11px 22px;border-radius:2px;
+}
+.subbar .cta:hover{background:var(--accent)}
 
 /* ---------- nav ---------- */
 nav.site{background:var(--paper);border-bottom:1px solid var(--rule-soft)}
@@ -151,7 +149,8 @@ audio{width:100%;margin:8px 0 26px}
 }
 .subscribe h2{font-family:var(--display);font-weight:600;font-size:clamp(25px,4vw,36px);line-height:1.15;margin:0 0 10px}
 .subscribe p{margin:0 auto;max-width:30rem;color:var(--ink-2);font-size:18px}
-.subscribe .form{margin-top:22px;min-height:46px}
+.subscribe .form{margin-top:24px;min-height:46px;display:flex;justify-content:center}
+.subscribe .form iframe,.subscribe .form > div{max-width:430px;width:100%;margin:0 auto}
 .subscribe .fine{margin-top:14px;font-size:14px;color:var(--ink-3)}
 
 /* ---------- archive page ---------- */
