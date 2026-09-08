@@ -172,6 +172,49 @@ jobs:
               Signals, Public Investment Watchlist, Forward-Looking Angle, Watchlist
             - Omit any section with nothing real in it. Never pad.
 
+            === SOURCE QUALITY — THE EDITION IS JUDGED ON THIS ===
+
+            Edition No. 8 (Sep 8) cited TEN domains and NOT ONE was a primary
+            source. It attributed an investigation to the New York Times while
+            linking freepressjournal.in and asiatimes.com; it cited a court case
+            to a law firm blog instead of the public docket; and it cited
+            aroged.com, a content-scraping aggregator. Edition No. 5, written
+            with the same tools, cited anthropic.com, bls.gov, boozallen.com,
+            microsoft.ai and a company IR page. That gap is the difference
+            between this publication and the category it competes with.
+
+            RULES:
+            - For EVERY lead item, link the primary source: the company's own
+              newsroom or blog post, the regulator's release, the court docket,
+              the IR page, the filing, the research paper. Find it. It almost
+              always exists and is almost always fetchable.
+            - If a story originates with one outlet's reporting (The Information,
+              Bloomberg, NYT, WSJ), LINK THAT OUTLET'S OWN PAGE. Never cite an
+              aggregator's rewrite of it. If their page is paywalled, link it
+              anyway and say the reporting is theirs.
+            - Court cases: link the docket (cand.uscourts.gov, courtlistener.com)
+              or the filing. Never a law firm's blog post as the only source.
+            - Government data: link the agency (bls.gov, census.gov, sec.gov,
+              federalregister.gov, ec.europa.eu). Never a news summary of it.
+            - NEVER cite these or anything like them: aroged.com, rinzara.com,
+              tokenstead.ai, promptzone.com, creati.ai, xenospectrum.com,
+              cryptobriefing.com, techbuzz.ai, explainx.ai, or any site whose
+              article is an obvious rewrite of another outlet's work.
+
+            === ATTRIBUTION MUST MATCH BETWEEN THE LEDE AND THE BODY ===
+
+            Edition No. 8's body correctly said "The Information reported, and
+            Meta has not disputed." Its Executive Read said "Meta confirmed."
+            Those are different claims and the stronger one was wrong. The
+            Executive Read and the summary are the most-read lines in the
+            edition; they must be MORE careful than the body, never less.
+            Before finishing, re-read the summary and the Executive Read against
+            the body and make every verb match the weakest supported claim.
+
+            === CHECK BEFORE YOU FINISH ===
+            List the domains you cited. If fewer than a third are primary
+            sources, you have not finished researching — go back and find them.
+
             EDITORIAL STANDARDS — NON-NEGOTIABLE:
             - Every claim traces to a source you actually fetched. Never invent a story,
               quote, number, funding round, product name, or URL.
