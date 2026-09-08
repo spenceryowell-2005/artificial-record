@@ -47,6 +47,12 @@ SITE_URL = "https://artificialrecord.com"
 # --------------------------------------------------------------------------
 SUBSCRIBE_FORM_ID = "e6878f91-43b4-40b5-9127-83e55a1eea18"
 AUTHOR = "Artificial Record"
+# Shown in the masthead dateline as "VOLUME I · NO. 9 · TUESDAY, ...".
+# Roman numeral for the publication year/series; bump it each year.
+VOLUME = "I"
+# Words per minute used for the "EST. n MIN READ" line. 185 matches the
+# figure the previous site displayed.
+WPM = 185
 LANGUAGE = "en-us"
 
 # One flag controls the difference between the preview and the real site.
@@ -112,6 +118,12 @@ def strip_leading_title(body):
         while i < len(lines) and lines[i].strip() in ("", "---"):
             i += 1
     return "\n".join(lines[i:])
+
+
+def read_minutes(html_text):
+    """Rough reading time from the rendered body, in whole minutes."""
+    words = len(re.sub(r"<[^>]+>", " ", html_text or "").split())
+    return max(1, round(words / WPM))
 
 
 def audio_for(date_str):
@@ -186,25 +198,47 @@ def head(title, desc, canonical, kind="website", published=None):
     return "\n".join(tags)
 
 
-def subscribe():
-    """Signup block. Renders nothing at all until SUBSCRIBE_EMBED_URL is set."""
+def sub_form():
+    """The beehiiv embed itself. Empty string until the form ID is set."""
     if not SUBSCRIBE_FORM_ID:
         return ""
-    return f"""<section class="subscribe" id="subscribe">
-  <p class="eyebrow">Subscribe</p>
-  <h2>Get it in your inbox</h2>
-  <p>One email each morning on what actually happened in the AI industry. Every
-  claim source-linked, anything unconfirmed labelled as such, nothing hyped.</p>
-  <div class="subscribe-form">
-    <script src="https://subscribe-forms.beehiiv.com/v3/loader.js"
-            data-beehiiv-form="{e(SUBSCRIBE_FORM_ID)}"></script>
-    <noscript><p><a href="https://embeds.beehiiv.com/{e(SUBSCRIBE_FORM_ID)}">Subscribe by email</a></p></noscript>
+    return (f'<script src="https://subscribe-forms.beehiiv.com/v3/loader.js" '
+            f'data-beehiiv-form="{e(SUBSCRIBE_FORM_ID)}"></script>'
+            f'<noscript><a href="https://embeds.beehiiv.com/{e(SUBSCRIBE_FORM_ID)}">'
+            f'Subscribe by email</a></noscript>')
+
+
+def sub_bar():
+    """Slim signup strip directly under the masthead."""
+    if not SUBSCRIBE_FORM_ID:
+        return ""
+    return f"""<section class="subbar">
+  <div class="inner">
+    <span class="kicker">The Briefing</span>
+    <p class="say">Get the daily edition in your inbox.</p>
+    <div class="form">{sub_form()}</div>
   </div>
-  <p class="fine">Free. Unsubscribe in one click.</p>
 </section>"""
 
 
-def chrome(inner, title, desc, canonical, kind="website", published=None, jsonld=""):
+def sub_box():
+    """Framed signup block before the footer."""
+    if not SUBSCRIBE_FORM_ID:
+        return ""
+    return f"""<section class="subscribe" id="subscribe">
+  <div class="box">
+    <p class="kicker">Subscribe to the Daily</p>
+    <h2>The AI briefing on your doorstep.</h2>
+    <p>One email each morning. Source-backed, hype-free, built for operators.</p>
+    <div class="form">{sub_form()}</div>
+    <p class="fine">Free. Unsubscribe in one click.</p>
+  </div>
+</section>"""
+
+
+def chrome(inner, title, desc, canonical, kind="website", published=None,
+           jsonld="", dateline="", after_main=""):
+    line = dateline or f"Volume {VOLUME}"
     return f"""<!doctype html>
 <html lang="en">
 <head>
@@ -213,14 +247,25 @@ def chrome(inner, title, desc, canonical, kind="website", published=None, jsonld
 </head>
 <body>
 <header class="site">
-  <a class="wordmark" href="{BASE}/">{e(SITE_TITLE)}</a>
-  <p class="tagline">{e(SITE_TAGLINE)}</p>
-  <nav><a href="{BASE}/">Latest</a><a href="{BASE}/archive/">Archive</a><a href="{BASE}/feed.xml">RSS</a>{'<a href="#subscribe">Subscribe</a>' if SUBSCRIBE_FORM_ID else ''}</nav>
+  <div class="inner">
+    <a class="wordmark" href="{BASE}/">{e(SITE_TITLE)}</a>
+    <p class="tagline">{e(SITE_TAGLINE)}</p>
+    <div class="rules"></div>
+    <p class="dateline">{line}</p>
+  </div>
 </header>
+{sub_bar()}
+<nav class="site"><div class="inner">
+  <a href="{BASE}/">Latest</a>
+  <a href="{BASE}/archive/">Archive</a>
+  <a href="{BASE}/about/">About</a>
+  <a href="{BASE}/feed.xml">RSS</a>
+</div></nav>
 <main>
 {inner}
 </main>
-{subscribe()}
+{after_main}
+{sub_box()}
 <footer class="site">
   <p>{e(SITE_TITLE)} — {e(SITE_TAGLINE)}</p>
   <p class="fine">Every claim traces to a source we fetched. Items that are reported rather than confirmed are labelled as such. Informational only; nothing here is financial advice.</p>
@@ -244,7 +289,6 @@ def player(ed):
 
 def edition_page(ed):
     canonical = f"{SITE_URL}/editions/{ed['slug']}/"
-    num = f"No. {e(ed['number'])} · " if ed["number"] else ""
     jsonld = f"""<script type="application/ld+json">
 {{"@context":"https://schema.org","@type":"NewsArticle","headline":{_j(ed['title'])},
 "datePublished":"{ed['date']}","dateModified":"{ed['date']}",
@@ -253,7 +297,10 @@ def edition_page(ed):
 "author":{{"@type":"Organization","name":{_j(AUTHOR)}}}}}
 </script>"""
     inner = f"""<article class="edition">
-  <p class="eyebrow">{num}{ed['dt']:%B} {ed['dt'].day}, {ed['dt']:%Y}</p>
+  <div class="meta-row">
+    <span class="eyebrow">Executive Read</span>
+    <span class="readtime">Est. {read_minutes(ed['html'])} min read</span>
+  </div>
   <h1>{e(ed['title'])}</h1>
   {f'<p class="standfirst">{e(ed["summary"])}</p>' if ed['summary'] else ''}
   {player(ed)}
@@ -263,7 +310,13 @@ def edition_page(ed):
 </article>
 <p class="backlink"><a href="{BASE}/archive/">← All editions</a></p>"""
     return chrome(inner, ed["title"], ed["summary"] or SITE_DESC, canonical,
-                  kind="article", published=ed["date"], jsonld=jsonld)
+                  kind="article", published=ed["date"], jsonld=jsonld,
+                  dateline=masthead_line(ed))
+
+
+def masthead_line(ed):
+    num = f" · No. {e(ed['number'])}" if ed["number"] else ""
+    return f"Volume {VOLUME}{num} · {ed['dt']:%A}, {ed['dt']:%B} {ed['dt'].day}, {ed['dt']:%Y}"
 
 
 def _j(s):
@@ -274,24 +327,73 @@ def index_page(editions):
     if not editions:
         return chrome("<p>No editions yet.</p>", SITE_TITLE, SITE_DESC, SITE_URL + "/")
     latest = editions[0]
-    num = f"No. {e(latest['number'])} · " if latest["number"] else ""
-    recent = "".join(
+    cards = "".join(
         f"""<li><a href="{BASE}/editions/{e(x['slug'])}/">
-        <span class="d">{x['dt']:%b} {x['dt'].day}</span>
-        <span class="t">{e(x['summary'] or x['title'])}</span></a></li>"""
-        for x in editions[1:11]
+        <span class="d">No. {e(x['number']) if x['number'] else '—'} · {x['dt']:%B} {x['dt'].day}, {x['dt']:%Y}</span>
+        <span class="t">{e(x['title'])}</span>
+        <span class="s">{e((x['summary'] or '')[:150] + ('…' if len(x['summary'] or '') > 150 else ''))}</span></a></li>"""
+        for x in editions[1:4]
     )
+    recent = f"""<section class="recent">
+  <div class="head">
+    <h2>Recent Editions</h2>
+    <a class="all" href="{BASE}/archive/">Full archive →</a>
+  </div>
+  <ul>{cards}</ul>
+</section>""" if cards else ""
+
     inner = f"""<article class="edition">
-  <p class="eyebrow">Today · {num}{latest['dt']:%B} {latest['dt'].day}, {latest['dt']:%Y}</p>
+  <div class="meta-row">
+    <span class="eyebrow">Executive Read</span>
+    <span class="readtime">Est. {read_minutes(latest['html'])} min read</span>
+  </div>
   <h1>{e(latest['title'])}</h1>
   {f'<p class="standfirst">{e(latest["summary"])}</p>' if latest['summary'] else ''}
   {player(latest)}
   <div class="prose">
 {latest['html']}
   </div>
-</article>
-{f'<section class="recent"><h2>Recent editions</h2><ul>{recent}</ul></section>' if recent else ''}"""
-    return chrome(inner, f"{SITE_TITLE} — {SITE_TAGLINE}", SITE_DESC, SITE_URL + "/")
+</article>"""
+    return chrome(inner, f"{SITE_TITLE} — {SITE_TAGLINE}", SITE_DESC, SITE_URL + "/",
+                  dateline=masthead_line(latest), after_main=recent)
+
+
+def about_page():
+    inner = """<h1 class="page-title">About</h1>
+<p class="standfirst">What this is, who writes it, and the rules it follows.</p>
+<div class="prose">
+<p><em>Artificial Record</em> is a daily briefing on the artificial-intelligence
+industry, published every morning. It is written for people who work in AI and
+in the fields it is reshaping — finance, law, consulting, operations, marketing,
+engineering management. It assumes intelligence, not specialist knowledge.</p>
+
+<h2>The standards</h2>
+<p>The AI newsletter category is crowded with summarised press releases written
+excitedly. This publication is built on the opposite premise, and these rules are
+not negotiable:</p>
+<p><strong>Every claim traces to a source.</strong> Primary sources first — company
+newsrooms, regulatory filings, court dockets, investor relations. We fetch the
+announcement, not an aggregator's summary of it.</p>
+<p><strong>Uncertainty is labelled in the text.</strong> "Reported by", "in talks",
+"according to". Something reported is never presented as something confirmed.</p>
+<p><strong>What cannot be verified is dropped.</strong> A shorter edition beats a
+padded one. One fabricated item costs more trust than a hundred correct ones earn.</p>
+<p><strong>Nothing is hyped.</strong> No game-changers, no revolutions, no engagement
+bait. Where a vendor's benchmark is the vendor's own, we say so.</p>
+<p><strong>Public-company coverage is informational only.</strong> Nothing here is
+financial advice, and nothing here is legal advice.</p>
+
+<h2>Corrections</h2>
+<p>When we get something wrong we correct it in the text of the next edition and
+say plainly what is being withdrawn. If you spot an error, write to
+<a href="mailto:corrections@artificialrecord.com">corrections@artificialrecord.com</a>
+and it will be read.</p>
+
+<h2>Contact</h2>
+<p>Editorial: <a href="mailto:editor@artificialrecord.com">editor@artificialrecord.com</a><br>
+Everything else: <a href="mailto:hello@artificialrecord.com">hello@artificialrecord.com</a></p>
+</div>"""
+    return chrome(inner, f"About — {SITE_TITLE}", SITE_DESC, SITE_URL + "/about/")
 
 
 def archive_page(editions):
@@ -370,6 +472,7 @@ def main():
 
     write("index.html", index_page(editions))
     write("archive/index.html", archive_page(editions))
+    write("about/index.html", about_page())
     for ed in editions:
         write(f"editions/{ed['slug']}/index.html", edition_page(ed))
     write("feed.xml", feed_xml(editions))
