@@ -216,7 +216,7 @@ def sub_bar():
   <div class="inner">
     <span class="kicker">The Briefing</span>
     <p class="say">Get the daily edition in your inbox.</p>
-    <div class="form">{sub_form()}</div>
+    <a class="cta" href="#subscribe">Subscribe</a>
   </div>
 </section>"""
 
