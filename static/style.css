@@ -149,8 +149,10 @@ audio{width:100%;margin:8px 0 26px}
 }
 .subscribe h2{font-family:var(--display);font-weight:600;font-size:clamp(25px,4vw,36px);line-height:1.15;margin:0 0 10px}
 .subscribe p{margin:0 auto;max-width:30rem;color:var(--ink-2);font-size:18px}
-.subscribe .form{margin-top:24px;min-height:46px;display:flex;justify-content:center}
-.subscribe .form iframe,.subscribe .form > div{max-width:430px;width:100%;margin:0 auto}
+/* Keep this container plain. beehiiv's loader injects its own markup here and
+   flex / max-width constraints collapse it - that is what removed the email
+   field on Sep 8. Do not add display:flex or size constraints to .form. */
+.subscribe .form{margin-top:24px;min-height:56px}
 .subscribe .fine{margin-top:14px;font-size:14px;color:var(--ink-3)}
 
 /* ---------- archive page ---------- */
