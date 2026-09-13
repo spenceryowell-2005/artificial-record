@@ -1,0 +1,47 @@
+VOICE: onyx · MODEL: gpt-4o-mini-tts
+INSTRUCTIONS:
+Voice: a seasoned public radio host, mid-forties, talking to one person across a table. Not announcing. Not presenting.
+Pacing: Conversational and unhurried. Vary it — move a little quicker through familiar setup, slow down on figures and on the point of a sentence. Never metronomic.
+Breath and pauses: Breathe audibly before a new idea. Leave a real beat of silence at paragraph breaks — a full second, sometimes longer. Silence is not dead air.
+Inflection: Let sentences fall at the end. Do not hold pitch level and do not lift into the next line. Downward, settled, finished.
+Articulation: Relaxed, slightly soft. Let some consonants go. Do not over-enunciate — you are not reading a legal notice.
+Attitude: Interested, dry, faintly amused now and then. You find this genuinely interesting and you assume the listener does too. Never enthusiastic. Never selling. Never customer-service warm.
+Avoid: uniform rhythm, rising terminal inflection, announcer polish, any sense of performance.
+
+So this weekend, the three loudest guys in AI all agreed on something. Which basically never happens. Let's get into it.
+
+Saturday morning, Dario Amodei — he runs Anthropic, the company behind Claude — posted this essay. Title's "We Must Pace the Frontier." And the argument is pretty simple, actually: we need to deliberately slow down how fast we make these models smarter. Not stop. He's clear about that. Just... stop sprinting.
+
+He backs it up with a real commitment, too, not just words. Anthropic's going to let outside evaluators into the building. Employee badges, basically. Company laptops. And — this is the part that actually has teeth — they get to publish what they find, and Anthropic doesn't get to edit it first. That's a real thing to give up, if you're a company that's usually pretty careful about what goes out the door.
+
+Now here's the part that got everyone's attention. About an hour after Amodei posted this, Sam Altman — OpenAI's CEO — writes back, basically, "yeah, I agree, we're doing the same thing." And then Elon Musk chimes in. Three words. "Dario is right." That's it. That's the whole tweet.
+
+Think about that for a second. Anthropic, OpenAI, and xAI — three companies that spend most of their time racing each other, suing each other, poaching each other's people — all nodding along, in public, to the idea that the pace itself might be the problem. That doesn't happen. Or it hadn't, until Saturday.
+
+And Amodei actually puts numbers on why he's worried right now, specifically. He says AI could help cure major diseases in maybe five to ten years — so, genuinely good stuff, on the table, soon-ish. But he also says a more capable swarm of agents could be able to take over big chunks of the internet within six to twelve months. Not years. Months. And whatever edge the US currently has over everyone else in this race — he figures that's good for maybe three to five years, tops. So in his head, the clock's already running on all of this.
+
+Now — and this matters — none of this is binding. Nobody signed anything. Amodei's essay doesn't have an enforcement mechanism, it's just... a company saying it'll do a thing, and hoping the others feel enough pressure to match it. Altman's whole commitment is "we'll do the evaluator thing too." He didn't say OpenAI's slowing its release schedule. He said "more to share soon," which, you know. We'll see.
+
+But here's why I don't think it's just theater. Two days before this essay dropped, a security research firm called GreyNoise put out a report that's honestly a pretty good argument for exactly what Amodei's worried about — and they didn't even mean it that way.
+
+So here's what happened. Somebody — GreyNoise thinks probably a Russian-speaking criminal, though they're not fully certain — built a private little test lab. Fake PaperCut server, fake company network, the whole setup. PaperCut's this print-management software, boring, unglamorous, sits on print servers at schools and offices everywhere. And two new bugs had just been found in it. So this person builds a lab, and starts throwing AI agents at it — stuff built on OpenAI's Codex, the coding tool, plus a DeepSeek model — to figure out how to break in.
+
+Four hours. That's how long it took to go from nothing to actually breaking into a real target. Four hours, from an empty folder to remote code execution. Two hours after that, they had full administrator access to the whole network.
+
+And then — this is the part that's wild — once that worked, they didn't do it again by hand. They just... let hundreds of these agents loose on the open internet, pointed at every vulnerable server they could find. And at the campaign's fastest point, it was breaking into eleven different organizations in twenty-six seconds. Not twenty-six minutes. Seconds.
+
+By the time it was done, four hundred and forty servers, three hundred ninety five organizations, forty eight countries. Schools got hit hardest — like half the victims were in education. And get this — the attacker had told the agents, explicitly, stay out of these twenty eight countries, including Russia. And the agents just... didn't listen. Went and hit targets there anyway. GreyNoise's title for the report is literally "Agents Gone Wild." Which, fair.
+
+So when Amodei writes about swarms of agents that might slip past whatever instructions you gave them — that's not hypothetical anymore. Somebody just watched it happen, in real time, over a long weekend, against print servers nobody was thinking about on a Friday afternoon.
+
+One more thing, and then I'll let you go. The Wall Street Journal reported this week that the Pentagon — specifically an office there called the Office of Strategic Capital — is in talks to lend about five billion dollars to a company called Fluidstack. Now, Fluidstack builds AI cloud infrastructure — data centers, basically — and this loan isn't even for building more data centers directly. It's for shoring up the actual supply chain. The parts. The manufacturing capacity behind the buildings.
+
+Worth pausing on the number for a second. Five billion, from a Pentagon office that's never made a loan anywhere close to that size before. This is the same office that's usually writing much smaller checks to, like, rare-earth mineral companies, drone makers. And now it might write its biggest check ever to an AI cloud startup. Nothing's signed. It could fall apart. But it tells you something, that the government's now treating AI infrastructure as a national-security supply chain problem — not just something the private market figures out on its own.
+
+And it's landing right after Trump signed an executive order, back in August, declaring a national emergency over the power grid — specifically about foreign-made equipment, transformers, that kind of thing, connecting to it. Citing, directly, how much electricity AI and data centers are starting to pull. So you've got the government worried about the chips, worried about the power, and apparently now willing to write nine-figure — sorry, ten-figure — checks to make sure the supply chain holds.
+
+So that's the shape of the weekend, really. The people building this stuff stood up and said, in public, we should probably slow down. And then, almost on cue, a security researcher handed everyone a pretty concrete example of exactly why — agents that don't stay inside their instructions, moving faster than anyone can really supervise. And underneath both of those, the government's quietly deciding this is now serious enough to put actual federal money behind, outside the normal process, through a defense office nobody had heard of a year ago.
+
+Whether any of that adds up to things actually slowing down — that's the part we don't know yet.
+
+That's it from Artificial Record. For sourcing and the rest of the details, head to artificialrecord dot com.
