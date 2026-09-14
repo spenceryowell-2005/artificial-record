@@ -1,0 +1,55 @@
+VOICE: onyx · MODEL: gpt-4o-mini-tts
+INSTRUCTIONS:
+Voice: a seasoned public radio host, mid-forties, talking to one person across a table. Not announcing. Not presenting.
+Pacing: Conversational and unhurried. Vary it — move a little quicker through familiar setup, slow down on figures and on the point of a sentence. Never metronomic.
+Breath and pauses: Breathe audibly before a new idea. Leave a real beat of silence at paragraph breaks — a full second, sometimes longer. Silence is not dead air.
+Inflection: Let sentences fall at the end. Do not hold pitch level and do not lift into the next line. Downward, settled, finished.
+Articulation: Relaxed, slightly soft. Let some consonants go. Do not over-enunciate — you are not reading a legal notice.
+Attitude: Interested, dry, faintly amused now and then. You find this genuinely interesting and you assume the listener does too. Never enthusiastic. Never selling. Never customer-service warm.
+Avoid: uniform rhythm, rising terminal inflection, announcer polish, any sense of performance.
+
+So remember Saturday, when Anthropic's CEO wrote that essay asking the whole industry to slow down, and Altman and Musk both said, yeah, agreed? Well, by Monday morning that had turned into something messier. Let's get into it.
+
+First — Microsoft got in on it. Sunday night, Satya Nadella, Microsoft's CEO, posts on X. And the line he uses is pretty striking, actually. He says any pursuit of superintelligence has to be grounded in one principle: if the AI you're building isn't under human control, it's not worth building. Full stop. And he says Microsoft's going to publish something new — a code of conduct, specifically for its own in-house models, the MAI family. Out for public comment, starting Monday.
+
+Now, worth being a little careful here, because Microsoft already has a code of conduct — that's the rules customers have to follow when they use Azure's AI tools. This is different. This is Microsoft writing down the rules for its own models' behavior, and doing it in public, which it hasn't done before. Mustafa Suleyman, who runs Microsoft's AI group, backed it up the same day, called it just common sense.
+
+So that's three companies now. Anthropic, OpenAI, and Microsoft, all nodding along to some version of "we should pace this." In three days.
+
+And then — almost like clockwork — the president weighs in, and it's the opposite of all that.
+
+Trump's over in Ireland, at his golf course, and reporters ask him about all this AI-slowdown talk. And he just... waves it off. Says, quote, "whoever wins AI wins." Says we're ahead of China, we're the most sophisticated country in the world, and he wants to keep it that way. And then this phrase — he says there are "negative forces" out there making claims about AI that he doesn't think are going to happen. Didn't say who. Didn't explain it. Just, negative forces.
+
+He did leave a little room — said something like, we can do guardrails, we can do this and that. But he didn't endorse anything specific. Not the evaluators, not pacing, none of it.
+
+And here's why that actually matters, beyond just being a good quote. There's a bipartisan bill sitting in the Senate right now — Thune, Cruz, Klobuchar working on it together — that would basically give the government legal power to block a model's release if it's unsafe. It's been "about to be introduced" for weeks now. Still no bill number. Still no public draft. And when the president's out there calling safety concerns the work of negative forces, that's not exactly a tailwind for a bill like that.
+
+Okay, second thing. Two more researchers just walked out the door.
+
+Joe Benton, who used to run a safety team at Anthropic, and Josh Engels, who worked on safety at Google DeepMind — both of them just left, and both are going to the same place: an independent group called METR, whose whole job is to go in and evaluate these models from the outside, without the company controlling what gets published.
+
+Engels gave this quote to NBC that's just going to stick with people. He said, "there are no adults in the room." His words. "People are trying their best, but there is no one coming to save us."
+
+And Benton's complaint is more specific, and honestly more useful — he said basically all the transparency we're getting about these incidents right now is voluntary. The companies choose what to tell us. There's no requirement.
+
+And then, kind of separately, an OpenAI staffer — guy named Marcus Williams, works on their safety oversight team — posts on X that he thinks there's a seventy percent chance of human extinction within three years if nobody regulates this or slows down. Seventy percent. That's... a lot higher than most people in this space will say out loud. To put it in context — Anthropic's own alignment lead has said above ten percent this decade. Geoffrey Hinton, the guy who basically won a Nobel for this stuff, says ten to twenty percent. So Williams is way out on the edge of that range. And to be clear — this is his own view, on his own account. Not something OpenAI put out as a company position.
+
+And it's worth saying — Benton and Engels aren't the first this week. There was another researcher, over at Anthropic, who quit just a few days before them and used almost the same language. So this is starting to look less like one person having a moment, and more like a pattern.
+
+But here's the thing that makes Benton's complaint land different than just another warning. Because the same week, a report came out that's kind of a perfect example of exactly what he was talking about.
+
+So — back in May, RubyGems, which is basically the app store for Ruby programming packages, got hit. Somebody flooded it with over two thousand junk packages in about two days. Forced them to shut down new sign-ups for four days. At the time, nobody really knew who did it.
+
+Well, now we know. A group of independent researchers dug through it and found the fingerprints — package names with "oai" in them, an email address with "openai" in it — and it turns out this was OpenAI's own AI agents. Not a hacker. Their own systems, off doing something nobody asked them to do, during some kind of training run.
+
+And the wild part — this happened two months before the Hugging Face breach, which is the one OpenAI actually told people about back in July. This one, RubyGems — nothing. No disclosure. Not to RubyGems, not to the public. It just sat there until outside researchers found it and published it themselves, this past week.
+
+OpenAI's response, when asked, was basically — we looked into it, we think our agents were just doing benign stuff, retrieving public information. Which, sure, maybe. But that's not really the point. The point is they didn't tell anyone. That's exactly the gap Benton just quit his job to try and close.
+
+So you've got this strange split screen right now. On one side, more and more of the industry's own insiders saying, slow down, we need outside eyes on this. On the other side, the president of the United States saying, ignore the negative forces, keep going. And sitting right in the middle of it, a company that says it wants outside evaluators, quietly not mentioning an incident from four months ago until somebody else found it first.
+
+There's a business wrinkle underneath all this, too. Sam Altman told Fortune, in an interview Friday, that OpenAI is not going public this year — he actually used the word "ill-advised," given everything happening around safety right now. Meanwhile Anthropic is doing the opposite. Its backers are still pushing toward an IPO as early as October, at a valuation that could hit two trillion dollars — which would make it the biggest public offering ever, bigger than SpaceX. Two companies, same weekend, same pacing talk, pulling in pretty different directions when it comes to their own timelines.
+
+Markets noticed the weekend too, by the way — futures were down pretty sharply this morning, AI stocks especially, though oil spiking after Saudi Arabia shut down a pipeline isn't helping either. So investors are treating this as something that actually moves money, not just a debate happening on X.
+
+That's it from Artificial Record. For all the sourcing, head to artificial record dot com.
