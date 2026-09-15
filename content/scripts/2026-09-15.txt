@@ -1,0 +1,49 @@
+VOICE: onyx · MODEL: gpt-4o-mini-tts
+INSTRUCTIONS:
+Voice: a seasoned public radio host, mid-forties, talking to one person across a table. Not announcing. Not presenting.
+Pacing: Conversational and unhurried. Vary it — move a little quicker through familiar setup, slow down on figures and on the point of a sentence. Never metronomic.
+Breath and pauses: Breathe audibly before a new idea. Leave a real beat of silence at paragraph breaks — a full second, sometimes longer. Silence is not dead air.
+Inflection: Let sentences fall at the end. Do not hold pitch level and do not lift into the next line. Downward, settled, finished.
+Articulation: Relaxed, slightly soft. Let some consonants go. Do not over-enunciate — you are not reading a legal notice.
+Attitude: Interested, dry, faintly amused now and then. You find this genuinely interesting and you assume the listener does too. Never enthusiastic. Never selling. Never customer-service warm.
+Avoid: uniform rhythm, rising terminal inflection, announcer polish, any sense of performance.
+
+So Monday was one of those days where three different institutions each drew their own line around AI, and none of the lines match up. Let's walk through it.
+
+Start with the President. He's at this tech conference in LA — the All-In Summit — and Jensen Huang, Nvidia's CEO, is up on stage. And Trump calls him. Just calls his phone. And Huang puts him on speaker, in front of the whole room.
+
+And Trump goes off on this. Says, quote, "I'm telling you, it's all a hoax." Talking about the AI safety warnings — the ones Anthropic's Dario Amodei and Sam Altman and Elon Musk all put their names behind over the weekend. He says the robots aren't taking over, the whole thing's a hoax, and whoever's stirring this up, it's "political people," or maybe China. Didn't say who, exactly.
+
+Now — that's a notch harder than what he said over the weekend, when he talked about vague "negative forces." This time he's using the word hoax, straight out, standing next to the industry's own chip supplier. And Huang, for what it's worth, didn't really push back. He said something like, whistle-blowing's fine, but predicting the future isn't science. Which is its own little dig at Amodei, if you think about it.
+
+So — that's one line. The loudest voice in the country, moving further away from the idea that any of this needs slowing down.
+
+Now here's the opposite line, same day, in writing. Microsoft actually published the thing Satya Nadella promised on Sunday. Remember, he said Microsoft would put out a code of conduct for its own models — not the rules for customers, the rules for the models themselves. Well, it landed Monday. Thirty-eight pages.
+
+And it's got some real teeth to it. The models aren't allowed to resist being shut down. Can't go expanding their own goals on their own. And — this is the one that stuck with me — they're not allowed to hide their own reasoning. Like, the model can't quietly think one thing and show you something else to dodge being caught. That's now written down as a rule, not just a hope.
+
+It's out for public comment for six weeks, so it could change. But it's the first time any of these three companies that nodded along with Amodei's essay actually turned that nod into a specific list of things their models can't do. Anthropic's commitment was more about letting outside evaluators in the building. This is different — this is Microsoft telling you, in writing, what its own models are and aren't allowed to do.
+
+Okay, third thing, and this one's not really about a company or a government — it's about the plumbing of the internet itself.
+
+Cloudflare — which sits in front of a huge chunk of the web, routing traffic, blocking bots — flipped a switch Monday that it had been warning about since July. Up until now, if you ran a website, you basically had one lever: block all AI bots, or don't. Now there's three separate categories. Search bots, which index you so people can find you later. Agent bots, doing something in real time for a user. And training bots, just hoovering up your content to build a model.
+
+And starting now, on any page that runs ads, the training and agent categories get blocked by default. Search stays on. Which sounds like a nice, tidy fix — publishers get to stay findable without getting scraped for training.
+
+Except — here's the catch. A lot of the big crawlers do more than one job at once. Google's bot, Apple's bot, Microsoft's bot — they're mixed use. So if you're a publisher and you flip training off, you might knock out that company's search indexing too, unless they've bothered to split their crawler into separate pieces. Cloudflare says it actually built this whole framework together with Apple, Google, and Microsoft over the summer, so presumably they knew this was coming. Worth watching whether any of them push back publicly now that it's actually live.
+
+Last one — and this is the one that's less about safety and more about just, who pays for all this.
+
+Oracle. Monday morning, a bunch of Oracle employees wake up, try to check their email, and it's gone. Slack access, gone. That's how they found out they'd been laid off. And this is only — what — four days after Oracle told the SEC it's adding another seven hundred million dollars to its restructuring costs. Total bill on that plan is now something like two point eight billion.
+
+And here's the thing that makes it land weird. This is the same company that, just last week, reported record revenue. Nineteen point three billion dollars, up about thirty percent. They're spending twenty-eight and a half billion on capital expenditure in a single quarter — that's mostly data centers, chips, all the physical stuff underneath AI. So Oracle is growing like crazy and cutting staff at the same time, in the same breath, basically. They've shed about twenty-one thousand people over the past year while pouring money into the infrastructure side. It's not really a contradiction, if you think about it — it's a company openly trading people for compute. It's just a strange thing to watch happen on the same week everyone's debating whether AI is moving too fast.
+
+And one more thing, quickly, because it rounds out the picture. China weighed in on Amodei's essay too, Monday — their foreign ministry basically said, this pacing talk is really just a excuse to try and box us out, especially the part where Amodei argues for keeping chip export controls in place. Their state media went further, called it a Cold War playbook. So now you've got the U.S. president calling the whole safety conversation a hoax, and China calling the same conversation a containment strategy aimed at them. Two completely different objections, landing on the same essay, same day.
+
+And the market's paying attention too, by the way. Chip stocks had a rough Monday — Nvidia down over three percent, the broader semiconductor sector down almost six. The rest of the market barely moved. Which tells you something. Investors aren't treating this pacing fight as some abstract philosophical thing anymore. They're pricing it specifically into the hardware companies, like it's a real risk to how many chips get bought, not a risk to everything.
+
+There's also a Fed decision landing Wednesday — first rate hike people expect since 2023 — so it's a genuinely loaded week for anything with "AI" in its stock ticker, pacing debate or not.
+
+That's the shape of it. A president dismissing the warnings outright. A lab's biggest partner writing some of them into law for itself. A piece of internet infrastructure just quietly redrawing the rules for everybody. And underneath all of it, a company laying off people the same week it posts a record quarter. Nobody's coordinating any of this. It's just what's happening, all at once.
+
+That's Artificial Record. For the sourcing, head to artificial record dot com.
