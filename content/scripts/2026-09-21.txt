@@ -1,0 +1,47 @@
+VOICE: onyx · MODEL: gpt-4o-mini-tts
+INSTRUCTIONS:
+Voice: a seasoned public radio host, mid-forties, talking to one person across a table. Not announcing. Not presenting.
+Pacing: Conversational and unhurried. Vary it — move a little quicker through familiar setup, slow down on figures and on the point of a sentence. Never metronomic.
+Breath and pauses: Breathe audibly before a new idea. Leave a real beat of silence at paragraph breaks — a full second, sometimes longer. Silence is not dead air.
+Inflection: Let sentences fall at the end. Do not hold pitch level and do not lift into the next line. Downward, settled, finished.
+Articulation: Relaxed, slightly soft. Let some consonants go. Do not over-enunciate — you are not reading a legal notice.
+Attitude: Interested, dry, faintly amused now and then. You find this genuinely interesting and you assume the listener does too. Never enthusiastic. Never selling. Never customer-service warm.
+Avoid: uniform rhythm, rising terminal inflection, announcer polish, any sense of performance.
+
+So this week, AI stopped being a hypothetical problem for the military and started being a documented one. Two separate incidents, two separate outlets, both landing the same week. Let's get into it.
+
+First one's from CNN, and it's a doozy. Sometime this spring, an analyst working for Special Operations Command asked a chatbot to look over the cargo manifest of a ship — a ship people suspected of moving through the Middle East carrying something it shouldn't. The bot pulled together open-source info with classified intelligence, and it decided — wrongly — that this ship was carrying parts for a nuclear weapons program.
+
+And here's the part that'll get you. The military believed it. They started prepping to actually board that ship. Troops ready to go. Aircraft already in the air. And then, before anyone pulled the trigger on it, somebody realized — wait, this whole report, the thing driving this operation, it's made up. The AI hallucinated it. One source told CNN, and I'm quoting here, this "almost started a war." Because any US move against a Chinese vessel, that's not a small thing. That's the kind of spark that doesn't stay contained.
+
+Nobody's named which tool did this. Nobody's said exactly when in the spring it happened. And neither the Pentagon nor Special Operations Command has come out and disputed any of it either.
+
+Now — breathe with me here — there's a second story, and it's darker. Bloomberg did a big investigation, came out the same day as the CNN piece, digging into a strike back in February that hit a school in a town called Minab, in Iran. More than a hundred and fifty people died. Over a hundred of them kids.
+
+And Bloomberg's sourcing — people who've seen the Pentagon's own internal review, which still hasn't been made public — says part of what went wrong was an AI tool. Specifically, a Palantir system called Maven, that the military uses to pull together targeting intelligence. Some of the people running that operation just... trusted it. Assumed if something was wrong with the intel, Maven would catch it. It didn't.
+
+The actual underlying problem went back years. US records had that compound in Minab flagged as a military site, going back a long time. One American analyst had actually noticed something changed about the place, all the way back in 2019 — flagged it. But that note went into a system that wasn't even hooked up to the main database everybody else, and Maven, was pulling from. So the correction just... sat there. Unused.
+
+And on top of that — the team whose whole job is catching exactly this kind of mistake before a strike happens, the civilian harm folks — they'd been cut by ninety percent. Fewer than twenty people left, spread across multiple teams. Nobody from that team even reviewed this target before it got hit.
+
+Palantir's response, for what it's worth, is that they're not responsible for bad data going in, only for what their software does with it. Fair point, as far as it goes. Doesn't change what happened. There's actually a separate detail buried in the same reporting — the Pentagon's own targeting databases had warnings built in, saying the intelligence on this site needed to be double-checked before anyone used it. Senior officers saw those warnings. And they moved ahead anyway, because — this is the word sources used — expediency. They were in a hurry, building target lists at the start of a war, and a warning label got waved past.
+
+And this isn't the first time an AI company and the Pentagon have bumped up against each other this year, either. Back in the spring, Anthropic straight-up refused to let the military use Claude for autonomous weapons, or for domestic surveillance, full stop. The Pentagon tried to blacklist them over it. A federal judge said, in August, no — that was illegal retaliation. So there's already a live argument happening about how much say an AI company gets over how its own technology gets used once it's inside the military. This week's news is really just a new chapter in that same argument, except now there's a body count attached to it.
+
+So you've got these two stories, landing together, and three senators — Warner, Reed, Coons — wrote a letter demanding inspectors general get full access to dig into both of them. No restrictions. That letter went out a day before either story broke publicly, actually, which tells you these folks already knew what was coming.
+
+And look — none of this is really new, in the sense that AI hallucinating and people over-trusting automated tools, that's a known problem. Labs have talked about weirder stuff than this in their own safety reports. What's new is the setting. This isn't a chatbot giving you a wrong recipe. This is nuclear-armed countries and airstrikes.
+
+Which brings me to the last thing, and it's — I think — actually connected, even though on the surface it looks totally separate. Sunday, Treasury Secretary Scott Bessent sat down with his counterpart from China, and the US side floated something new — a notification system. Basically, hey, if one of our AI systems does something alarming enough to be a national security concern, we tell you, you tell us. Bessent's phrase was, and I liked this, moving from "opaque to more transparency" between — his words — "the number one and the number two AI powers in the world."
+
+This is groundwork for a real summit. Trump and Xi, in Washington, Thursday and Friday this week. And there's a state dinner attached to it — Jensen Huang's going to be there, Sam Altman, Tim Cook, half the tech industry's leadership, actually, all in one room with both presidents.
+
+Now, you could read the timing as coincidence. Diplomats plan summits months in advance. But you can't un-notice it either — the same week two different outlets document American AI systems producing genuinely dangerous wrong answers inside military and intelligence work, the two governments that build and buy most of this technology start talking, seriously, in specifics, about how to warn each other when it breaks.
+
+Nothing's signed. Nothing's binding yet. Xinhua, on the Chinese side, only confirmed they "discussed AI" — pretty thin compared to what Bessent's saying. So we'll see, this week, whether that thinness turns into an actual agreement, or whether it's just diplomatic noise ahead of a summit that was always going to happen anyway.
+
+One more thing, quickly, because it matters for anyone watching where the actual model race is headed. Two Chinese labs shipped real products this weekend. StepFun put out a new flagship model, six hundred billion parameters, and — this is their whole pitch — they're going to give the weights away free next month, after selling API access for a few weeks first. And Alibaba's Qwen team shipped an update that cut their audio pricing by something like ninety-eight percent. Nobody in Washington or Beijing is waiting around for the diplomacy to finish before they ship the next model.
+
+That's where we are tonight. Two documented failures inside the machinery that's supposed to keep the country safe. A Senate letter demanding answers. And, maybe, the first real conversation between Washington and Beijing about what to do when their AI goes wrong.
+
+This has been the Artificial Record. For the full write-up, sources and all, find us at artificialrecord dot com.
