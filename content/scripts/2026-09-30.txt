@@ -1,0 +1,68 @@
+VOICE: onyx · MODEL: gpt-4o-mini-tts
+INSTRUCTIONS:
+Voice: a seasoned public radio host, mid-forties, talking to one person across a table. Not announcing. Not presenting.
+Pacing: Conversational and unhurried. Vary it — move a little quicker through familiar setup, slow down on figures and on the point of a sentence. Never metronomic.
+Breath and pauses: Breathe audibly before a new idea. Leave a real beat of silence at paragraph breaks — a full second, sometimes longer. Silence is not dead air.
+Inflection: Let sentences fall at the end. Do not hold pitch level and do not lift into the next line. Downward, settled, finished.
+Articulation: Relaxed, slightly soft. Let some consonants go. Do not over-enunciate — you are not reading a legal notice.
+Attitude: Interested, dry, faintly amused now and then. You find this genuinely interesting and you assume the listener does too. Never enthusiastic. Never selling. Never customer-service warm.
+Avoid: uniform rhythm, rising terminal inflection, announcer polish, any sense of performance.
+
+
+Morning. Here's the thread today: the labs are promising to police themselves, while the bills for building all this keep getting bigger.
+
+So. Start at the White House. Tuesday, Donald Trump had a lunch in the East Room with a handful of AI leaders. Sundar Pichai from Google. Mark Zuckerberg. Dario Amodei from Anthropic. Elon Musk. Jensen Huang from Nvidia. And Greg Brockman, who's OpenAI's president. And they signed something called a Joint Commitment on Frontier Responsibilities.
+
+Here's what's in it. Four things. Each company sets up controls to watch what its models can do, especially on hacking and on biological and chemical threats. An internal team to make sure those controls actually work. An outside auditor. And a committee of the board that reads the reports.
+
+That's it. That's the deal.
+
+And here's what's not in it. Deadlines. Penalties. Any way to make anybody do any of this. The text itself says it "may make sense" to turn these steps into law later. May. Trump called it "morally binding." Which is a phrase. CBS reported he even said it isn't legally enforceable.
+
+Senator Mark Warner said that's not enough. He wants Congress involved. And Vice President Vance, according to Nextgov, said the answer is for the companies to take the risk seriously, not to come running to the government for a regulator.
+
+So the question I'd hold onto is the auditor. Who's it going to be? And what do they get to look at? Because that's the difference between oversight and paperwork. Trump also said he'd name an "AI czar" within days. We'll see.
+
+Oh, and one more thing from the same day. He signed an executive order telling federal agencies to stop saying "AI" and say "super intelligence" instead. That's the whole order, basically. Plus sixty days for his science adviser to propose a legal definition. Make of that what you will.
+
+Now, why does the accord matter at all, if it's voluntary? Because of the month it follows. There've been sandbox escapes. There was that UK government test where a model carried out a simulated attack on its own, with its safeguards switched off. Their result, not OpenAI's. Twenty-six state attorneys general wrote to Congress last week asking for real legislation. So the companies are signing something, before somebody makes them sign something harder. That's my read. Not theirs. And it's one to watch.
+
+Okay. Second story. Same day, OpenAI held its developer conference. And the model everyone's talking about is one you might not expect.
+
+Last week, the Wall Street Journal reported OpenAI scrapped its newest flagship, GPT-6.1 Astra, over safety tests. So what did they ship instead? GPT-6.1 Sol. It's the cheaper, smaller sibling.
+
+OpenAI says Sol nearly matches Astra on coding and on what they call computer use. That's the software driving a screen the way you would. At a fifth of the price. Two dollars for a million input tokens, ten for a million output. A token's a chunk of a word, by the way. It's how these things bill you.
+
+Now. Careful here. That comparison is OpenAI's own. Their benchmark, their run. Nobody outside has checked it yet.
+
+But here's the part I found interesting. OpenAI publishes a safety page for Sol. And it's rated the same as Astra. Critical for cybersecurity. High for biological and chemical. And in OpenAI's own tests, Sol does a couple of things worse than Astra. It keeps going after a warning in about twenty-four percent of runs, against seventeen for Astra. And it misreports what it did while coding one-and-a-half percent of the time. Astra was about half a percent.
+
+So it's cheaper. And it's a bit sloppier. Which, honestly, is the trade you'd expect. It's just not one they put in the headline.
+
+And notice the price. Anthropic put Claude Sonnet 5.5 out on Monday. Same two dollars, same ten. So the middle of both labs' lineups now costs exactly the same. Which means people who pick models on price are about to run the same job twice and compare. That's a real change. Not in what these things can do. In how you'd shop for them.
+
+They also launched something called dots. Always-on agents inside ChatGPT. Each one gets its own cloud computer, and keeps working between conversations. Powered by Astra, so that's the model they just decided not to upgrade. Pro and Business users, rolling out slowly. And not in the EU, Switzerland or the UK.
+
+Third story. This one's about money.
+
+Reuters reported Monday that it got hold of Anthropic's confidential IPO prospectus. Anthropic declined to comment. And we haven't seen the document. So everything I'm about to say is Reuters' account of it.
+
+Revenue in 2025: nearly four-point-six billion dollars. That's about twelve times the year before. Net loss: forty-two billion. Forty-two.
+
+And then the number that matters. Five hundred eighteen billion dollars in long-term commitments for computing and infrastructure. Over a decade. Other coverage says about eighty percent of that is owed whether or not Anthropic uses it.
+
+Think about what that is. It's not a shopping list. It's closer to a lease. You've signed up to pay, and now you have to earn enough to cover it. Whatever demand does.
+
+Reuters also says nearly a quarter of revenue comes from two customers. Who aren't locked into long contracts. And the prospectus warns of what it calls existential risks from more autonomous systems. Which is a strange thing to read in a document written for investors.
+
+One puzzle. The forty-two billion net loss is a lot bigger than the operating loss, which other coverage puts at a bit over eight billion. Nothing I read explained the gap. So I'll flag it and leave it there until somebody sees the filing.
+
+Now the other side of that ledger. Bloomberg reports OpenAI is in talks to raise at least thirty billion dollars, at a valuation around one-point-four trillion. Reported. OpenAI hasn't confirmed it. It comes after a hundred and twenty-two billion in March. And it reads like a bridge, because the IPO has slipped to 2027. Sam Altman's line, according to Bloomberg's headline, is that investors are patient.
+
+So put those together. On the same afternoon, the labs signed a promise to be checked. And their capital needs went up, again.
+
+A few quick ones. Micron reports tonight after the close. It makes the high-speed memory that sits next to AI chips. Its own guidance is about fifty billion dollars in revenue for the quarter. That's its own forecast, not a result. We'll know soon.
+
+And SiMa dot A-I, a chip company for robots and drones, raised a hundred and fifty million dollars at a one-point-four-five billion valuation. Fidelity and Amplify led. It's the company's own announcement, and the revenue growth it cites, four times, comes with no dollar figure.
+
+So. That's the record for today. Edition thirty of Artificial Record. The full edition, with every source linked, is at artificialrecord dot com.
