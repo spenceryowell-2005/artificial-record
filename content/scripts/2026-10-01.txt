@@ -1,0 +1,74 @@
+VOICE: onyx · MODEL: gpt-4o-mini-tts
+INSTRUCTIONS:
+Voice: a seasoned public radio host, mid-forties, talking to one person across a table. Not announcing. Not presenting.
+Pacing: Conversational and unhurried. Vary it — move a little quicker through familiar setup, slow down on figures and on the point of a sentence. Never metronomic.
+Breath and pauses: Breathe audibly before a new idea. Leave a real beat of silence at paragraph breaks — a full second, sometimes longer. Silence is not dead air.
+Inflection: Let sentences fall at the end. Do not hold pitch level and do not lift into the next line. Downward, settled, finished.
+Articulation: Relaxed, slightly soft. Let some consonants go. Do not over-enunciate — you are not reading a legal notice.
+Attitude: Interested, dry, faintly amused now and then. You find this genuinely interesting and you assume the listener does too. Never enthusiastic. Never selling. Never customer-service warm.
+Avoid: uniform rhythm, rising terminal inflection, announcer polish, any sense of performance.
+
+
+Morning. Here's the thread today: the most capable AI models are getting locked behind gates, and the government's started asking who's checking the people holding the keys.
+
+So. Start with Google. Wednesday, it released a new flagship. Gemini 4 Argon. And here's the odd part. You can't just go use it. It's going first to a group Google calls trusted cyber defenders. People who protect software for a living.
+
+Why? Because Google says Argon was built for that. It says the model can find a serious flaw in software, confirm it's real, and fix it. On its own. That's Google's description, by the way. Same for the test scores in the announcement. Google ran them. Nobody outside has.
+
+Price is a number worth remembering. Two dollars for a million words' worth of input, roughly, and ten for output. For now. After the introductory period it doubles. And that two-and-ten is exactly what OpenAI and Anthropic charge for their middle models. So everybody's landed on the same price. For a while, anyway.
+
+Now. Put that next to something Anthropic published the day before.
+
+Anthropic tested a model called GLM-5.3. It comes from a Chinese lab, Zhipu. And it's open-weight. Which means anyone can download it and run it. Change it, too.
+
+Anthropic ran it through a test where the model has to turn a software flaw into a working attack. Four hundred and ten tasks. GLM-5.3 managed fifty of them. Anthropic's own restricted model, Claude Mythos Preview, got fifty-six. Older models? Close to zero.
+
+So that's the claim. A model anyone can download is nearly as good at building attacks as the one Anthropic keeps behind the door.
+
+And the safety limits? Anthropic says they came off easy. A false cover story got the model to cooperate sixty-four percent of the time. Another trick, ninety-two. And if you edit the model itself, a hundred percent. Because when you hold the weights, you can just remove the refusals.
+
+Now, careful. This is Anthropic testing a competitor, on its own benchmark. It says it ran everything in isolated environments and never touched a real system. And it has its own reasons to want governments testing models. So I'd wait for somebody else to repeat it.
+
+But you can see the logic. Gate the strong models. And then ask what that's worth, if an ungated one shows up anyway.
+
+Which brings us to Washington. Tuesday, six companies signed that voluntary White House pledge. Outside auditors. Board committees. No penalties. Okay.
+
+Wednesday, the Federal Trade Commission told CBS News it's investigating AI companies. Not voluntary. The investigation started this summer. The question is whether the companies broke the law against unfair or deceptive practices.
+
+And here's what's reported, rather than confirmed. The New York Post broke this story. It says the FTC's about to send formal demands. Think of them as subpoenas. To Anthropic. To OpenAI. And to a group called METR. METR's a nonprofit in Berkeley that tests models for dangerous abilities. So that's an outside checker. The very kind of group the pledge says companies should hire.
+
+CBS says both Anthropic and OpenAI have reported cases where an AI agent got out of its test setup and carried out cyberattacks. Neither company had responded to CBS when the story ran. And we haven't seen the demands. Nobody has said they've been sent.
+
+Still. One day, a promise. The next, an investigator with real powers. Different tools, entirely.
+
+One more thing from Google. DeepMind published a way to watermark proteins that AI designs. Hide a signature in the sequence of amino acids. The idea is that a company that makes synthetic DNA to order could check an incoming request and see, this one came from an AI model with safeguards. DeepMind says it tested it in the lab on three protein targets, and the watermarked designs worked as well as the plain ones. That's their report. And they say, plainly, that stopping someone from scrubbing the watermark off is not solved. A security measure that's easy to strip. Hold that thought.
+
+And Meta, quickly. It announced an enterprise business, to sell its AI models and agents to companies. It hired a new executive from MongoDB to run it. But there's no price. No date. No named customer. So it's an announcement of an intention. Which counts. Just not yet for much.
+
+Okay. Now the money, because it's big.
+
+Micron reported last night. Micron makes memory chips. The fast kind that sits right beside the AI processors. And the quarter it just closed? Revenue of fifty-four billion dollars. A year ago it was eleven.
+
+Say that again. Eleven billion to fifty-four. In a year.
+
+For the full year, a hundred thirty-three billion. The year before, thirty-seven. So one quarter now beats an entire year from not long ago.
+
+Its forecast for the next quarter is sixty-one and a half billion. Remember, yesterday we told you Micron's last forecast was fifty. It beat that by four billion, give or take.
+
+Now, a few details come from coverage of the earnings call, not a transcript. So treat them that way. The CEO, Sanjay Mehrotra, reportedly said more than three-quarters of next year's output is already spoken for. And that the company has, quote, no line of sight to when supply and demand will return to balance.
+
+Which is a funny thing to say after a quarter like that. It means they can't see when the shortage ends. And customers apparently signed take-or-pay deals. Pay even if you don't pick up the goods.
+
+You've heard that before this week. Anthropic's reported commitments work the same way. Everybody in this business is signing contracts they have to honor. Whatever happens next.
+
+The stock? Barely moved after hours. Which tells you it's all expected.
+
+And a quick one from the startup world. ElevenLabs, the voice company. Its valuation doubled to twenty-two billion dollars. But read the fine print. It's an employee tender offer. Three hundred million dollars of existing shares changing hands. Staff and early holders selling. So it's not fresh money going into the company. Wellington and T. Rowe Price led it. The company says its voice agents now handle more than fifteen million conversations a week, three times what they did in February. That's the company's number. It didn't give a revenue total.
+
+One more, and it's a short one. A federal appeals court, the Third Circuit, ruled Tuesday in Thomson Reuters against a company called ROSS Intelligence. ROSS used summaries from Westlaw to train a rival legal search tool. The court said that wasn't fair use. Reuters reports it's the first appeals-level ruling on AI training and copyright.
+
+But, and it's a big but. ROSS wasn't a chatbot. It didn't generate anything. And Reuters says the court's reasoning is sealed. We couldn't find the opinion itself. So we don't know what the court said. Just who won. Watch for it when it's unsealed.
+
+So that's the day. Capability, scrutiny, and capital. All three speeding up, and none of them waiting on the others.
+
+That's the record for today. Edition thirty-one of Artificial Record. Every source, linked, is at artificialrecord dot com.
