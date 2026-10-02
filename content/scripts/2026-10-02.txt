@@ -1,0 +1,75 @@
+VOICE: onyx · MODEL: gpt-4o-mini-tts
+INSTRUCTIONS:
+Voice: a seasoned public radio host, mid-forties, talking to one person across a table. Not announcing. Not presenting.
+Pacing: Conversational and unhurried. Vary it — move a little quicker through familiar setup, slow down on figures and on the point of a sentence. Never metronomic.
+Breath and pauses: Breathe audibly before a new idea. Leave a real beat of silence at paragraph breaks — a full second, sometimes longer. Silence is not dead air.
+Inflection: Let sentences fall at the end. Do not hold pitch level and do not lift into the next line. Downward, settled, finished.
+Articulation: Relaxed, slightly soft. Let some consonants go. Do not over-enunciate — you are not reading a legal notice.
+Attitude: Interested, dry, faintly amused now and then. You find this genuinely interesting and you assume the listener does too. Never enthusiastic. Never selling. Never customer-service warm.
+Avoid: uniform rhythm, rising terminal inflection, announcer polish, any sense of performance.
+
+Hi. Here's today's thread. AI's running into limits, and they're not about the models. They're about trust, export law, and electricity.
+
+So let's start with trust.
+
+OpenAI said yesterday that it's parted ways with three safety researchers. Its words were that they, quote, mishandled sensitive information outside established company procedures. Unquote. That's OpenAI's statement, as quoted by TechCrunch.
+
+The Wall Street Journal broke it. And the Journal reported that the information went to an outside AI-safety group. Now, here's what we don't have. We don't have names. We don't know the group. We don't know what the information was.
+
+And that matters. Because "mishandled sensitive information" could be a leak. It could be a researcher sharing something with a colleague at another organization. It could be something messier. Right now the only account we've got is the company's own.
+
+There's context. A couple of days earlier, the New York Times reported that executives had brushed off employee safety worries. I couldn't read that story, so I'm not going to tell you what's in it. And OpenAI's already pulled a model launch over safety tests, which we covered last week.
+
+So, a company that sells trust is being asked how it treats the people who raise concerns. Worth watching whether it says more.
+
+Okay. Something lighter. Sort of.
+
+Google put a satellite in orbit yesterday. Launched on a SpaceX rocket, about two-thirty in the afternoon Eastern. And on board are four of Google's AI chips. The ones it uses to train and run its models.
+
+It's a test. Can that hardware survive the launch, and the radiation up there? And can it stay cool? Because there's no air in space, so there's nothing to carry the heat away.
+
+Now. Scale. The satellite runs on about one kilowatt of solar power. That's roughly a space heater. A single big data center on the ground is planned at a million times that. So this isn't moving any AI work into space. Not even close.
+
+Google's argument, from a research post it published last November, is that solar panels in the right orbit can be up to eight times as productive as on the ground. That's Google's own analysis. And it says the math only works against ground data centers if launch costs fall below about two hundred dollars a kilogram, sometime in the mid-twenty-thirties. That's a condition. Not a forecast.
+
+Two more prototype satellites are planned by early next year.
+
+Why bother? Because on the ground, AI is running into power limits. Which brings us to Michigan.
+
+Regulators there approved the power contracts for a Google data center outside Detroit. One gigawatt. That's about one large nuclear reactor. Hundreds of thousands of homes' worth.
+
+The vote was unanimous. And the interesting part is the terms. Twenty-year contract. Google pays for at least eighty percent of what it reserves, whether it uses it or not. If it walks away early, it owes at least fifteen years of those minimum charges. And Google has to pay for new renewable power, up to sixteen hundred megawatts, plus batteries.
+
+The state's attorney general wanted ninety percent. Her worry was stranded assets. That's when a utility builds for a customer, the customer leaves, and everybody else gets the bill.
+
+So that eighty percent is the number to remember. It decides who carries the risk if AI demand doesn't show up. Power's starting to look like the real gatekeeper.
+
+And on the same day, a Canadian company called Enerflex said it'll build four hundred and fifty megawatts of gas-fired generators for an unnamed data center developer. On site. No grid connection. They didn't disclose the price.
+
+One more. And this one's an allegation, so, careful.
+
+Federal prosecutors in Southern California charged a man named Greg Lui. He owns a computer company. They say that between 2023 and 2024 he bought servers full of Nvidia chips, told the manufacturers they were headed somewhere that doesn't need an export license, and shipped them through Singapore and Malaysia. To China. Value, about three hundred million dollars.
+
+He's charged with conspiracy to violate export law, smuggling, and conspiracy to commit money laundering. He hasn't been convicted. Nvidia's not accused of anything in this case, as far as I could tell.
+
+But it's a pattern. The rules say the most advanced chips can't go to China. A middleman country is one way around that. Prosecutors had already charged two Chinese nationals in the same part of California using the same route. And Bloomberg's running a piece asking what Nvidia can see once the box leaves its hands. I couldn't read it. It's paywalled.
+
+And there's a footnote on the chip story that belongs here. Bloomberg reported that TSMC, the company that actually makes Nvidia's chips, is weighing a second big American campus. In Texas. Tens of billions of dollars. Each factory, at least twenty billion.
+
+Now, that's reported, not confirmed. Bloomberg cites people familiar with the plans, and says the talks are early. TSMC's own response, and I like this, was, quote, we have no comment on market rumors.
+
+The detail that matters is the condition. The whole thing reportedly depends on Congress extending a manufacturing tax credit that runs out at the end of this year. So a decision in Washington, about a tax credit, could decide where a chunk of the world's AI chips get built. That's the kind of thing that doesn't make a headline until it's already happened.
+
+Okay. Two quick ones, and then I'll let you go.
+
+Connecticut's new AI law started to kick in yesterday. Not all of it. Some pieces are live now, and some come in January of next year, and the year after. The ones live today are interesting. If an employer uses AI to help decide who gets hired or fired, it has to tell the workers. If a company files a layoff notice with the state, it has to say whether AI played a part. And the biggest AI developers have to give their employees a way to report catastrophic risks, anonymously, without getting punished for it.
+
+Which, you'll notice, brings us right back to the first story. I want to be clear. Nothing I've read says that law applies to what happened at OpenAI. I'm not saying it does. But it tells you where the rules are heading. I'm working from a summary by the Future of Privacy Forum there, not the text of the law itself.
+
+And the other one's smaller. Barclays, the British bank, put out a story with Anthropic about how it's using Claude. More than sixteen thousand employees use an internal assistant built on it. And the model sorts about a hundred and twenty thousand emails a day in the bank's markets business.
+
+I'd flag that those numbers come from Anthropic's own write-up of a customer. They're not independent. But I like the email thing. It's not glamorous. It's just a big, boring job. And that's often where the money is.
+
+So, the thing to take from today. Whether it's a safety team, a satellite, or a server in Malaysia, AI has stopped being just software. It's got people, and rules, and a power bill. And all three are showing strain.
+
+That's the Artificial Record. The AI industry, on the record. The full edition, with every source linked, is at artificialrecord.com.
