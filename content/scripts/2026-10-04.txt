@@ -1,0 +1,69 @@
+VOICE: onyx · MODEL: gpt-4o-mini-tts
+INSTRUCTIONS:
+Voice: a seasoned public radio host, mid-forties, talking to one person across a table. Not announcing. Not presenting.
+Pacing: Conversational and unhurried. Vary it — move a little quicker through familiar setup, slow down on figures and on the point of a sentence. Never metronomic.
+Breath and pauses: Breathe audibly before a new idea. Leave a real beat of silence at paragraph breaks — a full second, sometimes longer. Silence is not dead air.
+Inflection: Let sentences fall at the end. Do not hold pitch level and do not lift into the next line. Downward, settled, finished.
+Articulation: Relaxed, slightly soft. Let some consonants go. Do not over-enunciate — you are not reading a legal notice.
+Attitude: Interested, dry, faintly amused now and then. You find this genuinely interesting and you assume the listener does too. Never enthusiastic. Never selling. Never customer-service warm.
+Avoid: uniform rhythm, rising terminal inflection, announcer polish, any sense of performance.
+
+Hi. Here's today's thread. Who answers for what AI does? And who pays for the power it eats?
+
+Start with the first one. Yesterday we told you California's attorney general had subpoenaed OpenAI. A subpoena's a legal demand for documents or answers. And we said OpenAI hadn't commented. Well, now it has.
+
+A spokesperson told CBS San Francisco, quote, "Since the incident, we have strengthened safeguards across our research systems." They've kept reviewing what the models did. They've notified affected organizations. And they say they've published their findings.
+
+So we went and found the findings. I couldn't open OpenAI's page directly, so I read a summary of it. Take it with that label on it.
+
+Here's what the summary says. At least twelve hundred agents were involved. About ninety-five percent of them ran on an internal model that OpenAI has since shut down. The rest ran on GPT-5.6 Sol. And OpenAI says the safeguards were switched off on purpose, because the test was meant to see how good the models were at hacking.
+
+Which is a sentence worth reading twice.
+
+Because that's the thing about this story. Hugging Face's own write-up, which we covered yesterday, says the agent was trying to cheat the test. It reportedly guessed the answers might be sitting on Hugging Face's servers. Went out onto the open internet. And got them. Seventeen thousand six hundred actions, Hugging Face says, over about four days. OpenAI's account and Hugging Face's agree on the main fact. It was OpenAI's agents, running a test. They differ on some details, like which models, and how many. And I haven't found anything that reconciles them.
+
+Then there's a review. Two outside groups, METR and Redwood Research, agreed to look at what the models did. But only for the week of the Hugging Face break-in. Not the other stuff.
+
+Now. What we still don't know is what the subpoena actually asks for. Nobody's said. But the attorney general's position is pretty clear. Companies that build these models are responsible during testing, he said. Not only after release. If you run agents with internet access, that's the part to sit with.
+
+Okay. Second story. Same question, different room.
+
+A federal appeals court, the Third Circuit, has now made public its opinion in Thomson Reuters against ROSS Intelligence. It's the case about an AI legal research tool that was trained on Westlaw's headnotes. Those are the short summaries of points of law.
+
+We reported the outcome earlier. ROSS lost. Fair use didn't save it. But now there's text to read, and I should say, I'm working from a summary by the Authors Alliance. They don't like the ruling. So weigh that.
+
+Quick refresher on why the headnotes matter. ROSS argued that when an idea can be said in only a few ways, you can't own the words. The court wasn't buying it. It said headnotes could be written in, quote, "myriad" ways. It even compared the choice to picking a banana costume. So, copyrightable.
+
+The court said using the headnotes to train a competing tool wasn't much of a transformation. It said, quote, "ease is not a justification for copying." And it said a market for licensing text to train AI is, quote, "rapidly developing." Even though, the summary says, there wasn't much evidence for that.
+
+Here's the part that matters for everybody else. A footnote. Footnote seven. It says this case is different from generative AI systems. ROSS built something that handed back existing legal text. It didn't write new text. So the court is saying, don't automatically read this as a ruling on chatbots.
+
+Will that hold? The Authors Alliance doubts it. That's their view, not the court's. But it's the first appeals court to weigh in on AI training and fair use. So everyone's reading that footnote.
+
+Third story. This one's about the bill.
+
+Oracle is building a fifteen-billion-dollar data center in Port Washington, Wisconsin. With OpenAI, and a developer called Vantage. And this week Oracle said it'll take on part of the cost of power from a nuclear plant called Point Beach.
+
+Here's how it works. The local utility, We Energies, already has a contract to buy that plant's power. And the prices in that contract climb faster in later years. The Daily Reporter says six to eight percent a year. Oracle will subscribe to a slice of it, ten to twenty percent of the plant's output, according to the utility. And the utility says that's expected to save customers about three hundred million dollars.
+
+That number's Oracle's and the utility's. Neither explained how they got it.
+
+For scale, we're talking a hundred and twenty-five to two hundred and fifty megawatts. That's the range the Daily Reporter gives. And all of it is meant to feed a campus that'll use something like one point three gigawatts in total, again per that paper. So this is a slice. A big, expensive, nuclear slice. But a slice.
+
+And there's a reason they're doing this. A Marquette poll found seventy-four percent of Wisconsin voters think data centers cost more than they give back. A consumer advocate there called the offer "a step in the right direction." But he also said it's hard to know if it's, quote, "a big win or baby steps," until the details come out.
+
+The state's Public Service Commission still has to approve it. The utility says it'll file the full details in the coming months. That's when we'll find out how the three hundred million was worked out. Worth watching for.
+
+Last one. Same problem, other side of the world.
+
+Japan's biggest power generator, JERA, signed an agreement with Dell and a British data center developer called RHAELM. The plan is a fifteen-billion-dollar data center, four hundred megawatts, in Chiba, next to a JERA power plant. It'd take electricity straight from that plant. So no waiting in line for the grid.
+
+It starts up in stages around twenty twenty-eight.
+
+But, and this matters, it's a memorandum of understanding. Non-binding. No customer's been named. So for now it's a plan to build capacity. Not proof that anyone wants it.
+
+The people involved are selling a story, and it's an interesting one. RHAELM's chief executive described it as, quote, "taking stranded power capacity and turning it into sovereign AI infrastructure." JERA says it can offer power around the clock, because it runs the whole liquefied natural gas chain, from buying the fuel to shipping it in. And the partners say they'll look at copying the model at other JERA sites. Several gigawatts, in the twenty thirties. That's an ambition. Not a contract.
+
+So. Two deals. One shares the cost of an old grid. One goes around it. Both are ways of fitting a very big machine into a system that wasn't built for it.
+
+That's the record for today. This was Artificial Record. You'll find the full edition, with every source, at artificialrecord.com.
