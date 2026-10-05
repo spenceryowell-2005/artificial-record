@@ -1,0 +1,57 @@
+VOICE: onyx · MODEL: gpt-4o-mini-tts
+INSTRUCTIONS:
+Voice: a seasoned public radio host, mid-forties, talking to one person across a table. Not announcing. Not presenting.
+Pacing: Conversational and unhurried. Vary it — move a little quicker through familiar setup, slow down on figures and on the point of a sentence. Never metronomic.
+Breath and pauses: Breathe audibly before a new idea. Leave a real beat of silence at paragraph breaks — a full second, sometimes longer. Silence is not dead air.
+Inflection: Let sentences fall at the end. Do not hold pitch level and do not lift into the next line. Downward, settled, finished.
+Articulation: Relaxed, slightly soft. Let some consonants go. Do not over-enunciate — you are not reading a legal notice.
+Attitude: Interested, dry, faintly amused now and then. You find this genuinely interesting and you assume the listener does too. Never enthusiastic. Never selling. Never customer-service warm.
+Avoid: uniform rhythm, rising terminal inflection, announcer polish, any sense of performance.
+
+Hi. Here's the thread today. AI can do more on its own than it could last month, and the people who decide what's allowed are mostly doing it one court order at a time.
+
+Let's start with the capability side. And I'll be careful here, because most of today's claims come from the people who made them.
+
+A security company called Horizon3 says it used Anthropic's Mythos model to find a serious flaw in a file server. The server's called Rejetto HFS. It's a free program people use to share files over a network. Horizon3 published its write-up on September 30th.
+
+Here's the flaw, in plain terms. The server makes its secret signing key using a random number function that isn't actually secure. It's the everyday kind, the kind you'd use to shuffle a playlist. And the server also leaks some of that function's output to anyone who tries to log in. So an attacker collects the leaked numbers, runs them through an equation solver, rebuilds the generator's internal state, and out comes the key. With the key, you can forge an administrator login. And then run your own code on the machine.
+
+Now. The part that stood out. The researcher, Zach Hanley, says Mythos didn't just spot the weak random function. It noticed the leak at the same time, and put the two together. That's Horizon3's account. I haven't seen Anthropic publish its own.
+
+And then the speed. The Register reports that by Thursday night, a day after disclosure, a vulnerability-intelligence firm called VulnCheck saw live attacks coming from an address in China, aimed at servers in the US and Japan. VulnCheck saw the attempts. I haven't seen a victim confirm a break-in.
+
+So. There's a fixed version, 3.2.1. If you run this thing, update. But the bigger point is the clock. Find a flaw, publish it, and the copying starts within hours. If a tool makes finding cheaper, and a write-up makes copying cheaper, the time you've got to patch gets shorter. That's all.
+
+Okay. Second story. Same theme, different field.
+
+Meta says its Muse Spark model helped outside mathematicians write six papers. Five of them, Meta says, answer questions that were open. This is from Meta's own research blog, posted October 2nd.
+
+A few examples. One paper shows that a certain kind of wave equation has to blow up in finite time. That settles a question from 2015. Another one knocks down a conjecture in group theory. They found a counterexample, a group with three hundred and eighty-four elements. The model wrote the search program, and the mathematicians checked what it found.
+
+But here's what I like. Meta's own post is careful. The mathematicians chose the problems and guided the work. The model wrote code, suggested approaches, drafted sections. Each paper marks which passages were mostly the human's and which were mostly the model's. And Meta admits that on some of these questions, other people got there at the same time, or earlier. In one case, three independent solutions turned up around the same moment.
+
+So the claim isn't "first." It's "helped." I haven't read the papers, and I haven't seen an outside mathematician size up how big the results are. Worth waiting for that.
+
+Now the other half of the day. Who decides?
+
+First, a ruling from Judge Amit Mehta in Washington. Chegg and Penske Media, that's the company behind Rolling Stone and Variety, sued Google. Their argument was that Google uses its search power to make publishers hand over content for free, for AI Overviews, those AI summaries at the top of search results. In return, they get traffic. Or, they used to.
+
+Mehta dismissed both suits. His reasoning, as quoted in press coverage: "An expectation is not an agreement. It is simply how a general search engine works." Antitrust law needs an agreement, or an exclusionary practice. And he found no agreement alleged. He also said he was not unsympathetic to the publishers. But that antitrust isn't the tool for fixing this.
+
+Press reports say Penske's dismissal was without prejudice. Meaning it could try again. I couldn't find the opinion on a public docket, so this rests on news accounts. Still, if you're a publisher, it tells you something about what won't work. Antitrust claims that say Google takes more than it gives, without anything like a deal, didn't clear the bar. The leverage now looks like licensing deals. Or copyright. Or Congress.
+
+Then there's Minnesota. The state passed a law, effective August 1st, banning AI tools that create realistic nude images of real people from ordinary photos. xAI sued. Says it violates the First Amendment, and says its Grok Imagine tool has strong protections. A district judge said no to xAI. Said it waited too long. But on October 2nd, the Eighth Circuit Court of Appeals granted xAI an injunction while the appeal goes on. So the law is paused.
+
+And the order, according to Reuters, was one sentence. No reasoning. So we know who won this round. We don't know how the judges see the free speech question.
+
+The state's attorney general said he's disappointed. And there's a number worth having next to this. The Internet Watch Foundation, a UK charity that finds and removes this material, said today that its analysts found 6,310 AI-generated child abuse images in the first six months of 2026. That's forty percent more than in all of 2025. Girls appear in ninety-eight percent of them. Those are the charity's own counts, from what it assessed. Not everything that's out there.
+
+Last thing. Sunday, President Trump announced on social media that Jay Clayton, the Director of National Intelligence, will lead something called the Super Intelligence Force. Per PBS and NPR, the members include the chair of the FTC, the Pentagon's technology chief, and the head of the Office of Personnel Management. It reports to the president and his chief of staff.
+
+Its job is to coordinate the government's dealings with consumers, public interest groups, religious organizations, infrastructure providers, and AI companies. PBS says it came after a White House event where AI executives signed a voluntary accord on self-regulation. I haven't read the accord. And the coverage I read includes no executive order text. So this is an announcement. Not a rule. As reported, it can't bind anybody.
+
+What it does do is put a few powerful people in one room. If you work at an AI company, expect calls. And watch for the accord's text, because that's where any real commitments would live.
+
+So that's the shape of it. The tools keep getting more capable, and the claims about them come mostly from the companies and researchers who built them. Meanwhile, the rules are arriving as a dismissed lawsuit, a one-sentence court order, and a post on social media.
+
+That's Artificial Record. The AI industry, on the record. More, with every source linked, at artificialrecord.com.
