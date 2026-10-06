@@ -1,0 +1,83 @@
+VOICE: onyx · MODEL: gpt-4o-mini-tts
+INSTRUCTIONS:
+Voice: a seasoned public radio host, mid-forties, talking to one person across a table. Not announcing. Not presenting.
+Pacing: Conversational and unhurried. Vary it — move a little quicker through familiar setup, slow down on figures and on the point of a sentence. Never metronomic.
+Breath and pauses: Breathe audibly before a new idea. Leave a real beat of silence at paragraph breaks — a full second, sometimes longer. Silence is not dead air.
+Inflection: Let sentences fall at the end. Do not hold pitch level and do not lift into the next line. Downward, settled, finished.
+Articulation: Relaxed, slightly soft. Let some consonants go. Do not over-enunciate — you are not reading a legal notice.
+Attitude: Interested, dry, faintly amused now and then. You find this genuinely interesting and you assume the listener does too. Never enthusiastic. Never selling. Never customer-service warm.
+Avoid: uniform rhythm, rising terminal inflection, announcer polish, any sense of performance.
+
+Morning. Here's today's thread. Open models are getting very expensive to build, and the rules around them are getting very real.
+
+Let's start with the building. Then the rules. Then the part that's a little unsettling.
+
+It's a Tuesday, and there's more money in this than usual.
+
+A US startup called Reflection AI put out a model yesterday. It's called Beam. And here's the thing to keep in your head. Nobody can download it yet.
+
+What Reflection did was publish a description. Five hundred and one billion parameters. That's the number of adjustable dials inside the model. But only twenty-three billion of them run at any one time. It's a design where the model wakes up just the parts it needs. Cheaper to run that way.
+
+Reflection says it'll release the actual weights later this month. Free. Under a license that lets companies use them commercially. That's what open-weight means. You can take the thing and run it yourself.
+
+Now. The performance claims? All Reflection's. The company says Beam comes close to a big Alibaba model on coding, and matches a Chinese model called GLM-5.2 on hard reasoning, while using three to four times less computing to answer a question. TechCrunch says none of that's been independently checked. And, to Reflection's credit, its own table reportedly shows Beam trailing some of the newer Chinese models.
+
+So. A promise, and a set of numbers you can't test. Yet.
+
+And there's a business pitch inside it. Reflection says it's going after companies and governments that want a model they can run on their own hardware. It's already tried that with a Korean conglomerate, Shinsegae. Think of it as selling a model the way you'd sell a building. Here are the keys, it's yours.
+
+Here's what you can picture, though. The last stage of training, where the model gets graded on its attempts, used ten and a half thousand of Nvidia's newest chips. For four weeks. That's one stage. For one company's first release.
+
+And that company, according to TechCrunch, has raised about four point seven billion dollars.
+
+Which brings us to China.
+
+Bloomberg reported this morning that DeepSeek is close to raising at least twelve billion dollars. Twelve billion. Tencent is one of the biggest names in it, and so is CATL, the battery maker. Bloomberg says DeepSeek wanted about half that at first, and then interest ran well past it after its latest model. The total could get close to a hundred billion yuan.
+
+Now, careful here. That's Bloomberg's reporting, from people familiar with it. I haven't seen DeepSeek, Tencent, or CATL confirm a number. And I couldn't open Bloomberg's page itself, so I'm relying on excerpts. Bloomberg also ties the round to a public listing planned for early next year.
+
+But put the two stories side by side. An American lab and a Chinese lab. Both building models they'll give away. Both funded for years. That's not a side project anymore. That's a race with the lights on.
+
+And DeepSeek started life inside a hedge fund. High-Flyer, a trading firm. Now there's a battery maker writing it cheques. Funny where AI money turns up.
+
+So. Money's one half of today.
+
+The other half is the rules.
+
+OpenAI said yesterday it'll start watermarking ChatGPT text for users in the European Union. The reason is the EU's AI Act. It says that if a system generates content, the output has to be marked in a way a machine can detect.
+
+So how do you mark text? You can't stamp it. What OpenAI does is nudge word choices. Tiny statistical nudges. A reader sees nothing. But a separate detector can pick up the pattern.
+
+And here's what I liked. OpenAI's own numbers are blunt about the weakness. Swap out ten percent of the words for synonyms, and detection drops from ninety-two percent to sixty-six. Short passages are harder. Math answers are harder. Translated text is harder.
+
+That's why OpenAI says it's only giving the detector to approved researchers. Not to the public.
+
+I'll tell you what that means in practice. If the watermark's there, that's decent evidence a model wrote it. If it's not there, that tells you almost nothing. So a teacher hoping for a lie detector? That's not what this is.
+
+One more thing. I couldn't open OpenAI's own page. It wouldn't load for me. So those figures come through TechCrunch's reading of it.
+
+Now, the same company also said it'll test ads. Visual ads. They'd show up while you wait for ChatGPT to make an image. Labelled, OpenAI says, and kept separate from the picture. It's free-tier users in the US, starting later this month.
+
+OpenAI says the ads won't change what ChatGPT tells you. And it says it'll try to keep them away from, quote, emotionally vulnerable conversations. Those are promises too. Worth watching how they're tested.
+
+OpenAI also says ChatGPT reaches one point two billion people a week. That's its number. It's a lot of people watching a progress bar.
+
+Okay. Last story. This one's less comfortable.
+
+In South Korea, seven financial firms have confirmed data leaks since the first of October. Shinhan Bank, KB Kookmin, Hana, Busan Bank, two savings banks, and Hyundai Capital. The Korea Herald puts it at around sixty-six thousand people. Names, phone numbers. For some, resident registration numbers, income, loan limits.
+
+Police have put twenty-eight investigators on it.
+
+And the detail that's getting attention is how. The Herald says the attacks may have used a tool called ARTEX. It's an AI system that finds weak spots in security. Other coverage describes it as running the whole attack by itself. Scanning, trying stolen passwords, checking what worked.
+
+Now, "may have." That's the Herald's wording, and investigators haven't publicly settled it. The regulator found twenty-eight internet addresses tied to the attacks. But it warned they could be routed through other countries. So nobody's named who's behind this.
+
+What's reported is that the weak entry points weren't the banks' core systems. They were the side doors. Contractors. Loan agents. That's an old problem. What changes is the price of knocking on every door.
+
+You heard something like this yesterday. A security firm said Anthropic's Mythos model found a flaw in a file server, and attackers followed within a day. Different story. Same direction. Finding weaknesses is getting automated. And so is using them.
+
+One small item before I go. Anthropic announced a hundred-million-dollar program to train ten thousand engineers who work inside customer companies. It says that's the goal by the end of next year. Which tells you something. The models exist. What's scarce is people who can fit them into a bank.
+
+So that's the day. Money pouring into open models on both sides of the Pacific. Rules arriving in the form of a watermark that's easy to weaken. And attacks that need fewer people each time.
+
+This is Artificial Record. The AI industry, on the record. The full edition, with every source linked, is at artificialrecord.com.
