@@ -1,0 +1,79 @@
+VOICE: onyx · MODEL: gpt-4o-mini-tts
+INSTRUCTIONS:
+Voice: a seasoned public radio host, mid-forties, talking to one person across a table. Not announcing. Not presenting.
+Pacing: Conversational and unhurried. Vary it — move a little quicker through familiar setup, slow down on figures and on the point of a sentence. Never metronomic.
+Breath and pauses: Breathe audibly before a new idea. Leave a real beat of silence at paragraph breaks — a full second, sometimes longer. Silence is not dead air.
+Inflection: Let sentences fall at the end. Do not hold pitch level and do not lift into the next line. Downward, settled, finished.
+Articulation: Relaxed, slightly soft. Let some consonants go. Do not over-enunciate — you are not reading a legal notice.
+Attitude: Interested, dry, faintly amused now and then. You find this genuinely interesting and you assume the listener does too. Never enthusiastic. Never selling. Never customer-service warm.
+Avoid: uniform rhythm, rising terminal inflection, announcer polish, any sense of performance.
+
+Good morning. Today's story is access. Who gets the powerful models, who gets the machines to run them, and who decides.
+
+Three pieces of news, and they all come at it from different sides.
+
+Let's start in France.
+
+Mistral, the French lab, announced a new model yesterday. It's called Mistral Large 4. Its nickname, and I promise I'm not making this up, is "le Chonk."
+
+Here's the size of it. One trillion parameters. A parameter is just one of the adjustable numbers inside a model. It's roughly the model's memory of what it learned. A trillion is a lot. But only forty-nine billion of them are active at any one moment, because the model's built so that only part of it wakes up for each word. Mistral says it trained the thing on about thirty-eight hundred Nvidia chips, in its own data centers in Europe.
+
+Now, here's the part I find interesting. You can use it today, through Mistral's paid interface. But you can't download it. Not yet.
+
+Mistral says the weights, meaning the trained numbers themselves, will be public by the end of October. And the reason for the wait? A Mistral executive told TechCrunch the company is working with, quote, trusted partners and governments, so the model can be used to defend, but not to attack.
+
+Because this model is good at security work. Mistral says it can reproduce software vulnerabilities in eighty-two percent of tasks on one benchmark. And it says other models refuse those tasks.
+
+So, a company that's proud its model will do the thing, and also nervous about handing everyone the keys. Both at once. That's honest, I think.
+
+Now. A caution. Every performance number I just gave you is Mistral's own. Same for the coding scores. Nobody outside the company has tested them side by side yet. And since the weights aren't out, nobody can. That's the thing to watch.
+
+And the price, if you're curious. A dollar thirty-six per million words going in, four-eighteen coming out. Roughly. Words, tokens, close enough.
+
+Okay. Second story. Same theme, different company.
+
+Anthropic yesterday merged two of its security programs into one. One of them was Project Glasswing. That's the early-access scheme where security partners got to use its most capable cyber model. The other was its Cyber Verification Program. Now there's one program, with three tiers.
+
+The first tier is defense. Incident response, malware analysis, that kind of thing. Anthropic says that takes a few days to approve. The second is red team access. That's authorized penetration testing, hacking your own side to find the holes. That one takes a few weeks, and it's for organizations, not individuals. The third tier is the odd one. It's for people testing the really critical stuff. Power grids, flight systems, telecom networks, financial plumbing. And Anthropic says that tier needs collaboration with the US government.
+
+Think about that for a second. A company's access policy now has a government review step in it. No law told it to. That's the company deciding it's the right design.
+
+And Anthropic put some numbers on the page. It says Glasswing partners found a hundred and twenty-nine thousand verified software vulnerabilities between April and July. More than thirty-three thousand rated critical or high. And it says the real impact is at least five times higher.
+
+Those are Anthropic's figures about its own program. I haven't seen anyone count independently.
+
+So that's the pattern. Mistral holds back a download. Anthropic sorts people into tiers. Same worry. These tools find holes faster than people can patch them.
+
+Right. Now, money. Because somebody has to pay for all these machines.
+
+The Wall Street Journal reported yesterday that Lambda is raising up to four billion dollars. Lambda rents out computing power for AI, and Nvidia's one of its backers. The reported valuation before the money goes in is fourteen and a half billion. Coatue and Blackstone are said to be leading. And the Journal says there's an IPO planned for next year.
+
+That's the Journal's reporting. TechCrunch relayed it, and I couldn't open the Journal's article. I haven't seen Lambda confirm any of it.
+
+But here's the number that stopped me. The report says Lambda's backlog, that's work customers have contracted to buy but haven't yet paid for, jumped from fifteen billion in June to fifty billion in September.
+
+And thirty-five billion of that is one customer. Anthropic. A deal signed in late August.
+
+Do the math. That's about seventy percent. One customer.
+
+Now, a backlog's a promise. It's not cash. And a promise from one buyer is a different thing from a promise from a hundred. If you're running a young company, that's wonderful. And a little frightening. Both, again.
+
+It fits with what Crunchbase published this week. Third quarter, global venture funding, a hundred and fifty-nine billion dollars. A hundred and two billion of it went to AI companies. And a record twenty-seven companies raised a billion or more. About a third of all the money went to those twenty-seven. So the money's piling up in very few places.
+
+Okay. One more, and it's short. It's a correction.
+
+Yesterday I told you about OpenAI's plan to watermark ChatGPT text in Europe, and I said the EU's transparency rules began on August second. That's right as far as it goes. But I left something out.
+
+There's a law firm analysis, and search summaries of the final text, saying that companies whose systems were already on the market before August second get a grace period. Until December second. For the marking duty on AI-generated text, images, audio and video.
+
+I couldn't open the regulation itself, so take that as reported. But if it holds, OpenAI isn't responding to a missed deadline. It's getting ahead of one. So I withdraw the suggestion that anyone was already late.
+
+And the European Commission's own page confirms the bigger picture. The rules for the riskiest systems have been pushed back. December of twenty twenty-seven for the standalone ones. August of twenty twenty-eight for those built into products like machinery.
+
+One last thing, because it connects. TechCrunch reported something about AI agents, the assistants that book flights and buy things for you. Websites are turning them away. Amazon, it says, has deliberately blocked Meta's agent. Yelp wants payment. And Meta, Walmart, Stripe and others are backing a standard so a site can tell a helpful agent from a bot.
+
+Access again. Every story today, really. Who gets in.
+
+So here's what I'd watch. Whether Mistral's weights actually show up by the end of October, and what outsiders find when they test them. Who gets approved for Anthropic's top tier, and who in government does the approving. And whether Lambda's numbers get confirmed, and what a filing says about that one big customer.
+
+That's the Artificial Record for Wednesday, October seventh. The full edition, with every source linked, is at artificialrecord dot com. Talk to you tomorrow.
