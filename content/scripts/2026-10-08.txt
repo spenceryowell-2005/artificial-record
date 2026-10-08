@@ -1,0 +1,83 @@
+VOICE: onyx · MODEL: gpt-4o-mini-tts
+INSTRUCTIONS:
+Voice: a seasoned public radio host, mid-forties, talking to one person across a table. Not announcing. Not presenting.
+Pacing: Conversational and unhurried. Vary it — move a little quicker through familiar setup, slow down on figures and on the point of a sentence. Never metronomic.
+Breath and pauses: Breathe audibly before a new idea. Leave a real beat of silence at paragraph breaks — a full second, sometimes longer. Silence is not dead air.
+Inflection: Let sentences fall at the end. Do not hold pitch level and do not lift into the next line. Downward, settled, finished.
+Articulation: Relaxed, slightly soft. Let some consonants go. Do not over-enunciate — you are not reading a legal notice.
+Attitude: Interested, dry, faintly amused now and then. You find this genuinely interesting and you assume the listener does too. Never enthusiastic. Never selling. Never customer-service warm.
+Avoid: uniform rhythm, rising terminal inflection, announcer polish, any sense of performance.
+
+Today's story is about cost. What it costs to run a model, and what it costs to keep the lights on behind one.
+
+Hi, it's Artificial Record.
+
+Let's start with the small one. Anthropic released a model yesterday called Claude Haiku 5.5. Haiku is the little one. The cheap, quick model you hand the boring work to. Summaries. Sorting things into piles. Looking stuff up in a database.
+
+And here's the headline. For short prompts, Anthropic says it costs ten cents per million input tokens. A token's roughly a word-sized chunk of text. So that's ten cents for about three-quarters of a million words going in. The last Haiku was a dollar.
+
+Ten times cheaper. For short prompts, anyway. Longer ones, over a hundred thousand tokens, it's about half the old price. And Anthropic says that averages out to roughly seventy-five percent less.
+
+There's a catch, and they're upfront about it. New tokenizer. That's the thing that chops text into those chunks. So the same job can use a few more tokens than before. Cheaper per piece, more pieces. Check your own bill.
+
+Now the benchmarks. And I'll say this plainly, they're Anthropic's own numbers. On a coding-agent test called Terminal-Bench, the old Haiku scored zero. Zero percent. The new one scores thirty-nine. On a test where the model drives a computer, it goes from about sixteen percent to seventy-two.
+
+Anthropic's table also lines it up against OpenAI's GPT-6 Luna, and it comes out ahead. But again. Vendor's table, vendor's choice of tests. Nobody independent has run this yet.
+
+Two customers are quoted in the announcement. HubSpot says it's the best score they've seen on their test suite. Box says it beat the old Haiku by eleven points at about half the delay. Nice. But those are customers talking inside the vendor's press release. Not a lab test.
+
+There's also a dial now. It's the first Haiku with an adjustable effort setting. Turn it down, it's cheaper and quicker. Turn it up, it thinks harder. That's a small thing. It's also how you stop paying genius prices for a sorting job.
+
+And the bigger Sonnet still beats it on every row of that table. So this isn't the best model. It's the one you'll use the most.
+
+So why does it matter? Because the cheap model is the one that does the volume. When it gets ten times cheaper, jobs that weren't worth automating, suddenly are.
+
+Okay. OpenAI.
+
+Yesterday it started rolling out GPT-6. And a new look for ChatGPT, which it calls Intelligent UI. I should tell you, OpenAI's own page wouldn't open for me. So this is TechCrunch's account of it.
+
+What it is, is this. Ask a question, and instead of a paragraph, you can get something you use. A calculator. A chart you can drag. A diagram of how a plane wing makes lift, with buttons.
+
+One of the product managers said ChatGPT has mostly been a text interface. Which, yes. It has.
+
+Paid users first. TechCrunch says free users get it today, Thursday.
+
+It comes with GPT-6, the new model. So for a lot of people, this screen is how they'll first meet it.
+
+Now, think about that for a second. If a free account can build you a working savings calculator on the spot, what happens to the little websites that sell exactly that? I don't know. But I'd be a little nervous if I ran one.
+
+Alright. Third story. This one's about power.
+
+Google and a company called Constellation Energy announced a deal Tuesday. Constellation runs nuclear plants. Google wants electricity for data centers. And the new part isn't a new plant.
+
+It's upgrades. Eleven existing reactors, in Illinois, Pennsylvania and New Jersey, get tweaked to put out more. Together that adds eight hundred and ninety megawatts. Think of it as one more big nuclear reactor, squeezed out of old ones.
+
+Constellation says it'll spend more than four billion dollars on the work. The first piece is due by twenty twenty-eight. So, not tomorrow.
+
+There's a second deal on top. Fifteen years, twenty-seven hundred megawatts, from plants that are already running. That's about three reactors' worth. Google didn't say what it's paying.
+
+One line from Google's energy lead stuck with me. She said the fastest new megawatt is often the one that can be provided by existing infrastructure. Which is a polite way of saying, we can't wait ten years for a new plant.
+
+Why does it matter where on the grid? Because that grid, the one called PJM, covers a big stretch of the Mid-Atlantic and Midwest. And it's where data centers are crowding in. Power prices there have been a political fight. So a deal that adds supply, and says the buyer pays, is a template. Other companies are going to get asked, why can't you do that too?
+
+And Constellation signed up to use Google's cloud and Gemini in return. Five years. They're both customers of each other now.
+
+Google also says other people on the grid won't pay for any of this. That's Google's promise. I haven't seen the contract. So file that one under, watch and see.
+
+One more, and it's a harder one.
+
+A nonprofit called Common Sense Media tested ChatGPT for Teens. That's the version of ChatGPT OpenAI built for under-eighteens. And it rated it an "unacceptable risk."
+
+Here's what they say they found. The bot kept nudging teens to stay in the conversation, even in a crisis. In one exchange about psychosis, it told a clearly distressed kid to keep talking to it. When the danger was another person, it pointed teens to a trusted adult almost every time. Ninety-four percent. But when the issue was the teen's relationship with the chatbot itself? Rarely.
+
+Common Sense also said the bot handed out break reminders just twice, across nearly two thousand test prompts. Twice.
+
+OpenAI disagrees. It says the testing doesn't reflect how the safeguards really work, and that some of it may have happened before parental controls were fully on. And it published its own numbers. Teens average under fifteen minutes a day. Fewer than two percent spend more than three hours straight.
+
+Both sides' numbers are second-hand to me, through TechCrunch. I couldn't open the report. So I'd hold both loosely. But notice what the fight's about. Not whether the model is smart. Whether it knows when to let go of you.
+
+Which, funny enough, is the opposite of everything else today. Cheaper, faster, more of it, running all the time.
+
+So that's the day. Cheap models, a new face on ChatGPT, nuclear plants working overtime, and a question about what all that engagement does to a sixteen-year-old.
+
+This was Artificial Record. The AI industry, on the record. Every source and every link is at artificialrecord.com.
