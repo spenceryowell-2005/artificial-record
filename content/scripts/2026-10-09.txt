@@ -1,0 +1,84 @@
+VOICE: onyx · MODEL: gpt-4o-mini-tts
+INSTRUCTIONS:
+Voice: a seasoned public radio host, mid-forties, talking to one person across a table. Not announcing. Not presenting.
+Pacing: Conversational and unhurried. Vary it — move a little quicker through familiar setup, slow down on figures and on the point of a sentence. Never metronomic.
+Breath and pauses: Breathe audibly before a new idea. Leave a real beat of silence at paragraph breaks — a full second, sometimes longer. Silence is not dead air.
+Inflection: Let sentences fall at the end. Do not hold pitch level and do not lift into the next line. Downward, settled, finished.
+Articulation: Relaxed, slightly soft. Let some consonants go. Do not over-enunciate — you are not reading a legal notice.
+Attitude: Interested, dry, faintly amused now and then. You find this genuinely interesting and you assume the listener does too. Never enthusiastic. Never selling. Never customer-service warm.
+Avoid: uniform rhythm, rising terminal inflection, announcer polish, any sense of performance.
+
+
+Today's story is about checking. Everybody's shipping machines that work on their own. Not many people can show you how they check the work.
+
+Good morning. Let's start with Google.
+
+Yesterday, Google Cloud introduced what it calls the Gemini agent. One agent, for work. You don't give it steps. You give it an objective, and it goes off and plans the thing, writes code, and hands you back finished work. In your documents. In your inbox. Google says it runs in the cloud, so a long job keeps going after you close the laptop.
+
+And it works across Google's own tools, but also Microsoft 365 and Slack. Which is a little remarkable on its own.
+
+Here's another one. By default, it picks the model for each task. Today, the choices are Google's Gemini and Anthropic's Claude. So Google's selling an agent that can hand your work to a rival's model.
+
+Now, the part I found most interesting. It's not the intelligence. It's the leash.
+
+Google says every agent gets its own identity. Every action's logged under the agent's name, not a person's. And there are spend caps, set per project. When the agent hits the cap, it just stops. Waits for a human to say go on.
+
+Think about why that's a feature. Customers are worried that an agent that keeps working keeps billing. So Google's answer is a pause button.
+
+A caution on the numbers. Google says per-token prices are down ninety-eight percent since twenty twenty-four. It says nearly ninety percent of the Fortune 100 use Gemini Enterprise. Those are Google's figures. Customer results in the post, too. And no price for the agent itself. TechCrunch says businesses get it first, consumers later.
+
+So. That's the leash.
+
+Now, Anthropic. Same theme, from a different angle.
+
+Anthropic announced what it's calling a Cyber Mission. Two pieces. One's for people who defend critical infrastructure. Power grids, water systems, that kind of thing. Eleven founding partners, including CrowdStrike, Palo Alto Networks, Deloitte, Rockwell Automation. Anthropic says it'll give them its strongest models, plus engineers on site.
+
+The other piece is a free scanner for open-source software. Projects opt in. Anthropic's models scan the code, and send back a report. A proof of concept, an explanation, a suggested fix if there is one.
+
+And here's the line that stopped me. Anthropic's own post says the reports are, quote, "model-generated and sent without human review." It says some may be wrong. Severity ratings, for instance.
+
+It says it expects more than ninety percent of the findings to be real. Notice the word. Expects. That's a target. Not a measurement.
+
+I like that they said it plainly. But think about the person on the receiving end. A volunteer maintainer, who gets a report, and has to decide if it's true. The checking didn't disappear. It moved to them.
+
+One more thing from that post. Anthropic says that in its earlier work, months often passed between finding a flaw and fixing it. And in industrial systems, some fixes could take years. Finding bugs is the fast part.
+
+One more piece of that, from earlier in the week. Anthropic merged two of its security programs into one, with three tiers of access. The broadest tier is for everyday defense work, and Anthropic says it aims to answer applicants within days. The top tier has the fewest blocks. It's for verified organizations testing things like power grids, and Anthropic says it reviews each one with the US government. So the access you get decides what the model will do for you.
+
+Anthropic also says its partners found at least a hundred and twenty-nine thousand verified vulnerabilities between April and July. Those are Anthropic's counts. Big number. Which is exactly why the fixing part matters.
+
+And one quick aside. Anthropic pledged a hundred and fifty million dollars over three years to the federal Genesis Mission, a science effort. Claude for more than fifteen agencies, including NASA. Anthropic doesn't say how much of that is cash and how much is credits for its own products. Worth asking.
+
+Alright. Third story, and it's about a number.
+
+Last week Axios reported that OpenAI's annualized revenue was approaching seventy billion dollars. Annualized means you take a recent stretch, and multiply it out to a full year. Now the Financial Times reports that OpenAI told investors the figure is approaching fifty. That's twenty billion dollars less.
+
+I couldn't open either page. So I'm going by TechCrunch's summary, and OpenAI hasn't commented that I can find. Treat the fifty as reported. Not confirmed.
+
+What's the gap? According to that summary, the higher number came from investors trying to compare OpenAI directly with Anthropic. And there's an accounting difference. Anthropic counts sales made through its cloud partners. OpenAI doesn't.
+
+Anthropic said its annualized revenue was sixty-five billion in July. CNBC reported that.
+
+So these two aren't measured with the same ruler. Which means the race you've been reading about depends, partly, on what you decide to count. Private companies, no audits. Until one of them files to go public, those are claims.
+
+Last one. And it's the cleanest example of the day.
+
+OpenAI put out a big batch of math. Its GitHub page lists seven hundred and nineteen manuscripts, written by an internal model. Some come with Lean versions. Lean is software that checks a proof, step by step, so you don't have to trust the author. OpenAI's own page says about forty-two percent of the top results are formalized. And it says, quote, "some of the unformalized results could have issues."
+
+Which is honest. But here's the problem.
+
+Late September, a group of mathematicians put out guidelines for labs doing this. Say what model you used. Say what prompts. Say how many attempts failed. Pay for humans to understand the results. TechCrunch reports OpenAI fell short on several of those. For instance, only ten of the seven hundred and nineteen came with reasoning summaries.
+
+And TechCrunch reports a paper from Cambridge and King's College London. It found at least two places where OpenAI's Navier-Stokes proof, written in plain language, doesn't match its Lean code. That's the million-dollar-prize problem. I haven't read the paper myself.
+
+So even the checker needs checking.
+
+I'll give you a short one, too. The researchers OpenAI fired last week published an open letter yesterday. They deny leaking and mishandling anything. OpenAI says there was a pattern of misconduct. Those accounts conflict, and nobody outside can sort them out yet. I'll leave it there.
+
+So, where does that leave us.
+
+Google built a leash. Anthropic admitted its scanner has no human in the loop. OpenAI's revenue, and its math, are both waiting on somebody else to confirm them. Different companies. Same gap. Output is cheap now. Verification is the expensive part.
+
+And that's probably where the next year's real work is.
+
+That's the Artificial Record for Friday. The AI industry, on the record. Every source and every link is at artificialrecord.com.
