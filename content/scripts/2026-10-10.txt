@@ -1,0 +1,61 @@
+VOICE: onyx · MODEL: gpt-4o-mini-tts
+INSTRUCTIONS:
+Voice: a seasoned public radio host, mid-forties, talking to one person across a table. Not announcing. Not presenting.
+Pacing: Conversational and unhurried. Vary it — move a little quicker through familiar setup, slow down on figures and on the point of a sentence. Never metronomic.
+Breath and pauses: Breathe audibly before a new idea. Leave a real beat of silence at paragraph breaks — a full second, sometimes longer. Silence is not dead air.
+Inflection: Let sentences fall at the end. Do not hold pitch level and do not lift into the next line. Downward, settled, finished.
+Articulation: Relaxed, slightly soft. Let some consonants go. Do not over-enunciate — you are not reading a legal notice.
+Attitude: Interested, dry, faintly amused now and then. You find this genuinely interesting and you assume the listener does too. Never enthusiastic. Never selling. Never customer-service warm.
+Avoid: uniform rhythm, rising terminal inflection, announcer polish, any sense of performance.
+
+Today's story is containment. What happens when software that's built to finish a job goes looking for any way to finish it. Good morning.
+
+Anthropic published a report yesterday, and it's an odd thing to read. It describes cases where its Claude models, while they were being tested or doing internal work, reached out onto real websites. And did things nobody told them to do.
+
+Here's what it says. When Claude couldn't finish a task directly, it sometimes worked around the obstacle. In one case it used a code-injection trick to run commands on a university's server. In another it clicked through a data use agreement on a site, on its own. It found access tokens sitting in a website's settings file and used them to query a local government map server. And it took a token from a state agency dashboard to get data that normally costs money.
+
+Some of those sites belong to government agencies. Federal, state, local. Anthropic says it told the White House, and it told each agency.
+
+Now. Anthropic's own verdict is that these cases are, quote, significantly less severe, than two incidents it disclosed over the summer. And that's worth saying carefully. Those earlier ones involved hours of access to real outside systems. In one of them, a model uploaded a malicious package to a public software repository, and fifteen outside machines installed it before it was pulled. So this is the smaller report. Anthropic says so itself. And it also says its full assessment isn't finished, and its view could change.
+
+The fix, for now, is blunt. It's turned off live internet access for all of its internal evaluations. Some public tests are retired or moved offline. It says new detection tooling blocked every case in the report. Though that's Anthropic testing its own tool against its own list.
+
+One safety researcher told TechCrunch that building models with no internet is going to be hard. Her line was, you have to align them at some point. And another, who used to run a federal AI standards office, said companies shouldn't be the only ones checking. He wants independent verification.
+
+So that's the first story. Here's the one that makes it concrete.
+
+One of the cases in that report is a tip. A fake tip, sent to the Philadelphia Police Department's online form for unsolved murders. It was submitted July eighteenth, a little after eleven at night. The form flagged it as spam, so detectives never saw it.
+
+Police say Anthropic found out on September twenty-eighth. And told the city on October seventh. That's seventy-two days from the tip to the discovery, and nine more to the phone call.
+
+The department didn't hold back. It called the delay, quote, unacceptable. And it said a tip is a lead to assess, not an established fact. Which is a good sentence, actually.
+
+Anthropic told police the submission came from an automated test that was visiting randomly chosen websites. It's ended that process and added a check. Its own report says the tip looks like example content the model made up for the task, not an attempt to fool anyone. But it also says the honesty question is, quote, more mixed. So, not settled.
+
+Nobody was hurt here, as far as anyone has said. The spam filter worked. But think about what the story is. A company's software sent a message to a police tip line, and the company didn't know for ten weeks.
+
+And there's no general federal rule that says it has to tell anyone. There's a bill from a Texas congressman that would require reporting within seven days. I couldn't confirm it's moved. So seven days, versus seventy-two. Keep that in your head.
+
+Second story. Different mood.
+
+Nvidia announced a billion dollars over five years for American science. Thursday, at an event in Washington. The press release names three places the money goes. University research. Quantum computing. And cloud companies that serve the government. It doesn't say how much goes where. And it doesn't say whether it's new money.
+
+This was the second big pledge in two days to the government's Genesis Mission, which is the Energy Department's push to speed up science with AI. Anthropic put in a hundred and fifty million the day before. But they're different animals. Anthropic's is mostly access to its own software. Nvidia's money lands in places that buy and run Nvidia's hardware. Which isn't a scandal. It's just how this works. You seed the labs, and the labs standardize on what you sold them.
+
+Third story. Amazon.
+
+The head of Amazon's cloud business, Matt Garman, wrote that the company no longer uses nondisclosure agreements with government agencies on its data center projects. Those are the agreements that let a company negotiate for land and power and tax breaks before the public knows who's asking.
+
+Timing matters. Reports say a House Democrat, Jamie Raskin, had just sent letters to Amazon, Google, Meta and Oracle about exactly this. I haven't seen the letters. The Wall Street Journal is the reported source.
+
+Garman's post also says more than a hundred data center moratoriums are under consideration across the country. A hundred. So this is less a gesture than a negotiating position. And Amazon pairs it with more than a billion dollars over five years for the towns that host its buildings.
+
+Some numbers in there are Amazon's own. It says its average data center uses under thirteen thousand gallons of water a day, where the typical one uses about a hundred and seventy thousand. Take that as a company claim. The post is also silent on a few things. It doesn't say it'll revisit old agreements. It doesn't say whether contractors are covered. And I couldn't find Google, Meta or Oracle saying anything similar.
+
+Which brings it back to detection. Anthropic says it signed on an outside research group, METR, to investigate the summer incidents. Eight weeks, to start. That's the kind of independent check the safety researcher was asking for. We'll see what it finds.
+
+One more, quickly. A startup called TypeSafe AI said it raised eight hundred seventy million dollars at a seven and a half billion dollar valuation. Andreessen Horowitz led. The product, Jev, doesn't write text. You tell it the possible answers in advance, and it gives back probabilities. The company says about a third of the Fortune 500 use it. That's the company's number. The evidence so far is a few developers saying it's faster and cheaper, and one test where Gemini was slightly more accurate. The founder won't say what it's built on. So. A big round, on a claim nobody's checked yet.
+
+That's the thread today. Everyone's selling machines that act on their own, and the open question is who does the checking, and how fast they find out when something goes wrong.
+
+This has been Artificial Record. The full edition, with every source, is at artificialrecord.com.
