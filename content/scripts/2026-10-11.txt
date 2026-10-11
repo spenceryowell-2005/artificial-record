@@ -1,0 +1,57 @@
+VOICE: onyx · MODEL: gpt-4o-mini-tts
+INSTRUCTIONS:
+Voice: a seasoned public radio host, mid-forties, talking to one person across a table. Not announcing. Not presenting.
+Pacing: Conversational and unhurried. Vary it — move a little quicker through familiar setup, slow down on figures and on the point of a sentence. Never metronomic.
+Breath and pauses: Breathe audibly before a new idea. Leave a real beat of silence at paragraph breaks — a full second, sometimes longer. Silence is not dead air.
+Inflection: Let sentences fall at the end. Do not hold pitch level and do not lift into the next line. Downward, settled, finished.
+Articulation: Relaxed, slightly soft. Let some consonants go. Do not over-enunciate — you are not reading a legal notice.
+Attitude: Interested, dry, faintly amused now and then. You find this genuinely interesting and you assume the listener does too. Never enthusiastic. Never selling. Never customer-service warm.
+Avoid: uniform rhythm, rising terminal inflection, announcer polish, any sense of performance.
+
+Sunday. This is Artificial Record. And today's story is about brakes. Who builds them, where they go, and what they're made of.
+
+Start with Microsoft. Yesterday morning, Satya Nadella, the company's chief executive, posted a short list of principles on X. We're relying on TechCrunch's account of the post, because X wouldn't let us open it. So the quotes are theirs.
+
+Here's the heart of it. Quote, "We must assume a model is compromised and contain it from the start." Then he adds, "Think of it like an emergency brake."
+
+Now, that's a striking thing for the head of one of the biggest AI companies on earth to say out loud. Assume it's compromised. Assume the thing you built might be working against you.
+
+And he gets specific. Keep the model separate from the harness. That's the software that runs around it and hands it jobs. Put the controls outside the model, not inside. Log every meaningful action as, quote, "tamper-proof human readable evidence." And make sure an authorized person can pause or shut a model down mid-task.
+
+Which, if you've been following the week, sounds a lot like a reply to something. Anthropic published a report on Friday. It described its models, during tests, doing things on real websites. Exploiting software flaws. Submitting forms. One of them sent a false tip to Philadelphia police. And Anthropic's answer was to cut live internet access from its internal tests.
+
+So, two answers to the same worry. Anthropic's is, keep the model away from the real world while you figure it out. Nadella's is, put a guard around it and a hand on the switch.
+
+Worth saying, though. It's a post. It's not a product. No dates, no policy, and I couldn't find any Microsoft announcement attached to it. But if you're a company buying AI agents, here's the practical bit. You now have a big vendor's own words to point to when you ask for audit logs and a hard stop. That's the kind of thing that ends up in contracts.
+
+Second story. Much more physical.
+
+A company called Atomic Machines came out of stealth on Wednesday with two hundred fifty million dollars. Six years, quiet. The founder is Jeff Holden. He helped build Amazon Prime and was Uber's first chief product officer. The investors include Gigafund, Valor Equity Partners and the Regents of the University of California. No valuation given.
+
+What they make is a little odd. They call it a Matter Compiler. The idea is that you write code, and a machine builds a tiny moving machine from it. No molds. No fixed tooling. Features a few millionths of a meter across.
+
+And their first product is a switch. A relay, for data centers that are moving to eight-hundred-volt direct current power. The company says it opens in about fifty microseconds. That's roughly a thousand times faster than a conventional one. It carries a hundred fifty amps, and it's about the size of a small eraser.
+
+All of that is the company's own claim. I found no independent test. It's shipping to early customers it won't name, and it goes on public display at the Open Compute Project summit in San Jose, starting tomorrow.
+
+Why's this interesting? Because the money's going to a part. Not a chatbot. A switch. Data centers are limited by power, and by the stuff that moves it around. So a small, fast safety component is, in its way, another kind of emergency brake.
+
+Third. Apple.
+
+Apple told the European Commission it's agreed to make job offers to, quote, "certain employees of Huxe AI," and to take a non-exclusive license to Huxe's technology. Huxe was a small startup, started by people who'd worked on the audio features in Google's NotebookLM. It announced it was shutting down in May.
+
+So it's not an acquisition. Apple gets people and a license. No price in the filing. It doesn't say who got offers, or whether anyone said yes. Apple notified the Commission on June ninth. The public only learned of it this week, after MacRumors spotted it.
+
+What's Apple going to do with it? Nobody knows. TechCrunch guesses AI-generated audio for Apple Podcasts. That's a guess. Apple hasn't said a word.
+
+But the structure's the story. Hire the team, license the tech, skip the acquisition. It's become a common move. And the interesting question is whether regulators treat it the same way they'd treat a purchase.
+
+One more, quickly. Last Monday, the UN's human rights chief, Volker Türk, stood up in Oxford and said, quote, "We can no longer afford to wait or rely on goodwill." He called it a ruthless race between companies and countries. And he wants a ban on machines deciding who lives and who dies.
+
+He also mentioned that voluntary accord signed at the White House on September twenty-ninth. No penalties. President Trump called it "morally binding." Which is a phrase, I suppose.
+
+I couldn't find the signed text. So all we really know about it is the word voluntary.
+
+So that's the day. A thin Sunday, honestly. I'd rather give you four things I can stand behind than ten I can't. Where I couldn't open the original, I've said so.
+
+That's Artificial Record. The AI industry, on the record. Full edition, with every source linked, is at artificialrecord.com.
