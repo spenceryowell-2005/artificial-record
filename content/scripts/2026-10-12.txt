@@ -1,0 +1,69 @@
+VOICE: onyx · MODEL: gpt-4o-mini-tts
+INSTRUCTIONS:
+Voice: a seasoned public radio host, mid-forties, talking to one person across a table. Not announcing. Not presenting.
+Pacing: Conversational and unhurried. Vary it — move a little quicker through familiar setup, slow down on figures and on the point of a sentence. Never metronomic.
+Breath and pauses: Breathe audibly before a new idea. Leave a real beat of silence at paragraph breaks — a full second, sometimes longer. Silence is not dead air.
+Inflection: Let sentences fall at the end. Do not hold pitch level and do not lift into the next line. Downward, settled, finished.
+Articulation: Relaxed, slightly soft. Let some consonants go. Do not over-enunciate — you are not reading a legal notice.
+Attitude: Interested, dry, faintly amused now and then. You find this genuinely interesting and you assume the listener does too. Never enthusiastic. Never selling. Never customer-service warm.
+Avoid: uniform rhythm, rising terminal inflection, announcer polish, any sense of performance.
+
+Monday's story is about who controls the supply. Chips, early looks at new models, even whole companies. Three stories, and I'll tell you how well I could check each one.
+
+So. Start with the one I can actually check, because Microsoft published it themselves.
+
+Today the company put out a blog post about its own AI chip. It's called Maia 300. Third generation. And the post says production deployments start in 2027, and Microsoft wants Maia to be, quote, the primary inference system for its own products and services.
+
+Inference. That's just the work of running a finished model. You type a question, the model answers. Training builds the thing. Inference is what happens every time somebody uses it. And that's the part that costs money, over and over, forever.
+
+Now the details. Each chip carries eight stacks of a very fast memory called HBM4. That's about two hundred and eighty-eight gigabytes per chip. A rack holds ninety-six of them, and draws a hundred and sixty-seven kilowatts. That's a lot. Think of several dozen households' worth of electricity, in one cabinet, all day.
+
+And then they link up to a hundred and twenty-eight racks together. Twelve thousand, two hundred and eighty-eight chips acting as one machine.
+
+Here's the part to hold loosely. Microsoft says Maia 300 should give forty percent more tokens per megawatt than leading GPU systems. And up to seven times the throughput of its current chip, Maia 200. Those are Microsoft's numbers. The chip isn't shipping. And the post doesn't name a single rival product it's comparing against.
+
+It also doesn't name an outside customer. And it doesn't say how many chips the manufacturer, TSMC, will actually make.
+
+What it does say is "multi-gigawatt" deployments, starting in 2027. A gigawatt is roughly one large nuclear reactor. If you spent a whole one on these racks, you'd need about six thousand of them. And that's before cooling, before networking, before anything else.
+
+The Information ran a story with the same headline-level claim, multiple gigawatts next year. That one's paywalled. I only saw the headline. So that's what I'm telling you.
+
+Why care? Because Microsoft is one of the biggest buyers of Nvidia and AMD chips on the planet. If it moves most of its own inference onto its own silicon, some of that spending goes in-house. How much, and when? The post doesn't say. They've promised more next month, at their Ignite conference.
+
+Okay. Second story. This one I can't check directly.
+
+Back in September, Politico reported that the White House asked OpenAI and Anthropic to hold back new models from the UK's AI Security Institute. That's the British body that tests models for safety risks before release. The ask was to wait until the US government had looked first. And Anthropic, it seems, went along. It kept its Mythos 5.1 model away from the British testers.
+
+Now the Daily Telegraph says that's been reversed. Yesterday, Sunday. The UK gets its early access back, for models from Anthropic, Google DeepMind and OpenAI.
+
+I couldn't open the Telegraph. What I read is The Decoder's summary of it. And that summary says it happened after diplomatic pressure from Britain's AI minister, Kanishka Narayan. He's apparently about to announce new safety measures, including stricter reporting when AI causes a security incident at critical infrastructure.
+
+I looked for a White House statement. Didn't find one. Didn't find one from the companies either.
+
+So here's where that leaves us. One newspaper says the door's open again. Nobody on the record has confirmed it. And notice what that means even if it's true. Whether an ally gets to test a model before you do isn't set by law. It's set by a request, and then by another request. That's a fragile way to run safety testing between countries.
+
+Third story. And this is the shakiest of the three.
+
+The Wall Street Journal reported Sunday that Amazon is in talks to buy Decart. Decart's an Israeli AI startup. The price is around seven billion dollars.
+
+The Journal's page is paywalled and my tools couldn't open it. All I've got is the headline, and a summary of it that says Anthropic had earlier passed on a deal around six billion.
+
+And that history is murky. In August, there were reports Anthropic was deep in talks to buy Decart. Amazon was named as one possible bidder, along with a couple of others. In September, a smaller site said Anthropic walked away after due diligence. I couldn't confirm either account anywhere solid.
+
+So, "in talks." Not signed. Neither company is quoted in anything I read. If it does happen, it's a cloud giant spending seven billion on a company well outside its core. Which tells you what strategic buyers will pay right now for an AI team.
+
+One more from Anthropic, because the numbers are interesting. Last week it widened a program that gives vetted security teams looser safeguards on Claude. And it published test results. Ten challenges, five tries each, fifty trials per tier.
+
+Without access to the program? Blocked on every task, from the very first prompt. At the basic defender tier, forty-six of fifty trials got blocked at some point, and four succeeded. At the red-team tier, nothing was blocked, and thirty-four of fifty tasks got done. Anthropic says that matches the model with no safeguards at all.
+
+Those are Anthropic's own tests, on Anthropic's own benchmark. Same for the claim that partners found at least a hundred and twenty-nine thousand verified software flaws between April and July. Nobody outside has audited that. But it shows you the design. Same model. Different doors. And the door you get depends on who vouches for you.
+
+And one more thing, quickly, as a contrast. TechCrunch reports a startup called Ambi has raised twenty-six million dollars. It makes apps that listen to you in the background, all day if you let them. Meeting notes, suggestions, that sort of thing. The company says the listening is off by default, and that it doesn't store recordings. But TechCrunch notes it's unclear whether the apps would tell other people they're being recorded. The founder says that's on the user.
+
+Which, if you've ever sat in a meeting with someone's phone on the table, is a thing to think about.
+
+That's the day. A chip you can read about but can't buy until next year. A policy reversal reported by one paper. And a deal that exists, for now, as a headline.
+
+I should say, a lot of the best sources today were locked to me. Reuters, Bloomberg, the Journal. So I left out what I couldn't trace.
+
+This is Artificial Record. The AI industry, on the record. The full edition, with every source linked, is at artificialrecord.com.
