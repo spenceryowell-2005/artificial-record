@@ -1,0 +1,50 @@
+VOICE: onyx · MODEL: gpt-4o-mini-tts
+INSTRUCTIONS:
+Voice: a seasoned public radio host, mid-forties, talking to one person across a table. Not announcing. Not presenting.
+Pacing: Conversational and unhurried. Vary it — move a little quicker through familiar setup, slow down on figures and on the point of a sentence. Never metronomic.
+Breath and pauses: Breathe audibly before a new idea. Leave a real beat of silence at paragraph breaks — a full second, sometimes longer. Silence is not dead air.
+Inflection: Let sentences fall at the end. Do not hold pitch level and do not lift into the next line. Downward, settled, finished.
+Articulation: Relaxed, slightly soft. Let some consonants go. Do not over-enunciate — you are not reading a legal notice.
+Attitude: Interested, dry, faintly amused now and then. You find this genuinely interesting and you assume the listener does too. Never enthusiastic. Never selling. Never customer-service warm.
+Avoid: uniform rhythm, rising terminal inflection, announcer polish, any sense of performance.
+
+
+Tuesday's thread is control. Who's got it over an AI model once it's out in the world. Four stories, and I'll tell you how well I could check each one.
+
+Start with Meta. On Monday it released two new models, Muse Wonder and Muse Wonder Full. Meta calls them its most capable. And says they're state of the art at agent work. That's the kind of task where the model plans a bunch of steps and just goes and does them.
+
+Now, here's the catch. The numbers behind that claim come from Meta's own model card. Meta's own. And Meta says some of the comparisons used different tools for different models. So it's not a clean race.
+
+What do those numbers say? On a long-running coding test, Wonder Full scores about fifty-seven and a half. Claude Opus 5.5 scores about forty-six. That's a real lead. But on a general composite index, Wonder Full gets fifty-six, and Opus 5.5 gets fifty-eight. So Meta's ahead on some coding tests, and behind on the overall score. Which isn't quite "best model in the world."
+
+The business detail I'd watch is the fine print. The standard Wonder model is sold through an API, four dollars per million input tokens, twenty on the way out. The bigger one, Full, isn't in the API at all. You get it through a coding subscription. And that subscription defaults to letting Meta use what you submit to improve its models. You can opt out. But only going forward. So, if your company's about to approve this for staff, read that setting first. Meta also says a full safety report is coming soon. Not yet.
+
+So that's one lab holding its model close, and selling it at a premium price. Meta says it trained them at a gigawatt-scale data center it calls Prometheus. Now the flip side, which is what happens when a model's value leaks out through the side door.
+
+Anthropic published two research posts Monday, and both are about what happens when models get out. The first is about distillation. That's when you train your own model on another model's answers, to copy what it can do. Anthropic says it's found a way to blunt that. Its new classifier, a program that flags requests aimed at pulling out Claude's reasoning, cut what copiers extract by ten to a hundred times. Anthropic's number. Anthropic's measurement.
+
+It also names names. It says a Chinese lab, Zhipu, copied cyber skills from American models while building its GLM-5.3. And that requests to another lab's models, Moonshot's Kimi, were quietly forwarded to Claude. One of them, Anthropic says, came from a user it believes was tied to China's army. I couldn't find a response from either company. And I haven't seen the evidence. So, allegations. Specific ones, but allegations.
+
+There's a cost to customers here, too. Anthropic now charges for requests its safeguards block in certain areas. And it admits some honest users had to rewire their setups.
+
+The second post is stranger. Anthropic's red team asks whether small AI models could copy themselves onto cheap, badly secured gadgets. Think off-brand TV boxes, about fifty-five dollars each. They ran a small open model across fifteen of them. It worked. At roughly a third of a word a second. Painfully slow.
+
+And in a simplified cloud test, one open model, GLM-5.2, spread to all eight test devices in four of five tries. But the authors are upfront. Their test left a door unlocked that real devices might not. And their summary line is, quote, "right now, the floor and ceiling don't intersect." Meaning, the models that can do it are too big for those devices. And the ones small enough to fit can't do it yet. They think that gap could close within about a year. That's a forecast. From a lab that sells security tools. From one proxy measure. Take it as a flag, not a finding.
+
+Which brings me to something that's already happening. A security team at Lumen published research on a botnet called PoeLLM. It's taken over more than thirty-four hundred servers, according to their summary. Though the body of their report gives a smaller number, about twenty-two hundred at the peak. So there's a discrepancy in their own paper.
+
+What's it going after? Exposed AI tools. Software that routes requests to models, or runs them locally. Left open on the internet. And the trick is nice, in an awful way. The malware finds its boss by reading four words from a poem on GitHub. Turns them into an internet address. The operator moves house by editing the poem. They've edited it eleven times. The fix is boring. Patch your software. Don't leave it open to the world.
+
+Last story. Character.AI. It's the chatbot company where you talk to characters. On Monday it said it filed for bankruptcy. And that it's selling some assets to Disney for twenty million dollars.
+
+Disney's what they call a stalking-horse bidder. An opening offer. Others can top it. What Disney gets is a license, not exclusive, to some of the company's intellectual property. The company says it expects to close by late November or early December. And if no buyer keeps it running, the service shuts down.
+
+Now, the backstory matters. Google licensed the technology in twenty twenty-four and rehired the founders. The company's been sued. A Florida mother, in a case that settled this year. Kentucky. Pennsylvania. Disney sent a cease-and-desist letter last year over its characters. Then in September, Disney hired Character.AI's former CEO as its first company-wide tech chief. I'll say what I don't know. The reporting I read doesn't say what caused the filing. And I couldn't find the court docket. NBC, carrying Reuters, is the source.
+
+Quick detour to India. Google says its planned data center in Visakhapatnam will use air cooling, not water. Residents objected, because the area's short on water. It's a fifteen billion dollar project, and Google says it opens in twenty twenty-eight. It's about a gigawatt. Which is roughly one large nuclear reactor's worth of power. Google says it'll pay for the grid upgrades, and claims about six hundred eighty-eight million dollars a year in local activity. Those are Google's numbers. Activists want a pause on new data centers across the state. The report's from AFP.
+
+One more thing, quickly. The White House said eleven companies pledged two point four billion dollars to a science program called the Genesis Mission. Nvidia a billion. AMD five hundred million. The fact sheet doesn't say how much is cash, and how much is credits and software. That's the part to ask about.
+
+So here's the thread again. Meta guards its models. Anthropic's trying to stop others copying its own. And somewhere out there, someone's hijacking servers with a poem. Control's a lot harder than it sounds.
+
+That's Artificial Record. The AI industry, on the record. Every source, and every link, is at artificialrecord.com.
