@@ -1,0 +1,55 @@
+VOICE: onyx · MODEL: gpt-4o-mini-tts
+INSTRUCTIONS:
+Voice: a seasoned public radio host, mid-forties, talking to one person across a table. Not announcing. Not presenting.
+Pacing: Conversational and unhurried. Vary it — move a little quicker through familiar setup, slow down on figures and on the point of a sentence. Never metronomic.
+Breath and pauses: Breathe audibly before a new idea. Leave a real beat of silence at paragraph breaks — a full second, sometimes longer. Silence is not dead air.
+Inflection: Let sentences fall at the end. Do not hold pitch level and do not lift into the next line. Downward, settled, finished.
+Articulation: Relaxed, slightly soft. Let some consonants go. Do not over-enunciate — you are not reading a legal notice.
+Attitude: Interested, dry, faintly amused now and then. You find this genuinely interesting and you assume the listener does too. Never enthusiastic. Never selling. Never customer-service warm.
+Avoid: uniform rhythm, rising terminal inflection, announcer polish, any sense of performance.
+
+Wednesday's thread is AI leaving the lab. Landing in rooms where somebody can check it, buy it, or, in one case, bug it. Four stories.
+
+Let's start with the strange one.
+
+Federal prosecutors in San Francisco have charged an OpenAI engineer. His name's Abdulrahman Alfozan, he's thirty-five. The charge is using a device to intercept oral communications. And I should say right away, these are allegations. He hasn't been tried. Everything I've got comes from the San Francisco Standard's reporting on the complaint, and from OpenAI's own statement.
+
+Here's the story as they tell it. On September thirtieth, OpenAI staff sweeping their offices found a recording device. It was plugged into a USB port behind the TV in an executive conference room. Wrapped, they say, in toilet paper. The contents were encrypted. The company thinks it went in around September twenty-eighth.
+
+Prosecutors say he wasn't allowed in that room. They also say a chatbot account tied to his spouse asked, in so many words, how to build a continuous audio recorder. And how to encrypt the SD card. Then on October fifth, security found a bag he'd left sitting in another room. Wallet, ID, and a second recording device.
+
+Now. The line that got attention is this one. OpenAI says its own AI models helped identify the device and where it came from. And, well. It hasn't said which models. Or what they actually did. So that part, you're just taking on the company's word.
+
+What I find more interesting is the room. Prosecutors say it hosted talk about product roadmap, research, government dealings. The U.S. Attorney called it a matter of national security. The head of the FBI said protecting American AI is a top counterintelligence priority. So that's the shift. Frontier labs are now the kind of place people try to bug. Detention hearing's October nineteenth. If it goes to trial, we'll learn a lot more.
+
+Second story. Google.
+
+Two weeks ago Google announced Gemini 4 Argon, its new flagship. But only to a small group of vetted cyber defenders. Wider access, it said, would come. Well, on Tuesday it came. Argon's now in the Gemini app for people on the Pro and Ultra plans. And developers can use it on the paid tier of the Gemini API.
+
+What's new in the app? Google says answers are more direct, less hedging. And you can flip a switch so Gemini keeps working on tasks while you're away from your computer. It lists connections to more than forty apps. Instacart. OpenTable. Adobe. Shopify.
+
+What Google didn't put in those posts is a price. Or a benchmark. Nothing on context window either. So the numbers from the September launch, those were Google's own claims, and they still are. And Bloomberg reported back then that some Google employees thought it did worse on real coding than the scores suggested. Google disputed that. I couldn't read Bloomberg's piece myself, so call it reported, not established.
+
+So here's where that leaves you. If you're a buyer, you'd test it on your own work first. And ask Google for the regular price in writing. Because the introductory rate won't last.
+
+Third. Chips, and China.
+
+Reuters has some data from IDC, the research firm. In the first half of this year, Nvidia held thirty-four percent of China's market for data-center AI chips. It shipped six hundred seventy-eight thousand of them. That's down forty-four percent from a year ago. Huawei shipped five hundred seventy-two thousand. Up from just over three hundred thousand. Twenty-eight percent of the market.
+
+And the mix is shifting too. The general-purpose chips, GPUs, fell twenty-six percent. Chips built for specific jobs, like running a trained model, rose almost eighty percent. And they've now passed GPUs by volume. Four Chinese companies hold ninety-five percent of that second group.
+
+Two caveats. IDC didn't say which Nvidia products make up that thirty-four percent. Or whether smuggled chips are counted. And Nvidia didn't answer Reuters. So it's a research estimate. A good one, probably. But not Nvidia's own number.
+
+What it says, though, is that Chinese buyers are building around American supply. Not waiting for it.
+
+Last one, and it's quicker. Apple.
+
+On Tuesday Apple held a home-focused event. It showed a smart display called HomeView. Seven-inch screen, runs the new Siri, two hundred ninety-nine dollars. Ships November thirteenth. There's a new Apple TV, also two hundred ninety-nine, a hundred more than before. And a new HomePod mini at a hundred forty-nine dollars.
+
+Here's the part I liked. The cheapest new speaker launches without the new Siri. Apple says a software update will add it. No date. So you can buy the AI speaker. Just not the AI.
+
+I'm working from Engadget and Tom's Guide there. Apple's own site wouldn't open for me, so prices and dates are as they report them.
+
+Two small things before I go. Mistral says the open weights for its Large 4 model are coming by the end of October, after some red-teaming. No license named yet. And Anthropic opened a Singapore office, and signed an agreement with the government there on safety testing. That's a statement of intent. Not a contract.
+
+That's the day. This has been Artificial Record. More at artificialrecord.com.
