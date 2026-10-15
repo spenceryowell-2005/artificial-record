@@ -1,0 +1,71 @@
+VOICE: onyx · MODEL: gpt-4o-mini-tts
+INSTRUCTIONS:
+Voice: a seasoned public radio host, mid-forties, talking to one person across a table. Not announcing. Not presenting.
+Pacing: Conversational and unhurried. Vary it — move a little quicker through familiar setup, slow down on figures and on the point of a sentence. Never metronomic.
+Breath and pauses: Breathe audibly before a new idea. Leave a real beat of silence at paragraph breaks — a full second, sometimes longer. Silence is not dead air.
+Inflection: Let sentences fall at the end. Do not hold pitch level and do not lift into the next line. Downward, settled, finished.
+Articulation: Relaxed, slightly soft. Let some consonants go. Do not over-enunciate — you are not reading a legal notice.
+Attitude: Interested, dry, faintly amused now and then. You find this genuinely interesting and you assume the listener does too. Never enthusiastic. Never selling. Never customer-service warm.
+Avoid: uniform rhythm, rising terminal inflection, announcer polish, any sense of performance.
+
+Good morning. Today's story is about who's building for the long haul, and how far out they're willing to commit.
+
+Start with TSMC. They're the company that actually manufactures chips for Nvidia, AMD, Apple, a lot of the names you know. This morning they reported results for the quarter that ended September thirtieth. Revenue was forty-six point seven billion dollars. That's up about forty-one percent from a year ago. And it's above the top of the range the company itself had guided to. So, a beat.
+
+Now, the number I find more interesting is the forecast. For the current quarter, they're telling investors to expect fifty-two to fifty-four billion dollars. For the full year, revenue up around forty-four percent. The quarter they just closed was thirty-three billion a year earlier. So the fourth quarter could be well over fifty percent bigger than that one was.
+
+And they're spending to match. Capital spending was about four hundred forty-three billion Taiwan dollars in the quarter. That's up more than half from a year ago.
+
+Here's a detail that's easy to miss. Wafers, the silicon discs the chips are cut from, were up only about three percent from the last quarter. Revenue was up sixteen. So most of that growth isn't more chips. It's pricier chips. Newer ones. That's my read, by the way, not something TSMC says. But the arithmetic points that way.
+
+And the newest process, what they call two-nanometer, is already eight percent of wafer revenue. The CFO called the ramp steep.
+
+One caution. TSMC doesn't report an AI line. They don't say, here's what we earned from AI. You can see the direction of travel, but nobody's handing you the share.
+
+So that's one end of the chain. Now, the other end.
+
+ASML. Dutch company. They make the machines that TSMC and others use to print circuits onto silicon. Without their machines, there's no leading-edge chip. Full stop. They reported yesterday. Sales of about eleven point seven billion euros for the quarter, and a forecast for the full year of forty-four to forty-five billion.
+
+But the line that caught my eye is from the CEO, Christophe Fouquet. He said customers are raising their demand forecasts, and he put it this way. Quote, driven primarily by their views on the size and duration of AI-related investments. End quote.
+
+And then this. Some customers, he said, want to place orders for twenty twenty-nine. Even twenty thirty.
+
+Think about that. It's October of twenty twenty-six. Somebody wants to reserve a machine four years out.
+
+He also said what ASML plans to build for twenty twenty-seven and twenty twenty-eight won't fully meet demand. So they're looking at adding capacity beyond the thirty percent increase they'd already announced.
+
+Now. Let's be careful. This is a company describing what its customers have told it. Interested in ordering isn't the same as ordering. And as far as I could tell from the release, there's no bookings number to check it against. So what you've got is a supplier saying its customers are planning for a long future. That's a bet. It's a big, expensive one. But it's still a bet.
+
+And ASML put real money behind its own side of it. About four billion euros on buying back shares, just in this quarter. That's a company that feels fine about where it sits.
+
+Quick one before that. A French cloud company called Scaleway said it's building an AI supercomputer in Sweden, on AMD chips, not Nvidia. They call it the first commercial AMD system of its kind in Europe. But they haven't said how many chips, how much power, or when. So I can tell you who they picked. I can't tell you how big it is.
+
+Alright. Different layer of the stack.
+
+Anthropic put out a post yesterday about the midterm elections. And what I liked is that it included actual numbers. They took a random sample of two hundred fifty thousand American conversations on Claude dot ai, from one week in late September. About five point seven five percent touched politics or policy in some way. About half a percent were specifically about elections or voting. And about one hundredth of one percent asked Claude who to vote for.
+
+That last one's a ceiling, by the way. It's the top end of a statistical range, not a point estimate.
+
+And requests that broke their election rules? Two thousandths of a percent. Tiny. Though it's one week, on one product's consumer traffic. It tells you nothing about other chatbots, and nothing about the developers building on Claude.
+
+Now, the part I'd flag. Anthropic says its newest models scored ninety-nine percent on its own test for political evenhandedness. Its own test. Worth knowing. The post also describes outside reviewers, and they found some things. One found an older model sometimes softened right-leaning arguments more than left-leaning ones. Others found Claude rarely refuses, but sometimes tacks on a counterargument nobody asked for. Like putting the opposing view into an email you wanted persuasive.
+
+And the red-teamers, the people paid to break it, found Claude was good at refusing one bad request. Less good when a bad campaign was chopped into a lot of innocent-looking tasks. So Anthropic says it's added detectors for that.
+
+It also says it caught a foreign-based operator using Claude to churn out fake news about the midterms, tilted toward Russian, Iranian and North Korean narratives. Banned the accounts. That's their account. They didn't name anyone.
+
+One more. Smaller company, but I think it says something.
+
+Modal. It rents out computing so that developers can run AI code without managing machines. Yesterday, the CEO, Erik Bernhardsson, wrote that they've raised seven hundred fifty million dollars. Valuation, fifteen point seven five billion. Led by Accel.
+
+And he says they've crossed a billion dollars in annualized revenue. That's the company's number, unaudited. Annualized just means you take a recent stretch and multiply it out to a year.
+
+The piece I'd point at is something called Sandboxes. Basically, a safe little room where an AI agent can run code without wrecking anything. Modal says that one product alone is on a three hundred million dollar run rate. Nearly three billion sandboxes launched.
+
+Think of it this way. Everyone's talking about the models. But somebody has to rent out the rooms the models work in. That's a business now.
+
+Same caveat as always. Customers they name, DoorDash, Ramp, Suno, those are Modal's claims. I haven't checked them with the customers.
+
+So where does that leave us? A chipmaker forecasting a bigger quarter. A machine maker hearing about orders for twenty thirty. A startup renting rooms for agents. Everyone building for a future that they're assuming shows up. And the open question, the one none of these documents answers, is whether people paying for AI at the end of the chain will pay enough to fill it all.
+
+That's the record for today. This is Artificial Record. Find the full edition, with every source, at artificialrecord dot com.
