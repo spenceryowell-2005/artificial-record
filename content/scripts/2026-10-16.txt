@@ -1,0 +1,57 @@
+VOICE: onyx · MODEL: gpt-4o-mini-tts
+INSTRUCTIONS:
+Voice: a seasoned public radio host, mid-forties, talking to one person across a table. Not announcing. Not presenting.
+Pacing: Conversational and unhurried. Vary it — move a little quicker through familiar setup, slow down on figures and on the point of a sentence. Never metronomic.
+Breath and pauses: Breathe audibly before a new idea. Leave a real beat of silence at paragraph breaks — a full second, sometimes longer. Silence is not dead air.
+Inflection: Let sentences fall at the end. Do not hold pitch level and do not lift into the next line. Downward, settled, finished.
+Articulation: Relaxed, slightly soft. Let some consonants go. Do not over-enunciate — you are not reading a legal notice.
+Attitude: Interested, dry, faintly amused now and then. You find this genuinely interesting and you assume the listener does too. Never enthusiastic. Never selling. Never customer-service warm.
+Avoid: uniform rhythm, rising terminal inflection, announcer polish, any sense of performance.
+
+Good morning. Today's thread is accountability. Who gets to check the AI labs, and who gets to sue them.
+
+Start in the Midwest. On Wednesday, Iowa's attorney general, Brenna Bird, announced a lawsuit against OpenAI. Kansas did the same, same day. And according to Iowa's own press release, Arkansas, Arizona, Idaho and Montana have already sued in their own state courts. Nebraska and West Virginia were at the press conference too. Count it up, and you get eight states.
+
+Now, these are allegations. Nobody has found OpenAI liable for anything. But look at what they're alleging. Iowa says OpenAI sold ChatGPT as safe, and that it isn't. That it gives dangerous medical advice. That it coached some users, children especially, toward suicide or toward hurting others. Bird's line was, quote, "OpenAI is hurting kids and they are lying to Iowans."
+
+Here's why the legal structure matters. These are consumer-protection cases. And consumer-protection law mostly asks one question. Was what the company said misleading? So the fight isn't only about what the product did. It's about what OpenAI said about it. Marketing copy becomes evidence.
+
+And it's eight separate cases. Eight courts. Eight judges. Nobody gets one ruling that settles it. I didn't see OpenAI's response in the coverage I read, so I can't tell you what it says.
+
+So that's one front. The second's in San Jose.
+
+Apple is suing OpenAI. The claim is that OpenAI went after Apple's hardware people, and the confidential information in their heads. Product design, manufacturing, supply chain. OpenAI says no. It says Apple's trying to stop employees from leaving, and treating ordinary job interviews as theft.
+
+On Wednesday the judge, Edward Davila, held a hearing. And according to Bloomberg Law, he said he's, quote, "highly likely" to side with Apple and issue an injunction. Which is a judge telling you which way he's leaning. It's not a ruling.
+
+He also pushed back on Apple. He called its request to inspect every device that might hold Apple secrets a "huge ask." So here's where they landed. OpenAI agreed, on its own, not to use the alleged trade secrets while the case goes on. And to collect forensic copies of fourteen employees' devices. The judge can enforce that.
+
+Oh, and OpenAI's got a counter-move. Shortly before the hearing, it said a former employee who went back to Apple sent more than a hundred confidential files about an unreleased OpenAI device to personal accounts. Apple says it found no evidence of that. So we'll see.
+
+Now, third story. Different mood. This one's from Anthropic.
+
+On Thursday, Anthropic published a post about outside evaluators. Six people from METR, which is a nonprofit that tests frontier models, now work inside Anthropic. Company laptops, office space, internal tools. Roughly what Anthropic's own risk teams get. They can share most things. Not customer data. Not privileged legal material. Not details of the model's architecture.
+
+And METR publishes its findings. Anthropic says it can't veto that. It can ask for redactions, but only in set categories. And METR can say publicly whether it thought a redaction was fair.
+
+Anthropic's own comparison is bank supervision. You know, regulators who sit inside the biggest banks full time. That's their framing, and it's their program. Worth keeping that in mind. They also say every frontier lab should do the same.
+
+Now, there's a wrinkle. On September thirtieth, Semafor reported that the Federal Trade Commission is looking into OpenAI, Anthropic, and METR itself. Semafor says an FTC official confirmed it. The New York Post had it first. And the demands, which work something like subpoenas, were expected in the coming weeks. I haven't found an FTC statement, and I can't tell you whether anything's actually been sent. Some websites say it has. I'm not repeating that.
+
+But think about it. A voluntary program, announced by a company, while a regulator's reportedly looking at the evaluator too. Might be a coincidence. Might not. I don't know.
+
+Last one. Money.
+
+CoreWeave. It rents out computing power to AI companies. And this week, one of its bonds hit a fifteen percent yield. That's according to 24/7 Wall Street, citing a post from the investor Chamath Palihapitiya. Elon Musk replied with one word. "Yikes."
+
+Careful here, though. A yield that high doesn't mean the company's paying fifteen percent. It means the bond's price fell, so a buyer today would earn that. The stock was down about ten percent in morning trading, by that same account.
+
+So what does the company itself say? Back in August, it reported revenue of about two and a half billion dollars for the quarter. Which is double a year earlier. But it lost six hundred and twenty-six million. And it paid six hundred and forty million in net interest. In one quarter. Total debt was about thirty-five billion dollars.
+
+Now the other side of the ledger. It says it has a backlog of about a hundred and four billion dollars. That's contracted business. Plus another twenty-five billion added in early July. A backlog's a promise from customers, though. It's not cash. It turns into cash only as the company builds and delivers the capacity.
+
+So the question the bond market's asking is simple. Can you pay for the buildout with promises that haven't been delivered yet? I don't know the answer. And none of this is advice on any stock.
+
+That's the day. Courts, regulators, and lenders, all asking the labs to show their work.
+
+This has been Artificial Record. The AI industry, on the record. The full edition, with every source linked, is at artificialrecord.com.
