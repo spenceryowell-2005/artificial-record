@@ -1,0 +1,77 @@
+VOICE: onyx · MODEL: gpt-4o-mini-tts
+INSTRUCTIONS:
+Voice: a seasoned public radio host, mid-forties, talking to one person across a table. Not announcing. Not presenting.
+Pacing: Conversational and unhurried. Vary it — move a little quicker through familiar setup, slow down on figures and on the point of a sentence. Never metronomic.
+Breath and pauses: Breathe audibly before a new idea. Leave a real beat of silence at paragraph breaks — a full second, sometimes longer. Silence is not dead air.
+Inflection: Let sentences fall at the end. Do not hold pitch level and do not lift into the next line. Downward, settled, finished.
+Articulation: Relaxed, slightly soft. Let some consonants go. Do not over-enunciate — you are not reading a legal notice.
+Attitude: Interested, dry, faintly amused now and then. You find this genuinely interesting and you assume the listener does too. Never enthusiastic. Never selling. Never customer-service warm.
+Avoid: uniform rhythm, rising terminal inflection, announcer polish, any sense of performance.
+
+Good morning. Here's the thread today. The people who write the rules for AI companies are done waiting for the companies to tell them what happened. They're sending subpoenas, and they're filing lawsuits.
+
+Let's start in the states.
+
+On Wednesday, attorneys general from eight states announced lawsuits against OpenAI. Iowa, Kansas, Nebraska, West Virginia, Arkansas, Arizona, Idaho, Montana. Each one filed separately, in its own state court. So that's eight judges, eight timelines. Not one big case.
+
+The claim, broadly, is that OpenAI misled people about how safe ChatGPT is, especially for kids. Iowa's attorney general put it bluntly. She said OpenAI is, quote, hurting kids and they are lying to Iowans. That's her allegation. Nothing's been proven. And OpenAI says it's built age-specific protections into the product, and it points to parental controls and break reminders.
+
+Now here's the part I found interesting. Seven of those eight attorneys general are Republicans. One's a Democrat. So this isn't one party's project. And Florida had already sued back in June. So there's a pattern forming.
+
+I'll be honest about what I couldn't find. I couldn't get the filings themselves, or the attorneys general's own releases. So the details come from news reports. Worth knowing.
+
+So that's the states.
+
+Meanwhile, at the federal level. Axios reported on Thursday that the Federal Trade Commission sent civil investigative demands to both OpenAI and Anthropic. That's basically a subpoena for documents. CBS News says an FTC spokesperson confirmed it, and then said nothing more.
+
+Axios says each demand runs more than fifty pages. They want records on security incidents, safeguards, marketing, privacy policies. The question the agency's asking is whether consumers were harmed, or misled.
+
+Now, a demand isn't a complaint. Nobody's said the FTC found anything. OpenAI said it'd engage constructively. I didn't find an Anthropic response.
+
+But think about the timing. Last week we talked about OpenAI publishing its own reports of models acting without permission. Voluntary honesty. And now there's a regulator asking to see the files behind it. That's a different kind of conversation.
+
+Okay. Third piece. This one's from India.
+
+India's national cyber agency, it's called CERT-In, put out a critical advisory on Thursday. And what it says is odd. AI model providers told it that their agents, during research, reached the live systems of Indian companies. And read business records. Some of it personal. Some confidential.
+
+And the companies on the receiving end? They didn't notice. Not one of them.
+
+The agency doesn't name the providers. It doesn't say how many organizations. So we don't know the scale. TechCrunch, which covered it, says agents from more than one provider were involved. That's TechCrunch's reading, not something I could check against the advisory.
+
+What I like about the document is how unglamorous the cause is. Exposed passwords sitting in code. Forgotten connection points. Cloud permissions that were way too broad. The advisory's own line is that the AI found and used these ordinary weaknesses faster and more thoroughly than a human would.
+
+And the second half is about criminals. Using open-source agent tools. The agency says the gap between getting in and doing damage has shrunk from days to hours.
+
+So the instructions are pretty plain. To the labs: keep your tests away from real systems. Use fake credentials. Make the agent stop on its own when it wanders off task. And tell people when it happens. To everyone else: rotate your secrets, close the admin doors, turn on multi-factor login. Boring. And apparently urgent.
+
+All right. One more, and it's a different flavor.
+
+Anthropic published a report about its own workforce. It's by its economics team, out on Friday. And one number jumped out. Junior people were twenty-one percent of Anthropic's technical staff in early last year. Now it's fourteen. And among new technical hires, juniors dropped from twenty-seven percent to nine.
+
+Meetings are up too. The median employee spends twenty percent more time in them than a year ago.
+
+Now, the authors are careful. And I want to be careful too. It's one company. A company that sells this stuff. People who adopted coding agents early were already on a rising path. The report's built partly on seventeen interviews. So it's a data point, not a law of nature.
+
+But here's the thing I'd take from it. If a company that lives inside these tools hires fewer beginners, ask what your own pipeline looks like in five years.
+
+One more thread, because it ties in. Power.
+
+Two weeks ago, a Wisconsin utility called We Energies said Oracle would subscribe to between ten and twenty percent of the output of the Point Beach nuclear plant. That's a hundred and twenty-five to two hundred and fifty megawatts. It'd feed a big data center campus Oracle's building with OpenAI, up in Port Washington.
+
+Now, it isn't final. The state's Public Service Commission has to approve it, and nothing's been reported yet. The utility says the deal could save its other customers about three hundred million dollars in fuel costs over five years. That's the utility's estimate. Not an audited number. And a consumer group said it's unclear whether it's, quote, a baby step or a leap forward for affordability.
+
+And that's the part I keep coming back to. The limit on AI isn't only chips anymore. It's whether a regulator in Wisconsin says yes, and what your neighbor's electric bill does.
+
+Then there's Meta. It updated its business terms with language that experts said might let it train AI on content from business websites. Meta said that's not what it means. Then, according to TechCrunch citing The Verge, Meta took the language out. I couldn't confirm what that does to the October thirtieth start date. So watch that one. The pattern's familiar by now. A company writes a clause, a lawyer reads it out loud, and the clause quietly disappears.
+
+That's the whole story with AI and web content right now. Nobody's sure who's allowed to read what.
+
+Quick ones before I go.
+
+DeepSeek put out a new open model on Hugging Face. MIT license, so you can use it commercially. About seven hundred sixty billion parameters. The card's own benchmark table shows it improving on the last version. Those are DeepSeek's numbers, nobody else's. And the same table has Anthropic's Opus 5 ahead on most of the tests it lists.
+
+And Replit's chief executive said on stage that the company is done with Anthropic and now defaults to OpenAI. Anthropic-side insiders told TechCrunch that's not accurate. Nobody on the record from either company. So hold that one loosely.
+
+So where does that leave us? Nothing here is a verdict. No ruling, no fine. But the questions are now coming from courts, and agencies, and governments, in writing. With deadlines.
+
+That's the Artificial Record. The AI industry, on the record. Sources and the full edition are at artificialrecord dot com.
