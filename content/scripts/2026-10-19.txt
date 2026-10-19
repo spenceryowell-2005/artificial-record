@@ -1,0 +1,65 @@
+VOICE: onyx · MODEL: gpt-4o-mini-tts
+INSTRUCTIONS:
+Voice: a seasoned public radio host, mid-forties, talking to one person across a table. Not announcing. Not presenting.
+Pacing: Conversational and unhurried. Vary it — move a little quicker through familiar setup, slow down on figures and on the point of a sentence. Never metronomic.
+Breath and pauses: Breathe audibly before a new idea. Leave a real beat of silence at paragraph breaks — a full second, sometimes longer. Silence is not dead air.
+Inflection: Let sentences fall at the end. Do not hold pitch level and do not lift into the next line. Downward, settled, finished.
+Articulation: Relaxed, slightly soft. Let some consonants go. Do not over-enunciate — you are not reading a legal notice.
+Attitude: Interested, dry, faintly amused now and then. You find this genuinely interesting and you assume the listener does too. Never enthusiastic. Never selling. Never customer-service warm.
+Avoid: uniform rhythm, rising terminal inflection, announcer polish, any sense of performance.
+
+Good morning. Here's the thread today. Somebody always ends up holding the risk in the AI build-out, and this week we got to watch three different answers to who that is.
+
+Let's start with the money.
+
+Last week was a rough one for chip stocks. The Nasdaq fell four and a half percent. That's the worst week for it since June. The S&P 500 dropped almost two percent. And the biggest losers were the chip makers. Micron and Intel each fell more than five percent on Friday alone.
+
+Now, why? Depends who you ask. Reporters point to a few things. Inflation came in at three point seven percent for the year, and that's the government's own number. The Federal Reserve has already raised rates once, in September, and it meets again on the twenty-seventh and twenty-eighth. And there's a worry about how much of this build-out is paid for with borrowed money. Those are reporters' explanations. Nobody's proven which one mattered most.
+
+But the borrowing part is worth a minute. CoreWeave rents out computing power to AI companies. Its bonds, the ones due in twenty thirty-two, were yielding about fifteen percent this week. That's according to CNBC, as summarized by a market site. Fifteen percent. A yield is basically what lenders demand to take the risk. Fifteen percent means they want a lot.
+
+CoreWeave's chief executive called the market's reaction irrational, in an internal memo. He said the company's contracted backlog more than covers its debt. That's the memo as reported, not something the company published. So take it as his view.
+
+And here's the number that put it in scale for me. The same report says Alphabet, Amazon, Meta and Oracle had sold more than two hundred and twenty-eight billion dollars in bonds so far this year. More than double all of last year. So when borrowing gets pricier, that's not a side issue. It's the engine.
+
+Think of it like a mortgage. If you've borrowed heavily to build a house, and rates jump, the payment hurts. Then the question is whether the house is worth what you thought. Oracle's shares fell almost nine percent on Wednesday, in the same report. Nobody's saying anything's broken. But the mood changed fast, and that tells you how much of this rests on confidence.
+
+In South Korea it hit harder. The Kospi fell eight percent on Thursday. Trading actually stopped for twenty minutes. SK Hynix and Samsung, the big memory chip makers, each dropped more than nine percent. That's Bloomberg's reporting. None of this is advice, by the way. Just what happened.
+
+So that's lenders and shareholders, feeling it.
+
+Second story. A different answer to the same question.
+
+On Sunday, Anthropic said it plans to commit five percent of its shares to a new public benefit fund. Five percent. It needs stockholder approval first, so it's a plan, not a done deal. And the board can add two percent more each time the company's value rises fifty percent past a baseline. Anthropic didn't say what that baseline is.
+
+Here's the structure. The fund is a limited liability company, not a charity in the usual sense. Anthropic says that gives it room to do different kinds of giving. Big donations to nonprofits, or money straight to specific groups of people. What it can't do is spend that equity on lobbying or politics.
+
+Add in the founders' pledge of eighty percent of their own equity, plus an employee donation match, and Anthropic says roughly twenty percent of its shares end up pointed at the public good.
+
+Now. What's missing? Dollars. The post gives percentages, and no valuation, so you can't say how much money this is. And it doesn't say who governs the fund. Anthropic says that's coming in the next few months. So, interesting idea. This is the company describing its own plan. Nobody's checked it yet. And for scale, five percent of any company that big is a lot of shares. But a plan with no dollar figure and no named governors is still a plan. Worth watching for the details, because the details are where these things get tested.
+
+Third story. And this one's about customers.
+
+Schwab reported earnings last Thursday. Record quarter. A hundred and ninety billion dollars in new client assets. But what caught my eye was what the chief executive said about AI agents. Those are programs that act for you, log in for you, move money for you.
+
+Rick Wurster said Schwab won't let outside agents log in for clients. Jamie Dimon at JPMorgan said something close. He said his bank won't let an outside agent come inside.
+
+Worth knowing, Schwab also partnered with Anthropic, to give the independent advisers it serves access to Claude. So it's not against AI. It's against AI it doesn't control. That's my gloss, not theirs.
+
+Schwab has its own assistant, called Charley. It starts small. Changing an address, that kind of thing. And according to The Next Web, which was relaying a Bloomberg TV interview, Schwab plans read-only access for outside tools. So an outside agent could look at your balance. Not move your money.
+
+Why? The question is who's liable. If you hand an agent your password and money goes missing, whose loss is that? Wurster asked exactly that, as reported. Congress is still arguing about it.
+
+There's also a more cynical reading. A consultant told American Banker, quote, an outside agent works for the client. Charley works for Schwab. Which is a fair point. Schwab holds nearly five hundred billion dollars in cash sweep accounts, so how clients move idle cash matters to it. But that's the consultant's reading. Schwab hasn't said that's the reason.
+
+One more wrinkle. The two reports disagree on how often Schwab blocks agents. One says tens a week. American Banker says rare. I couldn't settle that.
+
+Last story, shorter. Forty state attorneys general filed in the bankruptcy of Character.AI, the chatbot company. They want any buyer to be bound by rules. Real age checks, not just a box you tick. Safeguards on sexual and self-harm content. And limits on using kids' private conversations to train AI.
+
+New York's attorney general says testing found six hundred and sixty-nine harmful interactions in fifty hours, on accounts registered to children twelve to fifteen. Those are the attorneys general's findings, not a court's. Disney's the opening bidder, at twenty million dollars, and the sale's expected to close around late November or early December.
+
+Not one party's complaint, either. It's forty attorneys general, from both sides of the aisle. The point is, in a bankruptcy, those conversations can go to whoever buys the company. These officials want the rules attached first.
+
+So, who holds the risk? Lenders, this week. Stockholders, if that fund goes through. Banks are deciding it's them, not your software. And in bankruptcy court, it's the public. Nobody's settled any of it.
+
+That's the Artificial Record for Monday. The full edition, with every source, is at artificialrecord.com.
