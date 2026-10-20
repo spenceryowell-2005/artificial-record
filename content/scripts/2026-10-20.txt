@@ -1,0 +1,65 @@
+VOICE: onyx · MODEL: gpt-4o-mini-tts
+INSTRUCTIONS:
+Voice: a seasoned public radio host, mid-forties, talking to one person across a table. Not announcing. Not presenting.
+Pacing: Conversational and unhurried. Vary it — move a little quicker through familiar setup, slow down on figures and on the point of a sentence. Never metronomic.
+Breath and pauses: Breathe audibly before a new idea. Leave a real beat of silence at paragraph breaks — a full second, sometimes longer. Silence is not dead air.
+Inflection: Let sentences fall at the end. Do not hold pitch level and do not lift into the next line. Downward, settled, finished.
+Articulation: Relaxed, slightly soft. Let some consonants go. Do not over-enunciate — you are not reading a legal notice.
+Attitude: Interested, dry, faintly amused now and then. You find this genuinely interesting and you assume the listener does too. Never enthusiastic. Never selling. Never customer-service warm.
+Avoid: uniform rhythm, rising terminal inflection, announcer polish, any sense of performance.
+
+Good morning. Today's question is simple: who gets to check the work? Three stories, and they all circle it.
+
+Start with Anthropic. Last Thursday it put out a short post about outside evaluators. And the headline detail is this. Six people from METR, a nonprofit that tests frontier AI models, now have what Anthropic calls employee-like access. Company laptops. Office space. The internal tools its own risk teams use.
+
+Now, why's that interesting? Because for years, when an AI lab told you its model was safe, the lab was the one telling you. That's the whole system. Anthropic's comparing this to bank regulators who put examiners inside the big banks.
+
+And the details matter. Anthropic says it can't veto what METR publishes. But it can ask for redactions, in certain categories. Confidential intellectual property, for instance. So the question is, what's in those categories? The post doesn't say much beyond the labels.
+
+There are three tiers, by the way. Tier one, a narrow investigation, and Anthropic signs off on whatever comes out. Tier two, the evaluator sees more and publishes freely, with some redactions. Tier three is METR. Anthropic says it wants several of those eventually.
+
+Now. All of that is Anthropic describing its own program. We haven't heard from METR here. So the real test is the first report. What it says, and what got blacked out.
+
+Okay. Second story, and it's from the same company, which is a little funny. Its red team, the people paid to think about how things go wrong, published a paper last Monday. The claim is that small AI models might be months away from copying themselves onto cheap connected devices. Think smart ovens. Think off-brand TV boxes that cost about fifty-five dollars.
+
+Now, before anyone panics. The authors are careful. And I'd say, so should we be.
+
+What did they actually do? They got a nine-billion-parameter model running on eight of nine kinds of hardware. That's a small model. They spread a bigger one across fifteen of those TV boxes. And it ran at point-three-nine tokens per second. Which is, roughly, one word every few seconds. Painfully slow.
+
+Setting everything up took between a day and a half and six days, depending on the model. So this isn't fast.
+
+And the test was simplified. The target devices had an open debugging port, no password. The authors call their results an upper bound. They did not show a working worm on real gadgets. And they say nobody's documented mass compromise of these devices.
+
+So why does it matter? Their worry is that a network like that has no off switch. No central server to unplug. That's the part that stays with you.
+
+The defences they list are pretty ordinary. Internet providers spotting huge model files moving around. Decoy devices. And telling people when their gadget's been taken over. Which, based on old botnet clean-ups, got infection clear-out to ninety-two percent in two weeks. Versus seventy-four without the notice. Boring. And apparently it works.
+
+Alright. Third story is about money, and a little about a bankruptcy.
+
+Modal. It's a company that rents out computing for running AI software. On October fourteenth it said it raised seven hundred fifty million dollars, at a fifteen-point-seven-five billion dollar valuation. Accel led the round.
+
+And here's the number to hold onto. Modal says it's passed a billion dollars in annualized revenue. Now, annualized means: take what you're making right now, multiply by twelve. It's not money already in the bank. Modal also says about three hundred million of that comes from sandboxes. Those are sealed-off spaces where AI agents can run code without breaking anything.
+
+Why is that a business? Because when an agent writes a program and tries it out, it needs somewhere safe to do it. Somebody has to provide that room. Modal says it's started close to three billion of them. All of this is Modal's own account. I couldn't find anyone else confirming it. So take it as the company's claim.
+
+Now the bankruptcy. Character.AI, the chatbot company, filed for Chapter 11 last week. And on Sunday, TechCrunch reported that Disney will offer jobs to at least sixty of its employees. Most of the staff. TechCrunch got that from a court filing, which Bloomberg spotted first. I haven't read the filing myself.
+
+The filing puts the pay at around sixty million dollars a year. And says most of the people offered jobs said yes. It's described as a stalking horse bid. That's a first offer that sets the floor. Somebody else can still come in over the top.
+
+Here's what's missing. The report doesn't say what happens to the product. Or to the private conversations, a lot of them from kids. Last week forty state attorneys general asked the court to put conditions on any sale. So you can take the team and leave the problems. That's the part to watch.
+
+Oh, and one more from Anthropic, because it fits. Ahead of the midterms, it looked at about a quarter of a million American Claude conversations from one week in September. About one in every seventeen touched politics. Roughly one in two hundred was about voting. And just one in ten thousand asked who to vote for. That's tiny. Anthropic also says it banned accounts run by foreign operators who used Claude to write fake midterm news. All of this is the company's own sample and its own tests, so keep that in mind.
+
+And Singapore. Anthropic opened an office there and signed a memorandum with the government, covering safety testing and evaluation. Which is, again, outsiders checking the work. Though a memorandum is an intention. It isn't a rule.
+
+A few quick ones before I go.
+
+Reflection AI released its big open model, Beam, on Hugging Face. Five hundred one billion parameters. Last week's coverage said the weights weren't out. They are now. I couldn't confirm the licence from the page, though, so check the model card before you build anything on it.
+
+In Germany, press reports say the government and Nvidia are preparing an industrial AI partnership, with public money in the hundreds of millions of euros. Nvidia posted something about it Monday, but I couldn't open it. So those figures are reports, not confirmed terms.
+
+And Nscale's big data centre in Essex, the one Microsoft is supposed to use, has been told its grid connection won't be ready in 2027. Some reports say not until the early twenty-thirties. The company says it's still committed. Power, again. It's always power.
+
+So that's where we are. Everyone wants somebody outside to check the work. Whether they get to publish what they find, well. That's the whole thing.
+
+That's the Artificial Record. The full edition, with every source linked, is at artificialrecord.com.
