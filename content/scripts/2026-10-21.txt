@@ -1,0 +1,58 @@
+VOICE: onyx · MODEL: gpt-4o-mini-tts
+INSTRUCTIONS:
+Voice: a seasoned public radio host, mid-forties, talking to one person across a table. Not announcing. Not presenting.
+Pacing: Conversational and unhurried. Vary it — move a little quicker through familiar setup, slow down on figures and on the point of a sentence. Never metronomic.
+Breath and pauses: Breathe audibly before a new idea. Leave a real beat of silence at paragraph breaks — a full second, sometimes longer. Silence is not dead air.
+Inflection: Let sentences fall at the end. Do not hold pitch level and do not lift into the next line. Downward, settled, finished.
+Articulation: Relaxed, slightly soft. Let some consonants go. Do not over-enunciate — you are not reading a legal notice.
+Attitude: Interested, dry, faintly amused now and then. You find this genuinely interesting and you assume the listener does too. Never enthusiastic. Never selling. Never customer-service warm.
+Avoid: uniform rhythm, rising terminal inflection, announcer polish, any sense of performance.
+
+
+Good morning. Here's the question today: who's paying for all this, and who gets to say no? Three stories, and they all lean on it.
+
+First, the money. Tuesday night, SpaceX put out its third-quarter results. And yes, SpaceX. Rockets, satellites. But the biggest piece of the company now is artificial intelligence.
+
+Here's the number. Total revenue, fourteen point six billion dollars. Of that, the AI segment, which the company calls Super Intelligence, brought in seven point five six billion. A year ago, that same segment made eight hundred and thirteen million. So, roughly nine times as much, in twelve months.
+
+Now. Some of that is the company buying things. It closed its purchase of Cursor, the coding tool, in August. The filing says that deal was worth sixty billion dollars on paper, and Cursor added about six hundred million in revenue after it closed. But most of the AI revenue, seven billion of it, is cloud services. Basically, renting out computing.
+
+And here's the other side of the ledger. In that one quarter, the AI segment spent sixteen point four billion dollars on equipment. More than twice what it earned. The company says its installed computing capacity hit one point seven gigawatts. That's close to two big nuclear reactors' worth of capacity. Which is a strange thing to say about a data center, but there it is.
+
+The segment did turn a profit on operations, four hundred and thirty-one million, and that's after taking a one-point-two-billion-dollar hit for stock pay tied to the Cursor deal. So. Real money coming in, a lot more going out.
+
+TechCrunch, covering the investor call, reported that the CFO expects thirty-five to forty billion in capital spending next quarter. And that Elon Musk said annual recurring revenue could hit five hundred billion to a trillion dollars by the end of 2027. Keep that in context. That's a projection said out loud on a call. It isn't in the filing.
+
+What I like about this, if that's the word, is that it's a filing. Real format, real rules. AI labs have mostly reported to private investors. Now you can read one. And a filing has a cost too. It also gives you the Adjusted EBITDA number, which is a measure the company defines for itself. Useful. Not the same as profit. Read the plain operating line first.
+
+So, the second story. Who gets to say no.
+
+On Tuesday the Department of Homeland Security published an order in the Federal Register. It tells civilian agencies to stop buying products from DeepSeek, the Chinese AI company, and to pull them out of government systems. Not just DeepSeek's own products, either. The notice also covers, and I'm quoting, "third-party products and services developed using DeepSeek implementations."
+
+That's the clause to watch. DeepSeek's models are open. Lots of other software is built on them. So a contractor who sells to, say, a federal agency, might not even know they're covered.
+
+TechCrunch, reading the notice, says DHS pointed to national security, including a worry that Chinese authorities could reach American government users' data. Agencies can ask for exceptions. The notice itself doesn't give a deadline, and I haven't seen the signed order, which sits in a separate docket. So the open question is how far "developed using" reaches. The text doesn't say.
+
+Third story. And this one's a little odd, because it's a company asking to be regulated.
+
+Politico reported last Friday that Anthropic has been shopping a draft federal bill to lawmakers. A spokesperson confirmed the draft to Politico. I haven't seen the text, and as far as I can tell nobody's published it, and no member of Congress has put their name on it.
+
+Here's what's reported, through TechCrunch. If a model posed a foreseeable, imminent risk of killing more than fifty people, or doing more than a billion dollars of damage, the government could go to a judge and ask to halt its release. Only a judge. Federal agencies couldn't pull the plug on their own. The risks would be bioweapons, a model slipping its developer's control, or a cyberattack.
+
+Outside evaluators would register with the Commerce Department. Labs could pay them, as long as the payment didn't depend on what they found. And if an evaluator saw that kind of risk, they'd have seventy-two hours to tell Commerce. TechCrunch points out it's not obvious how you'd keep the paycheck from shaping the verdict.
+
+Anthropic's published framework, which is on its website, goes further than most labs do. Legal power to block dangerous deployments. Penalties tied to global revenue. And it says Congress shouldn't override state law unless the federal law is at least as strong. Whether the draft says the same on that last part, I couldn't confirm.
+
+One more thing, quickly. Press accounts of Anthropic's draft IPO filing came out this week. The Wall Street Journal, which says it saw a leaked draft, reports first-half revenue of sixteen point three billion and a net loss of eighty point seven billion. TechCrunch relays that the filing warns the big cloud providers increasingly see Anthropic as a competitor. I haven't seen the document, Anthropic hasn't confirmed the numbers, and the coverage doesn't say what drives that loss. So hold those figures loosely.
+
+But notice the thread. SpaceX shows what the buildout costs. The Anthropic reporting points to the same squeeze from the other side. Computing is scarce, and everybody's paying up for it.
+
+Which brings me to Nvidia. On Wednesday, at its Berlin conference, it said it's paying suppliers in advance to hold capacity. One chip testing company, King Yuan, gets one point one billion dollars, for new American facilities. A substrate maker in Japan, Ibiden, gets what Nvidia calls a multibillion-dollar advance. Substrates are the little boards chips sit on. Nobody thinks about them, until there aren't enough.
+
+Jensen Huang's line was, quote, "Capacity is the constraint." Fair. But remember, that's Nvidia's own release. Those are plans, not finished factories. The new testing sites aren't due to ship at volume until April of next year.
+
+And there's a quieter move, same theme. Google, on Tuesday, released a tool called TorchTPU. Amazon put out a similar one the day before. Here's why you'd care. Most AI software is written in a toolkit called PyTorch, and by default it runs on Nvidia chips. Google and Amazon are each trying to make it painless to run that same code on their own chips instead. Google says it takes minimal changes. That's Google's claim, and it hasn't been tested by anyone I can point to. Still. If your moat is software habit, someone just came for the habit.
+
+So that's the day. Money pouring in, even more going out, and governments and labs both trying to write rules while the thing's still moving.
+
+That's Artificial Record. The AI industry, on the record. Sources and links for everything today are at artificialrecord.com.
