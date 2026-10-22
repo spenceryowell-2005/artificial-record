@@ -1,0 +1,70 @@
+VOICE: onyx · MODEL: gpt-4o-mini-tts
+INSTRUCTIONS:
+Voice: a seasoned public radio host, mid-forties, talking to one person across a table. Not announcing. Not presenting.
+Pacing: Conversational and unhurried. Vary it — move a little quicker through familiar setup, slow down on figures and on the point of a sentence. Never metronomic.
+Breath and pauses: Breathe audibly before a new idea. Leave a real beat of silence at paragraph breaks — a full second, sometimes longer. Silence is not dead air.
+Inflection: Let sentences fall at the end. Do not hold pitch level and do not lift into the next line. Downward, settled, finished.
+Articulation: Relaxed, slightly soft. Let some consonants go. Do not over-enunciate — you are not reading a legal notice.
+Attitude: Interested, dry, faintly amused now and then. You find this genuinely interesting and you assume the listener does too. Never enthusiastic. Never selling. Never customer-service warm.
+Avoid: uniform rhythm, rising terminal inflection, announcer polish, any sense of performance.
+
+
+Good morning. Today's through-line is the bill for AI. Some of it's in dollars. Some of it's in risk. Three stories.
+
+First, the risk one. Because yesterday, the people who maintain PHP shipped patches for two critical bugs.
+
+Now, PHP. If you don't write code, here's all you need. It's the language behind a huge slice of the web. WordPress runs on it. A lot of the sites you visit every day run on it. And the two flaws would let a stranger run their own code on a server, without logging in.
+
+The project rates both of them a nine point two out of ten for severity. That's near the top.
+
+How does it work? Roughly this. One bug is about PHP running out of memory at exactly the wrong moment. It leaves half-built data lying around, and later PHP trusts it. The other leaves stale memory behind after a crash, and the next request can reuse it. Dull-sounding stuff. Dangerous stuff.
+
+The worst exposure, the project says, is servers running a module called mod_php. There, a stranger's request can trigger the attack before the site's own code even starts.
+
+Here's the part that belongs in this newsletter. The security firm Wiz found these. And Wiz says it used three AI systems to do it. Its own agent, called Wiz Atlas. Google's Gemini 4 Argon. And OpenAI's GPT-5.6 Sol. Wiz says it found the first bug in mid-August, and had working attacks against Drupal and WordPress within days. Then it told the PHP team, and waited about two months while the fix got built.
+
+Separately, TechCrunch reports a second security firm, Calif, found one of the flaws using OpenAI's model. TechCrunch also reports the NSA told people to patch right away, or take affected sites offline. I couldn't open the NSA's page myself, so that's TechCrunch's account.
+
+Wiz doesn't say anyone's been attacked. OpenAI said the same when it published. But now the patches are public, and a patch is also a map. So the race is for the long tail. All the small servers nobody updates.
+
+And here's what I liked, in a grim way. The PHP Foundation wrote about what AI has done to its inbox. Fifteen published security fixes since July first. And more than a hundred other reports that were wrong, duplicates, or couldn't be reproduced. People still make every call, they say. They just have a lot more to read.
+
+And one more detail. PHP eight-point-one and older doesn't get updates from the project anymore. So if that's what you're running, patching isn't a click. It's a migration.
+
+So that's the risk side. Same week, a different kind of mess. A popular tool called LiteLLM, which a lot of companies use to hold all their model keys in one place, had a bad release. Version one-oh-seven. The security firm Aikido says it carried a password stealer. If you pulled that version, you rotate everything. Cloud keys, API keys, all of it.
+
+Okay. The money.
+
+Meta reported Wednesday. Revenue, sixty-four point six billion dollars, up a quarter from last year. And in that one quarter it spent nearly thirty-five billion on capital projects. Mostly data centers and chips.
+
+For the year, Meta now says one hundred thirty-five to one hundred forty-five billion. Think about that. A hundred and thirty-five billion is the low end.
+
+Now, the net income number looks odd, and there's a reason. Meta booked a nine point nine billion dollar charge for an agreement with fifty-two state attorneys general. That's not AI. Strip it out, Meta says, and earnings per share would've been seven-forty instead of three eighty-three.
+
+On the call, according to TechCrunch, Zuckerberg said Muse, Meta's agent app, has more than ten million users. He said it's hit product-market fit. And that Meta expects to make it more than ten times cheaper to run within a year. Those are Meta's claims, on a call. Not audited numbers. Worth remembering.
+
+He also said Meta takes a cut of purchases made through Muse, and that it plans to keep the app free for most people. So the bet is commerce. You ask your agent to buy something, and Meta wins a slice.
+
+Which is a nice story. But remember where the spending is. A hundred and thirty-five billion dollars is a lot of agent shopping.
+
+Tesla reported the same day. Revenue about flat, twenty-eight billion. But operating income fell fifty-six percent, to seven hundred eighteen million. Electrek ties that to AI and robot spending growing faster than profit. Tesla's own letter says it wants four hundred megawatts of AI training compute by year-end. That's a plan, not a fact.
+
+Tesla also says it's started building its humanoid robot, Optimus, on lines in Fremont, and that its Cybercab has joined the robotaxi fleet in Austin. Nearly two million driverless miles so far, it says. Company figures, all of them.
+
+One caution. Its own letter doesn't update the big spending target for the year, which Electrek reads as needing about twelve billion dollars in the last quarter alone. Some call transcripts online suggest a different number. I couldn't confirm it, so I'm leaving it alone.
+
+So who pays? Which brings me to the third story. Debt.
+
+At a TechCrunch conference, Blackstone's AI chief, Jas Khaira, said the worry about AI debt is overblown. His line was, this doesn't feel like two thousand eight, with shaky banks. Most data center debt, he says, is backed by the big cloud companies.
+
+Fair. But he's not neutral. Blackstone has lent to these companies. And TechCrunch reports CoreWeave, which carries about fifty billion in debt, was down more than twenty percent in recent days. And an Australian GPU provider called Firmus scrapped its IPO. So that's the argument. Strong customers, against a market that's visibly nervous.
+
+He also described a joint venture with Anthropic and another firm, one and a half billion dollars, that sends engineers into companies to help them actually use this stuff. And he said the returns on AI are real, but uneven. That word again. Uneven.
+
+One more, quickly. Anthropic announced it'll set aside five percent of its shares for a public benefit fund. Subject to stockholder approval. Add the founders' pledges and employee matching, and Anthropic says about twenty percent of its stock goes to public good. Those are Anthropic's own numbers, and the fund doesn't exist yet. It's separate from the press reports of an IPO, which the company hasn't confirmed.
+
+It also named a new member of its Long-Term Benefit Trust, the outside body that can appoint most of the board. A Harvard physicist, Christopher Stubbs. The trust is independent of management and investors, Anthropic says. Which matters more, I'd guess, once there are public shareholders in the room. That's an opinion, not a fact from the post.
+
+So. Today's lesson, if there is one. The costs of AI show up first. Dollars for the buildout, and risk in the software around it. The payoff gets described in the future tense.
+
+That's the Artificial Record. The AI industry, on the record. Full edition, with every source, at artificialrecord dot com.
