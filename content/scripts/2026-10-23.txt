@@ -1,0 +1,61 @@
+VOICE: onyx · MODEL: gpt-4o-mini-tts
+INSTRUCTIONS:
+Voice: a seasoned public radio host, mid-forties, talking to one person across a table. Not announcing. Not presenting.
+Pacing: Conversational and unhurried. Vary it — move a little quicker through familiar setup, slow down on figures and on the point of a sentence. Never metronomic.
+Breath and pauses: Breathe audibly before a new idea. Leave a real beat of silence at paragraph breaks — a full second, sometimes longer. Silence is not dead air.
+Inflection: Let sentences fall at the end. Do not hold pitch level and do not lift into the next line. Downward, settled, finished.
+Articulation: Relaxed, slightly soft. Let some consonants go. Do not over-enunciate — you are not reading a legal notice.
+Attitude: Interested, dry, faintly amused now and then. You find this genuinely interesting and you assume the listener does too. Never enthusiastic. Never selling. Never customer-service warm.
+Avoid: uniform rhythm, rising terminal inflection, announcer polish, any sense of performance.
+
+Good morning. Today's through-line is money, and who's lining it up before the biggest AI companies go public. Three stories.
+
+So, first. Anthropic. Fortune reported Wednesday that the Wall Street Journal got hold of a draft of Anthropic's IPO paperwork. That's the S-1, the document a company files with the SEC to go public. And I should say up front, nobody's published this. Not Anthropic, not the SEC. It's a leaked draft, relayed by Fortune. I haven't read the Journal's piece, and I haven't seen the draft.
+
+But here's what Fortune says is in it. Sixteen point three billion dollars in revenue for the first half of this year. A year earlier? One point one billion. So, fifteen times as much, in twelve months.
+
+And then the other number. A net loss of about eighty billion dollars. Eighty. Fortune doesn't break that down, and I can't tell you why it's that big. Other outlets say most of it's accounting charges, not cash going out the door. I couldn't confirm that. So hold it loosely.
+
+What's easier to picture is the compute. Fortune says Anthropic plans to spend seven hundred and fifty billion dollars on computing power over the coming years. And it's signed four hundred and fifty billion in cloud deals that mostly can't be cancelled. That's the number I'd watch. Because that's the bill that shows up whether or not customers do.
+
+Fortune also says the planned valuation is two trillion dollars. Anthropic didn't comment in Fortune's story. A draft can change before it's filed. So that's all provisional.
+
+Okay. Second story. OpenAI.
+
+CNBC reported Thursday that OpenAI's working on a new round. Up to thirty billion dollars, at a valuation of one point two five trillion. Coatue and investors from the United Arab Emirates are reported to be leading it. CNBC also says the Emirates money could come paired with a deal to get more computing capacity from there.
+
+Now. CNBC's page wouldn't open for me. So I'm relaying it the way TechCrunch summarized it. And it's all "reportedly." Terms aren't settled. OpenAI declined to comment.
+
+One detail worth noticing. About a month ago, Bloomberg reported the same size round at one point four trillion. So the number's come down. That doesn't mean anything's gone wrong. It probably just means the price is still being argued over.
+
+If it closes, TechCrunch says it'd be the highest valuation ever for a private company. And for scale, OpenAI's round in March valued it at eight hundred and fifty-two billion. So that's a big step up in seven months.
+
+And here's the part I find funny. While they're racing each other for money, they're also selling through the same shelf. On Wednesday, Google Cloud said OpenAI's models are now available in its catalogue. Three of them, GPT-6 Astra, Sol and Luna. It's a private preview, select customers only. No date for everyone.
+
+But the way it's sold matters. A company that's already promised Google a certain amount of spending can use that money on OpenAI's models. One invoice. Google says it's now the only big cloud with Gemini, Claude and GPT under one roof. That's Google's claim, to be clear. But it tells you how the competition's shifting. These labs fight over models. Then they sell through the same storefronts.
+
+Alright. Third story. And it's about an agent.
+
+Anthropic put out a new app Thursday called Claude Duet. It's a research preview, waitlist only, for Pro and Max subscribers in the U.S. Think of it as an assistant that works in the background. It sends you a morning brief. It flags what needs attention. You can message it, say, set up a meeting, build me a dashboard, and it goes off and does it on its own cloud computer.
+
+It asks for your approval before the sensitive stuff. Sending messages, payments. That's Anthropic's description, and Anthropic's own page also warns it can misread a thread or misjudge how urgent something is. Which I appreciated. Not every product page says that.
+
+Here's the problem, though. An assistant like that has to log into things. Your email. Your accounts. And handing an AI your password isn't great.
+
+So the same day, 1Password announced something for exactly that. The agent proves who it is. You get asked, on your own device, whether to let it in. And 1Password types the password into the form itself. The agent never sees it. Anthropic's Duet, Meta's Muse, and OpenAI's ChatGPT Work are all named as working with it.
+
+Now, that's the company's description of its own product. There's no price and no date yet. But it's a decent answer to a real question. TechCrunch notes banks are starting to see agent activity in customer accounts, and a Chase spokesperson told Axios customers shouldn't give their usernames and passwords to anyone. So that tension's real.
+
+Just a few quick things before I go. DeepSeek, the Chinese lab that the U.S. Homeland Security Department told federal agencies to drop on Tuesday? Bloomberg reports it's raised about fifteen billion dollars. Two days later. That's Bloomberg's reporting, relayed by TechCrunch, and DeepSeek hadn't commented. If it's right, the order didn't slow its fundraising.
+
+And Nvidia showed a data center in a shipping container. It says that can cut build time at a ready site from six months to as little as fourteen days. That's Nvidia's number, and you still have to bring your own power and cooling.
+
+And one more, because it's the kind of thing that gets missed. Micron, the memory chip maker. Memory is what feeds AI servers. Reuters reported Tuesday that the union at its Taoyuan plant in Taiwan planned a one-day strike Thursday. It's a fight over bonuses. The workers want a profit-sharing system. Micron has about fifteen thousand people in Taiwan, and that plant makes the kind of memory AI servers use.
+
+Did the strike happen, and did it dent output? I couldn't find a reliable report on that. The union itself called it a warning strike. So, something to watch, not something to panic over. I'll flag it again if that changes.
+
+Also, quietly, on Thursday, Anthropic gave away one of its own inventions. It's called Agent Skills. It's basically a folder with a set of instructions that teaches an AI agent how to do one job. Anthropic says more than seventy platforms already use it. It's handing it to a Linux Foundation group that OpenAI is part of too. Those usage counts are Anthropic's own. But it's another sign that the rivals agree on the plumbing, even while they fight over everything else.
+
+So that's the day. Anthropic's numbers are leaked and provisional. OpenAI's round is reported, not confirmed. And the labs keep finding ways to sell each other's work. It'll look different once the real filings arrive.
+
+This has been Artificial Record. The AI industry, on the record. Sources and the full edition are at artificialrecord.com. Thanks for listening.
