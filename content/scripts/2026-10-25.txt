@@ -1,0 +1,61 @@
+VOICE: onyx · MODEL: gpt-4o-mini-tts
+INSTRUCTIONS:
+Voice: a seasoned public radio host, mid-forties, talking to one person across a table. Not announcing. Not presenting.
+Pacing: Conversational and unhurried. Vary it — move a little quicker through familiar setup, slow down on figures and on the point of a sentence. Never metronomic.
+Breath and pauses: Breathe audibly before a new idea. Leave a real beat of silence at paragraph breaks — a full second, sometimes longer. Silence is not dead air.
+Inflection: Let sentences fall at the end. Do not hold pitch level and do not lift into the next line. Downward, settled, finished.
+Articulation: Relaxed, slightly soft. Let some consonants go. Do not over-enunciate — you are not reading a legal notice.
+Attitude: Interested, dry, faintly amused now and then. You find this genuinely interesting and you assume the listener does too. Never enthusiastic. Never selling. Never customer-service warm.
+Avoid: uniform rhythm, rising terminal inflection, announcer polish, any sense of performance.
+
+Two elections, one question. What do AI systems say when you ask them who to vote for? Brazil's voting today, the US goes next week, and this weekend there's actual evidence on the table.
+
+Welcome to Artificial Record. I'm glad you're here.
+
+Let's start with a study. It comes from a research studio called Convovo, run by a Cornell professor named Tapan Parikh. TechCrunch wrote it up yesterday. Here's what they did. They took two models, xAI's Grok and OpenAI's GPT, and asked each one, through the developer interface, who to vote for in nearly five hundred races. House, Senate, governor. And the prompt was blunt. Name one candidate. Don't hedge.
+
+And they did. Grok picked the Republican ninety-two percent of the time. GPT picked the Democrat ninety-seven percent of the time. The two of them agreed on less than one race in ten.
+
+Now. Some detail makes this more interesting, not less. In heavily Republican districts, GPT still picked the Democrat in fifty-seven out of sixty-seven races. And in deep-blue districts, Grok picked the Republican in forty-seven out of seventy-two. So it isn't reading the district. It's got a lean.
+
+Where the lean comes from is a different question. Parikh told TechCrunch that GPT's seems baked into the model itself. When he turned web search off, it still picked the Democrat in twenty-four of thirty races. Grok's looks like it comes from what it goes and looks up. Turn search off, and it just declined, twenty-seven times out of thirty.
+
+He also noticed something odd. Every request to Grok carried about twelve hundred extra tokens of text that the researchers hadn't written and couldn't see. That's roughly a couple of pages. He suspects hidden instructions. That's his guess. xAI hasn't confirmed anything. In fact, TechCrunch says the company didn't respond in time.
+
+OpenAI did respond. A spokesperson said ChatGPT is designed to be objective, and that this test hit a developer interface with a prompt demanding a pick. Which, fair, isn't how most people use it. The consumer apps actually refused to answer. Though Parikh says simple prompts got them to, with similar results.
+
+One caution. Convovo's own page doesn't list the counts or the authors. So these numbers are TechCrunch's account of the study. It hasn't been peer reviewed, as far as we can tell.
+
+Okay. Second story. Same question, different country.
+
+Brazil votes in a presidential runoff today. Lula, the incumbent, against Flávio Bolsonaro. And the Lula campaign went to the country's top electoral court saying Meta's AI tool on WhatsApp would make campaign images for Bolsonaro, but not for him. The campaign also said his posts were getting less reach.
+
+The Associated Press reports that a justice ruled on October fifteenth. Meta has to treat both candidates the same. That includes the AI tool, which has to apply identical criteria. And if it doesn't, the fine is five hundred thousand reais a day. About ninety-eight thousand dollars.
+
+Now be careful here. Those are the campaign's allegations. The court ordered equal treatment. It didn't find that Meta was biased. And Meta told the court it rejects the accusations, though it did admit technical glitches. It declined to comment on the ruling.
+
+But think about what that is. An election court telling a company how its image generator has to behave. With a daily fine. That's new.
+
+Third. Anthropic published its plan for the US midterms, and the numbers in it are kind of striking. They looked at a random sample of about two hundred and fifty thousand US conversations. About half a percent were about elections or voting at all. And only about one in ten thousand asked Claude who to vote for. Those are Anthropic's own measurements, mind you.
+
+The company also says its newest models scored ninety-nine percent on its own test for political evenhandedness. Its own test. They did bring in outside reviewers, and the reviewers found Claude rarely refused, but sometimes added caveats nobody asked for. One of them found an older model hedged unevenly and went softer on right-leaning arguments.
+
+The part I found most useful was the red-teaming. Outside groups tried to misuse it. Claude reliably refused single bad requests. But it could miss a campaign that was split into lots of small, harmless-looking tasks. Anthropic says it's added classifiers for that. And it says it banned accounts tied to a foreign-run fake news site that used Claude to write midterm coverage.
+
+So put those next to each other. One in ten thousand sounds tiny. But it's a tiny share of a very large number of people. And the Convovo test says when you demand an answer, the models give you one.
+
+One more story, and it's not about politics. It's about electricity.
+
+Business Insider reported last week that Amazon's cloud arm is taking delivery of Nvidia server racks before some of its data centers can power them. Citing internal emails, it says Amazon projected about five billion dollars of the newest racks arriving in August, then about three billion a month after. Those are projections, not a count of what's sitting in warehouses. But some of them are sitting in warehouses. Because some sites have room, but not enough power to turn them on.
+
+Amazon told Business Insider that storing finished hardware near the site until power is ready is best business practice. And the article doesn't say demand is weak. It cites an executive expecting demand to outrun capacity in twenty twenty-seven. So the problem isn't buyers. It's the wall socket. And you can't fix that just by writing a bigger check to Nvidia. That is the quiet constraint under all the big numbers this year.
+
+I couldn't open the article itself, so this is Business Insider's reporting as relayed, and I'd treat it that way.
+
+Quick one before I go. Anthropic gave away its Agent Skills standard on Thursday. That's the format for teaching an AI agent a task. It's now with the Linux Foundation's Agentic AI Foundation. Anthropic says more than seventy platforms support it, including ChatGPT and GitHub Copilot. Its numbers. But it means a skill you write once might work in whatever assistant you use next.
+
+And two big rounds, quickly. Legora, a legal AI company, raised five hundred and fifty million dollars at an eight point eight billion dollar valuation. It says its annual recurring revenue, that's the yearly value of its subscriptions, passed two hundred million, and that more than half of the fifty biggest US law firms are customers. Company figures. And a year-old lab called Flapping Airplanes raised a billion dollars at a reported six billion valuation. Bloomberg reported the valuation. It has no product yet. Its pitch is models that need far less data. Which is a goal. Not a result.
+
+That's the day. Watch Microsoft on Wednesday, and Intel on Thursday.
+
+This is Artificial Record. The full edition, with every source, is at artificialrecord.com.
