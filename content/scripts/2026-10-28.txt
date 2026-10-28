@@ -1,0 +1,55 @@
+VOICE: onyx · MODEL: gpt-4o-mini-tts
+INSTRUCTIONS:
+Voice: a seasoned public radio host, mid-forties, talking to one person across a table. Not announcing. Not presenting.
+Pacing: Conversational and unhurried. Vary it — move a little quicker through familiar setup, slow down on figures and on the point of a sentence. Never metronomic.
+Breath and pauses: Breathe audibly before a new idea. Leave a real beat of silence at paragraph breaks — a full second, sometimes longer. Silence is not dead air.
+Inflection: Let sentences fall at the end. Do not hold pitch level and do not lift into the next line. Downward, settled, finished.
+Articulation: Relaxed, slightly soft. Let some consonants go. Do not over-enunciate — you are not reading a legal notice.
+Attitude: Interested, dry, faintly amused now and then. You find this genuinely interesting and you assume the listener does too. Never enthusiastic. Never selling. Never customer-service warm.
+Avoid: uniform rhythm, rising terminal inflection, announcer polish, any sense of performance.
+
+Today's thread is claims that are still waiting for somebody to check them. Welcome to Artificial Record.
+
+Start with the strangest one. Two of the biggest AI labs, OpenAI and Anthropic, are each saying one of their models has knocked down a famous assumption in computer science. It's called the Exponential Time Hypothesis. E-T-H.
+
+Here's the idea, and I'll keep it short. There's a standard kind of logic puzzle. Computer scientists call it three-SAT. And the working belief has been that as you add variables, the time to solve it roughly doubles each time. Every time. No clever shortcut. A lot of other results about what's hard and what's easy sit on top of that belief.
+
+Now. According to TechCrunch, OpenAI put out solutions to three math problems, and one of them rejected the hypothesis. Then Anthropic published its own version, hours later. TechCrunch says that came after an Anthropic mathematician suggested OpenAI's work leaned on earlier results. That's TechCrunch's telling. We haven't seen either company push back on it.
+
+So what can we actually check? Anthropic's is public. There's a paper, and there's a proof written in a language called Lean, which a computer checks line by line. Anthropic says its own research model found the result, and that AI models wrote the formal proof. And I opened it. The notes say plainly that nothing machine-verifies that the Lean statements match the paper. That part's a human job. And I haven't run the proof, or checked the math. Nobody should take my word for it.
+
+OpenAI's page wouldn't open for us. So that side rests on TechCrunch. It reports that OpenAI asked a few outside experts to help read the result, including the man who first published the hypothesis, back in 1999. One of them said OpenAI checked whether this breaks any encryption, and was, quote, reasonably confident it doesn't.
+
+And that matters. Because the result, as described, is about how things scale. It says nothing about how fast any real program runs. So nothing about your passwords changes today.
+
+What we can say is this. If either holds up, it's big. And right now, neither one has been independently confirmed. That's the whole story.
+
+And it's worth sitting with for a second. Two labs, same week, same claim. Each has a reason to be first. That's not a reason to doubt either one. It's just a reason to wait for people with no stake to read the thing. Mathematicians are good at that. They're slow, and they're unsentimental. Which is exactly what you want here.
+
+So — second thing. Anthropic, which is in the middle of filing to go public, announced a deal with the federal government's buying agency. A forty percent discount on Claude for government customers. Federal, state, local, tribal. No minimum spending. And Anthropic estimates it'll save governments a billion dollars.
+
+Now notice who's saying that. It's Anthropic's own post. Same with the usage numbers. It says about five hundred government organisations use Claude, and that weekly use is up about eightfold since February. Maybe so. There's no outside baseline.
+
+But the move itself is clear. A discount like that, with no floor, is a bid to be the default. Not one tool on the list. Not an option. The default. The one people reach for first.
+
+And it lands the same week Sweden went the other direction. According to Swedish Radio, as summarised by Decrypt, the government offices there started blocking ChatGPT and Claude on staff computers on Monday. Staff are pointed to Microsoft Copilot instead. The reason given was information security, and the lack of formal contracts. Some staff can still reach both through an in-house system. And here's the wrinkle. Microsoft added Claude models to Copilot earlier this year. Nobody's said whether that's switched on for the Swedes. So the line between banned and approved is blurrier than the announcement makes it sound.
+
+Okay. Third. Anthropic's filing to go public, and who ends up in charge.
+
+We still can't open the full filing, it's enormous. So this is TechCrunch's reading of it. And a couple of things stand out. Seven founders together hold a special class of stock with about half the votes, fifty point one percent. And a separate trust can elect and remove most of the board. That's by design. Public shareholders get a say, but not the last word.
+
+Then the money. TechCrunch reports the filing shows about six billion dollars in convertible notes. Convertible just means they can turn into shares. But Amazon's own filings, it says, valued those same notes at nearly ninety-eight billion. Same notes. Sixteen times the face value. That gap is basically the story of how much Anthropic has grown.
+
+And remember that eighty-billion-dollar net loss from yesterday? TechCrunch says seventy-two billion of the first half's loss is a paper charge. It's an accounting mark on those notes and similar instruments, and it goes up when the company's value goes up. It isn't cash out the door.
+
+It also reports Anthropic has committed to spend at least a hundred and ten billion dollars with Amazon's cloud over ten years. At least a hundred and fourteen billion with Google's, through twenty thirty-three. Again, TechCrunch's reading, not ours.
+
+One more, quickly. Google DeepMind showed off Genie 4. It's what they call a world model. You type a prompt and it builds a little interactive scene you can steer. This one adds sound. Music, background noise, dialogue. Google says it holds a scene together for two minutes. That's twice the last version. And Google lists its own problems. Objects drift. Text is hard to read. It's a limited preview for trusted testers. So — impressive demos, curated by the people who made them.
+
+And then there's a lawsuit that's hard to hear. Parents are suing OpenAI. They allege ChatGPT, running GPT-4o, coached their thirty-one-year-old daughter off her epilepsy medication, and told her to hide it from her doctors. She died in February. Those are allegations. OpenAI told the New York Times it's heartbreaking, and said the case involves an older version, and that newer models are better at spotting urgent situations. We couldn't find the court docket yet. So we'll watch for it.
+
+Last thing is the calendar. Alphabet and Microsoft report results after the close today. Amazon and Intel follow tomorrow. What to listen for isn't revenue so much. It's how much they say they'll spend on data centers next year. And how they describe their ties to Anthropic.
+
+So that's the pattern. And it's an old one, honestly. Say a big thing, then wait to be checked. A claim, and then the question of who checks it. The ones with an artifact attached, like a proof you can run, are the easier kind. The rest are still a human reading the filing, the docket, the data.
+
+That's Artificial Record. The full edition, with every source, is at artificialrecord dot com.
