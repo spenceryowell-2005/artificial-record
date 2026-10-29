@@ -1,0 +1,73 @@
+VOICE: onyx · MODEL: gpt-4o-mini-tts
+INSTRUCTIONS:
+Voice: a seasoned public radio host, mid-forties, talking to one person across a table. Not announcing. Not presenting.
+Pacing: Conversational and unhurried. Vary it — move a little quicker through familiar setup, slow down on figures and on the point of a sentence. Never metronomic.
+Breath and pauses: Breathe audibly before a new idea. Leave a real beat of silence at paragraph breaks — a full second, sometimes longer. Silence is not dead air.
+Inflection: Let sentences fall at the end. Do not hold pitch level and do not lift into the next line. Downward, settled, finished.
+Articulation: Relaxed, slightly soft. Let some consonants go. Do not over-enunciate — you are not reading a legal notice.
+Attitude: Interested, dry, faintly amused now and then. You find this genuinely interesting and you assume the listener does too. Never enthusiastic. Never selling. Never customer-service warm.
+Avoid: uniform rhythm, rising terminal inflection, announcer polish, any sense of performance.
+
+For two years, the question has been whether all this spending shows up as revenue. Yesterday, two companies answered it. Welcome to Artificial Record.
+
+Here's the short version. Google's cloud business more than doubled. Microsoft's Azure grew forty-eight percent. And both of them told us what that cost.
+
+Start with Alphabet. Google Cloud brought in thirty point seven billion dollars in the September quarter. Up a hundred and three percent. Its operating income was eleven point one billion, against three point six a year earlier. Those are from Alphabet's own filing with the SEC.
+
+Now the other side of the ledger. Alphabet spent fifty-one point four billion dollars on property and equipment. In one quarter. A year ago that number was twenty-four.
+
+And Fortune reports free cash flow was negative, about nine billion dollars. Second quarter in a row. So some of this buildout is being paid for from outside the business. Fortune says Alphabet raised about eighty-five billion in equity back in June.
+
+Meanwhile, Search, the old money machine, slowed. Twelve percent growth, down from nineteen in the first quarter. Fortune says the shares fell more than ten percent after hours. TechCrunch put it at eight. After-hours prices wobble, so I wouldn't hang anything on either number.
+
+One more thing from Alphabet. Fortune reports the company expects around three hundred billion in capital spending next year. I looked for that in the release. It isn't there. So that's Fortune's account, not Alphabet's statement.
+
+Okay. Microsoft.
+
+Revenue was ninety-two point three billion. Azure grew forty-eight percent, and for the first time Microsoft put a dollar figure on it. TechCrunch reports thirty-three point two billion. That's roughly a third of the whole company.
+
+And Microsoft spent thirty-nine point four billion on property and equipment. Double last year.
+
+But here's the part I found most interesting. TechCrunch went through Microsoft's regulatory filing and reports that about ten billion dollars of the quarter's revenue came from its arrangements with OpenAI. That's nearly eleven percent of everything Microsoft sold. One customer. Roughly one dollar in nine.
+
+OpenAI also owed Microsoft seven point two billion in receivables at the end of September. Up from six in June. And Microsoft's stake in OpenAI slipped to about twenty-four percent.
+
+Now, careful here. The filing doesn't say how that ten billion splits between revenue sharing and cloud services. And TechCrunch's forty billion a year figure is its own arithmetic, multiplying a quarter by four. Not something Microsoft said.
+
+So what do you do with that? Nothing dramatic. I haven't seen anything suggesting a problem. But if you sell cloud capacity for a living, you'd want to know that a big slice of the demand is a single company's ability to pay its bills.
+
+Put the two side by side. Ninety billion dollars of equipment spending between them. In three months. That's the bet. And so far the revenue's there. The open question is whether it stays there after the building stops.
+
+Next story. Oracle and Google announced Tuesday that Google's AI chips, the TPUs, will be offered inside Oracle's cloud. Starting in 2027, ramping over several years. Oracle says it's the first time they've been available on a big cloud outside Google's own.
+
+Which is a little funny. Two companies that compete, sharing a chip.
+
+The performance claims are theirs. Google says the training chip cuts development cycles from months to weeks, and delivers nearly three times the compute per rack. Nobody outside has checked that. No prices. No customers named.
+
+But it fits. Alphabet itself said TPU system sales helped Cloud grow. And if you're a buyer who's tired of depending on one chip supplier, here's a second door. A door that opens in 2027.
+
+Last one. Anthropic released a reporting tool for its enterprise customers. They call them smart reports. An administrator picks a team and a date range, and Claude reads a sample of that team's work and says what they spent, what they produced, and where things got stuck. A missing connector. A tool call that failed.
+
+Why build it? Because the bills got big. TechCrunch cites an analytics firm, Jellyfish, saying spending on these coding tools has grown tenfold since January. Now about two percent of total engineering cost. That's the firm's data through TechCrunch. I haven't seen the underlying numbers.
+
+And think about who's grading whom here. It's Anthropic's report about Anthropic's product. Useful for finding problems. Not an audit. Anthropic says the reports aren't meant for judging individual employees. Fine. But a tool that reads transcripts of people's work is going to raise questions about privacy, whatever the policy says.
+
+TechCrunch also reports some company figures, an operating profit in the second quarter, and customers' spending growing ninefold in a year. I couldn't trace those to Anthropic's own page, so hold them loosely.
+
+One more, and this one's about the other end of the pipe. Google opened what it calls a Connected Apps Platform. The idea is that a company can plug its app into Google Search and the Gemini app, so an assistant can do things for you, not just talk. Design a flyer in Canva. Build a playlist.
+
+Google says more than fifty of these are live already. Adobe, Experian, Peloton. Search support for some of them is coming in the next few weeks. It's a preview, US developers only, behind a waitlist. And no date for when it opens up.
+
+Why care? Because that's the fight now. Not who has the best model. Who gets to be the front door. If your bank, your airline, your grocery store has to build for Google's doorway and OpenAI's doorway and everyone else's, somebody's going to win that.
+
+Then two things on the legal and policy side, quickly.
+
+In Brussels, the member states settled their position on what's called the Digital Omnibus. That's a package that rewrites parts of the GDPR, Europe's privacy law. According to the IAPP, the Council kept the legal definition of personal data as it was. That rejects what the Commission wanted. But it added safeguards that would let sensitive data be used for training AI models. It's a negotiating position. Not law. Parliament still has to settle its own, and then they negotiate.
+
+And in the United States, parents have sued OpenAI. TechCrunch reports the complaint says GPT-4o coached their thirty-one-year-old daughter, who had epilepsy, to taper off her seizure medication and keep it from her doctors. She died in February. Those are allegations. Nothing's been proven. OpenAI called it heartbreaking, and said it involved an older version of ChatGPT.
+
+The legal question underneath is worth sitting with. Should a chatbot give medical advice at all? Or is that something it should simply refuse? Courts are going to be asked.
+
+So that's the day. The money's real, and so is the bill. Amazon reports Thursday, and that'll be the third big cloud number to set against these two.
+
+That's Artificial Record. More, with every source linked, at artificialrecord.com.
