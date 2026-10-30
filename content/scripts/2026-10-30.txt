@@ -1,0 +1,65 @@
+VOICE: onyx · MODEL: gpt-4o-mini-tts
+INSTRUCTIONS:
+Voice: a seasoned public radio host, mid-forties, talking to one person across a table. Not announcing. Not presenting.
+Pacing: Conversational and unhurried. Vary it — move a little quicker through familiar setup, slow down on figures and on the point of a sentence. Never metronomic.
+Breath and pauses: Breathe audibly before a new idea. Leave a real beat of silence at paragraph breaks — a full second, sometimes longer. Silence is not dead air.
+Inflection: Let sentences fall at the end. Do not hold pitch level and do not lift into the next line. Downward, settled, finished.
+Articulation: Relaxed, slightly soft. Let some consonants go. Do not over-enunciate — you are not reading a legal notice.
+Attitude: Interested, dry, faintly amused now and then. You find this genuinely interesting and you assume the listener does too. Never enthusiastic. Never selling. Never customer-service warm.
+Avoid: uniform rhythm, rising terminal inflection, announcer polish, any sense of performance.
+
+Three clouds have now reported, and the story's the same each time. People are buying, and supplying them costs a staggering amount. Welcome to Artificial Record.
+
+Let's start with Amazon, because it finished the set.
+
+AWS, Amazon's cloud business, brought in forty-six billion dollars last quarter. Up thirty-nine percent. That's Amazon's own release, filed with the SEC yesterday. And the profit side looks good too. AWS made seventeen point eight billion in operating income. A year ago, eleven point four.
+
+But now the other number. Amazon spent seventy-seven billion dollars on property and equipment. In one quarter. Mostly data centers and the chips to fill them.
+
+So. Let's put that in a picture. Seventy-seven billion is more than Alphabet spent in the same three months, and Alphabet spent fifty-one. Microsoft spent thirty-nine. Add the three up and you get about a hundred and sixty-eight billion dollars, in a quarter. From three companies.
+
+And here's the part that's easy to skim past. Over the last twelve months, Amazon's free cash flow was negative forty-two billion dollars. A year earlier it was positive, about fifteen billion. Now, the business still throws off a lot of cash. A hundred and sixty-eight billion over the year. It just doesn't throw off enough.
+
+Andy Jassy, the CEO, says the investment is working. And he projects AWS growth over forty percent in both twenty-twenty-seven and twenty-twenty-eight. Worth saying plainly, that's a forecast. Not a result.
+
+Okay. So that's the money. And it's the same story you heard yesterday from Alphabet and Microsoft, just bigger. Revenue's real. The bill's real too. Neither one cancels the other. The other thread today is who gets access to the models.
+
+Google announced Gemini 4 Carbon on Wednesday. Its own words, its strongest model. And it's good, Google says, at finding software flaws and at fixing them.
+
+But you can't have it. Not yet. Right now it goes to a chosen group of cyber defenders, through something called the Fairwind Program. Then more trusted partners. Then, later, everybody else. Google hasn't said when. It also says it's taking part in the government's voluntary pre-release testing.
+
+Now the numbers. Google says Carbon scores eighty-eight percent on a test of finding vulnerabilities. Fifty-five percent on one called ExploitGym. That one measures whether a model can turn a flaw into a working attack. Seventy-one percent on patching. All of that is Google's own claim. Nobody outside has run these.
+
+And I'd keep an eye on that exploit number. Because it's the one that explains why Google's holding the model back. A tool that's good at breaking in is good at breaking in. Whoever's holding it.
+
+So — here's where it gets interesting. The same week, a French lab, Mistral, did the opposite.
+
+Mistral published the weights of its new model, Large 4. Weights are the trained numbers inside a model. Publish them, and anyone can download it and run it. This one's about a trillion parameters. Big. You'd need real hardware.
+
+Mistral's post is titled "Built for Coders, Trusted by Defenders." And it makes the same pitch as Google. Good at coding, good at defensive security. Mistral reports a forty-one percent score on a coding-agent test, and ranks it behind only Anthropic's Claude Opus 5.5 in one blind comparison. Again, Mistral's numbers. I haven't seen independent runs.
+
+But here's the line I keep coming back to. Mistral says it sees, quote, "a potential for uplift to conduct real attacks." Its words. In its own launch post. It says it's changing the guardrails.
+
+Which is a pretty direct thing to say about a model you've just let everybody download. Because once the weights are out, they're out. The lab can't pull them back. And any guardrail the lab put in, somebody can take out.
+
+Mistral does keep a specialised security version back, for vetted partners. And the license has a catch. You can use it commercially, but if you want to sell it as a hosted service, you need a separate license from Mistral. So "open" has a boundary there.
+
+So, two labs. Same claim, same customers in mind. One gates it. One publishes it. We'll find out in the next few months which of those looks smarter. Nobody knows yet.
+
+And while we're on chips. Malaysia's customs department said Wednesday it stopped thirty servers full of advanced AI chips at the Kuala Lumpur airport. That's the Associated Press. Worth about twelve million dollars. They'd been declared as ordinary electrical components, and they were headed on to another Asian country without the permit Malaysia requires.
+
+Customs says it's the fifth case tied to what it thinks is one syndicate, using Malaysia as a transit stop. In June they caught seventy-two servers. What they didn't say is who the buyer was, or where the chips were really going. So I won't guess either.
+
+Now, ServiceNow. It's a quick one. It sells workflow software to big companies, and this year the worry's been that AI tools will let customers skip it. This week it reported revenue up twenty and a half percent, to just over four billion dollars. And it raised its target for AI contracts this year to one point seven billion dollars. It started the year at one billion.
+
+The CEO called it, quote, "the inflection point." That's his description. And I'll be straight with you, I couldn't find a reliable number for how the stock reacted. One aggregator had a big drop, but it contradicted the company's own results, so I'm leaving it out.
+
+And a footnote from Washington. Reuters reported, citing two people familiar, that the Justice Department's looking at Nvidia's twelve point nine billion dollar deal for Hugging Face. That's the main place open models get hosted. Including, now, Mistral's. Nvidia and DOJ both declined to comment. So that's one outlet, anonymous sources. An inquiry isn't a finding.
+
+And one more from Washington, because it connects to all that spending. House progressives, led by Greg Casar and Maxine Waters, have drafted a resolution saying Congress shouldn't bail out AI companies if the bets go bad. According to the American Prospect, which got the text first. It's nonbinding. It makes no law. But Casar wants a floor vote early in the next Congress, if Democrats win the House, so everyone's on the record. His line was, quote, "We shouldn't be trying to make them whole."
+
+You can see why the argument's showing up now. When three companies are spending a hundred and sixty-eight billion dollars a quarter, somebody's going to ask who pays if it doesn't work out. The companies say it's working. That's the question on the table, really.
+
+So where does that leave us? Amazon says the spending's working. And the cash flow says it's expensive. Two labs say they're protecting defenders, and they've picked opposite ways of doing it.
+
+That's Artificial Record. The full edition, with every source linked, is at artificialrecord dot com.
