@@ -1,0 +1,67 @@
+VOICE: onyx · MODEL: gpt-4o-mini-tts
+INSTRUCTIONS:
+Voice: a seasoned public radio host, mid-forties, talking to one person across a table. Not announcing. Not presenting.
+Pacing: Conversational and unhurried. Vary it — move a little quicker through familiar setup, slow down on figures and on the point of a sentence. Never metronomic.
+Breath and pauses: Breathe audibly before a new idea. Leave a real beat of silence at paragraph breaks — a full second, sometimes longer. Silence is not dead air.
+Inflection: Let sentences fall at the end. Do not hold pitch level and do not lift into the next line. Downward, settled, finished.
+Articulation: Relaxed, slightly soft. Let some consonants go. Do not over-enunciate — you are not reading a legal notice.
+Attitude: Interested, dry, faintly amused now and then. You find this genuinely interesting and you assume the listener does too. Never enthusiastic. Never selling. Never customer-service warm.
+Avoid: uniform rhythm, rising terminal inflection, announcer polish, any sense of performance.
+
+Good morning. Here's the thread running through the weekend's news. It's not how much the AI buildout costs anymore. It's who's willing to pay for it, and on what terms.
+
+Let's start with OpenAI.
+
+CNBC reported on Saturday that OpenAI is now looking to raise up to twenty billion dollars in its current round. That's down from a target of up to thirty. A person familiar with the deal told CNBC the numbers could still change, and that the round hasn't closed. OpenAI didn't respond to CNBC's request for comment. So none of this is confirmed by the company. Keep that in mind.
+
+Some of the details come from the Financial Times, as CNBC relays them. A valuation of one point two five trillion dollars. A deadline for investors to commit that fell on Friday. And some investors, apparently, trimmed what they'd agreed to put in.
+
+Now. A smaller target and a trillion-dollar-plus valuation, in the same sentence. That's a strange pairing. And we can't tell you why the target came down. Nobody on the record has said.
+
+What we can say is the timing. CNBC says AI-linked stocks had a rough Friday. Intel dropped twenty-five percent. Micron, five and a half. Nvidia, four. Whether that's connected to the round? We don't know. Don't let anyone tell you they do.
+
+So that's one company asking for money. Here's one saying how much it'll ask for.
+
+Oracle held an investor day on Wednesday, and it published its own numbers. And this part's from the company itself. Oracle says it'll limit new outside funding to twenty billion dollars over the next four fiscal years. About ten billion in stock, ten billion in debt. That doesn't count refinancing what it already owes.
+
+And it put a date on something investors have been asking about. Oracle says its free cash flow turns positive in the second half of its fiscal 2028. Its fiscal year ends in May. So, roughly, from the end of next year.
+
+Those are targets. Not results. Worth saying.
+
+There's one more line in there I liked. Oracle says vendor financing, customer-supplied hardware, and prepayments from customers should cut the cash it needs up front. Which is a polite way of saying someone else may be holding some of the cost of the chips for a while.
+
+And speaking of chips.
+
+Nvidia put out a release on Monday about Meta. Nvidia says it plans to invest three billion dollars in Meta's stock offering. Plans. It says the deal is still subject to closing conditions.
+
+Now you might remember Meta is selling stock to pay for its AI spending. About thirty-seven billion dollars' worth, between two deals. When Meta launched them, it said Nvidia, AMD and Broadcom had shown some interest in buying up to five billion of the common stock. Interest. Not a purchase.
+
+So this is the first time we've seen one of those turn into a number. Nvidia's three billion. We haven't found anything similar from AMD or Broadcom. And Nvidia's release doesn't say which of Meta's two offerings it'd join.
+
+Here's why it's interesting. Meta is a big buyer of Nvidia's chips. And now Nvidia may be a buyer of Meta's stock. Some of the money Meta raises could end up back with the company that sells it the hardware. That's not unusual in this industry. But it does make it harder to tell real outside demand from demand a supplier helps pay for.
+
+One more thing in that release, and it's Nvidia's claim, so treat it that way. It says Meta's Muse models have reached frontier-level performance on benchmarks. That's the vendor talking about its customer.
+
+Okay. One story that has nothing to do with money.
+
+On Friday night a federal judge in Mississippi let a lawsuit against xAI go forward. The NAACP is suing over gas turbines at a site in Southaven, Mississippi. That's the Memphis area. The claim is that xAI built and ran a power plant for its data centers without the right air permits.
+
+xAI had three arguments for dismissal. And the judge, in the written opinion, said no to all three. One: the NAACP couldn't sue under the Clean Air Act. The court said it could. Two: the turbines were mobile equipment, so no permit needed. The court said they aren't mobile sources under Mississippi's plan. Three: letting private groups bring these suits is unconstitutional. The court said it isn't.
+
+Now, be careful here. This is a motion to dismiss. The court has to assume the plaintiffs' allegations are true for now. Nobody's found that any law was broken. All the judge decided is that the case continues.
+
+But the mobile argument matters beyond this one case. Plenty of builders are bringing in portable turbines because the grid can't deliver power fast enough. A court has now said, at least at this stage, that portable-looking doesn't mean exempt. CNBC says SpaceX, which owns xAI's AI business, didn't immediately respond to its request for comment.
+
+One more piece of the money picture, from the filings. Microsoft filed paperwork on Thursday for a sale of senior notes. Ten series, two floating rate, eight fixed. But the draft leaves the amounts blank. CNBC says Microsoft plans to raise twenty-five billion dollars in bonds. We can't confirm that number from the filing. What the filing does say is that the money's for general corporate purposes, which may include capital spending.
+
+And a smaller, quieter item. On the twenty-seventh, Anthropic announced a forty percent discount on Claude for governments. Federal, state, local, tribal. Anthropic estimates it'll save the government a billion dollars. That's the company's own estimate. The company also says about five hundred government organizations already use Claude, and that federal civilian use grew about twentyfold in a year. Again, Anthropic's numbers about its own customers. Not an audit.
+
+So where does that leave us.
+
+Everyone building this stuff needs a lot of money, a lot of power, and a lot of patience from the people supplying both. And this week, each of those got a little harder to count on.
+
+Anthropic is walking into that. It filed to go public on the Nasdaq last Monday, ticker A-N-T. It hasn't set a price range or share count, and the filing isn't effective yet. CNBC says the market for new listings has been mostly frozen since SpaceX went public in June. It also reports the prospectus shows an eighty-billion-dollar net loss in the first half of the year. We haven't read the full filing ourselves, so that's CNBC's number. And an analyst CNBC quotes called the prospectus very impressive, but also said companies would be, his words, extremely cautious, if not just foolish, to go public right now.
+
+So we'll watch. Whether OpenAI closes at twenty billion, or some other figure. What Meta's final papers say about Nvidia. And Nvidia reports its own results on November seventeenth.
+
+That's today's edition of Artificial Record, the AI industry, on the record. The full edition, with every source linked, is at artificialrecord.com.
