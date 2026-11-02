@@ -1,0 +1,67 @@
+VOICE: onyx · MODEL: gpt-4o-mini-tts
+INSTRUCTIONS:
+Voice: a seasoned public radio host, mid-forties, talking to one person across a table. Not announcing. Not presenting.
+Pacing: Conversational and unhurried. Vary it — move a little quicker through familiar setup, slow down on figures and on the point of a sentence. Never metronomic.
+Breath and pauses: Breathe audibly before a new idea. Leave a real beat of silence at paragraph breaks — a full second, sometimes longer. Silence is not dead air.
+Inflection: Let sentences fall at the end. Do not hold pitch level and do not lift into the next line. Downward, settled, finished.
+Articulation: Relaxed, slightly soft. Let some consonants go. Do not over-enunciate — you are not reading a legal notice.
+Attitude: Interested, dry, faintly amused now and then. You find this genuinely interesting and you assume the listener does too. Never enthusiastic. Never selling. Never customer-service warm.
+Avoid: uniform rhythm, rising terminal inflection, announcer polish, any sense of performance.
+
+Good morning. It's Monday, and the big cloud companies have now all reported. The numbers say two things at once. Demand is huge. And the bill for meeting it is bigger.
+
+Let's start with Google's parent, Alphabet.
+
+Its quarterly filing came out last Wednesday, and it's worth reading slowly. Revenue was a hundred and twenty-seven point six billion dollars. Up twenty-five percent. But look at the cloud business. Google Cloud brought in thirty point seven billion. A year ago, that was fifteen point two. So it roughly doubled. Up a hundred and three percent.
+
+And the company says part of that came from selling its TPUs. Those are Google's own AI chips. So it's not just renting them out anymore. It's selling the systems.
+
+Alphabet also gave a usage number. It says the interfaces to its own models now process nearly thirty-two billion tokens a minute. A token's a little chunk of text, a few letters. So picture thirty-two billion of those, every sixty seconds. That's more than four times last year's rate. And it says the Gemini app has hit a billion users.
+
+The CEO, Sundar Pichai, put it this way. Quote, "we are now on a half-trillion dollar revenue run rate." A run rate just means: take the recent pace, and multiply it out over a year. It's a projection. Not a result.
+
+He also said the company's Gemini four models are, quote, "leading at the frontier." That's the CEO describing his own product. The filing doesn't point to a benchmark. So we'll call it a claim.
+
+Now. Those are Alphabet's numbers. The filing doesn't say how it counts a user, or a token. So hold them a little loosely.
+
+Here's the other half. Alphabet spent fifty-one point four billion dollars on equipment in that one quarter. Twenty-four billion a year before. And its free cash flow, the cash left after paying for all that, was negative. Nine point one billion.
+
+So: cloud revenue doubled, and the company burned cash. Both in the same filing.
+
+One more detail, and it's an odd one. Profit fell. Net income was twenty-six point two billion, down from thirty-five. The company says that's mostly an eight point seven billion dollar loss on investments it holds. Not the business itself. But it's there.
+
+CNBC reported the stock fell about ten percent in after-hours trading. That's CNBC's number, not Alphabet's.
+
+So that's Google. Now Microsoft.
+
+Microsoft's quarter ended in September too. Revenue, ninety-two point three billion. Up nineteen percent. Azure, its cloud, grew forty-eight percent, to thirty-three point two billion.
+
+But the number I keep coming back to is the backlog. Microsoft calls it commercial remaining performance obligation, which is a mouthful. It just means contracts customers have signed that Microsoft hasn't yet turned into revenue. It's up seventy-three percent. To six hundred and seventy-seven billion dollars.
+
+Now, a backlog's a promise. Not cash. And Microsoft's release doesn't say how much of that comes from any one customer. We looked. We didn't find a breakdown.
+
+What it does say, through CNBC, is that the finance chief, Amy Hood, told investors some capacity is going to slip. Delays at outside suppliers of graphics chips. Some of it pushes into the first half of next year.
+
+CNBC also says Microsoft trimmed its full-year spending forecast, to a hundred and seventy billion from a hundred and seventy-five. Which sounds like pulling back. But as CNBC tells it, the reason is supplier delays. Not weaker demand.
+
+A few more Microsoft figures, since they're all in the release. Operating income, forty-five point nine billion. Its broader cloud business, sixty-three point nine billion, up thirty percent. And Microsoft says its profit, leaving out gains tied to its OpenAI investment, was thirty-six point four billion. Those OpenAI gains added about two hundred million dollars this quarter. Small, next to everything else. But it's a reminder how tied together these companies are.
+
+So put those two next to each other. A company with six hundred and seventy-seven billion dollars in signed work. And it can't build fast enough. That's a different problem from the one people were worried about a few months ago.
+
+And Microsoft's trying to ease it with its own silicon. Earlier this month, it announced a chip called Maia 300. It's built for inference, which is the work of actually running a model once it's trained. Production starts next year. And Microsoft says it expects forty percent more output per megawatt than, quote, leading GPU systems. It doesn't say which ones. And it's a projection. The chip isn't in production yet. So that's a hope, in writing.
+
+Okay. Last story. A lighter one, sort of.
+
+Google says it has gotten its first AI answer back from space.
+
+Here's what happened, according to Google's own post on Friday. A prototype satellite went up on October first. It carries one of Google's data-center-class chips. And the team sent it a prompt. Write a haiku about being in space. A small Gemma model on board wrote one. And it came back down as the satellite passed over Svalbard, in Norway.
+
+They called it a Hello World moment. Which is about right.
+
+But here's the honest part. The post gives no speeds. No power figures. Nothing on how the chip handles heat or radiation. Those tests come next, Google says. And the next real milestone is two linked satellites, in twenty twenty-seven.
+
+So it's one prototype, one haiku, and Google grading its own work. Interesting. Not yet evidence of anything about costs.
+
+Which brings it back to the money. Everyone's building on the promise that demand keeps doubling. This week's filings say, for now, it is. What they can't say is who pays for the gap between spending and cash. That's the question for the next few quarters.
+
+That's the Artificial Record. The full edition, with every source linked, is at artificialrecord.com.
