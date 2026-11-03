@@ -1,0 +1,87 @@
+VOICE: onyx · MODEL: gpt-4o-mini-tts
+INSTRUCTIONS:
+Voice: a seasoned public radio host, mid-forties, talking to one person across a table. Not announcing. Not presenting.
+Pacing: Conversational and unhurried. Vary it — move a little quicker through familiar setup, slow down on figures and on the point of a sentence. Never metronomic.
+Breath and pauses: Breathe audibly before a new idea. Leave a real beat of silence at paragraph breaks — a full second, sometimes longer. Silence is not dead air.
+Inflection: Let sentences fall at the end. Do not hold pitch level and do not lift into the next line. Downward, settled, finished.
+Articulation: Relaxed, slightly soft. Let some consonants go. Do not over-enunciate — you are not reading a legal notice.
+Attitude: Interested, dry, faintly amused now and then. You find this genuinely interesting and you assume the listener does too. Never enthusiastic. Never selling. Never customer-service warm.
+Avoid: uniform rhythm, rising terminal inflection, announcer polish, any sense of performance.
+
+Yesterday we looked at the companies that sell the AI buildout. Today it's the buyers. Who's paying, and what does the seller burn to serve them?
+
+Hello, it's Tuesday, November third.
+
+So. Start with Palantir. It put out its quarterly results yesterday. Revenue was two point three billion dollars. That's up ninety-six percent from a year ago. Nearly double.
+
+And here's the part I liked. Its U.S. commercial business, that's companies, not the government, brought in nine hundred eighty-four million. The U.S. government side brought in nine hundred fifty-three million. So the private customers are ahead of Uncle Sam.
+
+Now. Every one of those numbers is Palantir's own. It's the company's release, filed with the SEC. And the margin it brags about, sixty-two percent, that's an adjusted figure. Not the standard accounting one. The standard one is forty-seven percent. Which, honestly, is still a lot.
+
+Palantir is guessing at the rest of the year too. It's guiding to about eight and a half billion in revenue. That's a forecast. Not a result.
+
+The CEO, Alex Karp, put it this way. He said the sovereign AI movement is imposing a dramatic dichotomy between haves and have-nots. Sovereign AI just means countries building AI they control themselves. Whether that's driving these numbers, the release doesn't say. It doesn't break it out.
+
+So that's one side. Somebody's paying.
+
+Now the other side. Amazon.
+
+Amazon's cloud arm, AWS, grew thirty-nine percent last quarter. Forty-six billion dollars in sales. A year ago that was thirty-three. And the unit made seventeen point eight billion in operating profit. Good business.
+
+But look at what it cost. In one quarter, Amazon bought seventy-seven billion dollars of equipment. Servers, chips, buildings. A year earlier, that number was thirty-five billion. So it more than doubled.
+
+And over the last twelve months, Amazon's free cash flow, that's the cash left after buying all that stuff, was negative. Forty-two billion dollars negative. A year ago it was positive, fourteen billion.
+
+Amazon says that swing is mostly AI investment. It expects to spend about two hundred twenty billion this year. Two hundred twenty billion. Just on equipment.
+
+The boss, Andy Jassy, says AWS growth will stay above forty percent in twenty twenty-seven and twenty twenty-eight. Okay. That's what management thinks. It's not a measurement.
+
+One more thing, because you'll see it elsewhere. Some outlets printed a figure for Amazon's contracted backlog. It's not in the release. So we're not using it.
+
+Here's the way I'd hold those two stories together. Revenue is growing. But the cash is going out faster than it's coming in. Alphabet showed that last week. Amazon shows it too. Nobody's saying it can't work. They're saying it takes a lot of money first.
+
+Alright. Third story. It's about price.
+
+Anthropic announced a deal with the General Services Administration. That's the part of the federal government that does the buying. Under it, government customers get forty percent off Claude. And state and local governments get it too. No minimum spending.
+
+Anthropic says that saves the government a billion dollars. Notice that word, says. It's an estimate. It depends on what agencies actually buy.
+
+It also gave usage numbers. About five hundred government organizations use Claude. Weekly users of its government product are up roughly eightfold since February. But it doesn't tell you the starting point. Eightfold from what? We don't know.
+
+And the success stories, a Utah pilot, a state team moving nine hundred software functions in two days, those are Anthropic's, or the agencies it quotes. Nobody independent has checked them that we've seen.
+
+Why does it matter? A forty percent government discount is a number. And numbers like that get quoted back at every other vendor. Anybody selling AI to a public agency is now going to be asked, so, what's your forty?
+
+Also, Anthropic filed to go public on October twenty-sixth. We're not drawing any figures from that filing today. The share count and price aren't set.
+
+Last one. Apple.
+
+Apple says some Apple Intelligence features are coming to China. Testing starts tomorrow, November fourth. The public release is in December.
+
+And the interesting bit is what's inside. Apple says it worked with Alibaba to put Alibaba's Qwen model into Siri, writing tools, and visual features. So on an iPhone in China, some of the AI will come from a Chinese company.
+
+But it's a trimmed version. Apple says it does not include the new Siri, or the other big features announced at its developer conference this year. And the Mac and iPad have to wait for, quote, necessary approvals.
+
+That's Apple's own wording. It's the only thing about regulators we can pin on Apple. There are reports about which Chinese permits were involved. We couldn't verify them. So we've left them out.
+
+What does it add up to? Older features, a local partner, no new Siri. That's the deal you get for being in that market.
+
+A bit of startup money, too. Both from three weeks back, but we hadn't covered them.
+
+An AI lab called Flapping Airplanes, a year old, raised a billion dollars. TechCrunch says the valuation is six billion, and it credits Bloomberg for that number. So it's reported. The company hasn't confirmed it. They're building models that need far less training data. That's the pitch. No product yet that we know of.
+
+And Legora, a legal AI company, raised five hundred fifty million at an eight point eight billion valuation. TechCrunch says its recurring revenue passed two hundred million dollars. That's the company's figure, relayed. Not audited. Its rival Harvey raised the same amount a month earlier, at fifteen and a half billion.
+
+Oh, and OpenAI and ServiceNow widened their partnership last week. A ServiceNow plugin for ChatGPT is live. Most of the rest, though, is slated for twenty twenty-seven. So that's intent. Not a launch. We couldn't open OpenAI's own page, so we're leaning on the ServiceNow release there too.
+
+A couple of quick ones before I let you go.
+
+Microsoft's threat team published a report on how North Korean hacking groups use AI. It says adoption is high. But, and this is the important part, it says the operations are still run by humans. Not autonomous. Microsoft names three groups it considers furthest along. That's Microsoft's own assessment of groups it tracks. Think of it as a company's field notes, not a court finding.
+
+And in Britain, a legal news service reports that four regulators, including the competition authority and the privacy regulator, put out a joint statement. The gist is, the laws you already have cover AI agents. An agent acting on your behalf doesn't shrink your responsibility. We haven't read the statement itself. So treat that one as secondhand for now.
+
+Anthropic also widened a free-credit program for scientists, with twenty named partners, the National Science Foundation among them. It's a program announcement. No research results attached.
+
+That's the day. Buyers are paying. Sellers are spending even faster. And the governments are starting to set the price.
+
+This was Artificial Record. The AI industry, on the record. Full edition, with every source, is at artificialrecord dot com.
