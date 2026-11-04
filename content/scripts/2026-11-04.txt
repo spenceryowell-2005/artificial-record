@@ -1,0 +1,65 @@
+VOICE: onyx · MODEL: gpt-4o-mini-tts
+INSTRUCTIONS:
+Voice: a seasoned public radio host, mid-forties, talking to one person across a table. Not announcing. Not presenting.
+Pacing: Conversational and unhurried. Vary it — move a little quicker through familiar setup, slow down on figures and on the point of a sentence. Never metronomic.
+Breath and pauses: Breathe audibly before a new idea. Leave a real beat of silence at paragraph breaks — a full second, sometimes longer. Silence is not dead air.
+Inflection: Let sentences fall at the end. Do not hold pitch level and do not lift into the next line. Downward, settled, finished.
+Articulation: Relaxed, slightly soft. Let some consonants go. Do not over-enunciate — you are not reading a legal notice.
+Attitude: Interested, dry, faintly amused now and then. You find this genuinely interesting and you assume the listener does too. Never enthusiastic. Never selling. Never customer-service warm.
+Avoid: uniform rhythm, rising terminal inflection, announcer polish, any sense of performance.
+
+Here's the thing running through today's documents. Everybody says demand for AI is climbing. The harder question is what it costs to serve it. Good morning.
+
+So — AMD first. The chipmaker put out its numbers last night. Revenue for the quarter was about thirteen point four billion dollars. That's up forty-five percent from a year ago. And the part that matters is the data center business, the one that sells the chips AI runs on. That nearly doubled. Up ninety-seven percent, to about eight and a half billion.
+
+Then the guess about what's next. AMD says the fourth quarter will come in around seventeen billion. Give or take three percent. That's a forecast, remember. Not a result. But the CEO, Lisa Su, said growth should quote "accelerate further." Which is a bold thing to say after a quarter like that.
+
+One more detail. Back on October twenty-seventh, AMD announced a bigger partnership with Meta. AMD says it plans to put a billion dollars into Meta's stock offering. A chip seller investing in a customer. Hold onto that thought. It comes back.
+
+Okay. Now the other side of the counter.
+
+Anthropic has filed to go public, and it amended that filing yesterday with newer numbers. I should be straight with you. The filing is enormous, and our tools couldn't open it. So what I'm about to say comes from TechCrunch's read of it. Not ours.
+
+TechCrunch says Anthropic's revenue last quarter was about seventeen billion dollars. Up from eleven and a half the quarter before. Earlier reports put it a little lower, around sixteen point eight. Close. Not the same. So check the filing.
+
+But here's the number that stuck with me. Compute. The computing power Anthropic rents to train and run its models. TechCrunch says that bill was ten billion dollars for the quarter. Fifty-eight percent of revenue. A quarter earlier it was forty-eight.
+
+Think about that. For every dollar that comes in, fifty-eight cents goes right back out to the people who own the machines. And part of it, about five billion, was bought on short-term deals. Which cost a lot more than long ones. It's like booking a hotel room the night of, instead of a month ahead.
+
+TechCrunch also reports a measure of revenue per compute dollar. It peaked a little over two, and slid to one point seven two. The company itself says compute will be its biggest expense for, quote, the foreseeable future.
+
+And that's the other half of AMD's story. Somebody's paying for all those chips. This is what it looks like from the paying end.
+
+So. Palantir. We covered its quarter yesterday. Revenue up ninety-six percent. Big number. But TechCrunch went looking in the small print and found something. New contract value for U.S. businesses fell. From a record two point one three billion the quarter before, to one point four six billion. That's TechCrunch's figure. We didn't find it in the release.
+
+And on the earnings call, the CEO, Alex Karp, talked about customers moving, quote, "much quicker to deployment, shorter duration of the contract." Shorter contracts.
+
+Now, careful. Nobody's said the shorter contracts caused the drop. A dip after a record can be timing. Customers waiting. Lots of things. But shorter terms do mean customers can leave faster. Which makes the revenue harder to predict. Palantir's growth is real. What's less clear is how sticky it is.
+
+Last thing. And this is more of a lighter note, sort of.
+
+Mistral, the French lab, released an open-weight version of its biggest model last week. Open-weight means anyone can download the trained model and run it. This one's about a trillion parameters. That's the number of adjustable settings inside it. Big.
+
+Mistral says it's the best open model for coding. Those are Mistral's own claims. Its own benchmarks. We haven't seen anyone else reproduce them. The license is mostly free, but if you want to sell it as a hosted service, you need to pay Mistral. And Mistral says it's tightening its safety guardrails, because it saw signs the model could help real attackers.
+
+Why does that matter? Well. For companies that need to keep their data in-house, there's now a very large model they can run themselves. That's a real option.
+
+And the throughline's the same. Even free-to-download models need somebody to run them. On machines. That cost money.
+
+Oh, and one more from Anthropic, because it ties in. On Monday the company's red team published a research prototype called FlashProve. The question it's trying to answer is a good one. When you pay for a particular AI model, how do you know that's the model answering you? Maybe the provider quietly swapped in a cheaper one. You'd never know.
+
+FlashProve uses what's called a zero-knowledge proof. Which is a way of proving something is true without showing the thing itself. The provider commits to a model's settings, and then each answer comes with a proof. You check the proof. You never see the model.
+
+Now, the authors are upfront that it's early. Proving an answer costs seventy to ninety-five times as much computing as just generating it. The proofs are about nineteen megabytes for a short request. Checking one takes seventeen seconds on a decent processor. And it only works on requests up to about a thousand tokens, which is a few paragraphs. TechCrunch says there are no plans to put it into use anywhere.
+
+So it's a prototype. But it's a hint at where trust is heading, when the product is an answer and the price depends on which model gave it.
+
+And while we're on cost, here's a physical version of it. TechCrunch, summarizing a New York Times investigation, says some data centers are making their own electricity with old jet engines. Retired ones, rebuilt to burn natural gas. Because waiting for the grid takes years. The International Energy Agency puts a hundred-megawatt hookup in Northern Virginia at about seven years. A hundred megawatts is roughly seventy-five thousand homes.
+
+The Times, as TechCrunch relays it, says xAI put eight of these converted turbines in Mississippi to help power its Memphis site. And that Microsoft backed out of a data center in England because the local utility couldn't promise enough power until the early twenty-thirties. These engines are less efficient and pollute more. So they're a stopgap, a way to get running now while the permanent power catches up. We haven't read the Times piece ourselves.
+
+So that's the day. Demand's up. Everybody agrees. The open question is whether the cash coming in covers the cash going out. AMD says yes, for now. Anthropic's numbers say it's closer than you'd like. And Palantir's customers seem to want to try before they commit.
+
+None of this is investment advice, by the way. Just what the documents say.
+
+That's the Artificial Record. The AI industry, on the record. Sources and the full edition are at artificialrecord.com.
