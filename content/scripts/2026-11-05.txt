@@ -1,0 +1,65 @@
+VOICE: onyx · MODEL: gpt-4o-mini-tts
+INSTRUCTIONS:
+Voice: a seasoned public radio host, mid-forties, talking to one person across a table. Not announcing. Not presenting.
+Pacing: Conversational and unhurried. Vary it — move a little quicker through familiar setup, slow down on figures and on the point of a sentence. Never metronomic.
+Breath and pauses: Breathe audibly before a new idea. Leave a real beat of silence at paragraph breaks — a full second, sometimes longer. Silence is not dead air.
+Inflection: Let sentences fall at the end. Do not hold pitch level and do not lift into the next line. Downward, settled, finished.
+Articulation: Relaxed, slightly soft. Let some consonants go. Do not over-enunciate — you are not reading a legal notice.
+Attitude: Interested, dry, faintly amused now and then. You find this genuinely interesting and you assume the listener does too. Never enthusiastic. Never selling. Never customer-service warm.
+Avoid: uniform rhythm, rising terminal inflection, announcer polish, any sense of performance.
+
+Here's the thread today. For two years, the AI industry got asked how fast it could build. Now the people on the other side of the table are setting terms. Good morning.
+
+Start with the voters. NBC News ran an exit poll on Tuesday, election day. And one question was about data centers. Those are the huge warehouses full of computers that AI runs on. Seventy-six percent of voters said they oppose building one in their own community. Seventy-six. Only twenty-four percent were in favor.
+
+Now, careful. That's an exit poll. It's what people said, not how they voted. And it doesn't tell us why they object. But there's more. Fifty-seven percent said AI will do more to hurt society than help it. And fifty-six percent said AI and data centers were a crucial or major factor in their vote for Congress.
+
+Which, if you build data centers, is a problem. You already wait years for power. Now you may wait for permission, too. TechCrunch reports that a county in Ohio, where Meta had planned a big facility, passed a ban on large data centers. It also reports that Senator Sanders and Representative Ocasio-Cortez introduced a bill for a nationwide pause. We haven't read the bill. So hold that one loosely.
+
+Okay. Second thread. And it's the same story, really, from a different side.
+
+Bloomberg reported yesterday that Apple is cutting how much its own employees can spend on AI. This is Bloomberg's reporting. Apple hasn't confirmed it, as far as we found. And we're getting it by way of TechCrunch, because we couldn't open the original.
+
+Here's what they say. In October, Apple lowered the daily cap for engineering teams from three hundred dollars to two hundred. Some are headed to a hundred. And for people outside engineering, Apple is reportedly looking at twenty-five dollars a day.
+
+Think about what that means. AI services charge by the token. A token's a chunk of text, about three-quarters of a word. So every question an engineer asks has a price tag. For a while, companies told people to use as much as they could. Now somebody in finance is reading the bill.
+
+Does that mean AI isn't working? No. The reports don't say. Maybe it's price. Maybe it's productivity. Maybe both. But it's a very rich company, treating the meter as something to manage.
+
+And then there's Uber.
+
+On its earnings call yesterday, Uber's executives were asked about AI agents. Those are programs that do a task for you, like order a ride. The pitch is you'll stop opening apps. You'll just tell an assistant.
+
+So how many rides did agents book in Uber's busiest week of October? Four. Four rides. They said about five hundred food orders, too. Out of roughly three hundred and twenty million trips and orders that week.
+
+The CEO, Dara Khosrowshahi, called it, quote, "very, very early and very limited traction." He also pointed out that booking a ride in the app takes about fifty seconds. So what's the agent saving you? And to be fair, he also said every AI company is talking to them. That's one week, at one company. But four is a small number. DoorDash, TechCrunch notes, has reported only a few hundred orders from agents. So it isn't just Uber.
+
+Money's part of this, too. TechCrunch took a look at how the AI industry's political spending did. All figures are TechCrunch's. We didn't check the filings.
+
+One group, Leading the Future, is backed by OpenAI's president, Greg Brockman, and the venture firm Andreessen Horowitz. It spent about twenty-seven million dollars in primaries. Eight million of that went against a New York lawmaker named Alex Bores. He lost his race in June. So, a win. But a related pair of groups spent four point eight million backing a Senate candidate in South Carolina, Darline Graham. She lost.
+
+On the other side, a group backed by Anthropic, Public First, had a mixed night. It backed several Republicans who lost. It did better with Democrats. It also gave three million dollars to a group supporting California state Senator Scott Wiener, who was leading when TechCrunch published.
+
+And here's the honest part. TechCrunch says it's hard to pull the AI money apart from a bigger Democratic wave. So nobody can tell you that spending won or lost anything.
+
+OpenAI's policy chief, Chris Lehane, also published an essay calling AI a defining issue for 2028. He compares it to the New Deal. And he warns that a data center moratorium could cost America its lead over China. A critic at the AI Now Institute called it self-serving. We haven't read the essay itself, only TechCrunch's summary.
+
+Alright. One more, and this one moved fast.
+
+On Tuesday, Google said schools using its classroom software would lose access to Search unless they opted in to Google's AI tools. A Google vice president told the New York Times that Search and AI are, quote, "deeply integrated."
+
+Well. People noticed. TechCrunch reports senators from both ends of the party spectrum, Bernie Sanders and Richard Blumenthal, criticized it. So did the former head of the FTC, Lina Khan, and New York's mayor. Sanders called it extortion.
+
+By Wednesday, Google posted on X that it had listened to educators. AI products would be off by default, and schools could switch each one on themselves. One day. That's quick, for a company that size.
+
+I should flag something here. Yesterday's edition described the plan as it stood on Tuesday. That's out of date now. And we haven't read Google's own full announcement, only TechCrunch's account of the post. So we can't tell you whether the Search requirement is gone entirely.
+
+Quick hits, then I'll let you go.
+
+Meta bought a small startup called Conductor. It lets you run several coding agents side by side. Axios reported it first, and Meta confirmed to TechCrunch. No price. Meta's own coding agent launched in August. Conductor's came from other labs, like Anthropic and OpenAI. If you're a Conductor customer, the cloud service shuts down November twentieth. Export your data before then.
+
+And Agility Robotics, which makes a walking warehouse robot, was expected to start trading on Nasdaq today through a merger with a shell company. It's expected to raise about four hundred sixty-five million dollars. TechCrunch reports its revenue for the first half of the year was about a hundred seventy-four thousand dollars. Against losses of roughly three hundred sixty-two million. That's the company's own filing numbers, as TechCrunch tells it. We haven't seen the closing paperwork.
+
+So, here's where that leaves us. Nothing today says demand is falling. Yesterday's numbers from AMD and Anthropic pointed the other way. What it says is that the buyers, the neighbors and the voters have leverage now. And a few of them have already used it.
+
+That's Artificial Record. The AI industry, on the record. Full edition, with every source, is at artificialrecord.com.
