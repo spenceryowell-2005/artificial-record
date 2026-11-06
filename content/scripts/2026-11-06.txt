@@ -1,0 +1,63 @@
+VOICE: onyx · MODEL: gpt-4o-mini-tts
+INSTRUCTIONS:
+Voice: a seasoned public radio host, mid-forties, talking to one person across a table. Not announcing. Not presenting.
+Pacing: Conversational and unhurried. Vary it — move a little quicker through familiar setup, slow down on figures and on the point of a sentence. Never metronomic.
+Breath and pauses: Breathe audibly before a new idea. Leave a real beat of silence at paragraph breaks — a full second, sometimes longer. Silence is not dead air.
+Inflection: Let sentences fall at the end. Do not hold pitch level and do not lift into the next line. Downward, settled, finished.
+Articulation: Relaxed, slightly soft. Let some consonants go. Do not over-enunciate — you are not reading a legal notice.
+Attitude: Interested, dry, faintly amused now and then. You find this genuinely interesting and you assume the listener does too. Never enthusiastic. Never selling. Never customer-service warm.
+Avoid: uniform rhythm, rising terminal inflection, announcer polish, any sense of performance.
+
+Morning. Here's the thread today. The AI business is getting more specific about what it's actually selling, and the people it's selling to, and living next to, are getting more specific right back.
+
+So let's start with OpenAI.
+
+Greg Brockman, the company's president, was on stage at a Wall Street Journal conference on Wednesday. Somebody asked if OpenAI could be ready to go public next year. And he said, quote, "I think so. Yes." Which, fine. Executives say that. But the rest of what he said was more interesting.
+
+He said the first half of this year was, his words, "pretty rough" for enterprise sales. That's the business customers. He said OpenAI "wasn't even in the conversation" on coding agents. Those are programs that write and run software on their own. Anthropic's Claude Code had that ground. And then he said things turned around in the third quarter. Enterprise revenue doubled, he said. It's now the majority of the company's revenue. Used to be around thirty percent.
+
+Now. Here's the careful part. This is an executive at a private company, talking on a stage. TechCrunch reported it. We haven't seen a filing or an audited number behind any of it. And TechCrunch noted it isn't clear whether his seventy percent quarterly growth figure covers the whole company or just enterprise. So treat the numbers as claims.
+
+But the admission itself? That's not nothing. Companies at this size don't often say out loud, we were behind.
+
+Okay. Second story. Same conference, same day.
+
+Dina Powell McCormick, Meta's president, said that after Tuesday's midterms, building data centers is going to be, quote, "harder." She said the industry hasn't done a good enough job explaining why it's building them. And she said the real problem isn't the buildings. It's, her words, "how people feel about AI in general."
+
+Here's what makes that land. CNBC, citing Ballotpedia, counted forty-one local ballot measures in ten states that restricted data center construction in some way. Ohio alone had twenty-one. And voters sided against data centers in all but one of them. The one exception was in a tiny town in North Dakota, and that was a vote about adding extra review of industrial projects, so it's a bit of an odd case.
+
+Meta says it has data centers in twenty-three states, and five planned projects at a gigawatt or bigger. A gigawatt is about one large nuclear reactor's worth of power. Five of those. And she said Meta gets calls, quote, "every day," from companies wanting to rent its computing power.
+
+So think about that for a second. Demand is there. People are literally phoning up to rent the capacity. And at the same time, the neighbors are voting to stop the next one. That's a squeeze from both ends.
+
+And Meta's answer, for now, is a set of promises. Pay for your own electricity. Send tax money to teachers and first responders. Hire locally. Get both parties on board. We'll see whether that's enough. This is just information, not investment advice.
+
+Third story. This one's about hacking, and it's a bit more uneasy.
+
+TechCrunch reports OpenAI has released a model called ChatGPT Cyber. It's built for offensive security work. That means finding weaknesses in software and writing the code that exploits them. It's not open to everybody. You apply, you verify your identity, one researcher said he uploaded his driver's license. OpenAI says thousands of security professionals are in the program, and it plans to open it wider.
+
+The headline example is a researcher named Max Justicz. He said he used an OpenAI model to find a serious flaw in Ubuntu, the Linux system that runs a lot of servers. The kind of flaw that could let an attacker take over a machine. The Debian project has patched it, and TechCrunch says there's no known exploitation. He said it took about two hours. And cost him roughly five thousand dollars in usage fees.
+
+OpenAI's own numbers, as TechCrunch relays them, are bigger. Patches prepared for nine hundred and forty-eight possible problems in the Linux kernel. Eighty-one new vulnerabilities in Firefox. Plus a one billion dollar pledge to help people protect things like the power grid and water systems.
+
+Now, I'll be plain. Those are OpenAI's claims. We couldn't open OpenAI's pages today. The site wouldn't let our tools in. So that's TechCrunch's account of them, not ours.
+
+And the worry, from Justicz himself, is a fair one. Gating access keeps bad actors out. But if attackers can get open models with the safety limits stripped off, the defenders might end up the ones with the handicap. That's his argument. It's not a finding. But it's the question hanging over the whole program.
+
+Last one. And it's kind of the quiet one.
+
+Airbnb reported its third quarter. Revenue about four point nine billion dollars, up nineteen percent. And in the same release, it said it's building its own AI travel agent, coming in the first half of next year. And then a line I liked. Quote, "We don't believe people will use one AI agent for everything."
+
+That's a company betting that a specialist beats a generalist. And it's not alone in thinking the action is around the edges of the agents. Dropbox announced it'll buy a storage startup called Tigris Data for three hundred and fifty million dollars, to build storage meant for AI agents. And The Information reported, and nobody's confirmed this, that Palo Alto Networks is in talks to pay about five hundred million dollars for a company called Clutch, which controls what AI agents can reach inside a business.
+
+Clutch had about ten million dollars in annual revenue, approaching. So that's something like fifty times revenue, if the report's right. Reported. Not agreed.
+
+One more, because it's a good one. A startup called Axiom Math says its AI agents took the Stacks Project, a giant open reference on algebraic geometry, about seventy-five hundred pages, and turned it into roughly sixteen million lines of Lean. Lean's a proof language. A computer checks every step. So it's not "trust me." It's "go run it."
+
+Mostly. Axiom's own site says one part of the library is AI-written code that humans haven't reviewed yet. And no outside group has confirmed the claim. But a Columbia mathematician told TechCrunch he knows of nothing comparable. So it's a claim worth watching, with the checking still to come.
+
+And there's a lawsuit worth a sentence. The New York Times sued the browser maker Brave on Monday. It says Brave scraped its articles and passed them to AI companies. Brave hadn't responded. Those are allegations, nothing more, for now.
+
+So here's where I land. The money isn't just going to the big models. It's going to the plumbing. Storage, security, who's allowed to touch what. The stuff you only think about when something goes wrong.
+
+That's today's Artificial Record. Every source and every caveat's at artificialrecord.com. I'll see you tomorrow.
