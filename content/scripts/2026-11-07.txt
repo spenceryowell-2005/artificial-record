@@ -1,0 +1,57 @@
+VOICE: onyx · MODEL: gpt-4o-mini-tts
+INSTRUCTIONS:
+Voice: a seasoned public radio host, mid-forties, talking to one person across a table. Not announcing. Not presenting.
+Pacing: Conversational and unhurried. Vary it — move a little quicker through familiar setup, slow down on figures and on the point of a sentence. Never metronomic.
+Breath and pauses: Breathe audibly before a new idea. Leave a real beat of silence at paragraph breaks — a full second, sometimes longer. Silence is not dead air.
+Inflection: Let sentences fall at the end. Do not hold pitch level and do not lift into the next line. Downward, settled, finished.
+Articulation: Relaxed, slightly soft. Let some consonants go. Do not over-enunciate — you are not reading a legal notice.
+Attitude: Interested, dry, faintly amused now and then. You find this genuinely interesting and you assume the listener does too. Never enthusiastic. Never selling. Never customer-service warm.
+Avoid: uniform rhythm, rising terminal inflection, announcer polish, any sense of performance.
+
+Morning. Here's the thread today. The money behind AI got a little more careful this week, and the people building it got a little more bold. Those two things don't usually happen together.
+
+Start with Thursday. The Nasdaq fell five and a half percent. That's CNBC's number, and it's the worst day since April of last year. Nvidia dropped more than nine percent. Which, for one company, works out to nearly four hundred and fifty billion dollars of value gone in a day. AMD and Micron each fell by something like seventeen percent.
+
+So what happened? Well. Nobody knows for sure, and I'd be suspicious of anyone who says they do. CNBC lists a handful of causes. Qualcomm gave a weak forecast the night before. Interest rates are up. There's a memory chip shortage pushing prices around. And voters in the midterms turned down local data center measures, in forty of forty-one local votes.
+
+That last one's the interesting one. A Barclays analyst told CNBC the pushback is, quote, bipartisan but local. And that scarce power favors the biggest balance sheets. Which is a polite way of saying, if you can't get electricity, you can't play.
+
+Hold that thought.
+
+Because on Friday, Bloomberg reported that OpenAI has raised eleven billion dollars of a bigger round, at a valuation of one point two five trillion. That's reporting, not an announcement. OpenAI hasn't confirmed it, as far as we could find. And it's less than the one point four trillion Bloomberg said they were after in September.
+
+There's a second Bloomberg story, relayed by TechCrunch. People who might buy Anthropic's shares in its IPO are talking about a valuation as low as one point one trillion. A month ago, CNBC says, the expectation was around two trillion. Again, that's reported. Anthropic has filed its paperwork, but there's no price in it yet.
+
+So. Investors still want in. They're just not paying what the sellers hoped.
+
+And there's some data that fits. Ramp, the corporate card company, tracks what its customers spend on AI. Their economist found that spending on model usage was roughly flat across August and September. Flat. While the amount of usage kept going up.
+
+Why? Ramp's explanation is prices. The models got cheaper, so you can do more and pay the same. They also say new customers are coming in more slowly, and that buyers have the upper hand in negotiations. Now, this is Ramp's own customer base, and the biggest spenders, the top one percent, make up about eighty percent of the money at OpenAI and Anthropic. So it's a partial picture. TechCrunch says spending picked up again in October. Take that one with a grain of salt, we couldn't find it in Ramp's own post.
+
+Okay. So the money's getting careful. Now the other half.
+
+METR is an outside group that evaluates AI systems. They spent about eleven weeks looking at Anthropic, with access Anthropic gave them. Their conclusion is that Anthropic's models are improving about twice as fast as they were. Their staff wouldn't be shocked by one and a third times, or three times. And they guess about eighty percent of that speed-up comes from AI itself helping to build AI.
+
+Now, the catch. And it's a big one. Anthropic redacted most of the evidence METR found most useful. So METR is telling us, essentially, trust our judgment, because you can't see our work. They say that themselves. And when you include every frontier lab, not just Anthropic, the number drops to about one point four.
+
+Is it true? Possibly. Can you check it? Not really. Worth knowing the difference.
+
+Let's do one more, because it's about the thing that keeps this whole business honest, which is power. Concrete, wires, gas.
+
+Google announced a seventeen billion dollar data center in Wyoming, near Cheyenne. It's going to be powered by fuel cells, running on natural gas, with the carbon captured and stored underground. Seven hundred and two megawatts of it. That's roughly the size of a big power plant. Google says it'll pay for a hundred percent of the power it uses, and cool the building with air to save water. Notice how much of that sounds like an answer to the ballot measures.
+
+And here's the twist. Google didn't start this project. Crusoe did. Crusoe is a Denver developer, valued at about thirty-one billion dollars. On Friday Crusoe said Google has bought the site. No price. TechCrunch says Bloomberg reported back in June that Google had worried about cost and timing under Crusoe. So the developer who had the plan couldn't carry it, and the buyer with the biggest balance sheet picked it up. Which is, funnily enough, exactly what that Barclays analyst said.
+
+Two smaller ones, because they point the same direction.
+
+Thinking Machines, the lab started by former OpenAI people, put out a model called Inkling 2 Small. It's a big one, nearly six hundred billion parameters, though only seventeen billion are active on any one question. They say they'll release the full weights, free to download, next week. If safety testing finishes. That's their condition, not mine. And every benchmark number on their page is their own. They even show a few rivals beating them on specific tests, which is a nice bit of candor.
+
+And the Justice Department announced a new task force on what it calls super intelligence. The stated aim is to stop foreign governments, criminal groups and fraudsters from misusing it. Read the release and you'll look for a budget, or a case, or a headcount. It doesn't give one. So for now it's a name and a mandate.
+
+And Meta backed off. It had proposed new business terms that would let it scrape the websites of anyone with a Meta business account. Nieman Lab says that after pushback, including a UK investigation and a letter from two senators, Meta paused the whole thing on Thursday. Indefinitely. The old terms stay in place. Which tells you something. Even the biggest companies are finding that "we'll just take it" has a shorter shelf life than it used to.
+
+One last thing, and it's a quick one, but I think it matters. Security researchers at Censys found more than eight hundred separate copies of an AI hacking framework called ARTEX, sitting open on the internet. No password. It's meant for authorized testers, and plenty of these probably are. But Microsoft says a China-aligned group used it to try signing in to more than twenty-two hundred companies' accounts, and in some cases got deep access in under three hours. Most attempts failed. And Microsoft's advice is almost boring. Strong passwords. Multi-factor sign-in. The old stuff still decides most outcomes.
+
+So that's the week, really. Prices are being questioned. Power's being fought over, one county at a time. And the labs keep saying they're going faster. Next big date is November seventeenth, when Nvidia reports earnings. We'll be watching that one.
+
+That's Artificial Record. The AI industry, on the record. Everything we've cited, with links, is at artificialrecord.com.
