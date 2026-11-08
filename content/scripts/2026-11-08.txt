@@ -1,0 +1,67 @@
+VOICE: onyx · MODEL: gpt-4o-mini-tts
+INSTRUCTIONS:
+Voice: a seasoned public radio host, mid-forties, talking to one person across a table. Not announcing. Not presenting.
+Pacing: Conversational and unhurried. Vary it — move a little quicker through familiar setup, slow down on figures and on the point of a sentence. Never metronomic.
+Breath and pauses: Breathe audibly before a new idea. Leave a real beat of silence at paragraph breaks — a full second, sometimes longer. Silence is not dead air.
+Inflection: Let sentences fall at the end. Do not hold pitch level and do not lift into the next line. Downward, settled, finished.
+Articulation: Relaxed, slightly soft. Let some consonants go. Do not over-enunciate — you are not reading a legal notice.
+Attitude: Interested, dry, faintly amused now and then. You find this genuinely interesting and you assume the listener does too. Never enthusiastic. Never selling. Never customer-service warm.
+Avoid: uniform rhythm, rising terminal inflection, announcer polish, any sense of performance.
+
+Sunday. Here's the thread. Today's the day the paperwork talks. A company, a prosecutor, a judge. Each one wrote something down. And what they wrote is more interesting than what everybody's been saying about it.
+
+Start with Anthropic. Its IPO filing got amended last Monday, and it's sitting on the SEC's website. We opened it. Last week we couldn't. It was too big for our tools. This time we got through it. So these numbers come from the filing itself, not from somebody's summary.
+
+Revenue for the first nine months of this year. Thirty-three point two billion dollars. Same stretch last year? About two and a half billion. So that's, what. Thirteen times bigger. And the third quarter alone was seventeen billion.
+
+Okay. Now the other side of the ledger. The company says it has signed purchase and lease agreements worth about eight hundred and ninety-five billion dollars. Nearly all of it for computing. Chips, data centers, the buildings and the power that go with them. Roughly half of that comes due before the end of twenty-thirty. The rest stretches out to twenty-forty-five.
+
+Think about that. It's about twenty-seven times what the company earned in nine months. That's a bet. A very large, very specific bet, and it's written down where lying has consequences.
+
+Now, the net loss looks scary. A hundred and four billion dollars. But most of that, ninety-four billion, is an accounting charge. The filing says it comes mainly from the rising value of notes the company issued to investors. Because Anthropic's own valuation went up. So, paper. Not cash out the door. The cash side is better than you'd guess. Operating cash flow was positive, six point six billion. The company also reports something it calls adjusted operating income, about four billion. And I'd flag that, adjusted is the company's own measure. It's not a standard one.
+
+A couple more numbers, because they tell you who's paying. More than eleven thousand nine hundred customers spend at least a hundred thousand dollars a year. A year ago that number was under a thousand. And they account for about three quarters of revenue. No single customer is more than ten percent. But the top five add up to about a quarter. And many of the big ones aren't locked into long contracts. They can walk.
+
+But here's the part that stopped me. There's a risk factor in there about AI building AI. And the wording is careful. It says the company's internal estimates, and its expectations for future models, indicate it may, quote, imminently meet, end quote, its own safety policy's definition of dramatically accelerated progress attributable to AI.
+
+Which is a mouthful. Let me say it plainer. The company thinks its models might soon be speeding up its own research by a lot. And it says it hasn't declared any current model to be past that line.
+
+It also says the list-price value of its own internal use of Claude grew more than two hundred and fifty times between January and September. In April, that monthly figure passed what it spends on salaries. Put plainly, the company is one of its own biggest customers. It adds that it doesn't expect to safely let Claude design its own successors without real human oversight. So it's looking at changing its safety policy to keep people in charge.
+
+Now. Is that a warning? Is it marketing? A prospectus is both, honestly. I'd just say, it's the company's own statement. It isn't an outside measurement. The independent evaluator METR looked at the same question last week and landed in a similar direction. But METR also said Anthropic held back most of the evidence it found most useful.
+
+Still no price range in the filing, by the way. Share count, blank too.
+
+So. That's one document. Here's another.
+
+Prosecutors in Manhattan announced charges this week against three men. They're accused of using AI to fake the voices, and sometimes the faces, of company executives and law firm attorneys. Finance staff got a call, it sounded like the boss, and money went out the door.
+
+The total alleged is more than a hundred and twenty-nine million dollars, between twenty-twenty-four and this year. One victim named in the press reports is a hospital system in Missouri. It lost nearly five million. Another is a British financial technology company. About eleven and a half million.
+
+Two of the men were arrested in Spain, one in Britain. Extradition is pending. And I want to be plain about this, these are charges. Allegations. Nobody's been convicted of anything.
+
+One more caveat. Our tools couldn't load the Justice Department's own page. So the details come from press accounts of the release. We've labelled that in the written edition.
+
+What's the lesson? It isn't about the technology, really. It's old and boring. A voice on the phone isn't proof of who's talking. If the wire is big, call back on a number you already had. Or get a second person to sign off. That's the whole defense.
+
+Third thing. A federal judge in California.
+
+The music publishers are suing Anthropic over song lyrics. And they named the chief executive, Dario Amodei, personally. This week, according to press accounts, the judge dismissed one claim against him. The one that said he directly infringed copyright, by torrenting.
+
+But with leave to amend. So the publishers can try again with better facts. And the quote attributed to the judge is a good one. Quote, every CEO for any small startup would be liable under the analysis here.
+
+Now don't read too much into it. It's narrow. It doesn't say whether training on copyrighted work is fair use. It doesn't touch the claims against the company itself. The claim that he contributed to infringement is still there. We couldn't open the court docket ourselves, so treat the details as secondhand until you check.
+
+A status report is due Wednesday on what happens next.
+
+And one last item, quickly, because it's still unproven. Over the weekend TechCrunch, relaying New York Times reporting, said a US intelligence memo describes a woman named Alice Huang, an executive at a company called Megaspeed, as recruited to spy on Nvidia's chief executive, Jensen Huang.
+
+What we do know is narrower. Nvidia told the Times its dealings with her were, quote, not unusual. The memo itself hasn't been published. The Times and the Financial Times are both behind paywalls, and our tools couldn't open them. So that one rests on anonymous sources. Congress is asking questions. A briefing's been proposed for the eighteenth.
+
+So, step back.
+
+Most days, the argument about AI is about what might happen. Today it's about what's on paper. A filing that says the company may be near a threshold. An indictment that says a voice was faked. A ruling that says a CEO isn't automatically on the hook.
+
+Paper is slower than the headlines. But it's what holds up later.
+
+That's Artificial Record. The AI industry, on the record. Sources and links are at artificialrecord.com.
