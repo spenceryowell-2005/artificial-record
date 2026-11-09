@@ -1,0 +1,63 @@
+VOICE: onyx · MODEL: gpt-4o-mini-tts
+INSTRUCTIONS:
+Voice: a seasoned public radio host, mid-forties, talking to one person across a table. Not announcing. Not presenting.
+Pacing: Conversational and unhurried. Vary it — move a little quicker through familiar setup, slow down on figures and on the point of a sentence. Never metronomic.
+Breath and pauses: Breathe audibly before a new idea. Leave a real beat of silence at paragraph breaks — a full second, sometimes longer. Silence is not dead air.
+Inflection: Let sentences fall at the end. Do not hold pitch level and do not lift into the next line. Downward, settled, finished.
+Articulation: Relaxed, slightly soft. Let some consonants go. Do not over-enunciate — you are not reading a legal notice.
+Attitude: Interested, dry, faintly amused now and then. You find this genuinely interesting and you assume the listener does too. Never enthusiastic. Never selling. Never customer-service warm.
+Avoid: uniform rhythm, rising terminal inflection, announcer polish, any sense of performance.
+
+Monday, November ninth. The thread today is people being asked to show their work. Boards, lawmakers, even the labs' own safety processes. Let's get into it.
+
+Start with Nvidia. Because Sunday, the company's board announced an independent investigation into its own chief executive, Jensen Huang.
+
+Here's what's on the record. The board says a committee of independent directors, with outside counsel, will run it. This follows reports that Huang was the target of a foreign intelligence effort. And the board says, quote, it has no reason to believe national security or Nvidia's secrets were compromised. But it says the review will look at all available information.
+
+Same day, Huang sent staff an email. CNBC quotes it. "I was unfaithful to my wife." And then, "There is no excuse for what I did." Nvidia says he stays on as CEO.
+
+Now. The woman at the center is Alice Huang. No relation. She's an executive at a company called Megaspeed. It's a Singapore cloud outfit that rents out computing power, mostly for AI, and it calls itself a core business partner of Nvidia in the region.
+
+And this is the part to be careful about. The claim that US intelligence officials see her as a Chinese intelligence asset? That comes from the New York Times and the Financial Times. Not from Nvidia. Not from any court. Nobody's been charged with anything. Megaspeed says one article had, quote, misleading information and incorrect insinuations. It says inspections by US and Malaysian authorities, and by Nvidia, found no chip-transfer violations. Singapore's government says it hasn't investigated her.
+
+So why does a board investigation matter? Well. Fortune reports it may get into what Nvidia has said publicly about all this. Last October, a spokesman said a twenty twenty-four meeting was nothing improper. This October, Huang himself said the interactions were, quote, completely normal and not unusual. Fortune says that's its own reading of the scope. The board hasn't said that. But you can see why people are asking.
+
+There's a calendar, too. Three House Republican committee chairs have asked Huang for a closed-door briefing on November eighteenth. It's voluntary. Reports say he has until the eleventh to answer. And Nvidia reports quarterly earnings the day before, the seventeenth, according to CNBC.
+
+Overnight, Fortune says the shares fell about four percent. The regular session hasn't opened as we record this. So. Informational only. Not advice.
+
+Okay. Second thread. Coding agents.
+
+An agent, if you haven't met one, is an AI program that doesn't just answer. It goes off and does a task. Writes code, tests it, fixes it. And developers now run several at once.
+
+Which is what Conductor does. It's a Mac app that runs a bunch of coding agents side by side, each in its own copy of your project. Axios reported on November fourth that Meta bought it. The Next Web says the founder confirmed it, and that Meta confirmed to TechCrunch but wouldn't say more. No price.
+
+Here's the catch for the people who use it. Conductor stopped taking sign-ups. Its cloud service goes read-only November thirteenth and shuts down the twentieth. Data gets deleted. The desktop app limps along into early next year. And the founder says something new is coming. He didn't say what.
+
+Same day, OpenAI announced it'll acquire a company called Pierre. Tiny. Makes a code storage product and some open-source libraries. Press coverage says those libraries are already inside Codex, which is OpenAI's coding agent. Price not disclosed. And it isn't closed. It needs the usual conditions first.
+
+So two big labs, same day, both buying the plumbing around the model. Not the model. The stuff that keeps your agents organized. I'd say the interesting question is what happens to the tools that work with everybody's agents. Conductor worked with Claude Code and Codex and Cursor. Meta hasn't said whether its next version will. That's the thing to watch.
+
+Third story. Thinking Machines.
+
+That's Mira Murati's company. On November fifth, it introduced a model called Inkling 2 Small. It's what's called a mixture-of-experts model. Meaning it's big on paper, five hundred ninety-four billion parameters, but it only uses seventeen billion of them for any one question. Think of a big office where only the relevant desks answer each call.
+
+Now here's the interesting bit. You can use it today, through the company's own platform. But the weights are closed. Weights are the actual numbers that make up the trained model. Publish them and anyone can run it themselves. The company says it plans to publish them under the Apache license, which is about as permissive as it gets, quote, next week. After outside safety testing and red-teaming. That's people deliberately trying to get it to misbehave.
+
+So that's a promise. Not a done deal. If the testing turns something up, the date could move.
+
+And the scores? Those are the company's own. It reports thirty-one on the Artificial Analysis Intelligence Index, and about eighty-six percent on a hard coding benchmark. But its own tables show it trailing some rivals on several measures. And it says outright that on its alignment tests, it still trails closed models like GPT-6.1 Sol. Which is, well, a candid thing to put on your own launch page.
+
+For a company, the practical point's simple. If the weights ship, you could host this yourself and keep your data in-house. Until then, you're renting.
+
+A couple of quick ones before I let you go.
+
+Google made Gemini Omni 1.2 Flash generally available. It's a video model. Clips now run up to fifteen seconds, up from ten. Google says it costs seven cents a second at seven-twenty-p, thirty percent cheaper than the last version. That's Google's announcement, so it's Google's claim. It also says the model still struggles with fast sports and complicated physics.
+
+And in drug discovery, Roche is going to use Chai Discovery's models across several of its programs. No terms disclosed. Chai says its model hits difficult targets well. No outside validation was cited. So, early.
+
+One last date. Wednesday, the eleventh, there's a status report due in the music publishers' case against Anthropic. We told you about that on Sunday. Nothing new yet.
+
+And a word on what we couldn't confirm today. Axios and OpenAI's own pages wouldn't open for us, so parts of the Meta and OpenAI stories rest on secondary reports. We also dropped a few things we couldn't trace to a source. If we can't stand behind it, it doesn't go in.
+
+That's Artificial Record. The AI industry, on the record. The full edition, with every source linked, is at artificialrecord dot com. Talk tomorrow.
