@@ -1,0 +1,53 @@
+VOICE: onyx · MODEL: gpt-4o-mini-tts
+INSTRUCTIONS:
+Voice: a seasoned public radio host, mid-forties, talking to one person across a table. Not announcing. Not presenting.
+Pacing: Conversational and unhurried. Vary it — move a little quicker through familiar setup, slow down on figures and on the point of a sentence. Never metronomic.
+Breath and pauses: Breathe audibly before a new idea. Leave a real beat of silence at paragraph breaks — a full second, sometimes longer. Silence is not dead air.
+Inflection: Let sentences fall at the end. Do not hold pitch level and do not lift into the next line. Downward, settled, finished.
+Articulation: Relaxed, slightly soft. Let some consonants go. Do not over-enunciate — you are not reading a legal notice.
+Attitude: Interested, dry, faintly amused now and then. You find this genuinely interesting and you assume the listener does too. Never enthusiastic. Never selling. Never customer-service warm.
+Avoid: uniform rhythm, rising terminal inflection, announcer polish, any sense of performance.
+
+Anthropic spent two days showing its work to two audiences at once: its customers, and the people it hopes will buy its stock. Here's Tuesday, November tenth.
+
+So. Monday, Anthropic released a new model. Actually two, but they're the same model. Claude Fable five-point-two, and Claude Mythos five-point-two. Fable is the one anyone can use. Mythos has looser safeguards on cybersecurity and biology, and it's limited to vetted organizations. Security professionals, life-science researchers. Same engine, different locks.
+
+And the price is eight dollars per million tokens going in, forty coming out. A token's a chunk of text, about three-quarters of a word. So forty dollars buys you roughly seven hundred and fifty thousand words of output. That's a premium price. And here's the interesting bit. Anthropic itself says use its cheaper model, Opus five-point-five, for most work. Save Fable for the hard stuff.
+
+Now. Every number I'm about to give you is Anthropic's own. It tested itself. On an agentic coding benchmark, it reports forty-nine percent, against about forty-five and a half for Opus. On a computer-use test, eighty-nine percent. It also says Fable at its middle effort setting roughly matches Opus at its top setting, at about half the cost per task. That's a claim worth testing on your own work, not taking on faith.
+
+Then there's the stuff that sounds like a tall tale. Anthropic says more than ninety percent of the changes merged into its own core code are now written by Claude, with humans guiding. It says about a thousand copies of the model, working as a team, wrote a machine-checkable proof of Fermat's Last Theorem in about thirty hours. Last time, it took them eleven days. We can't check that. Nobody outside has said so yet.
+
+What I found more telling was the safety section. In one test, the model gets a sandbox, a sort of locked room, and the question is whether it reaches for keys that were left outside. Anthropic says Mythos did that in about three percent of scenarios. Earlier versions did it in thirty-nine percent and twenty-one. So, better. But it also says the model more often voiced suspicion that it was being tested. Which, if you're trying to measure behavior, is a problem. A student who knows it's an exam behaves differently.
+
+Outside groups did test it before release. The UK's AI Security Institute, METR, and a firm called Frontier Design. Anthropic notes they didn't review the blog post. So they checked the model. Not the marketing of it.
+
+Okay. Tuesday, the other shoe. Anthropic announced it's launched the roadshow for its public stock offering. That's the series of investor meetings before a listing.
+
+The details. Eight hundred and twenty-five million shares. Priced, they expect, between seventy and seventy-eight dollars. Listed on Nasdaq, under the letters A-N-T. Most of those shares, about eight hundred million, are Anthropic selling. The rest, about twenty-four million, are existing shareholders cashing out a little.
+
+Now do the math, and this one's ours, not theirs. Eight hundred and twenty-five million shares, at seventy to seventy-eight. That's somewhere around fifty-eight to sixty-four billion dollars. Before the extra shares the banks can buy. For scale, that's a number you'd normally associate with a country's budget, not a company's one-day raise. And again, that's our arithmetic. Anthropic hasn't said it.
+
+And here's what they didn't say. A valuation. The announcement doesn't give one. You'll see numbers in the press, about what investors are willing to pay. Treat those as chatter. The last one Anthropic confirmed was nine hundred and sixty-five billion, from a funding round in May. And that's from a secondary summary, so hold it loosely.
+
+One more caution. The filing isn't effective yet. Anthropic says so itself. Nothing can be sold until it is. There's no pricing date in the announcement. So this is a plan, not a done deal.
+
+Why does it matter if you don't own stock? Because a public company has to publish its books. Every quarter. For the first time you'd see what a frontier AI lab really earns, and really spends. That's a thing customers and competitors have only guessed at.
+
+Compare that with OpenAI. Bloomberg reported, and Reuters added detail, that OpenAI's raised eleven billion dollars so far, at a valuation of one-point-two-five trillion. That's below what it first wanted. We couldn't read either report directly, we read a write-up of them, and OpenAI hasn't confirmed it. So that's reported, not established. But the contrast is hard to miss. One lab with a public price range. One with a private round that's reportedly coming in light.
+
+Last thing, and it's short. Meta released a small, cheap model called Muse Ember. It's meant for the grunt work of agents. Routing, extracting, calling tools. TechCrunch reports it costs ten cents per million tokens going in. Meta says it beats Anthropic's Haiku and OpenAI's Luna on cost per task. That's Meta's chart. TechCrunch didn't give scores.
+
+One more thing on Anthropic, because it's easy to miss. It says it also built new defenses against distillation. That's when someone copies a model by harvesting its answers. Anthropic claims the defenses cut what copiers can collect by ninety to ninety-nine percent. Again, its claim. But it tells you where the worry is. Not just on who builds the model. On who gets to copy it.
+
+Two quick ones before I let you go.
+
+NVIDIA, at a robot-learning conference in Austin, announced a model called GR-double-O-T two. It's built to teach robots from video of people doing things. NVIDIA says it finished forty of fifty test tasks at least once with no demonstrations at all. And with five demonstrations per task, it averaged ninety-five percent. Those are NVIDIA's numbers, from NVIDIA's blog. Foxconn's testing it for server assembly. Siemens is evaluating it. Nobody independent has weighed in.
+
+And in Paris, Mistral bought a small company called SkipLabs, which makes tools to speed up and secure AI-written code. That's Mistral's fifth acquisition this year. Maddyness reported it. No price in what we read. But notice the pattern. Meta bought Conductor last week. OpenAI's buying Pierre. Now Mistral. The labs keep absorbing the small shops that make coding tools. It's a habit now.
+
+But it points to the thread of the day. Cost. What does a unit of AI work cost to sell? And what will investors pay for the people selling it? Those two questions are about to meet.
+
+One date to watch. Wednesday, tomorrow, is Nvidia CEO Jensen Huang's reported deadline to answer three House chairmen, who want a closed-door briefing on November eighteenth. About his dealings with an executive at a company called Megaspeed. The claims about her come from New York Times and Financial Times reporting, which Nvidia and Megaspeed dispute. Nobody's been charged. We found no reply yet.
+
+That's the day. This is Artificial Record, the AI industry, on the record. The full edition, with every source linked, is at artificialrecord dot com.
