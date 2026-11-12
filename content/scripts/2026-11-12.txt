@@ -1,0 +1,75 @@
+VOICE: onyx · MODEL: gpt-4o-mini-tts
+INSTRUCTIONS:
+Voice: a seasoned public radio host, mid-forties, talking to one person across a table. Not announcing. Not presenting.
+Pacing: Conversational and unhurried. Vary it — move a little quicker through familiar setup, slow down on figures and on the point of a sentence. Never metronomic.
+Breath and pauses: Breathe audibly before a new idea. Leave a real beat of silence at paragraph breaks — a full second, sometimes longer. Silence is not dead air.
+Inflection: Let sentences fall at the end. Do not hold pitch level and do not lift into the next line. Downward, settled, finished.
+Articulation: Relaxed, slightly soft. Let some consonants go. Do not over-enunciate — you are not reading a legal notice.
+Attitude: Interested, dry, faintly amused now and then. You find this genuinely interesting and you assume the listener does too. Never enthusiastic. Never selling. Never customer-service warm.
+Avoid: uniform rhythm, rising terminal inflection, announcer polish, any sense of performance.
+
+The company that sells the chips under most of AI lost its founder today. And the question now is how much of Nvidia was really one man. Here's Thursday, November twelfth.
+
+So. Nvidia put out a press release this morning. Jensen Huang has resigned. As chief executive, and as a director. Effective immediately.
+
+The release doesn't say why. Not a word. It just says the chief financial officer, Colette Kress, is now interim CEO, and she keeps the finance job too. And a man named Harvey Jones, who used to run Synopsys, becomes the company's first-ever board chair. First ever. Which tells you something about how Nvidia was run.
+
+Now. The why comes from the press, and it's worth being careful about what's known and what isn't.
+
+On Sunday, Huang put out a statement. CNBC reports he apologized for being, quote, unfaithful to my wife. No details. The woman involved, according to CNBC, is a businesswoman named Alice Huang. No relation. She was linked to a company called Megaspeed, a Singapore-based Nvidia customer. And here's where it gets harder. Yahoo Finance reports that US intelligence officials believe she's a Chinese spy. We haven't seen those officials, or any evidence. Reuters, as we understand it, couldn't verify it. China calls it a smear. And Huang has denied compromising national security or Nvidia's secrets.
+
+Nvidia's board says it has no reason to believe secrets or national security were compromised. But it's also hired outside lawyers. A former federal prosecutor from Manhattan, and the firm Wachtell Lipton. That investigation is still open.
+
+Okay. Why does this matter beyond the soap opera?
+
+Because of scale. Fortune put Nvidia's value at about four point three trillion dollars. Huang had been CEO for thirty-three years. He had around sixty people reporting to him directly. There's no chief operating officer. And no named successor. He'd said he hoped the next CEO already works there. That's not a plan. That's a hope.
+
+And the stock tells the rest. CNBC says it closed Wednesday at one seventy-three seventy-three. It was two thirty-nine at its high in early October. That's roughly two trillion dollars of value gone. Six straight weekly declines, the longest streak since twenty-twelve. And this morning it was down something like twelve percent before the open, according to Yahoo. Though that number was moving. Take it as a snapshot.
+
+So that's the first story. Hold it for a second, because there's a second one, and it's the other half.
+
+On Monday, The New York Times reported that the Commerce Department stopped investigating Megaspeed. Stopped. After Nvidia's general counsel contacted the agents running the case. We couldn't open the Times' page, so we're relying on The Next Web's summary. But the reporting is the Times', not ours.
+
+Here's the gist. Commerce suspected Megaspeed of smuggling Nvidia chips into China. According to the Times, Nvidia's lawyer emailed the agents back in August of last year, and said a senior Commerce official had signed off on the outreach. The agents didn't take the meeting. They sent the emails up the chain. Some officials saw the contact as a possible procedural breach. Then the Justice Department asked Commerce to pause. The case moved over to Justice, which is reportedly running a criminal inquiry.
+
+Commerce says it went by the book. Nvidia says it was just answering questions. Megaspeed denies smuggling. And nobody's been charged, as far as we found.
+
+But see, this is the institutional question. The relationship story is personal. This one's about whether the world's dominant chip supplier knew its hardware was ending up in China. And whether it leaned on the people checking.
+
+Senator Elizabeth Warren asked Nvidia about exactly that back in June. Nvidia says its statements were accurate. And CNBC reports Democrats are poised to take both houses of Congress, and have promised to look into Nvidia.
+
+One more thing on Nvidia. CNBC reports its obligations to other companies are estimated at four hundred billion dollars. Commentators have started calling it the central bank of AI. That's CNBC's framing, not Nvidia's. The worry is circular financing. A supplier funds its customers, who then buy from the supplier. It works beautifully. Right up until it doesn't.
+
+And for what it's worth, Nvidia says it's still reporting earnings Tuesday, November seventeenth. Kress will be the one on the call. That's the first real look at how she frames all of this.
+
+Okay. Second story. And it's a quieter one, but I think it connects.
+
+Yesterday the UK government announced it's backing a chip company called Fractile. Based in Bristol and London. The government's release says it's a Series C round, over five hundred million pounds, at a valuation above five billion. The money comes from the government's Sovereign AI fund and the British Business Bank, along with CapitalG, Lightspeed and Redpoint.
+
+How much did the government put in? It won't say. Commercially sensitive. It only notes that its typical stakes run one to ten million pounds. So the headline number is mostly private money.
+
+Now, I should flag something. Some press reports before the announcement put this round nearer seven hundred million dollars, with a higher valuation. We haven't reconciled those. So we're using the government's numbers.
+
+What's Fractile building? Chips for running models once they're trained. That's where most of the spending's heading. And the release is pretty plain about why the government cares. Reducing reliance on overseas chip supply.
+
+Which, on the day Nvidia's leadership changes, reads a little differently. Though to be clear, Fractile has no products in the release. It's a bet. One to watch. Not one to plan around.
+
+Third story. The OpenAI copyright case in New York.
+
+It's a big consolidated case. Judge Sidney Stein. The Authors Guild, The New York Times, a whole pile of others, all suing OpenAI. The final round of briefs on summary judgment was due last Friday. That's a request for the judge to decide a legal question without a trial. And the question is simple to say. Is training an AI on copyrighted books and articles fair use?
+
+Publishing Perspectives reports fifty-one friend-of-the-court briefs. Outside groups weighing in. By their count, twenty-six back the plaintiffs, eighteen back OpenAI, and eight are neutral. That adds up to fifty-two, so their totals may be off by one. Publishers' groups, PEN America and some members of Congress on one side. The Electronic Frontier Foundation and Public Knowledge on the other.
+
+The Justice Department also filed, in September. It urged the court to find AI training is fair use.
+
+There's no ruling. And no hearing date that we could verify. We couldn't open the docket, so these are the trade publication's numbers. But when that ruling does come, it resets licensing talks across the whole industry.
+
+A couple of quick ones before I go.
+
+Thinking Machines put out a model called Inkling 2 Small. Five hundred ninety-four billion parameters, but only seventeen billion active at a time. The company says it'll release the weights under an Apache license, quote, next week. Next week. That's a plan, not a release. And the benchmark scores are theirs. Worth testing independently.
+
+And Nvidia is donating an agent security tool called OpenShell to the Cloud Native Computing Foundation. It's software for controlling what an AI agent can reach. A boring announcement, honestly. But after this week, a lot of people are asking who controls what.
+
+So that's the day. One company, and until this morning one person, sitting in the middle of the chips, the export worries and the financing. What happens next is a board picking someone. Inside or outside. And that choice will tell customers what kind of company Nvidia means to be.
+
+Nothing here is investment advice. This has been Artificial Record. The AI industry, on the record. The full edition, with every source, is at artificialrecord.com.
