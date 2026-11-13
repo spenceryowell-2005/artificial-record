@@ -1,0 +1,71 @@
+VOICE: onyx · MODEL: gpt-4o-mini-tts
+INSTRUCTIONS:
+Voice: a seasoned public radio host, mid-forties, talking to one person across a table. Not announcing. Not presenting.
+Pacing: Conversational and unhurried. Vary it — move a little quicker through familiar setup, slow down on figures and on the point of a sentence. Never metronomic.
+Breath and pauses: Breathe audibly before a new idea. Leave a real beat of silence at paragraph breaks — a full second, sometimes longer. Silence is not dead air.
+Inflection: Let sentences fall at the end. Do not hold pitch level and do not lift into the next line. Downward, settled, finished.
+Articulation: Relaxed, slightly soft. Let some consonants go. Do not over-enunciate — you are not reading a legal notice.
+Attitude: Interested, dry, faintly amused now and then. You find this genuinely interesting and you assume the listener does too. Never enthusiastic. Never selling. Never customer-service warm.
+Avoid: uniform rhythm, rising terminal inflection, announcer polish, any sense of performance.
+
+Good morning. It's Friday, November thirteenth.
+
+Here's the thread today. The AI money isn't just sitting with the labs anymore. It's moving down the supply chain. Into machines, into network cables, into power plants. And Thursday night, two companies that sell that stuff told us the orders are still coming.
+
+Start with Applied Materials. They make the equipment that chip factories use to build chips. Thursday, after the market closed, they reported a record quarter. Revenue of ten point four one billion dollars. Up fifty-three percent from a year ago.
+
+Now, the part I found interesting. Their chip-equipment unit sold nearly eight billion dollars of machines in the quarter. A year earlier, that was under five. So, up about sixty-four percent. And roughly a third of it went to memory makers. Not just the companies building processors. Memory.
+
+China was a quarter of their revenue. It used to be twenty-nine percent. It's twenty-five now. The company didn't say why, and we're not going to guess.
+
+And the CEO said, quote, AI continues to fuel strong incremental demand for semiconductors. Well. He would. That's the company talking. But the numbers are in an SEC filing, and they do say that.
+
+Next door, Cisco. The networking company. Also reported after the close. Revenue of eighteen and a half billion dollars, up twenty-four percent. Their own words: strongest growth in more than fifteen years. And they raised their full-year forecast, to somewhere around seventy-five billion.
+
+Here's the figure to hold on to. Cisco now expects nine billion dollars this fiscal year from hyperscalers. That's the giant cloud companies. Nine billion. More than double last year, by Cisco's own account.
+
+But look at the margin. Gross margin fell, from sixty-eight percent to about sixty-six. Sales are booming, and they're keeping a little less of each dollar. The release doesn't say why. So I won't either.
+
+The CEO called it, quote, the very early stages of a multi-year networking supercycle. That's a sales line. The data's the better part.
+
+Okay. Power.
+
+The Financial Times reported on Sunday that Anthropic agreed to pay about three point four billion dollars for gas-fired generators. One point seven gigawatts of them. And a gigawatt is about one big nuclear reactor. So we're talking one and a half, two reactors' worth of equipment. Though generators don't run flat out around the clock.
+
+Now be careful here. This is the FT's reporting. It rests on one person who knew about the deal. Anthropic and the seller, a Texas company called OnePWR, both declined to comment. We haven't seen a confirmation. And we couldn't open the FT's own article, so we're leaning on Fortune and The Next Web, who both relayed it.
+
+What the report says is this. OnePWR had ordered the generators from Caterpillar two years ago, and needed money to finish the purchase. Anthropic first planned to buy power from them. Then it took over the orders and the installation work instead. It didn't buy the company.
+
+Why does it matter? Because Anthropic's planning to go public. The roadshow started Monday. Eight hundred and twenty-five million shares, at an expected seventy to seventy-eight dollars each. And the prospectus, according to Fortune, lists something like nine hundred billion dollars in commitments for computing and infrastructure. Fortune and The Next Web differ a little on that number. We haven't read the filing ourselves.
+
+And the filing warns about natural gas. Competition for supply. Competition for pipelines. Which is exactly what you'd worry about if you'd just bought a lot of gas generators.
+
+One more. Mercor.
+
+Mercor pays professionals to produce the examples and tests that AI models learn from. On Tuesday it said it raised seven hundred fifty million dollars, at a twenty-billion-dollar valuation. Now, we owe you a correction here. Yesterday's edition said that didn't match what we'd found, and held it back. We'd only found reports of talks. Mercor's own post confirms the round. We should have found that post. We didn't.
+
+The post doesn't name a lead investor. Doesn't give revenue. And doesn't say how much of the money is employees selling shares, rather than new money for the company. What it does say is that Mercor spends three times as much on inference as on salaries. Inference being the cost of running the models.
+
+Nvidia and Salesforce are on the investor list. Both sell to the labs Mercor serves. And the valuation doubled in a year, with no revenue number on the table.
+
+Two smaller things, and then I'll let you go.
+
+A company called Path Robotics. Ohio. They make robots that weld, guided by AI. They say they raised three hundred million dollars at a valuation of two point four five billion. That's according to The Next Web, relaying the company's statements. We didn't find Path's own release. The company says its recurring revenue grew seventeen-fold in eighteen months. And it says it signed a six-hundred-million-dollar production deal with a Navy shipbuilder, HII.
+
+The CEO told the reporter, quote, none of our customers have ever fired a welder because of a task robot. Okay. That's the CEO. Take it as that.
+
+And in Illinois, Governor JB Pritzker put out a suggested two-hundred-point agenda for the new Democratic Congress. It calls for a federal framework on privacy, AI safety, and data centers. Testing. Risk assessment. And he says federal law should build on what the states have done, not override it.
+
+That's a live fight. Because there's no comprehensive federal AI law right now. And the report says it's unclear whether the president would sign one. So, a fight that's mostly still ahead of us.
+
+So. Where does that leave us?
+
+Chip equipment, network gear, power. That's where the spending is landing. And each of those has a different clock. The reported generators won't be available for about two years. A company that buys all of it is betting on demand years from now. And its own risk section says so.
+
+A quick word on Nvidia, since that's the shadow over all of this. Its filing from Thursday says the board is searching for a permanent CEO, and will look at inside and outside candidates. Kress has been the finance chief since twenty thirteen. She keeps that job while she's interim. The new board chair, Harvey Jones, said the board has full confidence in her. And the filing gives no reason for Huang leaving. None. So when someone tells you why, ask where they got it.
+
+Back to the numbers for a second. Cisco also spent about two billion dollars buying back its own stock this quarter, and Applied Materials spent two billion too, its biggest quarterly buyback in more than eight years. Both companies are doing very well and still handing cash back. That's informational, not advice. Just a thing I noticed.
+
+We don't know how that turns out. But next Tuesday, Nvidia reports. First results since Jensen Huang resigned. Colette Kress is interim CEO. Worth watching.
+
+That's the Artificial Record. The AI industry, on the record. The full edition, with every source, is at artificialrecord dot com.
