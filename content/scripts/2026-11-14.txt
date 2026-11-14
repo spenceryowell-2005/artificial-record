@@ -1,0 +1,67 @@
+VOICE: onyx · MODEL: gpt-4o-mini-tts
+INSTRUCTIONS:
+Voice: a seasoned public radio host, mid-forties, talking to one person across a table. Not announcing. Not presenting.
+Pacing: Conversational and unhurried. Vary it — move a little quicker through familiar setup, slow down on figures and on the point of a sentence. Never metronomic.
+Breath and pauses: Breathe audibly before a new idea. Leave a real beat of silence at paragraph breaks — a full second, sometimes longer. Silence is not dead air.
+Inflection: Let sentences fall at the end. Do not hold pitch level and do not lift into the next line. Downward, settled, finished.
+Articulation: Relaxed, slightly soft. Let some consonants go. Do not over-enunciate — you are not reading a legal notice.
+Attitude: Interested, dry, faintly amused now and then. You find this genuinely interesting and you assume the listener does too. Never enthusiastic. Never selling. Never customer-service warm.
+Avoid: uniform rhythm, rising terminal inflection, announcer polish, any sense of performance.
+
+Friday's AI news was mostly about doors closing. Chips, websites, vendors, even the courtroom. Somebody, somewhere, is saying no.
+
+This is Artificial Record, for Saturday, November fourteenth.
+
+Let's start with the one that isn't about closing anything. Google put out a new model. It's called Gemini 4 Hydrogen, and it's the fast, cheap one. The sort of model you'd run a thousand times a day inside some company's software.
+
+Google says it costs a dollar fifty for every million tokens you feed it, and seven-fifty for every million it writes back. A token's just a chunk of text. Think three-quarters of a word. So a million tokens is, oh, about a few thick novels.
+
+Now. The numbers I'm about to give you are Google's own. Nobody else has checked them. Google says that on one popular index, this cheap model scores fifty-one. Its bigger, pricier sibling, Argon, scores fifty. And if you turn the thinking dial up to the new top setting, Hydrogen hits fifty-four.
+
+Which is odd, right? The small one beating the big one.
+
+I'd hold that loosely. It's a vendor chart. But it points at where the money is. Most companies don't need the smartest model on earth. They need one that's good enough and doesn't cost a fortune. And Google's saying, here. We built that.
+
+So that's the open door. Now, the closing ones.
+
+Congress. There are three bills about AI chip exports. One's about smuggling, one's about the machines that make chips, and one would give Congress a say over export licences. All three are in the Senate's version of the big annual defense bill. They are not yet in the final one. That's the catch.
+
+Semafor reports the Senate's majority leader, John Thune, thinks there's, quote, a high probability that Congress adds restrictions. Anthropic backs all three bills. And Bloomberg reports OpenAI told lawmakers it supports the effort too. I couldn't open Bloomberg's piece, so that's their reporting, not mine.
+
+Why now? Because of Nvidia. Its chief executive, Jensen Huang, resigned Thursday, after days of reports about a relationship with someone tied to a customer in Singapore. That customer, Megaspeed, is suspected of passing chips on to China. Semafor says the Justice Department is looking at it. Nvidia's board says it has no reason to think secrets were compromised. And the whole thing has handed the export hawks a very good week.
+
+Then, on Friday, TechCrunch reported on an analysis by a former OpenAI researcher, Will DePue. He looked at the published weights of some Chinese open models. Weights are the numbers a model learns. And he says he found traces of Nvidia's newest chips, the ones China isn't supposed to be able to buy. In models from Moonshot and DeepSeek.
+
+Careful, though. That doesn't prove anyone broke a law. The chips could sit in a data center in Malaysia, say. And the article has no response from the Chinese companies. I haven't seen his method either.
+
+Nvidia, by the way, reports earnings Tuesday. With an interim boss. That should be a strange call.
+
+Okay. Third story. This one's quieter, and I think it matters more to ordinary companies.
+
+Fireworks AI is a company that hosts open AI models for developers. Other firms send their customers' text to it. On October twenty-third, a cloud provider that Fireworks used had a security incident. A day later, Fireworks says, someone used that to get into its development machines.
+
+What did they get? Fireworks' own bulletin says billing and shipping addresses, invoice history, account balances. For a limited set of accounts, some secrets, datasets, and unfinished model weights. It says card numbers weren't stored, and weren't touched. It also says its main inference product shows no impact, because that one keeps no customer data.
+
+Here's the part that reached regular people. Notion. Notion sent chat text from its AI feature to Fireworks. And Notion says some of those chat transcripts were taken. Fewer than one percent of workspaces, it says. And most of the transcripts couldn't be tied to a person or a company.
+
+But chat text is chat text. People paste in things. Names, emails, sometimes a password or an API key. Notion's telling affected customers to rotate anything that showed up. It's turned that feature off, and it says it's auditing vendors on whether they keep any copy at all.
+
+Fireworks says it's seen this before, too. TechCrunch says this is its second incident in two months. And its bulletin points to a known criminal tactic, where people steal access to AI models and resell it.
+
+So the lesson is boring, and it's real. Your product is only as careful as the vendor you send your customers' words to.
+
+One more. A courtroom.
+
+On Thursday, four nonprofits sued five AI companies, in San Francisco. Public Citizen is one of them. The defendants are Anthropic, Google, Meta, OpenAI, and SpaceX's AI unit. The Associated Press says the suit asks a judge to stop them building or releasing new models.
+
+Not ChatGPT. Not Claude. The next ones. Other reports say it asks for two orders, one on systems more capable than today's best, and one on letting AI run research on more capable AI. I haven't seen the complaint, so treat those details as press accounts.
+
+And the argument's interesting. The AP says the complaint leans on the labs' own warnings. The ones where executives say this technology could be dangerous. The plaintiffs are basically saying, you told us. Take your word for it.
+
+Will it work? Almost certainly not as asked. Courts rarely grant orders this wide. The companies didn't respond to the AP. No hearing's been reported. But if it gets past early motions, the labs might have to hand over internal safety documents. That's the real exposure.
+
+Quick note before I go. Anthropic's public offering is still expected to price around next Wednesday, the eighteenth. Press reports say that. The company hasn't confirmed the date. It's offering about eight hundred twenty-five million shares at seventy to seventy-eight dollars. That's from its own announcement. And the registration isn't effective yet. None of this is advice.
+
+So. A cheap model, a Congress getting stricter about chips, a vendor that leaked, and a court being asked to slow everything down. The industry spent years building on open doors. This week it found out who has the keys.
+
+That's Artificial Record. The full edition, with every source linked, is at artificialrecord dot com.
