@@ -1,0 +1,61 @@
+VOICE: onyx · MODEL: gpt-4o-mini-tts
+INSTRUCTIONS:
+Voice: a seasoned public radio host, mid-forties, talking to one person across a table. Not announcing. Not presenting.
+Pacing: Conversational and unhurried. Vary it — move a little quicker through familiar setup, slow down on figures and on the point of a sentence. Never metronomic.
+Breath and pauses: Breathe audibly before a new idea. Leave a real beat of silence at paragraph breaks — a full second, sometimes longer. Silence is not dead air.
+Inflection: Let sentences fall at the end. Do not hold pitch level and do not lift into the next line. Downward, settled, finished.
+Articulation: Relaxed, slightly soft. Let some consonants go. Do not over-enunciate — you are not reading a legal notice.
+Attitude: Interested, dry, faintly amused now and then. You find this genuinely interesting and you assume the listener does too. Never enthusiastic. Never selling. Never customer-service warm.
+Avoid: uniform rhythm, rising terminal inflection, announcer polish, any sense of performance.
+
+Today's story is about the middle of the AI business. The part between the chips, the models, and you. Who gets to spend your money, who gets to fund the next startup, and who has to answer for where the hardware goes. Good morning. This is Artificial Record, for Sunday, November 15th.
+
+So. Start with the one that touches your wallet, literally.
+
+On Friday, OpenAI launched something called ChatGPT Wallet. TechCrunch has the details. We couldn't open OpenAI's own page, so we're leaning on that description. Here's how it works. OpenAI has these agents it calls "dots." Until now, a dot could help you browse, fill a cart, maybe. But you had to be the one to press buy. Now, with the Wallet, you add a card once. You ask for something. The dot shows you the items, the total, the card. And you approve it with a fingerprint or Face ID.
+
+And here's the clever bit. The card number never goes to the agent. Or the store. It's a token, a stand-in code. So the store gets paid, but nobody in the middle ever sees your real number.
+
+Now. Don't picture everyone's doing this tomorrow. It's a limited rollout. U.S. Pro subscribers only, eighteen and older, with a U.S. Visa, Mastercard, or American Express. OpenAI says spending limits are coming. Rules by category, by time period. Which is the part that'd let you say, "sure, go ahead and buy that, don't ask me." That's not here yet.
+
+And the stores? They're not all thrilled. United Airlines said this week it'd restrict outside AI agents from booking flights. Amazon's blocking agents and pushing its own, Alexa. So the question isn't whether the tech works. It's whether sellers want a middleman they don't control. We'll see.
+
+Okay. Second thing. And it's about a company that's kind of holding everybody's coat.
+
+Nvidia. You know the story by now. The chief executive, Jensen Huang, resigned Thursday. His chief financial officer, Colette Kress, is running things for now. And over the weekend, a petition went up asking the board to bring him back. TechCrunch says it passed a hundred and fifteen thousand signatures by Saturday afternoon. Elon Musk's on it. So is the head of Y Combinator. The petition's site says thousands of Nvidia employees signed, and we can't check that number. And the board hasn't budged, as far as anyone's reported.
+
+But here's what's interesting. It's not really about him. It's about the money.
+
+TechCrunch spoke to venture investors, and the picture they paint is that Nvidia's been a sort of safety net for young AI companies. Per PitchBook, it took part in a hundred and five funding rounds this year. Often as the biggest investor. One investor put it this way: "When Nvidia was on the cap table, everyone felt safe."
+
+Now that's opinion. People with money at stake. But there's a harder piece too. The Wall Street Journal reported, and again we couldn't read it ourselves, that Kress had already scaled back Nvidia's commitment to an OpenAI data center in Ohio. Talks had involved two hundred and fifty billion dollars in credit. Nvidia committed a hundred and five. Anonymous sources. No Nvidia comment that we've seen.
+
+And it's worth a word on who else is in that Nvidia list. TechCrunch names CoreWeave, Crusoe, Mistral, Lambda, Black Forest Labs. Companies that needed hundreds of millions for chips, and often raised about half of it from Nvidia, at valuations of a billion or more. If that tap narrows, valuations may come down. That's one investor's expectation, not a plan anyone's announced. Another told TechCrunch that other big tech companies probably won't write checks that size to startups with no revenue. Could be wrong. But it's the worry.
+
+So watch Tuesday. Nvidia reports results about one-twenty Pacific, and there's a call at two. Kress will be on it. The thing to listen for is how she talks about commitments. Not the quarter. The promises.
+
+Third. And this one's for anyone who runs software.
+
+Thinking Machines Lab, that's Mira Murati's company, launched a model on November fifth called Inkling 2 Small. At launch, closed. You could use it on their platform, but you couldn't download it. Well, an update on their own post, dated November twelfth, says the weights are now on Hugging Face. Weights, that's the model itself. The learned numbers. Public means you can run it on your own machines.
+
+It's big. Five hundred ninety-four billion parameters. But it's what's called a mixture of experts, so only seventeen billion are working at any one moment. Think of a hospital. Not every specialist sees every patient.
+
+Now, the benchmark numbers. All theirs. Self-reported. They say about thirty-one on the Artificial Analysis index, eighty-six percent on a hard coding test, eighty-one on a reasoning test. But to their credit, they also say a DeepSeek model beats it on a couple of coding tests. And that it trails closed models on safety evaluations. It's wordy, they admit. So, a lab grading its own homework. But a lab that's willing to show you where it lost.
+
+One caution. They'd planned an Apache license, which is the permissive kind. The update doesn't restate it, and we haven't seen the Hugging Face page. So check before you build on it.
+
+Why does it matter? Because running your own model means your text doesn't leave the building. And this week, a hosting company called Fireworks told customers attackers got in. Notion said some of its AI chat transcripts were exposed. Fireworks, by the way, is one of the hosts listed for this model. The post doesn't connect the two. We're just noting it.
+
+Also, the Fireworks news matters for a plain reason. When a product sends your words to an outside host, that host may keep a copy. Notion said it's now auditing vendors for zero retention. Meaning the vendor keeps nothing. That's a question you can ask your own suppliers. Today.
+
+Fourth, quickly. Washington.
+
+Two Democrats, Representative Richard Neal and Senator Ron Wyden, wrote to Commerce Secretary Howard Lutnick. They want the department to keep its records on how Nvidia's chip sales to China were arranged. TechCrunch has it. They allege a deal where chips shipped through the U.S. first, then got a tariff, then an export license. They call it an "unconstitutional export tax system." That's their phrase. And they ask whether twenty-six million dollars in Nvidia donations were connected. Allegations. Not findings.
+
+And remember, they're the minority. They can ask. They can't compel. Meanwhile Republicans are running their own probe, and Huang's agreed to testify. So both parties are asking about the same chips. Just from different doors.
+
+One more thing. Anthropic. We told you yesterday about its IPO range. Seventy to seventy-eight dollars a share. The company's own notice doesn't give a pricing date. Press reports say Wednesday, trading Thursday. Anthropic hasn't confirmed that. So, a maybe.
+
+And that's the thread. Who can spend for you. Who funds the next lab. Who's on the hook for the chips. None of it's settled.
+
+That's Artificial Record. The full edition, with every source, is at artificialrecord.com.
