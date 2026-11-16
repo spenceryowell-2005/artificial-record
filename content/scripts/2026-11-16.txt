@@ -1,0 +1,73 @@
+VOICE: onyx · MODEL: gpt-4o-mini-tts
+INSTRUCTIONS:
+Voice: a seasoned public radio host, mid-forties, talking to one person across a table. Not announcing. Not presenting.
+Pacing: Conversational and unhurried. Vary it — move a little quicker through familiar setup, slow down on figures and on the point of a sentence. Never metronomic.
+Breath and pauses: Breathe audibly before a new idea. Leave a real beat of silence at paragraph breaks — a full second, sometimes longer. Silence is not dead air.
+Inflection: Let sentences fall at the end. Do not hold pitch level and do not lift into the next line. Downward, settled, finished.
+Articulation: Relaxed, slightly soft. Let some consonants go. Do not over-enunciate — you are not reading a legal notice.
+Attitude: Interested, dry, faintly amused now and then. You find this genuinely interesting and you assume the listener does too. Never enthusiastic. Never selling. Never customer-service warm.
+Avoid: uniform rhythm, rising terminal inflection, announcer polish, any sense of performance.
+
+Today's story is about checking the claims. Nvidia reports tomorrow, and a lot of what's been said about AI this week is still waiting for someone to verify it.
+
+Good morning.
+
+Let's start with a researcher named Will DePue. He used to work at OpenAI. Now he runs a nonprofit called Unemployment Labs. And on Thursday he published a report that says something pointed.
+
+Here's the idea. When you build an AI model, the numbers inside it, the weights, don't start at zero. They start as random values. And the way a computer generates those random values depends, a little, on the chip it's running on. How many processing units the chip has. That leaves a pattern. A fingerprint.
+
+So DePue looked at the public weights of a bunch of Chinese models. And he says six of them, from four labs, match the layout of Nvidia's newest chips. Blackwell. Which are banned from export to China. The six include DeepSeek's V4 models, Moonshot's Kimi K3, and MiniMax's M3.
+
+Now. Slow down here, because he does. His own report says this shows what hardware generated the starting values. Not necessarily what trained the model. It doesn't say where the chips were. It doesn't say how anyone got them. And it doesn't claim a law was broken. The chips could've been sitting in a data center outside China.
+
+His rough guess is about twelve thousand Blackwell chips across the training runs. But that range runs from seven thousand to twenty-two thousand. And he says those numbers rest on assumptions he's not sure of.
+
+It's one person's method. I haven't seen anyone replicate it. Nvidia and the Chinese labs haven't answered, at least not in anything I read.
+
+But think about why it matters. Until now, checking where chips went meant tracking shipments. This is a way of checking after the fact, from the outside, using only what's public. If it holds up, that's a new tool. And Congress is already asking Nvidia questions about China.
+
+And the rules here are strange. TechCrunch reports the administration allows a weaker chip, the H200, to go to China, if the shipment takes a route that lets the U.S. collect a twenty-five percent tariff. Blackwell is the line it hasn't crossed. So whether Blackwell chips got in is exactly the question that matters. Most of the rest is detail.
+
+So that's one claim. Here's the second.
+
+Nebius. It's what the industry calls a neocloud. A company that rents out AI computing power, mostly on Nvidia chips. It reported results Thursday. And I'm working from TechCrunch's reading of the company's materials here, because I couldn't open the filings themselves.
+
+Revenue for the quarter was nine hundred eighty-one million dollars. Up five hundred seventy percent from a year ago. Sounds great. Except about a third of that was a one-time payment.
+
+And then they cut their forecast for the year. Down two hundred million, to three billion. The reason is delays at a site in Vineland, New Jersey. That site's run by another company, and it's meant to serve a contract with Microsoft worth up to nineteen point four billion dollars.
+
+TechCrunch says just over half of the capacity is due by the end of this year. The rest slips to spring. And according to Nebius's own summary of the contract, Microsoft can walk away from the affected service if dates are missed and nobody offers replacement capacity. Microsoft hasn't said it will. Nebius didn't say whether Microsoft agreed to the new dates.
+
+Meanwhile TechCrunch reports the site was fined about a million dollars for running generators without permits. And neighbors are suing over noise.
+
+Now, the stock fell seventeen percent. And the company's still planning to spend around forty billion dollars next year. It says customer prepayments and loans backed by contracts could cover most of that. That's the company's claim.
+
+Here's what I think is interesting. It's not chips. They've got chips. It's power. Permits. Construction. The boring stuff. And tomorrow, when Nvidia talks, that's the question underneath every other question. Can the customers actually turn the things on?
+
+Nvidia's results come out around one-twenty Pacific time. Call's at two. And the person writing the commentary is Colette Kress, the finance chief, who's also now the interim CEO, according to TechCrunch. We'll see what she says about investment commitments.
+
+Okay. Third thing. Google.
+
+Google released a model called Gemini 4 Hydrogen on Wednesday. It's a fast, cheaper model. And it's now in Google Search, for everyone, everywhere. Google calls it the biggest model upgrade to Search yet. Which, sure. That's Google grading itself.
+
+The numbers are Google's too. It says Hydrogen scores fifty-one on an independent index that rates models, against fifty for its bigger model, Argon. And that it's two and a half times faster than the last fast model. Those are vendor claims. Nobody outside has checked them, as far as I can tell.
+
+But here's the part that's a plain fact. It's in Google's own post. Its top model, Carbon, has an introductory price. Two dollars for a million tokens going in. Ten coming out. That ends November thirtieth. After that, it doubles. Four and twenty.
+
+So if you're running Carbon, you've got two weeks to figure out whether you need it. And Google's own post says the smaller Argon is quote, the ideal choice for the majority of software engineering and knowledge work. Which is a polite way of saying, probably don't pay double.
+
+Google DeepMind also put out a robotics model this week, Gemini Robotics 2.5. It says a humanoid robot hit ninety-six percent success on car-parts kitting at Mercedes plants. A proof of concept, and Google's number. It's only going to robotics partners for now. I'd file it under, interesting, check back later.
+
+One more. Anthropic.
+
+It's out on the road selling its shares. The company's announcement says eight hundred twenty-five million shares, at an expected seventy to seventy-eight dollars each. Do the multiplication and that's something like fifty-six to sixty-two billion dollars. That's my arithmetic. Not theirs.
+
+Here's the catch. We told you Sunday that press reports pointed to pricing on Wednesday. I went looking for that date in anything Anthropic published. It isn't there. The announcement gives no pricing date and no first trading day. And the registration isn't effective yet, so nobody can buy a share. So treat any date as a rumor. Until the company says otherwise.
+
+And that's sort of the theme, isn't it. A researcher says the chips got in. A cloud company says the buildings will be ready. A search giant says its model's better. A lab says it's worth a lot. Each one's a claim. And some of them are about to meet a test.
+
+Small thing, before I go. Yesterday we told you Thinking Machines hadn't confirmed the license for its open model, Inkling 2 Small. It has now. The Hugging Face page says Apache two point oh. That's the permissive one. So that's settled.
+
+And none of this is investment advice. It's just what's on the record.
+
+That's Artificial Record. The full edition, with every source linked, is at artificialrecord.com.
