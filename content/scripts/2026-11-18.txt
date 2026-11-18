@@ -1,0 +1,65 @@
+VOICE: onyx · MODEL: gpt-4o-mini-tts
+INSTRUCTIONS:
+Voice: a seasoned public radio host, mid-forties, talking to one person across a table. Not announcing. Not presenting.
+Pacing: Conversational and unhurried. Vary it — move a little quicker through familiar setup, slow down on figures and on the point of a sentence. Never metronomic.
+Breath and pauses: Breathe audibly before a new idea. Leave a real beat of silence at paragraph breaks — a full second, sometimes longer. Silence is not dead air.
+Inflection: Let sentences fall at the end. Do not hold pitch level and do not lift into the next line. Downward, settled, finished.
+Articulation: Relaxed, slightly soft. Let some consonants go. Do not over-enunciate — you are not reading a legal notice.
+Attitude: Interested, dry, faintly amused now and then. You find this genuinely interesting and you assume the listener does too. Never enthusiastic. Never selling. Never customer-service warm.
+Avoid: uniform rhythm, rising terminal inflection, announcer polish, any sense of performance.
+
+Nvidia just had the best quarter in its history, and the story is still about what it's stopped doing. That's the day. Good morning, this is Artificial Record.
+
+So. Let's start with the number, because it's a big one. Nvidia said Tuesday that revenue for the quarter was a hundred and fifteen point eight billion dollars. That's roughly double what it was a year ago. And for the next quarter, it's guiding to a hundred and thirty billion, give or take three percent.
+
+Now, those are Nvidia's own figures. It's the company's report and the company's forecast. But they're filed with the usual care, and nobody's disputing them.
+
+Here's the catch. The forecast leaves out China entirely. The release says, and I'm quoting, Nvidia "is not assuming any Data Center compute revenue from China." Zero. Not a small number. Zero.
+
+And the call itself, according to TechCrunch, went further. The interim chief executive, Colette Kress, said Nvidia will stop selling its H200 chips in China at all. Which, remember, was an arrangement that Jensen Huang and President Trump had worked out, with shipments routed through the United States so the government could collect a twenty-five percent tariff. TechCrunch also says Beijing had mostly refused those chips anyway.
+
+So that's the first thing. The second is who's running the place.
+
+Huang resigned a week ago. Tuesday, the chairman, Harvey Jones, said the board — and this is a quote — "does not intend to reinstate Jensen as CEO." Huang, for his part, posted that he'd be honored to come back if the board thought it was right. So you've got that standoff, in public.
+
+Then there's the SEC. The Wall Street Journal reported that the agency has opened a civil inquiry into whether Nvidia's disclosures misled investors. TechCrunch relayed it. And I want to be careful here. That's the Journal's reporting. We didn't find a filing, and we didn't find anything from Nvidia confirming it. Nobody's been found to have done anything wrong.
+
+Okay. Now the third thread, and I think it's the most interesting one, because it's the quiet one.
+
+For two years, Nvidia has been a kind of bank for the AI industry. It invests in its customers. They turn around and buy its chips. People call that circular, and some of them don't mean it kindly. Well, Nvidia now says its stakes in private companies are worth sixty-five and a half billion dollars. That's up from twenty-two billion in January. And it lists a hundred and eighteen billion in guarantees. A hundred and five billion of that is a backstop for OpenAI's giant data center campus in Ohio.
+
+So here's what Kress did. She clarified what a guarantee actually is. According to TechCrunch, it only kicks in once the customer has raised its financing and built the site with Nvidia's equipment. If the project's delayed, she said, the guarantee "doesn't exist anymore."
+
+Which is a much narrower promise than the headline number sounds like. And she said Nvidia will be, quote, "rigorously evaluating" future commitments. Fewer checks, smaller checks. That's what venture investors are bracing for, per TechCrunch.
+
+So, the money behind AI just got a little more conditional.
+
+Now. Same day, a different story, but it rhymes.
+
+Anthropic's about to go public. The company's looking to sell eight hundred and twenty-five million shares at seventy to seventy-eight dollars each. That's Renaissance Capital's read of the terms, and it works out to about sixty-one billion dollars. Ticker's ANT, on the Nasdaq. Pricing was expected this week, and I couldn't find a confirmed final price. So take the range as a range.
+
+What's new is the ownership. TechCrunch went through the amended filing. We haven't read it ourselves, so that's their reading. Amazon would hold about fourteen point seven percent of the company. Google, about thirteen point seven. Put those together and you're near thirty percent. Both in non-voting shares, which is meant to limit their say.
+
+And there's more. A separate twenty-six billion dollar private placement, with names you'd recognize. Nvidia, Google, Microsoft, AMD, Broadcom, Micron, TSMC's investment arm. Google and Nvidia are each in for ten billion. And Anthropic has committed to spend more than a hundred billion dollars on Amazon's cloud over ten years.
+
+So the folks selling Anthropic its chips and its cloud are also its owners. That's not a scandal. It's just the shape of the thing. Chip makers financing the labs that buy the chips. Same pattern as Nvidia and OpenAI, just from the other side of the table.
+
+Last story. And this one's lighter. Mostly.
+
+Google made its Gemini "Tasks" feature free on Tuesday. In the U.S., Japan, Korea, Canada, Australia and India. Tasks is the version of Gemini that doesn't just answer you. It does things. It'll call a business and book an appointment. It'll buy something through Google Pay. Google's own example was a VP using it to call car dealerships about a service appointment.
+
+Google says each task runs in its own isolated virtual machine, and that it asks you before the critical step, like clicking buy. You can set a spending cap. Those are Google's claims. Nobody's tested them independently, as far as I could find.
+
+One detail I liked. Calling doesn't work in Indiana, Louisiana, Minnesota, Montana or Nebraska. Google didn't say why in what I read. But it's a good reminder that the law on automated calls is a patchwork, and a robot dialing your pizza place is now a legal question in some places and not others.
+
+Oh, and one more thing from Google. It's now keeping temporary Gemini chats for about two months. It used to be seventy-two hours. Even with your history turned off. Google says it's for safety, and says those chats aren't used for training. OpenAI says up to thirty days. Anthropic, thirty. So Google's the longest of the three.
+
+Okay. So what's the through-line?
+
+For two years the question was whether the demand was real. Tuesday answered that, pretty loudly. A hundred and fifteen billion dollars. The new question's different. It's who's paying for all of it, and on what terms. Nvidia's saying its backing has conditions. Anthropic's filing shows its landlords and its suppliers are also its shareholders. And the man who wrote a lot of those checks isn't there anymore.
+
+That's not a bubble story. I'd be careful about calling it that. But it is a story about a financing model that was built around one person's appetite, and is now being rebuilt around a board's.
+
+We'll see how the quarter after this one goes. A hundred and thirty billion, minus China. Check back.
+
+That's Artificial Record. The AI industry, on the record. Everything we've covered today, with the sources, is at artificialrecord.com.
