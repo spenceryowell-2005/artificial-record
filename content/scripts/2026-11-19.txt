@@ -1,0 +1,95 @@
+VOICE: onyx · MODEL: gpt-4o-mini-tts
+INSTRUCTIONS:
+Voice: a seasoned public radio host, mid-forties, talking to one person across a table. Not announcing. Not presenting.
+Pacing: Conversational and unhurried. Vary it — move a little quicker through familiar setup, slow down on figures and on the point of a sentence. Never metronomic.
+Breath and pauses: Breathe audibly before a new idea. Leave a real beat of silence at paragraph breaks — a full second, sometimes longer. Silence is not dead air.
+Inflection: Let sentences fall at the end. Do not hold pitch level and do not lift into the next line. Downward, settled, finished.
+Articulation: Relaxed, slightly soft. Let some consonants go. Do not over-enunciate — you are not reading a legal notice.
+Attitude: Interested, dry, faintly amused now and then. You find this genuinely interesting and you assume the listener does too. Never enthusiastic. Never selling. Never customer-service warm.
+Avoid: uniform rhythm, rising terminal inflection, announcer polish, any sense of performance.
+
+Good morning. Here's the thread running through today. The AI industry is being asked to put things in writing. Who's liable, who has to disclose, who pays when the software goes wrong.
+
+It's Thursday, November nineteenth.
+
+Let's start with the big one. Anthropic priced its IPO last night.
+
+Eighty-three dollars a share. The range they'd been telling people was seventy to seventy-eight. So they priced above the top of it.
+
+And they sold more shares than planned. Nine hundred and eighty million, up from eight hundred and twenty-five million. That's Anthropic's own announcement, by the way, on its own site.
+
+Now, a small detail. Not all of those shares are the company's. About twenty-four million come from existing shareholders cashing out. Anthropic doesn't see a dime from those. The rest, a little over nine hundred and fifty-six million, are Anthropic's own.
+
+Do the math and that's about seventy-nine billion dollars for the company. That's our arithmetic, not theirs. Their announcement doesn't give a total.
+
+TechCrunch has a bigger number. It says the whole sale raised eighty-one billion, which would make it the largest IPO ever by money raised. SpaceX held that record at seventy-five. And TechCrunch puts the company's value at about one and a half trillion dollars. That's their reporting. Treat it that way.
+
+Here's the part I keep turning over, though. Pricing above the range tells you people wanted in. It doesn't tell you what the stock does once it opens. Trading was expected to start this morning, and when we wrote this, we hadn't seen a first price. So we don't know.
+
+What we do know is what changes. A public company has to file quarterly reports. It has to tell shareholders when something material happens. And if it says something false, it can be sued over it. That's a different life from being private.
+
+And that leads us straight to Nvidia.
+
+So. Nvidia reported earnings Tuesday. Big numbers. We covered those yesterday. But here's what's odd.
+
+Normally, a company files its quarterly report with the SEC the same day it announces results. It's called a ten-Q. It's the long version. Legal proceedings, risk factors, all the stuff the press release leaves out.
+
+Nvidia didn't file one. On the call, the interim chief executive, Colette Kress, said the company plans to file it, quote, in the coming weeks. No reason given. That's according to TechCrunch, which listened to the call.
+
+Now, why? Well, nobody on the record has said. What TechCrunch reports is that an analyst at UBS, Timothy Arcuri, said management tied the delay to the investigation into Jensen Huang. Whether the company has to add new risk factors, basically. That's an analyst describing what he was told. Not Nvidia saying it.
+
+Arcuri kept his buy rating. He cut his price target, from two-forty to two-twenty. And one analyst's view isn't ours. Just noting it.
+
+Then there's the government side. The Commerce and Justice departments put out a joint statement on a company called Megaspeed. It's a Singapore firm suspected of helping move restricted chips to China.
+
+The statement lays out a timeline. Commerce started looking in twenty twenty-four. Asked Nvidia for records in May of last year. Nvidia put Megaspeed on its no-sell list the next month. Then Commerce and Singapore's police interviewed Megaspeed's chief executive, and Justice took over the criminal case.
+
+What it doesn't do is name Nvidia as a target. That matters. Keep those two things apart.
+
+And the Wall Street Journal reported the SEC is looking at whether Nvidia's disclosures misled investors. That's the Journal's reporting. Paywalled, we didn't read it, and we haven't seen Nvidia confirm it.
+
+So, put it together. A very large company, no permanent chief executive, a missing filing, and a regulator reportedly asking questions. The ten-Q, whenever it lands, is going to get read very closely.
+
+Okay. Different kind of story now. Prices.
+
+OpenAI launched a new model Tuesday. GPT-6.2 Astra, and a cheaper sibling called Sol.
+
+Astra costs eight dollars per million tokens of input, forty per million of output. A token's a little chunk of text, about three-quarters of a word. And that's twenty percent below the last Astra.
+
+Here's the funny bit. Eight and forty is exactly what Anthropic charges for its newest model, Fable five point two. They released it on November ninth, same price.
+
+So two labs, same list price at the top. Which is either a coincidence or it isn't. I'll let you decide.
+
+What it does mean for a company buying this stuff: stop comparing price per token. Compare price per finished job. A cheaper token only helps if the model needs the same number of them. OpenAI says Astra needs fewer. Test it yourself before you believe it.
+
+OpenAI says Astra beat everything it tested, by six points over the last version, using about a fifth fewer output tokens. That's OpenAI's own claim. Decrypt reports independent tests put Astra second, behind Fable. And no gain on coding agents.
+
+Also, OpenAI says both new models hit its highest, "Critical," level for cyber risk under its own safety framework.
+
+One caveat from us. OpenAI's page wouldn't open when we tried. So that rests on summaries of it, plus Decrypt. We're telling you so you know how firm it is.
+
+Last one. And it's the one I think touches the most people.
+
+Banks are changing their terms. Citi updated its user agreement this week. If you give an AI agent access to your account, you're responsible for what that agent does. And if the agent gets hacked, or leaks your login, you're on the hook for what the hackers do.
+
+That's TechCrunch's reading of Citi's terms. We haven't read the agreement ourselves. TechCrunch says JPMorgan and Bank of America did something similar last month. PNC changed its terms Wednesday. Citizens emailed customers with the same warning.
+
+Now. There may be consumer protections that sit on top of those contracts. We haven't looked, and I wouldn't assume either way.
+
+But think about what the banks are saying. They're saying: that thing you let log in for you? It's you. Not us.
+
+And TechCrunch notes the obvious. Banks also worry agents will eat into their fees and deposits. That's the writer's observation, not the banks' words.
+
+For anybody building an agent that touches money, that's a real signal. A tool that only reads, that never holds a password, is going to have an easier road.
+
+A couple of quick things before I go.
+
+AMD closed its purchase of World Labs, the company Fei-Fei Li founded. She's now AMD's chief scientist. AMD didn't say what it paid.
+
+And Microsoft's CEO, Satya Nadella, said at the New York Times DealBook event that a lot of critical infrastructure has flaws that can't be patched. Chillers. Firmware. That kind of thing. That's from TechCrunch's account of his remarks. He also said patching now has to happen almost immediately, because attackers are exploiting holes in the wild. And that AI has made finding those holes easier. Which is a cheerful thought.
+
+So here's what I'd watch. Whether Anthropic trades above eighty-three. When Nvidia files that ten-Q, and what's in it. And whether more banks follow Citi.
+
+None of it is investment advice, by the way. Just the record.
+
+That's Artificial Record. The AI industry, on the record. Everything we cited, with the links, is at artificialrecord dot com.
