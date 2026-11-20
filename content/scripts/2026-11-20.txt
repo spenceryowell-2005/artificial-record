@@ -1,0 +1,59 @@
+VOICE: onyx · MODEL: gpt-4o-mini-tts
+INSTRUCTIONS:
+Voice: a seasoned public radio host, mid-forties, talking to one person across a table. Not announcing. Not presenting.
+Pacing: Conversational and unhurried. Vary it — move a little quicker through familiar setup, slow down on figures and on the point of a sentence. Never metronomic.
+Breath and pauses: Breathe audibly before a new idea. Leave a real beat of silence at paragraph breaks — a full second, sometimes longer. Silence is not dead air.
+Inflection: Let sentences fall at the end. Do not hold pitch level and do not lift into the next line. Downward, settled, finished.
+Articulation: Relaxed, slightly soft. Let some consonants go. Do not over-enunciate — you are not reading a legal notice.
+Attitude: Interested, dry, faintly amused now and then. You find this genuinely interesting and you assume the listener does too. Never enthusiastic. Never selling. Never customer-service warm.
+Avoid: uniform rhythm, rising terminal inflection, announcer polish, any sense of performance.
+
+Morning. Here's the thread today. The money's arrived. The rules haven't.
+
+Start with the money. Anthropic said this morning that its IPO has closed. Final count, a little over a billion shares, at eighty-three dollars each. That's about ninety-three and a half billion dollars, before fees. Which is a number you can't really picture, so try this. It's roughly the entire annual budget of a mid-sized country. Raised in a week.
+
+And that's before the extra part. Seven suppliers, chipmakers and cloud companies, Nvidia, Google, Microsoft, a few others, bought another twenty-six billion dollars of non-voting stock on the side. So the company says it raised about a hundred and nineteen and a half billion, all told.
+
+Now. The stock started trading Thursday. TechCrunch reported the first trade at a hundred and eleven dollars and fifty cents. That's a third above the offering price. And TechCrunch's math puts the company above two trillion dollars at that price. That's their calculation, not Anthropic's. I'll also tell you what I don't have. I couldn't confirm where it closed. So I'm not going to guess.
+
+But here's the part I keep turning over. TechCrunch, reading the company's filing, says Anthropic has committed to spend about nine hundred billion dollars. Mostly on computing. Against revenue last quarter of seventeen billion. Now, that's TechCrunch's reading, I haven't seen the filing myself. And some of those contracts reportedly have exit clauses. But the gap's the story. Lots of cash. Even more promised out the door.
+
+There's another piece of this, and it's a strange one. Anthropic set aside five percent of its shares for a public benefit fund. That's almost eight hundred and fifty million shares. TechCrunch estimates that at around eighty billion dollars. And it adds two percent more each time the company's value climbs by half over the offering price.
+
+Then there's the employees. They pledged shares to charity, and the company matches those pledges. Three to one for people who've been there a while. TechCrunch's writer adds it all up and gets something like a hundred and fifty-six billion dollars of potential giving. But be careful with that one. It's his arithmetic. It's not a company number. And the value moves with the stock.
+
+The seven co-founders sold about three point four million shares each. Roughly two hundred and eighty million dollars apiece. They've also pledged most of their own equity to philanthropy. TechCrunch notes those pledges can be revoked. So, a promise, not a gift. Yet.
+
+So who's on the other end of those promises? Nvidia, mostly. And Nvidia reported this week. Revenue for the quarter, a hundred and fifteen point eight billion dollars. Up a hundred and three percent from a year ago. About ninety-three percent of that, from data centers. That's Nvidia's own release, so take it as their number, but it's a filed result, not a forecast.
+
+And at the same time, Nvidia's in a mess. Jensen Huang, who founded it, resigned as chief executive earlier this month. Axios reports he and the company's general counsel will sit for closed-door interviews with three House committees in early December. The subject's his contacts with a woman named Alice Huang. No relation. She worked for Megaspeed, a Singapore company suspected of funneling banned chips to China.
+
+U.S. officials, according to TechCrunch's timeline, believe she's a Chinese intelligence asset. That's an allegation. Nobody's proven it in public. And Nvidia hasn't been accused of anything we've read about. But it does mean the company that's collecting all that money is also answering questions from Congress. And it still hasn't filed its quarterly report with the SEC. Why? Nobody on the record has said.
+
+So that's the money. Now the part that worries me a little more. The software.
+
+Reuters reported this week, from internal Meta messages, that Meta's AI agent, Muse, has been mixing up people's conversations. An agent, if you haven't met one, is software that does things for you. Not just answers. Does. It books, it orders, it messages.
+
+And employees testing it say it sent people things they never asked for. Childcare requests. Product orders. In one case, somebody else's bank balance, dropped into a chat about tides.
+
+Now, Meta's answer is that employees test special versions. Which is fair. And it doesn't say whether any real users were affected. I've read nothing that says they were. But it's the kind of failure that matters more with an agent than with a chatbot. A chatbot gets a fact wrong. An agent gets the wrong person.
+
+I couldn't open the Reuters story itself. So this is TechCrunch's account of it. The reporting's Reuters', though.
+
+And everybody's building these. Google shipped one this week that runs your Mac. You tell it what to do, it works in the background, and you can pause it or approve each step. It's U.S. only, English only, paid plans. And Bloomberg reports that Apple's working on its own. Apple hasn't said so. Bloomberg found a job listing. Which is how a lot of these stories start.
+
+Here's the wrinkle. Apple makes the operating system. TechCrunch says Apple told developers in October it would require explicit user action before an outside agent takes control. So the company that might build its own is also writing the rules for everyone else's. That's not a scandal. It's just, you know, how platforms work.
+
+Two smaller things before the close. Meta may charge three hundred dollars for a keychain-sized AI gadget called Muse Charm. That's The Information's report. Meta didn't deny it, just said it would have more to share soon. And TechCrunch points out that AI gadgets haven't exactly sold well.
+
+And a startup called Everful raised forty-eight and a half million dollars. It connects small retailers to Chinese factories. The founder says it's on track for a hundred million in annual revenue. That's their claim, and one outlet's reporting.
+
+One last thing. TechCrunch ran a piece on a run of outages. The FAA grounding flights for hours. Microsoft down for nearly two days. NASA. Apple Pay. Officials say these look unrelated, and the president called them individual events. Nobody's tied them to AI attacks, and the article says so. Some people in the industry guess AI's turning up old holes, and everyone's rushing to patch. That's opinion. Not finding.
+
+But notice the pattern across all of it. Capital's growing fast. Autonomy's growing fast. And the question of who answers when it breaks, that one's still wide open.
+
+One correction. Yesterday we gave Anthropic's proceeds as eighty-one billion. That was the base deal. With the extra shares the underwriters took, it's about ninety-three and a half. That's the number now.
+
+Anthropic's CEO, Dario Amodei, rang the opening bell and said the company will pace the training and deployment of its systems, and won't bend to business or political pressure. TechCrunch notes few concrete commitments have followed from anyone yet. Words first, then we'll see.
+
+That's Artificial Record. The AI industry, on the record. Everything's linked at artificialrecord.com. See you tomorrow.
