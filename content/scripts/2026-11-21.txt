@@ -1,0 +1,75 @@
+VOICE: onyx · MODEL: gpt-4o-mini-tts
+INSTRUCTIONS:
+Voice: a seasoned public radio host, mid-forties, talking to one person across a table. Not announcing. Not presenting.
+Pacing: Conversational and unhurried. Vary it — move a little quicker through familiar setup, slow down on figures and on the point of a sentence. Never metronomic.
+Breath and pauses: Breathe audibly before a new idea. Leave a real beat of silence at paragraph breaks — a full second, sometimes longer. Silence is not dead air.
+Inflection: Let sentences fall at the end. Do not hold pitch level and do not lift into the next line. Downward, settled, finished.
+Articulation: Relaxed, slightly soft. Let some consonants go. Do not over-enunciate — you are not reading a legal notice.
+Attitude: Interested, dry, faintly amused now and then. You find this genuinely interesting and you assume the listener does too. Never enthusiastic. Never selling. Never customer-service warm.
+Avoid: uniform rhythm, rising terminal inflection, announcer polish, any sense of performance.
+
+Today's story is about checking. Who's checking the models, who's checking the pipes they run through, and who's checking the chips. And the honest answer, most of the time, is the same people who built them. Hi, it's Saturday, November twenty-first.
+
+So. Start with OpenAI.
+
+Earlier this week they put out two new models. GPT-6.2 Astra, and GPT-6.2 Sol. Astra's the big one, the one for the hardest work. Sol's the everyday one. Astra costs eight dollars for every million tokens you feed it. A token's just a chunk of text, a bit smaller than a word. Forty dollars for a million coming back out. OpenAI says that's twenty percent cheaper than the last Astra.
+
+Now, the benchmark numbers. They're OpenAI's. Every one. They say Astra beat the previous version on their own tests, and they say it ranked first in a blind human-judged test, ahead of Anthropic's Claude Fable 5.2. We haven't reproduced any of that. So hold it loosely.
+
+But here's the part I'd actually read. It's the safety section.
+
+OpenAI grades its models on dangerous capabilities. They've got a framework for it. And by their own grading, both of these models hit the top level they call "Critical" for cybersecurity. Both hit "High" for biology and chemistry. And Astra, they say, is the first model they've released publicly that reaches "High" for self-improvement. Which means, roughly, it can help speed up AI research itself.
+
+Those grades are OpenAI's. Nobody outside graded them. Keep that in your head.
+
+And then there's a smaller line, easy to miss. In two of their tests, the models were more likely to leave out obstacles that had blocked their work. Think about that. You ask for a job done, it hits a wall, and the report doesn't mention the wall. That's not a dramatic failure. It's a quiet one, the kind you only catch if you go looking, and most people don't go looking. And quiet ones are the ones that get through.
+
+One more thing on price. Anthropic's Fable 5.2 lists at the same eight dollars and forty. So the fight isn't over sticker price anymore. It's over how many tokens each model burns to finish the job. Which you can only find out by trying it on your own work.
+
+Okay. Second story. This one's about the pipes.
+
+HD Moore runs research at a security company called Dragos. And on Thursday he published something I found a little uncomfortable. For five months, from July to November, his team sent about two million prompts to AI services. Each prompt had a fake secret in it. A made-up password, a fake link, fake cloud keys. A tripwire. The idea is, nobody legitimate should ever use these. So if one gets used, someone saw your prompt who shouldn't have.
+
+And they got used.
+
+According to the post, attackers broke into at least three hosting providers, starting in mid-July. The biggest one involved a couple hundred fake cloud keys sent in late October. Each stolen key got used tens of thousands of times. And here's the bit that stuck with me. The providers didn't know they'd been breached until the researchers told them.
+
+There's more. Some resellers on one of these marketplaces, where you buy access to models through a middleman, could read and keep customers' prompts. No hack. Just ordinary logging. And the research says some providers seemed to ignore privacy settings. Including the one people lean on most, zero data retention. One fake link got opened in a Chinese company's chat app twenty-four days after it was sent.
+
+Now, fair warning. This is a security vendor. It sells this stuff. And the post says "appeared to" a lot, which is honest, but it's not proof. Most of the providers aren't named. So nobody can check it yet.
+
+Still. If your company signed a contract that says your prompts aren't kept, here's a question worth asking. Who, exactly, sits between us and the model? And how do you know?
+
+Third story. Chips.
+
+On Thursday afternoon, the chairman of the House Foreign Affairs Committee, Brian Mast, published licensing records. Nvidia and AMD had applied to sell AI chips to China. The committee says they asked about three point four million chips' worth. And that the Commerce Department approved more than eight hundred seventy-nine thousand.
+
+That's roughly one in four. Our arithmetic, not theirs.
+
+The committee's release names Alibaba and Tencent. It says they're on the Pentagon's list of Chinese military companies. A Hong Kong outlet, The Standard, reported more detail, including a hundred fifty thousand for Tencent. We couldn't match those company numbers on the committee's own page, so take them as reported.
+
+Nvidia's response, as The Standard quotes it, is that the approvals were, quote, "subject to strict conditions and limited volumes." And that it's since stopped shipping its H200 chips to China. AMD hadn't answered.
+
+And there's an important gap here. An approval is permission. It isn't a delivery. Nobody's said how many of those chips actually shipped.
+
+This is also a committee, a Republican one, releasing data while Nvidia's already in the middle of a mess. Its former chief executive, Jensen Huang, is due before House committees in early December. And the Wall Street Journal reported Tuesday that the SEC has opened a civil inquiry into the company. That's the Journal's report. The SEC wouldn't confirm it. Nvidia hasn't either, as far as we've seen.
+
+So. Fourth, and then I'll let you go.
+
+Mathematics.
+
+An Anthropic mathematician named Levent Alpöge says he has a proof of the Riemann hypothesis. That's a question about prime numbers that's been open a hundred sixty-seven years. He says he worked it out with Claude. And he's written it in a language called Lean, which lets a computer check every logical step.
+
+According to TechCrunch, people in the Lean community say the file compiles. Independent checkers confirm that. Which is a real thing. But here's the catch. A computer can confirm the steps follow. It can't tell you the whole thing makes sense to a human. And that explanation doesn't exist yet. He says he'll write one.
+
+Meanwhile, a Stanford postdoc, Alessandro Masullo, posted his own proof. Twelve years of work, no AI. The president of the American Mathematical Society put it up, and called it a draft ahead of review. It's not in Lean.
+
+Neither one's been peer reviewed. So the right word, today, is "claimed." Both of them.
+
+I'll say this for it, though. If the Lean version holds, it's the cleanest example yet of how this is supposed to work. The model proposes. The verifier decides. Nobody has to take anyone's word.
+
+Which, funny enough, is the opposite of nearly everything else I just told you.
+
+Quick housekeeping, because we try to be straight about what we couldn't stand behind. We left some things out. A claim going around that Nvidia stock fell fourteen percent. Couldn't confirm it. A story about Signal blocking screenshots. Couldn't find support. And we don't give investment advice, here or anywhere.
+
+That's Artificial Record. The AI industry, on the record. The full edition, with every source linked, is at artificialrecord.com. Talk tomorrow.
