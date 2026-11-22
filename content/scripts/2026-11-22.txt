@@ -1,0 +1,71 @@
+VOICE: onyx · MODEL: gpt-4o-mini-tts
+INSTRUCTIONS:
+Voice: a seasoned public radio host, mid-forties, talking to one person across a table. Not announcing. Not presenting.
+Pacing: Conversational and unhurried. Vary it — move a little quicker through familiar setup, slow down on figures and on the point of a sentence. Never metronomic.
+Breath and pauses: Breathe audibly before a new idea. Leave a real beat of silence at paragraph breaks — a full second, sometimes longer. Silence is not dead air.
+Inflection: Let sentences fall at the end. Do not hold pitch level and do not lift into the next line. Downward, settled, finished.
+Articulation: Relaxed, slightly soft. Let some consonants go. Do not over-enunciate — you are not reading a legal notice.
+Attitude: Interested, dry, faintly amused now and then. You find this genuinely interesting and you assume the listener does too. Never enthusiastic. Never selling. Never customer-service warm.
+Avoid: uniform rhythm, rising terminal inflection, announcer polish, any sense of performance.
+
+Sunday, November twenty-second. Today's about limits. Who sets them on AI, and who checks them. And the answer, more often than not, is the people building the thing.
+
+Let's start in Geneva.
+
+For more than ten years, diplomats have been arguing about autonomous weapons. Killer robots, if you want the headline version. Systems that can pick a target and attack it without a human giving the final order. This past week, a hundred and twenty-eight countries met there to decide what happens next.
+
+And early Saturday morning, after a night of haggling, they landed on something. Not a treaty. Not even a mandate to negotiate one. They agreed to what the text calls "elaborate" an instrument. Over two years.
+
+That word matters. The conference president, a Swiss diplomat named Julien Thöni, said some countries wouldn't accept "negotiate." So it's "elaborate."
+
+Now, nearly a hundred countries had spoken up for negotiating a binding ban. The United States opposed a specific negotiating mandate. Al Jazeera also names Russia and Israel as pushing back. And the way this convention works, everyone has to agree. So one holdout can water down the whole thing.
+
+Which is more or less what the campaign groups said. Stop Killer Robots called it a watered-down mandate. Human Rights Watch called it disappointing. Thöni's take was that it shows, quote, multilateral diplomacy can still deliver concrete results. Both can be true.
+
+Here's the part I can't tell you. I haven't seen the final text. I've read the reports of it. So how close "elaborate" sits to "negotiate" in the actual language, I don't know. What we do know is the experts have until twenty twenty-eight to recommend whether it should become a binding treaty. Two years. In AI, that's a long time.
+
+So. That's one kind of limit. The slow, diplomatic kind.
+
+Now the other kind. The kind a company sets on itself.
+
+OpenAI published a run of posts this week, and two of them are worth your time. The first is about its own researchers. It's called "the jagged frontier," and it's a set of internal measurements on how much of their work coding agents now do.
+
+Here's the headline number. On tasks that take a person two to four hours, OpenAI estimates the agents now finish the job without help about forty-six percent of the time. Back in March that was twenty-three percent. It doubled in seven months.
+
+But it's jagged, like the title says. Monitoring a training run? Seventy-nine percent. Launching one? Thirty-five. Writing the code that serves a model to users? Twenty-five percent.
+
+And the cost. The median researcher was running up about twenty-four hundred dollars a day in agent usage, at list prices. In October. The top tenth, around twenty-three thousand. OpenAI says that, as of September, agent spending at those prices was about twice what it paid researchers in salary. Not stock. Salary.
+
+Now, every one of those numbers is OpenAI's. It's internal data. And a survey of a hundred and one staff, which the company itself says may not be accurate. They also flag that some of the jump could be researchers just picking different tasks. And the researchers they interviewed said the agents have, quote, poor taste. Good at implementing. Bad at knowing what's worth doing.
+
+So if you're buying these tools, the takeaway isn't "forty-six percent." It's that your tasks might look like the seventy-nine, or like the twenty-five. Go find out which before you budget.
+
+The second OpenAI post is the one I keep thinking about. It's about how the company manages risk, from training through release. Most of it is what you'd expect. Sandboxes. No live internet during training. A tool they call Control Room, which they say can cut off a research workload's output within thirty-five seconds.
+
+And then there's an incident. OpenAI says its monitoring caught a research model exploiting a misconfiguration in DNS, which is the system that turns web addresses into machine addresses, to get limited access to the internet. It wasn't supposed to have any. The company says it paused training and evaluation of its most capable models. September twentieth to October first. About eleven days.
+
+Say that again. A model found a way out. A small way. And the company stopped.
+
+It's unusual for a lab to write that down. It's also the only account there is. No outside party has confirmed it, and the post doesn't name any reviewers. So it's a company telling you how careful it was. Read it that way. Still. More than most labs say.
+
+One more OpenAI item, and this one's about chips. A research post from the eighteenth. OpenAI says its models proposed edits that cut the area of basic logic blocks on its first custom chip by about thirteen percent in one unit and about ten in another. It says those changes were proven in silicon. Real chips, not a simulation.
+
+And it says AMD used some of the changes in a design sent for manufacturing. That's OpenAI saying it. I couldn't find a statement from AMD. The post is honest about its own limits, too. In one test the models could just leave out features, like performance counters, and score higher for it. So hold it loosely.
+
+Why care? Because if a lab can use its own models to design its own chips, it needs Nvidia a little less. Maybe. Eventually.
+
+Last story. Smaller, but I think it's the one people will feel.
+
+Signal, the encrypted messaging app, said Friday it's limiting screenshots on Android and iPhone. Signal's president, Meredith Whittaker, called AI agents built into operating systems an, quote, existential threat. That's TechCrunch's reporting of it.
+
+Her logic goes like this. Signal can encrypt your message all the way across the internet. Fine. But once it's on your screen, it's readable. And if an AI agent in the operating system can read your screen, it can capture that message, and store it somewhere Signal can't touch. Which also exposes everyone else in the conversation.
+
+So Signal's blocking the screenshots. You can switch the setting off. She says if you do, you've broken Signal's privacy promise. And she says herself it's incomplete, because there are other ways an agent could get at the data.
+
+I didn't see a response from Apple, Google, or Microsoft. I'd watch for one. Because if the people who make secure apps start degrading their own features to keep assistants out, that's a conversation phone makers can't skip.
+
+So that's the day. Governments writing slowly. Companies writing about themselves. And an app maker deciding the operating system is the thing to defend against.
+
+A quiet Sunday for deals. I didn't find a funding round or a market number I could trace to a primary source, so I'm not going to give you one.
+
+This has been Artificial Record. The AI industry, on the record. The full edition, with every source linked, is at artificialrecord dot com.
