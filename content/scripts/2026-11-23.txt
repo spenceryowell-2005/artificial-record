@@ -1,0 +1,73 @@
+VOICE: onyx · MODEL: gpt-4o-mini-tts
+INSTRUCTIONS:
+Voice: a seasoned public radio host, mid-forties, talking to one person across a table. Not announcing. Not presenting.
+Pacing: Conversational and unhurried. Vary it — move a little quicker through familiar setup, slow down on figures and on the point of a sentence. Never metronomic.
+Breath and pauses: Breathe audibly before a new idea. Leave a real beat of silence at paragraph breaks — a full second, sometimes longer. Silence is not dead air.
+Inflection: Let sentences fall at the end. Do not hold pitch level and do not lift into the next line. Downward, settled, finished.
+Articulation: Relaxed, slightly soft. Let some consonants go. Do not over-enunciate — you are not reading a legal notice.
+Attitude: Interested, dry, faintly amused now and then. You find this genuinely interesting and you assume the listener does too. Never enthusiastic. Never selling. Never customer-service warm.
+Avoid: uniform rhythm, rising terminal inflection, announcer polish, any sense of performance.
+
+Monday. And the story today is about chokepoints. Who controls the chips, who controls the software that makes them useful, and how quickly the people in charge of all that can change.
+
+Start with Nvidia. Because this one moved fast.
+
+Eleven days ago, Jensen Huang resigned as Nvidia's chief executive. TechCrunch reports it followed his admission of at least two affairs. One of them, reportedly, with a woman the U.S. government suspects is a Chinese spy. The board chair said on the earnings call last week that they didn't plan to bring him back. They'd even hired a search firm.
+
+Today? Reinstated. Chief executive, president, and back on the board. Effective immediately.
+
+Here's what Nvidia's own announcement says. The vote was unanimous. The board says it's satisfied with, quote, his candor and ability to lead. And it says it took input from senior levels of the U.S. government, and on that basis it's confident his return poses no national security risk. That's it. No detail about who said what.
+
+Now, the company also says an investigation, run by independent directors with outside counsel, will, quote, proceed to conclusion. So he's back, and the investigation isn't over. There's a new board committee on national security and export controls. And they're hiring a chief compliance officer.
+
+President Trump praised the decision. TechCrunch reports he said the attorney general had confirmed there's no evidence Huang did anything illegal. But the attorney general hasn't said so publicly, as far as TechCrunch could find. So that part is the president's claim. Not something we could check.
+
+And the market? TechCrunch says the stock opened about thirty percent higher. Which tells you what investors thought of the last eleven days.
+
+Okay. That's the first thing. Now here's why it connects to the second.
+
+Last week the Commerce Department put out a rule on chips. And it's now in the Federal Register. Published Thursday, effective the same day, and the public has until January nineteenth to comment.
+
+The problem it's trying to fix is simple. Chinese companies can't buy the best American chips. So they rent them. Chips sitting in a data center in some third country, used over the internet. The rule says those data centers now need a licence if they supply serious computing power to companies headquartered in China, or certain other restricted places. And the chip sellers have to know who their customer really is.
+
+It also adds five countries to the licence list. Indonesia, Malaysia, Singapore, Thailand and Brazil. Because the government says they're a higher risk for chips being passed along. American companies are exempt, if they meet some reporting conditions.
+
+So, you see it. The Nvidia board is saying, we've got the national security questions covered. The government is saying, we're closing the back door. Same worry. Different rooms.
+
+There's an interesting wrinkle, though. Three analysts at Georgetown wrote in Fortune that the rule leaves a gap. American-owned data centers are renting out capacity to companies that serve Chinese open models. Models anyone can download and run. They say one Chinese model is offered by at least sixteen providers outside China, including Amazon. That's their reading of the data. Not a government finding. But it's a fair question.
+
+Alright. Third story. Amazon.
+
+Amazon says it's buying the technology behind something called the Decart Optimization Stack. Decart's an Israeli startup. The founders and engineers are joining Amazon too.
+
+What is it? Think of it like this. A chip is an engine. But an engine's no good without the tuning. Software that makes AI models run fast on a particular chip. And a huge part of Nvidia's hold on this market is that the tuning has been done. For years. On Nvidia.
+
+Amazon makes its own chips. They're called Trainium. And Amazon says Decart's team has been working on them since twenty twenty-five. The deal's meant to make AI answer requests faster and cheaper on that hardware.
+
+Now, Amazon didn't say what it's paying. Bloomberg reported seven and a half billion dollars. We haven't seen Bloomberg's own page, so that's reported, not confirmed. And TechCrunch says Amazon is getting ready to sell Trainium to outside customers. That's TechCrunch's account. Amazon's post doesn't say it.
+
+If that's right, though, this is the point. Nvidia's real moat isn't just the silicon. It's the software around it. And Amazon just paid, reportedly, a lot of money to build a bridge across it.
+
+One more.
+
+Yesterday OpenAI's chief scientist, Jakub Pachocki, published an essay. And it's a strange one for a company like that. He proposes that the big labs agree to limits on themselves.
+
+The idea runs on a measure called perplexity. It's a number for how well a model predicts the next piece of text. Lower is better. He says OpenAI tracks it on a fixed sample of its own code. A model around point nine-nine could hold a conversation. Around point nine-one, that's roughly GPT-4. Below point eight, he says, you start getting what he calls transformative abilities. In cybersecurity. In mathematics.
+
+His proposal is that labs agree not to cross certain thresholds until they've got better ways of watching what the models are doing. A kind of speed limit. Tied to a monitoring milestone.
+
+He's candid about the weaknesses. Perplexity doesn't measure any one task. Different labs test on different data. And clever prompting can make a model more capable without moving the number at all.
+
+And all of those numbers are OpenAI's. On OpenAI's data. Nobody outside can check them.
+
+TechCrunch says Sam Altman called the essay, quote, the most important thing OpenAI has published in a while. Nothing binds anyone, yet. But when a lab's own chief scientist writes down a number and says, let's not go past it? Worth noticing.
+
+A few quick ones before I go.
+
+Sierra, the customer-service software company, says it's raising one point seven five billion dollars at a thirty billion dollar valuation. That's double where it was in May. It says annual recurring revenue is above four hundred million. Those figures are Sierra's own.
+
+And in mathematics, two people claim to have proved the Riemann hypothesis. That's the famous old question about prime numbers. One of them worked with Claude, and the computer-checked version reportedly compiles. Which means the logic holds together. It doesn't yet prove the statement is the right one. The other, a Stanford researcher, did it, in the words of the president of the American Mathematical Society, with no AI. Neither is peer reviewed. And people have already reported problems with that second draft. So. Give it time.
+
+One last number, for scale. When Anthropic closed its public offering Friday, the company said it raised about ninety-three and a half billion dollars from the share sale. Plus another twenty-six billion from a private placement. Buyers included AMD, Broadcom, Google, Micron, Microsoft, Nvidia and TSMC. Think about that. Companies that sell chips, memory and cloud to Anthropic now own a piece of it. That's a lot of people with a stake in the same outcome. And a lot of the same chokepoints, again.
+
+That's the briefing, from Artificial Record. The AI industry, on the record. Everything we've covered today, with the sources, is at artificialrecord.com.
