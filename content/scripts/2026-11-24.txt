@@ -1,0 +1,67 @@
+VOICE: onyx · MODEL: gpt-4o-mini-tts
+INSTRUCTIONS:
+Voice: a seasoned public radio host, mid-forties, talking to one person across a table. Not announcing. Not presenting.
+Pacing: Conversational and unhurried. Vary it — move a little quicker through familiar setup, slow down on figures and on the point of a sentence. Never metronomic.
+Breath and pauses: Breathe audibly before a new idea. Leave a real beat of silence at paragraph breaks — a full second, sometimes longer. Silence is not dead air.
+Inflection: Let sentences fall at the end. Do not hold pitch level and do not lift into the next line. Downward, settled, finished.
+Articulation: Relaxed, slightly soft. Let some consonants go. Do not over-enunciate — you are not reading a legal notice.
+Attitude: Interested, dry, faintly amused now and then. You find this genuinely interesting and you assume the listener does too. Never enthusiastic. Never selling. Never customer-service warm.
+Avoid: uniform rhythm, rising terminal inflection, announcer polish, any sense of performance.
+
+Tuesday. And the question running through today's news is simple. Who gets to say yes when software acts on its own?
+
+Start with the biggest number. CrowdStrike, the cybersecurity company, has agreed to buy Zscaler. All stock. About forty-three point nine billion dollars.
+
+Now, Zscaler does network security. Think of it as the checkpoint that inspects traffic moving between a company's people, its apps, and the internet. CrowdStrike has been strong on the other side. The laptops, the servers. So the pitch from its chief executive, George Kurtz, is that CrowdStrike gets to, quote, add the network.
+
+Here's the AI part, and it's worth being precise. CrowdStrike's own announcement doesn't say the deal is about AI. What it does say is that a product for securing AI agents, called Falcon Guardian, has passed a hundred million dollars in annual recurring revenue. That's the company's number, not an audited one. So the AI is context. Not the stated reason.
+
+The market had a view, though. CNBC reported CrowdStrike's shares fell nine percent on Monday. Zscaler's rose almost eighteen. And because it's a stock deal, those two prices are now tied together. Each Zscaler share turns into one point one three five CrowdStrike shares. So until this closes, one moves with the other.
+
+When does it close? CNBC says the second half of CrowdStrike's fiscal twenty-twenty-eight. That ends in January of twenty-twenty-eight. So, a while. Regulators, a shareholder vote. None of that's done.
+
+Okay. Second story. Same theme, different shape.
+
+Anthropic launched something called Claude Ship. Monday. And it's aimed at a very specific chore. When a developer wants to change a company's code, they submit a proposal. It's called a pull request. Somebody has to read it, and fix it if the tests fail, and approve it. Every one. All day.
+
+Claude Ship tries to take that on. There are three pieces. One reviews the change. That part's generally available. One fixes failing tests and merge conflicts. That's in beta. And the third, Claude Approvals, is also in beta. A team writes a policy, in plain language, saved as a file in the repository. And under that policy, Claude can approve routine changes without a person reading them.
+
+Now. That's a real shift. The human stops reading every change, and starts writing the rule for which changes need reading.
+
+Anthropic seems aware of how that sounds. Its own advice is to run the approvals piece in observe-only mode first. One repository. Set a spending limit. And one more thing. The company says the fixing tool is designed not to approve or merge anything. So the same agent that repairs a change isn't the one that signs off on it.
+
+What don't we know? How good the approvals actually are. Anthropic says Claude writes most of the code on its own Claude Code team. That's their statement, and we've got no outside measure. It's billed by usage, so what it costs depends on how many changes you push. And it's not available if you've turned on zero data retention, or the HIPAA setup, or customer-managed encryption keys.
+
+If you're a security person, here's the dry observation. You'll want to read that approval policy as carefully as you'd read the code.
+
+Third story. This one's a courtroom. Sort of.
+
+Two states, Oregon and Virginia, have sued SpaceX. Over Grok. That's the image and chat tool built by its xAI unit. Oregon filed Sunday night. Virginia filed Monday morning. CNBC says they're the first states to do it.
+
+And these are allegations. Let's be clear about that. The states say the company didn't have adequate safeguards to stop people making and sharing harmful deepfakes. Fake images of real people. Including, they allege, suspected child sexual abuse material. They also say SpaceX misled the public by presenting Grok and X as generally safe.
+
+Notice what they didn't do. They didn't wait for an AI law. These are consumer protection suits. Virginia's Consumer Protection Act. Oregon's Unlawful Trade Practices Act. The theory is basically, you told people this was safe, and it wasn't. That's an old kind of case. Applied to a new product.
+
+SpaceX told CNBC it takes, quote, appropriate measures against users who try to break its safeguards, and that attempting to create this material is a serious crime. Elsewhere, CNBC reports, the company's lawyers have called Grok a neutral tool, subject to user control. And in a separate case with the city of Baltimore, it's argued Section 230, the law that shields platforms from liability for what users post, protects it.
+
+As of early Monday, CNBC says, the courts hadn't yet accepted the filings. And we haven't read the complaints ourselves. So this is CNBC's reporting. Watch for that.
+
+One more, quickly. A small one, but I liked it.
+
+OpenAI and Cisco released a tool called Shirudo. Japanese for shield. It's open source. The idea is, when someone finds a hole in a Linux server, fixing it properly takes time. You test the patch. You schedule the downtime. Shirudo lets you put up a temporary block on exactly the behavior the attacker needs, while the server keeps running. And the block can be watched before it's enforced.
+
+OpenAI says in one test, a block written by its Codex agent stopped an exploit against a running Elasticsearch service. No restart. That's OpenAI's own test. Not an independent one. But it's the same pattern again. An agent drafts it, and a person decides what goes live.
+
+And a last pair of numbers, because they're strange.
+
+Tidal, the music streaming service, says it'll start removing fully AI-generated songs on December ninth. TechCrunch reports it expects to delete more than twenty-nine million tracks by the end of the year. Twenty-nine million. And Tidal says that over the last ninety days, more than forty-three percent of what got uploaded was AI-generated. Of the roughly twenty-seven million fully AI tracks already on the service, ninety-six percent have never been streamed. Not once.
+
+So the music nobody asked for was piling up. Songs made with AI help are still allowed. Fully generated ones aren't. Bandcamp banned AI music outright. Spotify labels it. Tidal's picking the strictest line a big service has drawn. These are Tidal's figures, relayed by TechCrunch, by the way.
+
+And a funding note. A startup called Marlowe raised two hundred seventy-seven million dollars in seed money, at a valuation of one point one five billion. It was founded in May. It has about thirty employees. It's building AI computing capacity on AMD and Etched chips, and not on Nvidia's. The company says that'll deliver two to three times more output for the power and money. That's its claim. It hasn't named a single customer yet, though it says it's signed three.
+
+So that's the day. A forty-four billion dollar bet on security. A product that lets software approve software. A set of lawsuits asking who vouched for a product's safety. And a tool that hands the drafting to an agent, and keeps the decision with a human.
+
+Different companies, same question. Where does the person go?
+
+That's the Artificial Record. The AI industry, on the record. The full edition, with every source linked, is at artificialrecord dot com.
