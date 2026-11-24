@@ -27,6 +27,14 @@ import markdown
 
 SITE_TITLE = "Artificial Record"
 SITE_TAGLINE = "The AI industry, on the record."
+
+# Social profiles. Leave a value empty to hide that link.
+SOCIAL = [
+    ("LinkedIn", "https://www.linkedin.com/company/artificialrecord/"),
+    ("X", "https://x.com/artificialrnews"),
+    ("Instagram", "https://www.instagram.com/artificialrecord/"),
+    ("Facebook", "https://www.facebook.com/profile.php?id=61594052120219"),
+]
 SITE_DESC = (
     "A daily briefing on the AI industry. Every claim source-linked, "
     "unconfirmed items labelled as such, nothing hyped."
@@ -236,6 +244,19 @@ def sub_box():
 </section>"""
 
 
+def social_row():
+    links = [f'<a href="{e(u)}" rel="me noopener" target="_blank">{e(n)}</a>'
+             for n, u in SOCIAL if u]
+    if not links:
+        return ""
+    return '<p class="social">Follow: ' + " · ".join(links) + "</p>"
+
+
+SOCIAL_CSS = ("<style>footer.site .social{margin-top:14px;font-size:15px}"
+              "footer.site .social a{color:var(--ink-2)}"
+              "footer.site .social a:hover{color:var(--accent)}</style>")
+
+
 def chrome(inner, title, desc, canonical, kind="website", published=None,
            jsonld="", dateline="", after_main=""):
     line = dateline or f"Volume {VOLUME}"
@@ -244,6 +265,7 @@ def chrome(inner, title, desc, canonical, kind="website", published=None,
 <head>
 {head(title, desc, canonical, kind, published)}
 {jsonld}
+{SOCIAL_CSS}
 </head>
 <body>
 <header class="site">
@@ -260,6 +282,7 @@ def chrome(inner, title, desc, canonical, kind="website", published=None,
   <a href="{BASE}/archive/">Archive</a>
   <a href="{BASE}/about/">About</a>
   <a href="{BASE}/feed.xml">RSS</a>
+  {'<a href="#subscribe">Subscribe</a>' if SUBSCRIBE_FORM_ID else ''}
 </div></nav>
 <main>
 {inner}
@@ -268,6 +291,7 @@ def chrome(inner, title, desc, canonical, kind="website", published=None,
 {sub_box()}
 <footer class="site">
   <p>{e(SITE_TITLE)} — {e(SITE_TAGLINE)}</p>
+  {social_row()}
   <p class="fine">Every claim traces to a source we fetched. Items that are reported rather than confirmed are labelled as such. Informational only; nothing here is financial advice.</p>
 </footer>
 </body>
