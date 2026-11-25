@@ -1,0 +1,79 @@
+VOICE: onyx · MODEL: gpt-4o-mini-tts
+INSTRUCTIONS:
+Voice: a seasoned public radio host, mid-forties, talking to one person across a table. Not announcing. Not presenting.
+Pacing: Conversational and unhurried. Vary it — move a little quicker through familiar setup, slow down on figures and on the point of a sentence. Never metronomic.
+Breath and pauses: Breathe audibly before a new idea. Leave a real beat of silence at paragraph breaks — a full second, sometimes longer. Silence is not dead air.
+Inflection: Let sentences fall at the end. Do not hold pitch level and do not lift into the next line. Downward, settled, finished.
+Articulation: Relaxed, slightly soft. Let some consonants go. Do not over-enunciate — you are not reading a legal notice.
+Attitude: Interested, dry, faintly amused now and then. You find this genuinely interesting and you assume the listener does too. Never enthusiastic. Never selling. Never customer-service warm.
+Avoid: uniform rhythm, rising terminal inflection, announcer polish, any sense of performance.
+
+Wednesday. And today's thread is accountability. For the chips AI runs on, and for the things AI makes.
+
+Let's start with Nvidia. Because that's where the week got strange.
+
+About two weeks ago, Jensen Huang resigned as Nvidia's CEO. On November seventeenth, the board's chair said on an earnings call that the board didn't intend to bring him back. And then Monday, it did. Unanimously. Nvidia's own release says the board got, quote, "input from senior levels of the U.S. government," and is confident his return poses no national security risk.
+
+Now. Why does any of this matter beyond the boardroom? Because of a Singapore company called Megaspeed.
+
+Megaspeed is at the center of allegations that Nvidia chips ended up in China. The company has denied wrongdoing. And the Justice and Commerce departments put out a joint statement a week ago. It says Commerce started looking at Megaspeed in 2024. In May of last year, investigators asked Nvidia for its sales records. By June, Nvidia had put Megaspeed on its own no-sell list. And Justice took over the criminal side. No charges announced. Not yet.
+
+So, Monday. Alongside Huang's return, Nvidia said it's creating a new board committee on national security and export controls. And it's looking for a chief compliance officer. Its first. Which tells you something, right? Company this size, this long, and nobody in that seat.
+
+And Semafor reported that Commerce added Megaspeed and six affiliates to its Entity List. That's the blacklist. It means American companies need a license to sell them chips. Semafor first said the move was planned, then reported it as done. I haven't seen the Federal Register notice, so I'll say that plainly.
+
+Here's the part to watch. Congress. TechCrunch reports three House committees will interview Huang privately next week. And the Senate Banking Committee has him in public on December third. Senator Warren says Nvidia still owes Congress answers. Meanwhile the attorney general called Nvidia, quote, "a good corporate citizen." Those two things are sitting side by side.
+
+
+
+Okay. Second story. Anthropic's stock.
+
+Anthropic went public last week. Priced at eighty-three dollars a share. Opened at a hundred and eleven fifty. And TechCrunch reported Tuesday that it dropped as low as seventy-six by midday. Below the price people paid in the IPO.
+
+Let's put some scale on that. The offering raised about ninety-three and a half billion dollars. Plus another twenty-six billion from a private placement to strategic investors, so about a hundred and nineteen billion all told. That's Anthropic's own release, by the way. Those numbers are solid.
+
+The stock price, though, I haven't verified live. That's TechCrunch's report of trading in the middle of one day. And one day's trading doesn't say much about the business. But TechCrunch says falling under the offer price is often read as a bad sign, and that venture investors watch this stock as a barometer for other AI companies. Their framing, not mine. They don't name an analyst. So hold it loosely.
+
+
+
+Third. OpenAI had a busy few days, and two of them are worth your time.
+
+First, proteins. OpenAI published a preprint, Tuesday, saying its GPT-6 models can design proteins. Using reasoning and ordinary code. Without calling the specialized biology tools.
+
+And it did lab tests, with a partner called Onava. Of three hundred and twenty-two small designed proteins, thirty-five stuck to their targets. About eleven percent. For antibody fragments aimed at two cancer targets, a hundred and seventy-nine of two hundred and seventy-two bound. About two-thirds.
+
+Now, all of that is OpenAI's own data. Nobody outside has checked it. And to its credit, the post is blunt about the limits. They still used specialized tools to filter candidates. Predicting a protein's shape from its sequence is still weak. Sticking to a target is only step one. It doesn't tell you whether a drug would work, or be safe. And OpenAI says the capability could be misused.
+
+So. Interesting. Not proven.
+
+
+
+The other one is an essay. From OpenAI's Jakub Pachocki. He argues the whole industry should track one number. Perplexity. It's basically how well a model predicts the next word in text it hasn't seen. Lower is better.
+
+OpenAI published its own figures. Roughly point nine nine for GPT-3.5. Point nine one for GPT-4. And about point seven six for a newer model that's produced results on open math problems. It says capabilities got, quote, transformative, somewhere below point eight.
+
+And here's the line that stuck with me. He writes that a sudden avalanche of advances in training is conceivable, quote, "as soon as 2027." And that the tools for auditing these models are expected to get worse, and that AI-assisted safety work probably won't keep pace.
+
+That's OpenAI's projection. Not a finding. But it's a lab saying it out loud. And it's proposing that developers jointly agree on limits. I didn't find any other lab signing on yet.
+
+
+
+And one more from that OpenAI pile. Planets.
+
+Two amateur astronomers pointed AI tools at public telescope data. One's an OpenAI engineer, using Codex on about a hundred thousand stars from the Kepler telescope. The other used a model the post calls Astra, on some nineteen million stars. And they came back with candidates. Two new ones from the Kepler search. A SETI Institute astronomer independently found the same two signals.
+
+But, candidates. Not planets. Confirming one can take months, or years. Because two stars passing in front of each other can fake the same dip. So that's the honest status. Promising, and unfinished.
+
+Then there's a reality check on agents. A new benchmark called ShellBench. Built by researchers from Hugging Face, Red Hat, UC Berkeley and others, from over ten million real agent interactions. TechCrunch reports even the best models from OpenAI, Anthropic and Meta failed more than a third of everyday tasks. And about sixteen percent of attempts broke at least one safety rule. Forty percent recommended duplicate or wrong invoice payments. I haven't read the paper. But if you're about to hand an agent your accounts payable, that number's worth sitting with.
+
+Last one, and it's shorter. Meta and Amazon.
+
+Meta's agent, Muse, couldn't buy things on Amazon. Users hit an error back in September. Now Fortune reports the two companies are talking. Multiple rounds. Two sticking points. How search results get shown, and how advertising works. And both CEOs would have to sign off. TechCrunch relayed that. I haven't read Fortune's piece. Neither company has commented. Nothing's agreed.
+
+But think about why Amazon's hesitating. If an agent does the shopping, who owns the customer? That's the whole fight.
+
+
+
+So here's where that leaves us. Chips are getting compliance officers. Stocks are getting tested. Models are getting asked to prove what they can do. And the agents? Still negotiating for the right to shop.
+
+That's today's Artificial Record. The AI industry, on the record. Full edition, with every source, at artificialrecord.com.
