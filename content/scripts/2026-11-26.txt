@@ -1,0 +1,75 @@
+VOICE: onyx · MODEL: gpt-4o-mini-tts
+INSTRUCTIONS:
+Voice: a seasoned public radio host, mid-forties, talking to one person across a table. Not announcing. Not presenting.
+Pacing: Conversational and unhurried. Vary it — move a little quicker through familiar setup, slow down on figures and on the point of a sentence. Never metronomic.
+Breath and pauses: Breathe audibly before a new idea. Leave a real beat of silence at paragraph breaks — a full second, sometimes longer. Silence is not dead air.
+Inflection: Let sentences fall at the end. Do not hold pitch level and do not lift into the next line. Downward, settled, finished.
+Articulation: Relaxed, slightly soft. Let some consonants go. Do not over-enunciate — you are not reading a legal notice.
+Attitude: Interested, dry, faintly amused now and then. You find this genuinely interesting and you assume the listener does too. Never enthusiastic. Never selling. Never customer-service warm.
+Avoid: uniform rhythm, rising terminal inflection, announcer polish, any sense of performance.
+
+Today's thread is about who carries the risk when AI companies change hands, or change leaders. Thursday, November twenty-sixth. This is Artificial Record.
+
+Let's start with Nvidia. Again.
+
+You'll remember Jensen Huang was pushed out, and then brought back, all inside about two weeks. Well, a credit rating agency has noticed. S&P Global Ratings says it's weighing a cut to Nvidia's rating. From AA down to AA-minus. One notch.
+
+Now. That sounds small. And it is, for Nvidia. They'd still be investment grade, still highly rated. TechCrunch says Nvidia hasn't commented in that story, and I'll tell you that I couldn't open S&P's own statement. It wouldn't load for me. So what I've got is TechCrunch's account of it.
+
+And what S&P apparently said is this. The firing and the rehiring raised concerns about weak executive oversight. And about what it calls "key man risk." Which is just a polite way of saying: the company leans very hard on one person, and there's no plan for when he's not there. S&P expects to decide within ninety days.
+
+So why does a one-notch cut matter? Because of who's standing behind Nvidia's credit.
+
+Back in August, Nvidia announced a plan to help arrange five hundred billion dollars of financing for AI infrastructure. Five hundred billion. Under the original terms, Nvidia would guarantee a quarter of those loans. Bloomberg reported earlier this month that lenders were already pushing for more than that. Before any of the drama.
+
+So the smaller companies, the ones that rent out chips and build data centers, they borrow against Nvidia's good name. If that name gets a little less shiny, lenders may ask for bigger guarantees. That's TechCrunch's reading, by the way. Not S&P's. But it's a reasonable one.
+
+And there's a human footnote. At his first all-hands since coming back, Huang reportedly told employees he'd broken the company's code of conduct. And that nobody's exempt from it. That's Wired's reporting, passed along by TechCrunch. I haven't read the Wired piece myself.
+
+So — that's one way to react to a market that's nervous about one chip company. Here's another.
+
+Amazon announced Monday that it's buying the technology behind a startup called Decart. Decart makes software that gets more speed out of AI chips. And not just Nvidia's chips. Amazon's own, too. The ones it calls Trainium.
+
+Amazon didn't say what it's paying. Bloomberg reported about seven and a half billion dollars, citing sources. So treat that as reported, not confirmed. The deal still needs regulatory clearance.
+
+Here's why it's interesting. Most AI software is written with Nvidia's chips in mind. That's part of what keeps customers there. Software that makes other chips run models well? That loosens the grip a bit.
+
+Amazon's Peter DeSantis put it this way: "Every leap forward in AI starts with getting more out of every chip." Nice line. But notice that Amazon published no performance numbers. None. So whether this actually closes the gap, nobody knows yet.
+
+And TechCrunch adds a juicy detail. It says Anthropic tried to buy Decart in September for a similar amount, and walked away. That's TechCrunch's reporting. I didn't see either company confirm it.
+
+Okay. Different kind of story now.
+
+Character.AI is in bankruptcy. It filed in October. And it wants to sell off nearly everything, including its users' chats. We're talking more than twenty-one million U.S. accounts. About two point one million of them registered to minors. That's according to California's attorney general.
+
+Which brings us to Tuesday. California's Rob Bonta announced that he and a coalition of other attorneys general have asked the bankruptcy court to say no. Reject the sale. Reject the lead bidder, a Delaware company called Smirks and Pangs Acquisition. And at the very least, keep children's chats out of it.
+
+One small thing. The count of attorneys general wobbles in the press release. Forty-two in one spot, forty-five in a quote. TechCrunch says the list includes D.C. So I'd just say: dozens.
+
+Now what's the argument? The attorneys general say Character.AI told users their personal information wouldn't be sold. And that a buyer wouldn't be bound by that promise. Bonta's line was, "bankruptcy should not be used to sidestep these consumer protections."
+
+The auction's set for December first. The court hasn't ruled, as far as I could find.
+
+So think about that for a second. If you've ever poured something personal into a chatbot, and the company behind it goes under? Your conversations might just be an asset on a list.
+
+One more regulatory item, and it's a tidy one. New York's governor signed a five-year ban on toys with built-in AI chatbots. Signed Tuesday. Talking stuffed animals, internet-connected robots, that kind of thing. It takes effect ninety days after signing, so late February. Penalties run up to fifteen thousand dollars a day, per violation, enforced by the attorney general.
+
+TechCrunch says that makes New York the second state after California. And Amazon says it'll restrict sales of these toys where they're prohibited, though it didn't say how.
+
+So. Toy makers have about three months. And retailers with third-party sellers have the harder job, which is screening every listing.
+
+Last story. A small one, but it's worth a minute.
+
+OpenAI and Cisco released something called Shirudo. It's Japanese for "shield." It's open source. And the idea is simple. When someone finds a hole in a piece of Linux software, a real patch can take days or weeks to test and roll out. Meanwhile your servers are exposed. And you can't just switch off the vulnerable function, because the same function might be doing legitimate work.
+
+So Shirudo lets you put a temporary guard around the bad spot, without restarting anything. Each guard is signed, so you know where it came from. And a person has to approve it before it goes live.
+
+OpenAI showed one test. Its coding agent wrote a guard for a flaw in Java, attached it to a running Elasticsearch server, and the exploit attempt got rejected. Server stayed up.
+
+Now, that's one controlled test. By OpenAI. There are no false-positive numbers, nothing on performance cost. And a lot of what the page describes, like agents building these guards on their own, is labeled as a goal, not something that ships today. So it's a promising idea with thin evidence. There's a technical webinar December fifteenth, if you want to dig in.
+
+That's the day. The thread, again, is who's holding the risk. A rating agency watching one executive. A lender watching a guarantee. Attorneys general watching a chat archive.
+
+I'm leaving out a lot today, and the full edition has it. Google's new personal data hooks in Search. Walmart letting Meta's agent do Black Friday shopping. A benchmark OpenAI built for drug chemistry. Plus the sources for everything I've said, which I'd encourage you to open.
+
+This is Artificial Record. The AI industry, on the record. Find it at artificialrecord.com.
