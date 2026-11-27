@@ -1,0 +1,83 @@
+VOICE: onyx · MODEL: gpt-4o-mini-tts
+INSTRUCTIONS:
+Voice: a seasoned public radio host, mid-forties, talking to one person across a table. Not announcing. Not presenting.
+Pacing: Conversational and unhurried. Vary it — move a little quicker through familiar setup, slow down on figures and on the point of a sentence. Never metronomic.
+Breath and pauses: Breathe audibly before a new idea. Leave a real beat of silence at paragraph breaks — a full second, sometimes longer. Silence is not dead air.
+Inflection: Let sentences fall at the end. Do not hold pitch level and do not lift into the next line. Downward, settled, finished.
+Articulation: Relaxed, slightly soft. Let some consonants go. Do not over-enunciate — you are not reading a legal notice.
+Attitude: Interested, dry, faintly amused now and then. You find this genuinely interesting and you assume the listener does too. Never enthusiastic. Never selling. Never customer-service warm.
+Avoid: uniform rhythm, rising terminal inflection, announcer polish, any sense of performance.
+
+Morning. It's the day after Thanksgiving, so the news is thin. But what there is has a shape. It's about who gets to put AI hardware where, and who can prove it works once it's there.
+
+Start with the sky.
+
+On Wednesday, the Federal Communications Commission signed off on a SpaceX plan. Up to one million satellites. They'd work as data centers in orbit. SpaceX calls the system Starmind.
+
+One million. That's the ceiling the order allows. Not what anyone expects to launch soon.
+
+But read the order itself, and it's narrower than the headline.
+
+The deadlines first. SpaceX has to get one satellite working by November of twenty thirty-three. That's seven years out. Ten percent of the fleet by thirty-five. Half by thirty-eight. All of it by twenty forty. Miss a milestone, and the order says the authorization goes void.
+
+And one big piece got put off. SpaceX wanted room to move some retired satellites into other orbits, even around the Sun, instead of bringing them down. The FCC said, not yet. Before launching anything that won't come back down, SpaceX has to file again and make its case.
+
+The agency also denied petitions from Amazon, from Viasat, and from the American Astronomical Society. TechCrunch says Amazon called the plan a "lofty ambition rather than a real plan." I haven't read that filing myself.
+
+So what is this, really? Permission. To use orbits and radio spectrum. It is not a test of whether computing in space works. TechCrunch lists the open problems. Making the satellites cheaply. Cooling chips in a vacuum. Paying for chips that you can't get back. So, a long-dated option. Not capacity you can rent in twenty twenty-seven.
+
+Now, back on the ground.
+
+TechCrunch reported yesterday, citing the Wall Street Journal, that Nvidia has told server partners to pause shipments. Dell and Super Micro are the names. The countries are Malaysia, Singapore, Thailand and Indonesia. No end date.
+
+Now. I couldn't open the Journal's piece. It's paywalled. So this is TechCrunch's account of the Journal's reporting. And nobody's on the record. Not Nvidia, not Dell, not Super Micro.
+
+According to that account, Nvidia is checking whether its regional partners meet US export rules. And you can see why. Earlier this month the Commerce Department put out a rule. It was issued the fifteenth or sixteenth of November, depending on who you ask.
+
+Here's what the law firm write-ups say it does. If a data center sells a lot of computing power to companies headquartered in China, it needs a license to get advanced chips. And "a lot" is a low bar. Twelve million units of something called aggregate TPP. That's a measure of total processing power. One firm calls the threshold low, and that's the polite word.
+
+The rule also adds license requirements for shipments to those same four countries, plus Brazil. The government's reasoning, per one of the firms, is a higher-than-normal risk of diversion. Chips ending up somewhere they weren't supposed to.
+
+And there's a ninety-day window. Data centers already doing this work have that long to get a license.
+
+Now a caution. I couldn't find the rule text itself. Everything I just said comes from law firm alerts and NBC News. That's good enough to tell you what's going on. It's not what I'd want for the fine print.
+
+TechCrunch also passes along an estimate from a think tank, the Institute for Progress. That remote data centers in those countries supply about a quarter of China's AI computing. Twenty-four percent. I haven't seen the estimate. It's theirs.
+
+So if the pause holds, who feels it? Operators in four fast-growing markets with orders in the queue. And the server makers, who are holding the inventory. We don't know how many shipments. We don't know how long. Watch for whether Nvidia confirms it at all.
+
+OK. Two more, and these are follow-ups. Yesterday we covered both through TechCrunch, and I said we hadn't read the primary documents. Today we have.
+
+First, a benchmark called ShellBench. Published Tuesday by the OpenClaw project, with Hugging Face, Red Hat and UC Berkeley, and a company called Parsewave. It tests AI agents on everyday errands. Reconciling receipts. Drafting replies from an email thread.
+
+A hundred tasks. Fifty-three thousand graded runs. Twelve models.
+
+And the scores are... modest. The top model, OpenAI's GPT-6 Astra, got about sixty-two and a half percent. Anthropic's Claude Fable 5.2, sixty-one point nine. OpenAI's GPT-6.1 Sol, sixty-one point four.
+
+Here's the number I'd hold onto, though. That Sol model costs about nineteen cents a run. Astra costs about a dollar ten. For one point one points of score. That's from the authors' own cost estimates, and they say those are rough.
+
+Then reliability. Astra got a task right at least once in three tries, on three quarters of tasks. But right all three times? Under half. Forty-eight point eight percent. If you're handing an agent your invoices, you want the second number, not the first.
+
+And safety. About one run in six failed at least one safety check. And even among runs where the agent got everything else right, about one in ten still broke a safety rule.
+
+The authors are upfront about limits. Each run was judged once, so the judge adds some noise. Nobody's replicated this. Treat it as one study, from a mix of open-source and academic groups.
+
+Last one. The UK's National Cyber Security Centre, on AI-driven attacks.
+
+Same pattern. Yesterday I gave you TechCrunch's summary. Now I've read the NCSC's own post. It came out Tuesday, from three people at the agency.
+
+Here's their claim. Since September, they've seen a marked rise in attacks run by what they call agentic offensive frameworks. These are tools built for authorized red-team testing. Aimed at the internet's front doors, one after another, fast. They name one called ARTEX as the one most tied to this activity.
+
+And what's striking is what they don't say. They don't say it's a new kind of weapon. They say the opposite. The tools give a typical attacker nothing it couldn't already do. What's changed is speed. And persistence. And cost, because attackers use cheap open models, or resellers of model access.
+
+The weaknesses are dull. Passwords committed to code repositories. Default logins. Misconfigured cloud setups. Accounts with far more permission than they need.
+
+The post doesn't give a single count. So "marked rise" can't be sized from this source. I'd flag that.
+
+Their advice is practical, though. Know what you've got exposed to the internet, including forgotten old sites. Put services behind proper identity checks. Limit by account, not just by address. Scan code for secrets before it's committed. And scatter decoys. Fake credentials that raise an alarm when somebody touches them.
+
+So that's the day. Permission to put chips in orbit. A reported pause on chips going to four countries. A benchmark that says agents get it right about six times in ten. And a security agency saying the attackers got faster, not smarter.
+
+I left a lot out, and the full edition has it. Including the places where we're relying on one report, and the stories we dropped because we couldn't find a primary source.
+
+This is Artificial Record. The AI industry, on the record. Find it at artificialrecord.com.
