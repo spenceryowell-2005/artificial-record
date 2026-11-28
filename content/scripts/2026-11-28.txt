@@ -1,0 +1,51 @@
+VOICE: onyx · MODEL: gpt-4o-mini-tts
+INSTRUCTIONS:
+Voice: a seasoned public radio host, mid-forties, talking to one person across a table. Not announcing. Not presenting.
+Pacing: Conversational and unhurried. Vary it — move a little quicker through familiar setup, slow down on figures and on the point of a sentence. Never metronomic.
+Breath and pauses: Breathe audibly before a new idea. Leave a real beat of silence at paragraph breaks — a full second, sometimes longer. Silence is not dead air.
+Inflection: Let sentences fall at the end. Do not hold pitch level and do not lift into the next line. Downward, settled, finished.
+Articulation: Relaxed, slightly soft. Let some consonants go. Do not over-enunciate — you are not reading a legal notice.
+Attitude: Interested, dry, faintly amused now and then. You find this genuinely interesting and you assume the listener does too. Never enthusiastic. Never selling. Never customer-service warm.
+Avoid: uniform rhythm, rising terminal inflection, announcer polish, any sense of performance.
+
+It's the Saturday after Thanksgiving, and the news is thin. So today's a short one. But the two stories we can stand behind have something in common. Both are about who keeps control.
+
+Let's start in Tokyo.
+
+There's a startup there called Sakana AI. And its chief executive, David Ha, gave an interview to TechCrunch that came out today. The headline is that Sakana plans to build its own foundation model. That's one of those big general-purpose models, the kind you build chatbots and agents on top of. They're calling it Sawara.
+
+Now, here's the part worth noticing. Right now, Sakana doesn't really make its own. TechCrunch describes a product called Fugu, which stitches together other companies' models, including American ones, to build agents. It uses OpenAI's models. And there's another called Namazu, which takes open models from Meta and DeepSeek and tunes them for Japanese language and business.
+
+So Sawara would be the first one they train themselves.
+
+The timeline is modest. Work starts this month. A smaller model is aimed at early next year, and a bigger one after that. Ha says the smaller one should suit what's called on-premises use. That just means a customer runs it on its own machines, not somebody else's cloud. And he points to cybersecurity as an early need.
+
+And then there's the defense angle. TechCrunch reports Sakana signed a research contract with Japan's Ministry of Defense back in July. Ha's argument, roughly, is that for national defense, a country wants its own systems. He also says open models are, quote, "biased towards their creators." That's his view, to be clear. Not a finding.
+
+What we don't know is a lot. The article doesn't give a funding figure. No investors, no valuation, no model size. So this is a plan. Not a product.
+
+One more thing. There were reports earlier this month about Sakana going public. TechCrunch says Ha told them there's nothing near-term. He did say, and I like this phrase, that they have "a gravitational pull to eventually IPO in Japan." Eventually. Okay.
+
+So that's one way of answering the control question. Build your own.
+
+The other answer came from OpenAI, of all places.
+
+On November eighteenth, OpenAI published an essay by Dean Ball. It's in a series they call the Intelligence Age. And there's a note at the top saying it's adapted from a Harvard lecture, and it reflects his views. Not necessarily OpenAI's. Worth saying out loud, because it's easy to blur.
+
+His argument goes like this. A lot of people in AI, he says, quietly expect humans to hand over control of the economy and institutions to machines. Nobody says it. He calls it the silent consensus.
+
+And he's careful about the mechanism. There's no uprising in it. No secret plan. Just a long run of sensible decisions. You hand off this task because the machine does it better. Then that one. And if the machines keep outperforming people, market pressure does the rest. He has a phrase for where that ends up: "the termination of human primacy in the world as we know it."
+
+He doesn't accept it. He says he thinks humans can stay in the driver's seat. Though he admits that's a hard case to make.
+
+Now, what does he actually propose? Nothing like a blueprint. In fact he says he'd distrust anyone who claimed to have one. But there are principles. Hold developers accountable for unsafe practices. Hold people and companies accountable for misuse. Build the technical plumbing so a person is tied to what their agent does. Give agents limited permissions you can audit and take back. And let agents form companies, own property, or sue, quote, "with extraordinary caution, if at all."
+
+It's an essay. There are no numbers in it. But think about who's publishing it. A company that sells agents.
+
+And here's why I'd connect it to something we covered yesterday. A benchmark called ShellBench looked at agents doing everyday tasks. Among the runs that got every correctness check right, about one in ten still broke a safety rule. Nine point nine percent. That's from the authors' own paper, and nobody's replicated it yet. But it's the practical version of Ball's point. Permissions aren't a philosophy question. They're a design question.
+
+One last note, on the stock market side. Anthropic's offering closed on November twentieth. The company says it sold about one point one billion shares at eighty-three dollars. That's roughly ninety-three and a half billion dollars before fees. Add the private placement to chipmakers and cloud companies, and it's about a hundred and nineteen billion. We've covered that already. What we won't give you is this week's share price, because the only sources we found were trading sites we couldn't check. If you're following it, go to Nasdaq or the SEC. And that's information, not advice.
+
+Oh, and a quick word on what we left out. Aggregator newsletters circulated a few items on Friday. A billing error at OpenAI. A Canadian funding announcement. An Apple app removal. We couldn't confirm any of them from a real source. So they're not here. A short show beats a shaky one.
+
+That's Artificial Record. The AI industry, on the record. The full edition, with every source linked, is at artificialrecord.com.
